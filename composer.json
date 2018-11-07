@@ -6,7 +6,7 @@
     }
   ],
   "name": "resterland/resterland",
-  "description": "Tweeks the extension bootstrap_package from Benjamin Kott to some Resterland needs.",
+  "description": "Requires the bootstrap_package extension from Benjamin Kott and tweaks it to the needs of ResterlandWebatelier.",
   "minimum-stability": "stable",
   "license": "GPL-2.0-or-later",
   "authors": [
