@@ -1,34 +1,58 @@
 {
-  "repositories": [
-    {
-      "type": "composer",
-      "url": "https://composer.typo3.org/"
-    }
-  ],
-  "name": "resterland/resterland",
-  "description": "Requires the bootstrap_package extension from Benjamin Kott and tweaks it to the needs of ResterlandWebatelier.",
-  "minimum-stability": "stable",
-  "license": "GPL-2.0-or-later",
-  "authors": [
-    {
-      "name": "Roland Fuhrer",
-      "email": "roland@resterland.ch",
-      "homepage": "https://resterland.ch",
-      "role": "Developer"
-    }
-  ],
-  "require": {
-    "roave/security-advisories": "dev-master",
-    "bk2k/bootstrap-package": "^10.0",
-    "resterland/webatelier": "^2.1"
-  },
-  "require-dev": {
-    "typo3/testing-framework": "^4.11"
-  },
-  "extra": {
-    "typo3/cms": {
-      "root-dir": "private",
-      "web-dir": "public"
-    }
-  }
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "https://composer.typo3.org/"
+		}
+	],
+	"name": "resterland/resterland",
+	"type": "typo3-cms-extension",
+	"description": "Tweaks the extension bootstrap-package of Bajamin Kott with some Resterland specials.",
+	"minimum-stability": "stable",
+	"license": [
+		"GPL-2.0-or-later"
+	],
+	"keywords": [
+		"TYPO3 CMS"
+	],
+	"authors": [
+		{
+			"name": "Roland Fuhrer",
+			"email": "roland@resterland.ch",
+			"homepage": "https://resterland.ch",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"roave/security-advisories": "dev-master",
+		"bk2k/bootstrap-package": "^10.0",
+		"resterland/webatelier": "^2.1",
+		"typo3/minimal": "^9.5"
+	},
+	"require-dev": {
+		"typo3/testing-framework": "^4.11"
+	},
+	"extra": {
+		"typo3/cms": {
+			"root-dir": "private",
+			"web-dir": "public"
+		}
+	},
+	"autoload": {
+		"psr-4": {
+			"Resterland\\Resterland\\": "Classes"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Resterland\\Resterland\\Tests\\": "Tests"
+		}
+	},
+	"replace": {
+		"resterland": "self.version",
+		"typo3-ter/resterland": "self.version"
+	},
+	"config": {
+		"optimize-autoloader": true
+	}
 }
