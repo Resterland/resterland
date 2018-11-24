@@ -1,7 +1,7 @@
 {
 	"name": "resterland/resterland",
 	"type": "typo3-cms-extension",
-	"description": "Tweaks the extension bootstrap-package of Bajamin Kott with some Resterland specials.",
+	"description": "Tweaks the extension bootstrap-package of Bajamin Kott with some Resterland goodies.",
 	"license": "GPL-2.0-or-later",
 	"keywords": [
 		"TYPO3 CMS"
