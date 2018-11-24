@@ -1,10 +1,4 @@
 {
-	"repositories": [
-		{
-			"type": "composer",
-			"url": "https://composer.typo3.org/"
-		}
-	],
 	"name": "resterland/resterland",
 	"type": "typo3-cms-extension",
 	"description": "Tweaks the extension bootstrap-package of Bajamin Kott with some Resterland specials.",
@@ -21,12 +15,11 @@
 		}
 	],
 	"require": {
-		"roave/security-advisories": "dev-master",
-		"bk2k/bootstrap-package": "^10.0",
-		"resterland/webatelier": "^2.1",
-		"typo3/minimal": "^9.5"
+		"typo3/minimal": "^9.5",
+		"bk2k/bootstrap-package": "^10.0"
 	},
 	"require-dev": {
+		"friendsofphp/php-cs-fixer": "^2.0",
 		"typo3/testing-framework": "^4.11"
 	},
 	"extra": {
