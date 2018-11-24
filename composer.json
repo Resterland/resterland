@@ -8,10 +8,7 @@
 	"name": "resterland/resterland",
 	"type": "typo3-cms-extension",
 	"description": "Tweaks the extension bootstrap-package of Bajamin Kott with some Resterland specials.",
-	"minimum-stability": "stable",
-	"license": [
-		"GPL-2.0-or-later"
-	],
+	"license": "GPL-2.0-or-later",
 	"keywords": [
 		"TYPO3 CMS"
 	],
@@ -29,6 +26,7 @@
 		"typo3/minimal": "^9.5"
 	},
 	"require-dev": {
+		"roave/security-advisories": "dev-master",
 		"typo3/testing-framework": "^4.11"
 	},
 	"extra": {
