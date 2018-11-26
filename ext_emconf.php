@@ -5,7 +5,7 @@
  */
 $EM_CONF[$_EXTKEY] = [
     'title' => 'Resterland',
-    'description' => 'Resterlands distribution is based on TYPO3 version 8 and the bootstrap package extension by Bajamin Kott.',
+    'description' => 'Resterland extension is based on TYPO3 version 8 and the bootstrap package extension by Bajamin Kott.',
     'category' => 'distribution',
     'constraints' => [
         'depends' => [
@@ -28,5 +28,5 @@ $EM_CONF[$_EXTKEY] = [
     'author' => 'Roland Fuhrer',
     'author_email' => 'roland@resterland.ch',
     'author_company' => 'ResterLand',
-    'version' => '1.0.0',
+    'version' => '0.1.1',
 ];
