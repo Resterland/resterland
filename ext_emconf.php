@@ -27,6 +27,5 @@ $EM_CONF[$_EXTKEY] = [
     'clearCacheOnLoad' => 1,
     'author' => 'Roland Fuhrer',
     'author_email' => 'roland@resterland.ch',
-    'author_company' => 'ResterLand',
-    'version' => '0.1.1',
+    'author_company' => 'ResterLand'
 ];
