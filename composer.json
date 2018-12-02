@@ -1,4 +1,15 @@
 {
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "https://composer.typo3.org/"
+		},
+		{
+			"type": "vcs",
+			"url": "https://github.com/resterland/resterland.git"
+		}
+	],
+
 	"name": "resterland/resterland",
 	"type": "typo3-cms-extension",
 	"description": "Tweaks the extension bootstrap-package of Bajamin Kott with some Resterland goodies.",
