@@ -22,7 +22,7 @@
 		}
 	],
 	"require": {
-		"resterland/webatelier": "^3",
+		"resterland/webatelier": "^3.1",
 		"bk2k/bootstrap-package": "^10.0"
 	},
 	"require-dev": {
