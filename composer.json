@@ -1,6 +1,10 @@
 {
 	"repositories": [
 		{
+			"type": "composer",
+			"url": "https://composer.typo3.org/"
+		},
+		{
 			"type": "vcs",
 			"url": "https://github.com/resterland/resterland.git"
 		}
@@ -22,8 +26,8 @@
 		}
 	],
 	"require": {
-		"resterland/webatelier": "^3.3",
-		"bk2k/bootstrap-package": "^10.0"
+		"resterland/webatelier": ">=3.3.1 <4.0.0",
+		"bk2k/bootstrap-package": ">=10.0 <11.0.0"
 	},
 	"require-dev": {
 		"friendsofphp/php-cs-fixer": "^2.0",
