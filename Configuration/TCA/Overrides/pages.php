@@ -37,3 +37,10 @@ $extensionKey = 'resterland';
     'Configuration/TsConfig/Page/Mod/SHARED.tsconfig',
     'Resterland: SHARED'
 );
+
+/**
+ * workaround for all pages "Hide page if no translation for current language exists".
+ * This checkbox is available for every page under the tab "language".
+ * To automaticly set this flag for new created pages:
+ */
+$GLOBALS['TCA']['pages']['columns']['l18n_cfg']['config']['default'] = 2;

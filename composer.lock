@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "bk2k/bootstrap-package",
-            "version": "10.0.4",
+            "version": "10.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/benjaminkott/bootstrap_package.git",
-                "reference": "f523e4a60457660581fcb0b8965f5a0db3a3f3b9"
+                "reference": "d34a866a7c1051bd78c00343ca36bd637419c319"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/benjaminkott/bootstrap_package/zipball/f523e4a60457660581fcb0b8965f5a0db3a3f3b9",
-                "reference": "f523e4a60457660581fcb0b8965f5a0db3a3f3b9",
+                "url": "https://api.github.com/repos/benjaminkott/bootstrap_package/zipball/d34a866a7c1051bd78c00343ca36bd637419c319",
+                "reference": "d34a866a7c1051bd78c00343ca36bd637419c319",
                 "shasum": ""
             },
             "require": {
@@ -78,7 +78,7 @@
                 "theme",
                 "web"
             ],
-            "time": "2018-12-05T20:50:11+00:00"
+            "time": "2018-12-15T15:54:04+00:00"
         },
         {
             "name": "cogpowered/finediff",
@@ -1088,16 +1088,16 @@
         },
         {
             "name": "helhum/typo3-composer-setup",
-            "version": "v0.5.3",
+            "version": "v0.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/helhum/typo3-composer-setup.git",
-                "reference": "cf13489af8af80203814a1b79840e218b2e85b53"
+                "reference": "d8a7db5fc160bd652aae2837b324b26f7b5ed6d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/helhum/typo3-composer-setup/zipball/cf13489af8af80203814a1b79840e218b2e85b53",
-                "reference": "cf13489af8af80203814a1b79840e218b2e85b53",
+                "url": "https://api.github.com/repos/helhum/typo3-composer-setup/zipball/d8a7db5fc160bd652aae2837b324b26f7b5ed6d4",
+                "reference": "d8a7db5fc160bd652aae2837b324b26f7b5ed6d4",
                 "shasum": ""
             },
             "require": {
@@ -1106,7 +1106,7 @@
             },
             "require-dev": {
                 "typo3-console/php-server-command": "^0.1.0",
-                "typo3/cms-core": "dev-TYPO3_8-7 as 8.7.9"
+                "typo3/cms-core": "^8.7.10 || ^9.5.2"
             },
             "suggest": {
                 "helhum/typo3-console": "TYPO3 Console is highly recommended for any TYPO3 composer setup.",
@@ -1118,11 +1118,7 @@
                     "dev-master": "1.x-dev"
                 },
                 "typo3/cms": {
-                    "cms-package-dir": "{$vendor-dir}/typo3/cms",
                     "web-dir": "public"
-                },
-                "helhum/typo3-console": {
-                    "install-extension-dummy": "0"
                 }
             },
             "autoload": {
@@ -1143,43 +1139,40 @@
                 }
             ],
             "description": "Set up required entry points for TYPO3 web directory",
-            "time": "2018-06-26T12:47:04+00:00"
+            "time": "2018-12-16T11:45:46+00:00"
         },
         {
             "name": "helhum/typo3-secure-web",
-            "version": "v0.2.7",
+            "version": "v0.2.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/helhum/typo3-secure-web.git",
-                "reference": "79c916450a4c3ad19341fa6c8df5539a59179ad0"
+                "reference": "c3530fda74affbae6d5a09c62335d128a735c69c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/helhum/typo3-secure-web/zipball/79c916450a4c3ad19341fa6c8df5539a59179ad0",
-                "reference": "79c916450a4c3ad19341fa6c8df5539a59179ad0",
+                "url": "https://api.github.com/repos/helhum/typo3-secure-web/zipball/c3530fda74affbae6d5a09c62335d128a735c69c",
+                "reference": "c3530fda74affbae6d5a09c62335d128a735c69c",
                 "shasum": ""
             },
             "require": {
-                "helhum/typo3-composer-setup": "^0.5.0",
+                "helhum/typo3-composer-setup": "^0.5.4",
                 "typo3/cms-composer-installers": "^1.4 || ^2.0"
             },
             "conflict": {
-                "typo3/cms": "<8.7.8",
-                "typo3/cms-core": "<8.7.8"
+                "helhum/typo3-composer-setup": "<0.5.4",
+                "typo3/cms": "<8.7.10",
+                "typo3/cms-core": "<8.7.10"
             },
             "require-dev": {
                 "typo3-console/php-server-command": "^0.1.0",
-                "typo3/cms": "dev-TYPO3_8-7 as 8.7.8"
+                "typo3/cms-core": "^8.7.10 || ^9.5.2"
             },
             "type": "library",
             "extra": {
                 "typo3/cms": {
-                    "cms-package-dir": "{$vendor-dir}/typo3/cms",
-                    "root-dir": "typo3",
+                    "root-dir": "private",
                     "web-dir": "public"
-                },
-                "helhum/typo3-console": {
-                    "install-extension-dummy": "0"
                 }
             },
             "autoload": {
@@ -1200,7 +1193,7 @@
                 }
             ],
             "description": "Set up secure TYPO3 web directory containing only public assets",
-            "time": "2017-12-31T14:48:15+00:00"
+            "time": "2018-12-16T12:14:08+00:00"
         },
         {
             "name": "mso/idna-convert",
@@ -5484,16 +5477,16 @@
         },
         {
             "name": "typo3/testing-framework",
-            "version": "4.11.1",
+            "version": "4.11.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/testing-framework.git",
-                "reference": "cfc5ad04e61898c8144e19ca5f7e8d83203a4b24"
+                "reference": "da0bf472cbd07a5804b697cbdb90cf35bd47fbdb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/testing-framework/zipball/cfc5ad04e61898c8144e19ca5f7e8d83203a4b24",
-                "reference": "cfc5ad04e61898c8144e19ca5f7e8d83203a4b24",
+                "url": "https://api.github.com/repos/TYPO3/testing-framework/zipball/da0bf472cbd07a5804b697cbdb90cf35bd47fbdb",
+                "reference": "da0bf472cbd07a5804b697cbdb90cf35bd47fbdb",
                 "shasum": ""
             },
             "require": {
@@ -5540,24 +5533,25 @@
                 "tests",
                 "typo3"
             ],
-            "time": "2018-11-02T16:00:39+00:00"
+            "time": "2018-12-14T14:21:08+00:00"
         },
         {
             "name": "webmozart/assert",
-            "version": "1.3.0",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozart/assert.git",
-                "reference": "0df1908962e7a3071564e857d86874dad1ef204a"
+                "reference": "83e253c8e0be5b0257b881e1827274667c5c17a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/0df1908962e7a3071564e857d86874dad1ef204a",
-                "reference": "0df1908962e7a3071564e857d86874dad1ef204a",
+                "url": "https://api.github.com/repos/webmozart/assert/zipball/83e253c8e0be5b0257b881e1827274667c5c17a9",
+                "reference": "83e253c8e0be5b0257b881e1827274667c5c17a9",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.3.3 || ^7.0"
+                "php": "^5.3.3 || ^7.0",
+                "symfony/polyfill-ctype": "^1.8"
             },
             "require-dev": {
                 "phpunit/phpunit": "^4.6",
@@ -5590,7 +5584,7 @@
                 "check",
                 "validate"
             ],
-            "time": "2018-01-29T19:49:41+00:00"
+            "time": "2018-12-25T11:19:39+00:00"
         }
     ],
     "aliases": [],
