@@ -15,8 +15,10 @@
 	"description": "Tweaks the extension bootstrap-package of Bajamin Kott with some Resterland goodies.",
 	"license": "GPL-2.0-or-later",
 	"keywords": [
-		"TYPO3 CMS"
+		"TYPO3",
+		"extension"
 	],
+	"homepage": "https://resterland.ch",
 	"authors": [
 		{
 			"name": "Roland Fuhrer",
@@ -26,18 +28,12 @@
 		}
 	],
 	"require": {
-		"helhum/typo3-secure-web": "^0.2.7",
-		"bk2k/bootstrap-package": ">=10.0 <11.0.0"
+		"typo3/cms-core": "^9.5",
+		"bk2k/bootstrap-package": "^10.0"
 	},
 	"require-dev": {
 		"friendsofphp/php-cs-fixer": "^2.0",
 		"typo3/testing-framework": "^4.11"
-	},
-	"extra": {
-		"typo3/cms": {
-			"root-dir": "private",
-			"web-dir": "public"
-		}
 	},
 	"autoload": {
 		"psr-4": {
@@ -55,5 +51,14 @@
 	},
 	"config": {
 		"optimize-autoloader": true
+	},
+	"extra": {
+		"branch-alias": {
+			"dev-master": ""
+		},
+		"typo3/cms": {
+			"root-dir": "private",
+			"web-dir": "public"
+		}
 	}
 }
