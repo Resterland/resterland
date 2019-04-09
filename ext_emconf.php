@@ -21,8 +21,8 @@ $EM_CONF[$_EXTKEY] = [
             'Resterland\\Resterland\\' => 'Classes'
         ],
     ],
-    'state' => 'stable',
-    'version' => '1.3.0',
+    'state' => 'beta',
+    'version' => '1.3.1',
     'uploadfolder' => 0,
     'createDirs' => '',
     'clearCacheOnLoad' => 1,

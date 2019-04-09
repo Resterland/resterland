@@ -28,7 +28,7 @@
 		}
 	],
 	"require": {
-		"helhum/typo3-secure-web": "^0.2.7",
+		"helhum/typo3-secure-web": "^0.2",
 		"typo3/cms-core": "^9.5",
 		"bk2k/bootstrap-package": ">=10.0 <11.0.0"
 	},

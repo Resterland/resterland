@@ -142,7 +142,7 @@ page {
 
     includeCSS {
         # theme = EXT:resterland/Resources/Public/Css/theme.min.css
-        # resterland_layout = EXT:resterland/Resources/Public/Css/layout.min.css
+        resterland_layout = EXT:resterland/Resources/Public/Css/resterland-custom.css
         # theme = EXT:resterland/Resources/Public/Scss/Theme/theme.scss
     }
 
