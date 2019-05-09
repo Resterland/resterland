@@ -141,9 +141,13 @@ page {
     }
 
     includeCSS {
-        # theme = EXT:resterland/Resources/Public/Css/theme.min.css
-        resterland_layout = EXT:resterland/Resources/Public/Css/resterland-custom.css
-        # theme = EXT:resterland/Resources/Public/Scss/Theme/theme.scss
+      # bootstrap = EXT:bootstrap_package/Resources/Public/Contrib/bootstrap4/scss/bootstrap.scss
+      #theme = EXT:bootstrap_package/Resources/Public/Scss/Theme/theme.scss
+      theme >
+        #theme = EXT:resterland/Resources/Public/Css/theme.min.css
+        #resterland_layout = EXT:resterland/Resources/Public/Css/resterland-custom.css
+        resterland = EXT:resterland/Resources/Public/Scss/Themes/Resterland/resterland.scss
+      #slate = EXT:resterland/Resources/Public/Scss/Themes/Slate/slate.scss
     }
 
     includeJSLibs {
