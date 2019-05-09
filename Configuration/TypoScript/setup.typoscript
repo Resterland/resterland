@@ -146,7 +146,7 @@ page {
     #theme >
     #theme = EXT:resterland/Resources/Public/Css/theme.min.css
     #resterland_layout = EXT:resterland/Resources/Public/Css/resterland-custom.css
-    #resterland = EXT:resterland/Resources/Public/Scss/Themes/Resterland/resterland.scss
+    resterland = EXT:resterland/Resources/Public/Scss/Themes/Resterland/resterland.scss
     #slate = EXT:resterland/Resources/Public/Scss/Themes/Slate/slate.scss
   }
 
