@@ -110,3 +110,4 @@ fabric.properties
 /public/typo3conf/ext/*
 !/public/typo3conf/ext/
 
+/Resources/Private/Backup/

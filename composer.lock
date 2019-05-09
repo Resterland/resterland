@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ce26acf7fc8ec57ef380ebba07987f8e",
+    "content-hash": "e3f79b882d4ca81a37b4c89b4b2d4896",
     "packages": [
         {
             "name": "algo26-matthias/idna-convert",
@@ -5155,6 +5155,70 @@
             "time": "2019-04-04T09:56:43+00:00"
         },
         {
+            "name": "typo3/cms-styleguide",
+            "version": "10.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3/styleguide.git",
+                "reference": "8cd87680aa290390bc04f50ad0ad3b6a96d5d92b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3/styleguide/zipball/8cd87680aa290390bc04f50ad0ad3b6a96d5d92b",
+                "reference": "8cd87680aa290390bc04f50ad0ad3b6a96d5d92b",
+                "shasum": ""
+            },
+            "replace": {
+                "styleguide": "*"
+            },
+            "require-dev": {
+                "codeception/codeception": "^2.4",
+                "typo3/cms-about": "10.*.*@dev",
+                "typo3/cms-core": "10.*.*@dev",
+                "typo3/cms-frontend": "10.*.*@dev",
+                "typo3/cms-install": "10.*.*@dev",
+                "typo3/testing-framework": "^5.0.0"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "app-dir": ".Build",
+                    "web-dir": ".Build/Web",
+                    "extension-key": "styleguide"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\CMS\\Styleguide\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Felix Kopp",
+                    "email": "felix-source@phorax.com",
+                    "homepage": "http://phorax.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "TYPO3 CMS Core Team",
+                    "homepage": "https://forge.typo3.org/projects/typo3cms-core",
+                    "role": "Developer"
+                }
+            ],
+            "description": "TYPO3 CMS Extension to test everything in the TYPO3 Backend",
+            "homepage": "https://github.com/TYPO3/styleguide",
+            "keywords": [
+                "style guide",
+                "typo3",
+                "typo3 backend"
+            ],
+            "time": "2019-01-09T14:55:48+00:00"
+        },
+        {
             "name": "typo3/testing-framework",
             "version": "4.12.0",
             "source": {
@@ -5271,6 +5335,11 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
-    "platform-dev": []
+    "platform": {
+        "php": "^7.2"
+    },
+    "platform-dev": [],
+    "platform-overrides": {
+        "php": "7.2"
+    }
 }
