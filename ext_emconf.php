@@ -5,8 +5,8 @@
  */
 $EM_CONF[$_EXTKEY] = [
     'title' => 'Resterland',
-    'description' => 'Resterland extension is based on the bootstrap package extension by Bajamin Kott.',
-    'category' => 'distribution',
+    'description' => 'Resterland extension is based on the bootstrap package extension by Bajamin Kott. With a layout switch integrated.',
+    'category' => 'extension',
     'constraints' => [
         'depends' => [
             'typo3' => '8.7.0-9.5.99',
@@ -22,7 +22,7 @@ $EM_CONF[$_EXTKEY] = [
         ],
     ],
     'state' => 'beta',
-    'version' => '1.5.0',
+    'version' => '2.0.0',
     'uploadfolder' => 0,
     'createDirs' => '',
     'clearCacheOnLoad' => 1,
