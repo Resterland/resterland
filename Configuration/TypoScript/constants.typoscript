@@ -7,6 +7,7 @@
 ### CUSTOM SUBCATEGORIES ###
 ###########################
 # customsubcategory=100=Page Template
+# customsubcategory=111=Favicon
 # customsubcategory=120=Meta Settings
 # customsubcategory=150=Configuration
 # customsubcategory=160=Theme Layout
@@ -15,6 +16,11 @@
 # customsubcategory=168=Section Language
 # customsubcategory=169=Section Copyright
 # customsubcategory=180=Tracking
+
+###########################
+#### RESTERLAND TWEAKS ####
+###########################
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland/Configuration/TypoScript/Constants/0200_includepath.typoscript">
 
 
 ############
@@ -41,6 +47,7 @@ page {
         fadeDuration = 0.25
     }
     favicon {
+        # cat=Resterland Settings: logo/111/100; type=string; label=Favicon
         file = EXT:resterland/Resources/Public/Icons/favicon.ico
     }
 

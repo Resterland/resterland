@@ -1,0 +1,54 @@
+#-------------------------------------------------------------------------------
+#	NAVIGATION: Bootstrap Breadcrumbs
+#-------------------------------------------------------------------------------
+[treeLevel = 0]
+    lib.navigation.breadcrumb >
+[ELSE]
+    lib.navigation.breadcrumb = COA
+    lib.navigation.breadcrumb {
+        wrap = <ol class="breadcrumb">|</ol>
+        5 = TEXT
+        5 {
+            value = {$plugin.t3sbootstrap_configuration.general.company.name}
+            typolink {
+                parameter = {$plugin.t3sbootstrap_configuration.pages.homepage.uid}
+                target = _top
+            }
+            wrap = <li>|</li>
+        }
+        10 = HMENU
+        10 {
+            special = rootline
+            special.range =	2|-1
+            1 = TMENU
+            1 {
+                NO = 1
+                NO {
+                    wrapItemAndSub = <li>|</li>
+                    stdWrap.htmlSpecialChars = 1
+                }
+                CUR <.NO
+                CUR {
+                    wrapItemAndSub = <li class="active">|</li>
+                    doNotLinkIt = 1
+                }
+            }
+        }
+        # Add news title on single view if tx_news is loaded
+        20 = RECORDS
+        20 {
+            if.isTrue.data = GP:tx_news_pi1|news
+            dontCheckPid = 1
+            tables = tx_news_domain_model_news
+            source.data = GP:tx_news_pi1|news
+            source.intval = 1
+            conf.tx_news_domain_model_news = TEXT
+            conf.tx_news_domain_model_news {
+                field = title
+                htmlSpecialChars = 1
+            }
+            wrap =	<li>|</li>
+            wrap.if.isTrue.data = GP:tx_news_pi1|news
+        }
+    }
+[END]

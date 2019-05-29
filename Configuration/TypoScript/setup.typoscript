@@ -8,9 +8,11 @@
 ###################
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/Bootstrap4/setup.typoscript">
 
-[globalVar = GP:framework = bootstrap3]
-  <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/Bootstrap3/setup.typoscript">
-[end]
+###########################
+#### RESTERLAND TWEAKS ####
+###########################
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland/Configuration/TypoScript/Setup/2000_page.typoscript">
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland/Configuration/TypoScript/Helper/LanguageNavi.typoscript">
 
 ################
 #### HELPER ####
@@ -24,6 +26,8 @@
 ##############
 page = PAGE
 page {
+
+  shortcutIcon = {$page.favicon.file}
 
   10 = FLUIDTEMPLATE
   10 {
