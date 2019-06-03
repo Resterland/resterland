@@ -149,8 +149,8 @@ page {
     #theme = EXT:bootstrap_package/Resources/Public/Scss/Theme/theme.scss
     #theme >
     #theme = EXT:resterland/Resources/Public/Css/theme.min.css
-    resterland = EXT:resterland/Resources/Public/Scss/Themes/Resterland/resterland.scss
-      resterland_css = EXT:resterland/Resources/Public/Css/resterland-custom.css
+    resterland_scss = EXT:resterland/Resources/Public/Scss/Themes/Resterland/resterland.scss
+    #resterland_css = EXT:resterland/Resources/Public/Css/resterland-custom.css
     #slate = EXT:resterland/Resources/Public/Scss/Themes/Slate/slate.scss
   }
 
@@ -203,4 +203,4 @@ config {
 }
 
 ### Debugging -> not for production sites
-config.contentObjectExceptionHandler = 0
+config.contentObjectExceptionHandler = 1
