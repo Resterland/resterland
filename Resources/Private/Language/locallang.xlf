@@ -8,6 +8,46 @@
         </header>
         <body>
 
+            <!-- Logo Settings Header -->
+            <trans-unit id="constant_cats.logo" xml:space="preserve">
+                <source>Logo</source>
+            </trans-unit>
+
+            <!-- Logo File Path -->
+            <trans-unit id="constant_cats.logo.file" xml:space="preserve">
+                <source>Path to the Logo: Choose one of the list or submit your own</source>
+            </trans-unit>
+
+            <!-- Logo Height -->
+            <trans-unit id="constant_cats.logo.height" xml:space="preserve">
+                <source>Height: will not be resized!</source>
+            </trans-unit>
+
+            <!-- Logo Width -->
+            <trans-unit id="constant_cats.logo.width" xml:space="preserve">
+                <source>Width: will not be resized!</source>
+            </trans-unit>
+
+            <!-- Logo Alt Text -->
+            <trans-unit id="constant_cats.logo.alt" xml:space="preserve">
+                <source>Alternative text: Text of the alt attribute of the logo image (default: "Resterland WebAtelier")</source>
+            </trans-unit>
+
+            <!-- Logo Link Title -->
+            <trans-unit id="constant_cats.logo.linktitle" xml:space="preserve">
+                <source>Link Title: Text of the link attribute of the logo image (default: "ResterlandWebAtelierLogo")</source>
+            </trans-unit>
+
+            <!-- Favicon -->
+            <trans-unit id="constant_cats.favicon" xml:space="preserve">
+                <source>Favicon</source>
+            </trans-unit>
+
+            <!-- Favicon File Path -->
+            <trans-unit id="constant_cats.favicon.file" xml:space="preserve">
+                <source>Favicon File Path</source>
+            </trans-unit>
+
             <trans-unit id="cookieconsent.common.header">
                 <source>Cookies used on the website!</source>
             </trans-unit>

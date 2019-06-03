@@ -7,7 +7,8 @@
 ### CUSTOM SUBCATEGORIES ###
 ###########################
 # customsubcategory=100=Page Template
-# customsubcategory=111=Favicon
+# customsubcategory=110=LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.logo
+# customsubcategory=111=LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.favicon
 # customsubcategory=120=Meta Settings
 # customsubcategory=150=Configuration
 # customsubcategory=160=Theme Layout
@@ -28,11 +29,16 @@
 ############
 page {
     logo {
+        # cat=Resterland Settings: basic/110/100; type=string; label=LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.logo.file
         file = EXT:resterland/Resources/Public/Images/Logos/ResterlandLogo.svg
         fileInverted = EXT:resterland/Resources/Public/Images/Logos/ResterlandLogo.svg
+        # cat=Resterland Settings: basic/110/110; type=int+; label=LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.logo.height
         height = 52
+        # cat=Resterland Settings: basic/110/120; type=int+; label=LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.logo.width
         width = 180
+        # cat=Resterland Settings: basic/110/130; type=string; label=LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.logo.alt
         alt = Resterland WebAtelier
+        # cat=Resterland Settings: basic/110/130; type=string; label=LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.logo.linktitle
         linktitle = Resterland WebAtelier
     }
 
@@ -47,7 +53,7 @@ page {
         fadeDuration = 0.25
     }
     favicon {
-        # cat=Resterland Settings: logo/111/100; type=string; label=Favicon
+        # cat=Resterland Settings: basic/111/100; type=string; label=LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.favicon.file
         file = EXT:resterland/Resources/Public/Icons/favicon.ico
     }
 
