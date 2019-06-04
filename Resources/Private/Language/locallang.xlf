@@ -43,9 +43,19 @@
                 <source>Favicon</source>
             </trans-unit>
 
-            <!-- Favicon File Path -->
-            <trans-unit id="constant_cats.favicon.file" xml:space="preserve">
-                <source>Favicon File Path</source>
+            <!-- Favicon Switch -->
+            <trans-unit id="constant_cats.favicon.switch" xml:space="preserve">
+                <source>Favicon Switch: Choose your favorite icon</source>
+            </trans-unit>
+
+            <!-- Theme - Page Layout -->
+            <trans-unit id="constant_cats.theme" xml:space="preserve">
+                <source>Theme - Page Layout</source>
+            </trans-unit>
+
+            <!-- Theme Switch -->
+            <trans-unit id="constant_cats.theme.switch" xml:space="preserve">
+                <source>Favicon Switch: Choose your favorite icon</source>
             </trans-unit>
 
             <trans-unit id="cookieconsent.common.header">

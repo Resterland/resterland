@@ -27,7 +27,7 @@
 page = PAGE
 page {
 
-  shortcutIcon = EXT:resterland/Resources/Public/Icons/Favicons/{$page.favicon.file}/favicon.ico
+    shortcutIcon = EXT:resterland/Resources/Public/Icons/Favicons/{$page.favicon.swicht}/favicon.ico
 
   10 = FLUIDTEMPLATE
   10 {
@@ -149,7 +149,7 @@ page {
     #theme = EXT:bootstrap_package/Resources/Public/Scss/Theme/theme.scss
     theme >
     #theme = EXT:resterland/Resources/Public/Css/theme.min.css
-      mystyle = EXT:resterland/Resources/Public/Scss/Themes/{$page.theme.styleSwitcher}/theme.scss
+      mystyle = EXT:resterland/Resources/Public/Scss/Themes/{$page.theme.swicht}/theme.scss
     #resterland_css = EXT:resterland/Resources/Public/Css/resterland-custom.css
     #slate = EXT:resterland/Resources/Public/Scss/Themes/Slate/slate.scss
   }
