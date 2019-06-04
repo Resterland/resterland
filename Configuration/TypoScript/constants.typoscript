@@ -54,10 +54,12 @@ page {
     }
     favicon {
         # cat=Resterland Settings: basic/111/100; type=string; label=LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.favicon.file
-        file = EXT:resterland/Resources/Public/Icons/favicon.ico
+        file = Default
     }
 
     theme {
+        # cat=Resterland Settings: layout/160/100; type=options[Default=Theme, Resterland Default=Resterland, Slate=Slate]; label=LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.theme.styleSwitcher
+        styleSwitcher = Theme
         copyright {
             enable = 1
             text = Running with <a href="http://www.typo3.org" target="_blank">TYPO3</a> and <a href="https://www.bootstrap-package.com" target="_blank">Bootstrap Package</a><br>Tweaked by <a href="https://resterland.ch" target="_blank">ResterLand WebAtelier</a>
