@@ -55,7 +55,7 @@
 
             <!-- Theme Switch -->
             <trans-unit id="constant_cats.theme.switch" xml:space="preserve">
-                <source>Favicon Switch: Choose your favorite icon</source>
+                <source>Theme Switch: Choose your favorite theme</source>
             </trans-unit>
 
             <trans-unit id="cookieconsent.common.header">
