@@ -1,12 +1,13 @@
 //
 // Variables
 //
-@import "variables";
-
+//@import "variables";
 //
-// Import needed Bootstrap Files
+// Import required Bootstrap Files
 //
-@import "../../../Contrib/Bootstrap4/scss/bootstrap";
+@import "../../../Contrib/Bootstrap4/scss/functions";
+@import "../../../Contrib/Bootstrap4/scss/variables";
+@import "../../../Contrib/Bootstrap4/scss/mixins";
 
 //
 // Components
