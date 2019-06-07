@@ -58,7 +58,7 @@ page {
     }
 
     theme {
-        # cat=Resterland Settings: layout/160/100; type=options[Default=Theme, Resterland Default=Resterland, Slate=Slate]; label=LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.theme.switch
+        # cat=Resterland Settings: layout/160/100; type=options[Default=Theme, Resterland=Resterland, Slate=Slate]; label=LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.theme.switch
         switch = Theme
         copyright {
             enable = 1
