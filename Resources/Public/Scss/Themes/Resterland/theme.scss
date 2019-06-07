@@ -3,11 +3,19 @@
 //
 //@import "variables";
 //
+
 // Import required Bootstrap Files
 //
 @import "../../../Contrib/Bootstrap4/scss/functions";
 @import "../../../Contrib/Bootstrap4/scss/variables";
 @import "../../../Contrib/Bootstrap4/scss/mixins";
+// Import optional Bootstrap Files
+//
+@import "../../../Contrib/Bootstrap4/scss/reboot";
+@import "../../../Contrib/Bootstrap4/scss/type";
+@import "../../../Contrib/Bootstrap4/scss/images";
+@import "../../../Contrib/Bootstrap4/scss/code";
+@import "../../../Contrib/Bootstrap4/scss/grid";
 
 //
 // Components
