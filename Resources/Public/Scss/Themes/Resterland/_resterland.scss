@@ -24,3 +24,18 @@ $navbar-dark-hover-color: $white !default;
 $navbar-light-hover-color: $gray-800 !default;
 $navbar-light-active-color: $gray-800 !default;
 
+// Slate 4.3.1
+// Bootswatch
+
+// Variables ===================================================================
+
+@mixin btn-shadow($color) {
+    @include gradient-y-three-colors(lighten($color, 6%), $color, 60%, darken($color, 4%));
+    filter: none;
+}
+
+@mixin btn-shadow-inverse($color) {
+    @include gradient-y-three-colors(darken($color, 18%), darken($color, 15%), 40%, darken($color, 13%));
+    filter: none;
+}
+
