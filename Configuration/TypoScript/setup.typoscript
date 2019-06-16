@@ -8,9 +8,11 @@
 ###################
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/Bootstrap4/setup.typoscript">
 
-[globalVar = GP:framework = bootstrap3]
-  <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/Bootstrap3/setup.typoscript">
-[end]
+###########################
+#### RESTERLAND TWEAKS ####
+###########################
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland/Configuration/TypoScript/Setup/2000_page.typoscript">
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland/Configuration/TypoScript/Helper/LanguageNavi.typoscript">
 
 ################
 #### HELPER ####
@@ -24,6 +26,8 @@
 ##############
 page = PAGE
 page {
+
+    shortcutIcon = EXT:resterland/Resources/Public/Icons/Favicons/{$page.favicon.switch}/favicon.ico
 
   10 = FLUIDTEMPLATE
   10 {
@@ -143,11 +147,12 @@ page {
   includeCSS {
     # bootstrap = EXT:bootstrap_package/Resources/Public/Contrib/bootstrap4/scss/bootstrap.scss
     #theme = EXT:bootstrap_package/Resources/Public/Scss/Theme/theme.scss
-    #theme >
+    theme >
     #theme = EXT:resterland/Resources/Public/Css/theme.min.css
-    #resterland_layout = EXT:resterland/Resources/Public/Css/resterland-custom.css
-    resterland = EXT:resterland/Resources/Public/Scss/Themes/Resterland/resterland.scss
-    #slate = EXT:resterland/Resources/Public/Scss/Themes/Slate/slate.scss
+      mystyle = EXT:resterland/Resources/Public/Scss/Themes/{$page.theme.switch}/theme.scss
+    #resterland_css = EXT:resterland/Resources/Public/Css/resterland-custom.css
+      #slate = https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/slate/bootstrap.min.css
+      #slate.external = 1
   }
 
   includeJSLibs {
@@ -196,52 +201,7 @@ config {
 
   spamProtectEmailAddresses = ascii
   spamProtectEmailAddresses_atSubst = (at)
-
-  // Language Settings - default is set to German Swiss
-  sys_language_uid = 0
-  sys_language_overlay = hideNonTranslated
-  sys_language_mode = content_fallback:en,de
-  language = de
-  locale_all = de_CH.UTF-8
-  htmlTag_langKey = de
-  htmlTag_setParams = lang="de" dir="ltr" class="no-js"
-  sys_language_softMergeIfNotBlank = tt_content:header, tt_content:image
 }
 
-#############################
-#### MULTILANGUAGE SETUP ####
-#############################
-## English configuration
-[globalVar = GP:L = 1]
-  config {
-    sys_language_uid = 1
-    language = en
-    locale_all = en_US.UTF-8
-    htmlTag_langKey = en
-    htmlTag_setParams = lang="en" dir="ltr" class="no-js"
-  }
-[global]
-## Bahasa Indonesia configuration
-[globalVar = GP:L = 2]
-  config {
-    sys_language_uid = 2
-    language = id
-    locale_all = id_ID.UTF-8
-    htmlTag_langKey = id
-    htmlTag_setParams = lang="id" dir="ltr" class="no-js"
-  }
-[global]
-
-## French configuration
-#[globalVar = GP:L = 3]
-#    config {
-#        sys_language_uid = 3
-#        language = fr
-#        locale_all = fr_FR.UTF-8
-#        htmlTag_langKey = fr
-#        htmlTag_setParams = lang="fr" dir="ltr" class="no-js"
-#    }
-#[global]
-
 ### Debugging -> not for production sites
-#config.contentObjectExceptionHandler = 0
+config.contentObjectExceptionHandler = 1

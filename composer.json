@@ -28,12 +28,13 @@
 		}
 	],
 	"require": {
-		"php": "^7.2",
+		"php": ">=7.2",
 		"helhum/typo3-secure-web": "^0.2",
 		"typo3/cms-core": "^9.5",
 		"bk2k/bootstrap-package": ">=10.0 <11.0.0"
 	},
 	"require-dev": {
+		"roave/security-advisories": "dev-master",
 		"friendsofphp/php-cs-fixer": "^2.0",
 		"typo3/cms-styleguide": "~10.0.2",
 		"typo3/testing-framework": "^4.11"
@@ -57,6 +58,11 @@
 			"php": "7.2"
 		},
 		"optimize-autoloader": true
+	},
+	"scripts": {
+		"set-version": [
+			"Resterland\\Resterland\\Composer\\VersionScript::setVersion"
+		]
 	},
 	"extra": {
 		"typo3/cms": {

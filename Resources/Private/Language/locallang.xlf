@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<xliff version="1.0">
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.0" xmlns="urn:oasis:names:tc:xliff:document:1.1">
     <file source-language="en" datatype="plaintext" original="messages" date="2018-06-17UTC09:02:180"
 		  product-name="resterland">
         <header>
@@ -7,6 +7,56 @@
             <authorEmail>roland@resteland.ch</authorEmail>
         </header>
         <body>
+
+            <!-- Logo Settings Header -->
+            <trans-unit id="constant_cats.logo" xml:space="preserve">
+                <source>Logo</source>
+            </trans-unit>
+
+            <!-- Logo File Path -->
+            <trans-unit id="constant_cats.logo.file" xml:space="preserve">
+                <source>Path to the Logo: Choose one of the list or submit your own</source>
+            </trans-unit>
+
+            <!-- Logo Height -->
+            <trans-unit id="constant_cats.logo.height" xml:space="preserve">
+                <source>Height: will not be resized!</source>
+            </trans-unit>
+
+            <!-- Logo Width -->
+            <trans-unit id="constant_cats.logo.width" xml:space="preserve">
+                <source>Width: will not be resized!</source>
+            </trans-unit>
+
+            <!-- Logo Alt Text -->
+            <trans-unit id="constant_cats.logo.alt" xml:space="preserve">
+                <source>Alternative text: Text of the alt attribute of the logo image (default: "Resterland WebAtelier")</source>
+            </trans-unit>
+
+            <!-- Logo Link Title -->
+            <trans-unit id="constant_cats.logo.linktitle" xml:space="preserve">
+                <source>Link Title: Text of the link attribute of the logo image (default: "ResterlandWebAtelierLogo")</source>
+            </trans-unit>
+
+            <!-- Favicon -->
+            <trans-unit id="constant_cats.favicon" xml:space="preserve">
+                <source>Favicon</source>
+            </trans-unit>
+
+            <!-- Favicon Switch -->
+            <trans-unit id="constant_cats.favicon.switch" xml:space="preserve">
+                <source>Favicon Switch: Choose your favorite icon</source>
+            </trans-unit>
+
+            <!-- Theme - Page Layout -->
+            <trans-unit id="constant_cats.theme" xml:space="preserve">
+                <source>Theme - Page Layout</source>
+            </trans-unit>
+
+            <!-- Theme Switch -->
+            <trans-unit id="constant_cats.theme.switch" xml:space="preserve">
+                <source>Theme Switch: Choose your favorite theme</source>
+            </trans-unit>
 
             <trans-unit id="cookieconsent.common.header">
                 <source>Cookies used on the website!</source>

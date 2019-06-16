@@ -1,0 +1,53 @@
+config {
+    typolinkCheckRootline = 1
+
+    disableBodyTag = 0
+
+    absRefPrefix = auto
+
+    baseURL = https://{$config.baseURL}/
+    no_cache = {$config.no_cache}
+
+    noPageTitle = 2
+
+    renderCharset = utf-8
+    metaCharset = utf-8
+    doctype = html5
+    removeDefaultJS = external
+    inlineStyle2TempFile = 1
+
+    // Enable RealUrl
+    tx_realurl_enable = 1
+    simulateStaticDocuments = 0
+    typolinkEnableLinksAcrossDomains = 1
+    prefixLocalAnchors = all
+
+    // Spam protection
+    spamProtectEmailAddresses = ascii
+    spamProtectEmailAddresses_atSubst = (at)
+    spamProtectEmailAddresses_lastDotSubst = (dot)
+    debug = 0
+    cache_period = 86400
+    sendCacheHeaders = 0
+    intTarget =
+    extTarget =
+
+    disablePrefixComment = 1
+
+    // Disable Image Upscaling
+    noScaleUp = 1
+
+    // if indexed_search plugin enabled, set it to 1
+    index_enable = 1
+    index_externals = 1
+
+    // Header Comment can be set in the Constant Editor
+    headerComment = {$config.headerComment}
+
+    // Compression and Concatenation of CSS and JS Files
+    compressCss = {$config.compressCss}
+    concatenateCss = {$config.concatenateCss}
+
+    compressJs = {$config.compressJs}
+    concatenateJs = {$config.concatenateJs}
+}
