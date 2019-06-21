@@ -1,5 +1,4 @@
 <?php
-
 namespace Resterland\Resterland\Controller;
 
 /*
@@ -19,7 +18,6 @@ use InvalidArgumentException;
 use PDO;
 use Psr\Http\Message\ResponseInterface;
 use RuntimeException;
-use TYPO3\CMS\Backend\Controller;
 use TYPO3\CMS\Backend\Domain\Repository\Module\BackendModuleRepository;
 use TYPO3\CMS\Backend\Module\ModuleLoader;
 use TYPO3\CMS\Backend\Routing\UriBuilder;
@@ -48,72 +46,81 @@ use function get_class;
 /**
  * Class for rendering the TYPO3 backend
  */
-
-/**
- * Class for rendering the TYPO3 backend
- */
 class BackendController
 {
     use PublicMethodDeprecationTrait;
 
-    /**
-     * @var string
-     */
-    protected $content = '';
-    /**
-     * @var string
-     */
-    protected $css = '';
-    /**
-     * @var array
-     */
-    protected $cssFiles = [];
-    /**
-     * @var string
-     */
-    protected $js = '';
-    /**
-     * @var array
-     */
-    protected $jsFiles = [];
-    /**
-     * @var array
-     */
-    protected $toolbarItems = [];
-    /**
-     * @var bool
-     */
-    protected $debug;
-    /**
-     * @var string
-     */
-    protected $templatePath = 'EXT:backend/Resources/Private/Templates/';
-    /**
-     * @var string
-     */
-    protected $partialPath = 'EXT:backend/Resources/Private/Partials/';
-    /**
-     * @var BackendModuleRepository
-     */
-    protected $backendModuleRepository;
-    /**
-     * @var ModuleLoader Object for loading backend modules
-     */
-    protected $moduleLoader;
-    /**
-     * @var PageRenderer
-     */
-    protected $pageRenderer;
-    /**
-     * @var IconFactory
-     */
-    protected $iconFactory;
     /**
      * @var array
      */
     private $deprecatedPublicMethods = [
         'render' => 'Using BackendController::render() is deprecated and will not be possible anymore in TYPO3 v10.0.',
     ];
+
+    /**
+     * @var string
+     */
+    protected $content = '';
+
+    /**
+     * @var string
+     */
+    protected $css = '';
+
+    /**
+     * @var array
+     */
+    protected $cssFiles = [];
+
+    /**
+     * @var string
+     */
+    protected $js = '';
+
+    /**
+     * @var array
+     */
+    protected $jsFiles = [];
+
+    /**
+     * @var array
+     */
+    protected $toolbarItems = [];
+
+    /**
+     * @var bool
+     */
+    protected $debug;
+
+    /**
+     * @var string
+     */
+    protected $templatePath = 'EXT:backend/Resources/Private/Templates/';
+
+    /**
+     * @var string
+     */
+    protected $partialPath = 'EXT:backend/Resources/Private/Partials/';
+
+    /**
+     * @var BackendModuleRepository
+     */
+    protected $backendModuleRepository;
+
+    /**
+     * @var ModuleLoader Object for loading backend modules
+     */
+    protected $moduleLoader;
+
+    /**
+     * @var PageRenderer
+     */
+    protected $pageRenderer;
+
+    /**
+     * @var IconFactory
+     */
+    protected $iconFactory;
 
     /**
      * Constructor
@@ -196,26 +203,6 @@ class BackendController
     }
 
     /**
-     * Returns LanguageService
-     *
-     * @return LanguageService
-     */
-    protected function getLanguageService()
-    {
-        return $GLOBALS['LANG'];
-    }
-
-    /**
-     * Returns the current BE user.
-     *
-     * @return BackendUserAuthentication
-     */
-    protected function getBackendUser()
-    {
-        return $GLOBALS['BE_USER'];
-    }
-
-    /**
      * Initialize toolbar item objects
      *
      * @throws RuntimeException
@@ -247,25 +234,6 @@ class BackendController
         }
         ksort($toolbarItemInstances);
         $this->toolbarItems = $toolbarItemInstances;
-    }
-
-    /**
-     * Executes defined hooks functions for the given identifier.
-     *
-     * These hook identifiers are valid:
-     * + constructPostProcess
-     * + renderPreProcess
-     * + renderPostProcess
-     *
-     * @param string $identifier Specific hook identifier
-     * @param array $hookConfiguration Additional configuration passed to hook functions
-     */
-    protected function executeHook($identifier, array $hookConfiguration = [])
-    {
-        $options = &$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['typo3/backend.php'];
-        foreach ($options[$identifier] ?? [] as $hookFunction) {
-            GeneralUtility::callUserFunction($hookFunction, $hookConfiguration, $this);
-        }
     }
 
     /**
@@ -321,38 +289,6 @@ class BackendController
     }
 
     /**
-     * returns a new standalone view, shorthand function
-     *
-     * @param string $templatePathAndFileName optional the path to set the template path and filename
-     * @return StandaloneView
-     */
-    protected function getFluidTemplateObject($templatePathAndFileName = null)
-    {
-        $view = GeneralUtility::makeInstance(StandaloneView::class);
-        $view->setPartialRootPaths([GeneralUtility::getFileAbsFileName('EXT:backend/Resources/Private/Partials')]);
-        if ($templatePathAndFileName) {
-            $view->setTemplatePathAndFilename(GeneralUtility::getFileAbsFileName($templatePathAndFileName));
-        }
-        return $view;
-    }
-
-    /**
-     * loads all modules from the repository
-     * and renders it with a template
-     *
-     * @return string
-     */
-    protected function generateModuleMenu()
-    {
-        // get all modules except the user modules for the side menu
-        $moduleStorage = $this->backendModuleRepository->loadAllowedModules(['user', 'help']);
-
-        $view = $this->getFluidTemplateObject($this->templatePath . 'ModuleMenu/Main.html');
-        $view->assign('modules', $moduleStorage);
-        return $view->render();
-    }
-
-    /**
      * Renders the topbar, containing the backend logo, sitename etc.
      *
      * @return string
@@ -372,14 +308,14 @@ class BackendController
         }
         // if no custom logo was set or the path is invalid, use the original one
         if (empty($logoPath) || !file_exists($logoPath)) {
-            $logoPath = GeneralUtility::getFileAbsFileName('EXT:resterland/Resources/Public/Images/Logos/Resterland/ResterlandLogo.svg');
+            $logoPath = GeneralUtility::getFileAbsFileName('EXT:backend/Resources/Public/Images/typo3_logo_orange.svg');
             $logoWidth = 22;
             $logoHeight = 22;
         } else {
             // set width/height for custom logo
             $imageInfo = GeneralUtility::makeInstance(ImageInfo::class, $logoPath);
-            $logoWidth = $imageInfo->getWidth() ?? '22';
-            $logoHeight = $imageInfo->getHeight() ?? '22';
+            $logoWidth = '22';
+            $logoHeight = '22';
 
             // High-resolution?
             if (strpos($logoPath, '@2x.') !== false) {
@@ -507,48 +443,6 @@ class BackendController
     }
 
     /**
-     * Sets the startup module from either GETvars module and modParams or user configuration.
-     *
-     * @return string the JavaScript code for the startup module
-     */
-    protected function setStartupModule()
-    {
-        $startModule = preg_replace('/[^[:alnum:]_]/', '', GeneralUtility::_GET('module'));
-        $startModuleParameters = '';
-        if (!$startModule) {
-            $beUser = $this->getBackendUser();
-            // start module on first login, will be removed once used the first time
-            if (isset($beUser->uc['startModuleOnFirstLogin'])) {
-                $startModule = $beUser->uc['startModuleOnFirstLogin'];
-                unset($beUser->uc['startModuleOnFirstLogin']);
-                $beUser->writeUC();
-            } elseif ($beUser->uc['startModule']) {
-                $startModule = $beUser->uc['startModule'];
-            }
-
-            // check if the start module has additional parameters, so a redirect to a specific
-            // action is possible
-            if (strpos($startModule, '->') !== false) {
-                list($startModule, $startModuleParameters) = explode('->', $startModule, 2);
-            }
-        }
-
-        $moduleParameters = GeneralUtility::_GET('modParams');
-        // if no GET parameters are set, check if there are parameters given from the UC
-        if (!$moduleParameters && $startModuleParameters) {
-            $moduleParameters = $startModuleParameters;
-        }
-
-        if ($startModule) {
-            return '
-					// start in module:
-				top.startInModule = [' . GeneralUtility::quoteJSvalue($startModule) . ', ' . GeneralUtility::quoteJSvalue($moduleParameters) . '];
-			';
-        }
-        return '';
-    }
-
-    /**
      * Checking if the "&edit" variable was sent so we can open it for editing the page.
      */
     protected function handlePageEditing()
@@ -621,13 +515,45 @@ class BackendController
     }
 
     /**
-     * Returns an instance of DocumentTemplate
+     * Sets the startup module from either GETvars module and modParams or user configuration.
      *
-     * @return DocumentTemplate
+     * @return string the JavaScript code for the startup module
      */
-    protected function getDocumentTemplate()
+    protected function setStartupModule()
     {
-        return $GLOBALS['TBE_TEMPLATE'];
+        $startModule = preg_replace('/[^[:alnum:]_]/', '', GeneralUtility::_GET('module'));
+        $startModuleParameters = '';
+        if (!$startModule) {
+            $beUser = $this->getBackendUser();
+            // start module on first login, will be removed once used the first time
+            if (isset($beUser->uc['startModuleOnFirstLogin'])) {
+                $startModule = $beUser->uc['startModuleOnFirstLogin'];
+                unset($beUser->uc['startModuleOnFirstLogin']);
+                $beUser->writeUC();
+            } elseif ($beUser->uc['startModule']) {
+                $startModule = $beUser->uc['startModule'];
+            }
+
+            // check if the start module has additional parameters, so a redirect to a specific
+            // action is possible
+            if (strpos($startModule, '->') !== false) {
+                list($startModule, $startModuleParameters) = explode('->', $startModule, 2);
+            }
+        }
+
+        $moduleParameters = GeneralUtility::_GET('modParams');
+        // if no GET parameters are set, check if there are parameters given from the UC
+        if (!$moduleParameters && $startModuleParameters) {
+            $moduleParameters = $startModuleParameters;
+        }
+
+        if ($startModule) {
+            return '
+					// start in module:
+				top.startInModule = [' . GeneralUtility::quoteJSvalue($startModule) . ', ' . GeneralUtility::quoteJSvalue($moduleParameters) . '];
+			';
+        }
+        return '';
     }
 
     /**
@@ -642,6 +568,41 @@ class BackendController
             throw new InvalidArgumentException('parameter $css must be of type string', 1195129642);
         }
         $this->css .= $css;
+    }
+
+    /**
+     * Executes defined hooks functions for the given identifier.
+     *
+     * These hook identifiers are valid:
+     * + constructPostProcess
+     * + renderPreProcess
+     * + renderPostProcess
+     *
+     * @param string $identifier Specific hook identifier
+     * @param array $hookConfiguration Additional configuration passed to hook functions
+     */
+    protected function executeHook($identifier, array $hookConfiguration = [])
+    {
+        $options = &$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['typo3/backend.php'];
+        foreach ($options[$identifier] ?? [] as $hookFunction) {
+            GeneralUtility::callUserFunction($hookFunction, $hookConfiguration, $this);
+        }
+    }
+
+    /**
+     * loads all modules from the repository
+     * and renders it with a template
+     *
+     * @return string
+     */
+    protected function generateModuleMenu()
+    {
+        // get all modules except the user modules for the side menu
+        $moduleStorage = $this->backendModuleRepository->loadAllowedModules(['user', 'help']);
+
+        $view = $this->getFluidTemplateObject($this->templatePath . 'ModuleMenu/Main.html');
+        $view->assign('modules', $moduleStorage);
+        return $view->render();
     }
 
     /**
@@ -662,5 +623,51 @@ class BackendController
     public function getTopbar(): ResponseInterface
     {
         return new JsonResponse(['topbar' => $this->renderTopbar()]);
+    }
+
+    /**
+     * returns a new standalone view, shorthand function
+     *
+     * @param string $templatePathAndFileName optional the path to set the template path and filename
+     * @return StandaloneView
+     */
+    protected function getFluidTemplateObject($templatePathAndFileName = null)
+    {
+        $view = GeneralUtility::makeInstance(StandaloneView::class);
+        $view->setPartialRootPaths([GeneralUtility::getFileAbsFileName('EXT:backend/Resources/Private/Partials')]);
+        if ($templatePathAndFileName) {
+            $view->setTemplatePathAndFilename(GeneralUtility::getFileAbsFileName($templatePathAndFileName));
+        }
+        return $view;
+    }
+
+    /**
+     * Returns LanguageService
+     *
+     * @return LanguageService
+     */
+    protected function getLanguageService()
+    {
+        return $GLOBALS['LANG'];
+    }
+
+    /**
+     * Returns the current BE user.
+     *
+     * @return BackendUserAuthentication
+     */
+    protected function getBackendUser()
+    {
+        return $GLOBALS['BE_USER'];
+    }
+
+    /**
+     * Returns an instance of DocumentTemplate
+     *
+     * @return DocumentTemplate
+     */
+    protected function getDocumentTemplate()
+    {
+        return $GLOBALS['TBE_TEMPLATE'];
     }
 }
