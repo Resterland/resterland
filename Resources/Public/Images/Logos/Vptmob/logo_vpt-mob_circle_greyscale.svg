@@ -5,20 +5,20 @@
         xmlns:dc="http://purl.org/dc/elements/1.1/"
         xmlns:cc="http://creativecommons.org/ns#"
         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-        xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
         xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
         xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+        xmlns="http://www.w3.org/2000/svg"
         width="139.66733"
         height="150"
         viewBox="0 0 139.66733 150"
         version="1.1"
         id="svg4143"
         inkscape:version="0.92.3 (2405546, 2018-03-11)"
-        sodipodi:docname="logo_vpt-mob_circle.svg"
-        inkscape:export-filename="/home/roland/Grafics/Logos/SEV-VPT-MOB/logo_vpt-mob_circle.png"
-        inkscape:export-xdpi="2.8800001"
-        inkscape:export-ydpi="2.8800001">
+        sodipodi:docname="logo_vpt-mob_circle_greyscale.svg"
+        inkscape:export-filename="/home/roland/Grafics/Logos/SEV-VPT-MOB/128x128/logo_vpt-mob_circle_greyscale.png"
+        inkscape:export-xdpi="81.919998"
+        inkscape:export-ydpi="81.919998">
     <defs
             id="defs4137">
         <clipPath
@@ -537,7 +537,7 @@
                     xlink:href="#XMLID_4_"/>
         </clipPath>
         <filter
-                inkscape:label="Channel Transparency"
+                inkscape:label="Greyscale"
                 style="color-interpolation-filters:sRGB;"
                 id="filter2629">
             <feColorMatrix
@@ -549,11 +549,20 @@
                     in="colormatrix"
                     in2="SourceGraphic"
                     operator="in"
-                    result="composite1"
+                    result="fbSourceGraphic"
                     id="feComposite2627"/>
+            <feColorMatrix
+                    result="fbSourceGraphicAlpha"
+                    in="fbSourceGraphic"
+                    values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+                    id="feColorMatrix2941"/>
+            <feColorMatrix
+                    id="feColorMatrix2943"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -0.21 -0.72 -0.072 1 0 "
+                    in="fbSourceGraphic"/>
         </filter>
         <filter
-                inkscape:label="Channel Transparency"
+                inkscape:label="Greyscale"
                 style="color-interpolation-filters:sRGB;"
                 id="filter2635">
             <feColorMatrix
@@ -565,11 +574,20 @@
                     in="colormatrix"
                     in2="SourceGraphic"
                     operator="in"
-                    result="composite1"
+                    result="fbSourceGraphic"
                     id="feComposite2633"/>
+            <feColorMatrix
+                    result="fbSourceGraphicAlpha"
+                    in="fbSourceGraphic"
+                    values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+                    id="feColorMatrix2937"/>
+            <feColorMatrix
+                    id="feColorMatrix2939"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -0.21 -0.72 -0.072 1 0 "
+                    in="fbSourceGraphic"/>
         </filter>
         <filter
-                inkscape:label="Channel Transparency"
+                inkscape:label="Greyscale"
                 style="color-interpolation-filters:sRGB;"
                 id="filter2641">
             <feColorMatrix
@@ -581,8 +599,25 @@
                     in="colormatrix"
                     in2="SourceGraphic"
                     operator="in"
-                    result="composite1"
+                    result="fbSourceGraphic"
                     id="feComposite2639"/>
+            <feColorMatrix
+                    result="fbSourceGraphicAlpha"
+                    in="fbSourceGraphic"
+                    values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+                    id="feColorMatrix2945"/>
+            <feColorMatrix
+                    id="feColorMatrix2947"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -0.21 -0.72 -0.072 1 0 "
+                    in="fbSourceGraphic"/>
+        </filter>
+        <filter
+                style="color-interpolation-filters:sRGB;"
+                inkscape:label="Greyscale"
+                id="filter2935">
+            <feColorMatrix
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -0.21 -0.72 -0.072 1 0 "
+                    id="feColorMatrix2933"/>
         </filter>
     </defs>
     <sodipodi:namedview
@@ -593,8 +628,8 @@
             inkscape:pageopacity="0.0"
             inkscape:pageshadow="2"
             inkscape:zoom="4.3333333"
-            inkscape:cx="69.602895"
-            inkscape:cy="75"
+            inkscape:cx="69.833664"
+            inkscape:cy="75.000001"
             inkscape:document-units="px"
             inkscape:current-layer="layer1"
             showgrid="true"
@@ -602,7 +637,7 @@
             inkscape:window-width="1509"
             inkscape:window-height="898"
             inkscape:window-x="-4"
-            inkscape:window-y="113"
+            inkscape:window-y="30"
             inkscape:window-maximized="0"
             units="px"
             gridtolerance="10"
@@ -622,7 +657,7 @@
                 <dc:format>image/svg+xml</dc:format>
                 <dc:type
                         rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-                <dc:title></dc:title>
+                <dc:title/>
             </cc:Work>
         </rdf:RDF>
     </metadata>
@@ -633,7 +668,8 @@
             transform="translate(-0.0716482,-146.70233)">
         <g
                 id="g12"
-                transform="matrix(0.21166592,0,0,-0.21166592,0.0716482,296.7015)">
+                transform="matrix(0.21166592,0,0,-0.21166592,0.0716482,296.7015)"
+                style="filter:url(#filter2935)">
             <path
                     inkscape:connector-curvature="0"
                     d="M 581.777,449.836 581.77,431.43 633.781,415.047 581.77,398.238 v -18.289 l 78.07,27.071 v 15.746 l -76.856,26.648 -1.207,0.422"
