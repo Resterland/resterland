@@ -18,11 +18,6 @@
 # customsubcategory=169=Section Copyright
 # customsubcategory=180=Tracking
 
-###########################
-#### RESTERLAND TWEAKS ####
-###########################
-#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland/Configuration/TypoScript/Constants/0200_includepath.typoscript">
-
 
 ############
 ### PAGE ###
@@ -91,10 +86,9 @@ config {
     preloadImages = 0
 }
 
-
-##################
-### EXTENSIONS ###
-##################
+####################################
+### BOOTSTRAP PACKAGE EXTENSIONS ###
+####################################
 plugin.bootstrap_package {
     view {
         layoutRootPath = EXT:resterland/Resources/Private/Layouts/
@@ -102,7 +96,6 @@ plugin.bootstrap_package {
         templateRootPath = EXT:resterland/Resources/Private/Templates/
     }
 }
-
 
 ########################
 ### CONTENT ELEMENTS ###
@@ -115,12 +108,21 @@ plugin.bootstrap_package_contentelements {
     }
 }
 
+#############################################################
+#### EXTENSIONS                                          ####
+#### Manual inclusion to keep control over loading order ####
+#############################################################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/Extension/Form/constants.typoscript" condition="userFunc = TYPO3\\CMS\\Core\\Utility\\ExtensionManagementUtility::isLoaded('form')">
+## FrontendLogin
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland/Configuration/TypoScript/Extension/FrontendLogin/constants.typoscript" condition="userFunc = TYPO3\\CMS\\Core\\Utility\\ExtensionManagementUtility::isLoaded('felogin')">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/Extension/IndexedSearch/constants.typoscript" condition="userFunc = TYPO3\\CMS\\Core\\Utility\\ExtensionManagementUtility::isLoaded('indexed_search')">
+
 ###################
 #### FRAMEWORK ####
 ###################
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/Bootstrap4/constants.typoscript">
 [globalVar = GP:framework = bootstrap3]
-    <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/Bootstrap3/constants.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/Bootstrap3/constants.typoscript">
 [end]
 #######################################
 ### REMOVE BOOTSTRAP LESS CONSTANTS ###

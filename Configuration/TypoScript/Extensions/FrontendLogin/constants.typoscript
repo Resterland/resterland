@@ -1,0 +1,6 @@
+########################
+#### FRONTEND LOGIN ####
+########################
+styles.content.loginform {
+    templateFile = EXT:resterland/Resources/Private/Templates/FrontendLogin/FrontendLogin.html
+}
