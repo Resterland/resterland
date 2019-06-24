@@ -54,9 +54,14 @@ page {
     ### DATA PREPROCESSING ###
     ##########################
     dataProcessing {
-      5 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-      5 {
-        references.fieldName = media
+    1 = BK2K\BootstrapPackage\DataProcessing\ConstantsProcessor
+1 {
+as = theme
+key = page.theme
+}
+5 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+5 {
+references.fieldName = media
       }
     }
 
