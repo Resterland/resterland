@@ -1,5 +1,5 @@
 ## felogin plugin Settings
-#plugin.tx_felogin_pi1 >
+plugin.tx_felogin_pi1 >
 plugin.tx_felogin_pi1 = USER_INT
 plugin.tx_felogin_pi1 {
     storagePid = 121
