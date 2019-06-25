@@ -1,21 +1,31 @@
-## felogin plugin Settings
-#plugin.tx_felogin_pi1 >
-plugin.tx_felogin_pi1 = USER_INT
-plugin.tx_felogin_pi1 {
-    storagePid = 121
-    showForgotPasswordLink = 1
-    showPermaLogin = 1
-    #  redirectMode = groupLogin,userLogin,login
-    redirectPageLogin = 1
-    _CSS_DEFAULT_STYLE >
+10 = TEXT
+10 {
+    value = Login
+    typolink.parameter = 2
 }
+
+[loginUser = *]
+    10.value = Logout
+    10.typolink.additionalParams = &logintype=logout
+[end]
+
+lib.loginlogout = TEXT
+lib.loginlogout {
+    value = Login
+    typolink.parameter = 123
+}
+
+[loginUser = *]
+    lib.loginlogout.value = Logout
+    lib.loginlogout.typolink.additionalParams = &logintype=logout
+[end]
 
 ## Login Status Settings ######
 temp.loginStatus = TEXT
 temp.loginStatus {
-    value = {$text.login}
+    value = login
     typolink {
-        parameter = 2
+        parameter = 123
         additionalParams.htmlSpecialChars = 1
         ATagParams = title="{$text.login}"
     }
@@ -23,7 +33,7 @@ temp.loginStatus {
 
 temp.logoutStatus = TEXT
 temp.logoutStatus {
-    value = {$text.logout}
+    value = logout
     typolink {
         parameter.data = page:uid
         additionalParams = &logintype=logout
