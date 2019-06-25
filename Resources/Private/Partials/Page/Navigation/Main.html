@@ -118,9 +118,17 @@
     </f:if>
     </f:for>
     <li>
-        <f:link.typolink additionalParams="&logintype=logout" parameter="123" title="some title">
+        <f:if condition="{[loginUser = *]}">
+            <f:link.typolink additionalParams="&logintype=logout" parameter="123" title="logout">
+                Logout
+            </f:link.typolink>
+        </f:if>
+        <f:else>
+            <f:link.typolink additionalParams="&logintype=login" parameter="123" title="login">
             Login
         </f:link.typolink>
+        </f:else>
+
     </li>
     </ul>
     </f:if>
