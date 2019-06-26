@@ -17,7 +17,7 @@ temp.logoutStatus {
     typolink {
         parameter.data = page:uid
         additionalParams = &logintype=logout
-        ATagParams = title="{$text.logout}"
+        ATagParams = title="{$text.logout}" class="nav-link"
     }
 }
 
