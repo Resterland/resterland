@@ -5,7 +5,7 @@ temp.loginStatus = TEXT
 temp.loginStatus {
     value = {$text.login}
     typolink {
-        parameter = 123
+        parameter = 123 nav-link
         additionalParams.htmlSpecialChars = 1
         ATagParams = title="{$text.login}"
     }
