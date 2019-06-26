@@ -17,8 +17,7 @@
             </f:then>
             <f:else>
                 <f:link.page class="navbar-brand navbar-brand-text" pageUid="{rootPage}"
-                             title="{settings.logo.linktitle}">
-                    {siteTitle}
+                             title="{settings.logo.linktitle}">{siteTitle}
                 </f:link.page>
             </f:else>
         </f:if>
@@ -30,7 +29,6 @@
             <nav class="collapse navbar-collapse" id="mainnavigation">
                 <f:render arguments="{_all}" partial="DropIn/Navigation/MainBefore"/>
                 <f:render arguments="{menu: mainnavigation, theme: theme}" section="MainNavigation"/>
-                <!-- <f:render arguments="{_all}" partial="Navigation/LoginLogut"/> -->
                 <f:render arguments="{_all}" partial="DropIn/Navigation/MainAfter"/>
             </nav>
         </f:if>
@@ -47,8 +45,7 @@
         <ul class="navbar-nav">
             </f:then>
             <f:else>
-                <li
-                    class="nav-item{f:if(condition: item.active, then:' active')}{f:if(condition: item.children, then:' dropdown dropdown-hover')}">
+                <li class="nav-item{f:if(condition: item.active, then:' active')}{f:if(condition: item.children, then:' dropdown dropdown-hover')}">
                     <a class="nav-link{f:if(condition: item.children, then:' dropdown-toggle')}" href="{item.link}"
                        id="nav-item-{item.data.uid}" item.target, then: {f:if(condition: ' target="{item.target}"')}
                     title="{item.title}"{f:if(condition: item.children, then:' aria-haspopup="true"
@@ -70,8 +67,7 @@
                                         </f:if>
                                     </span>
                     </f:if>
-                    <span class="nav-link-text">{item.title}<f:if condition="{item.current}"> <span
-                        class="sr-only">(current)</span></f:if></span>
+                    <span class="nav-link-text">{item.title}<f:if condition="{item.current}"> <span class="sr-only">(current)</span></f:if></span>
                     </a>
                     <f:if condition="{item.children}">
                         <ul aria-labelledby="nav-item-{item.data.uid}" class="dropdown-menu">
