@@ -30,6 +30,7 @@
             <nav class="collapse navbar-collapse" id="mainnavigation">
                 <f:render arguments="{_all}" partial="DropIn/Navigation/MainBefore"/>
                 <f:render arguments="{menu: mainnavigation, theme: theme}" section="MainNavigation"/>
+                <f:render arguments="{_all}" partial="Navigation/LoginLogut"/>
                 <f:render arguments="{_all}" partial="DropIn/Navigation/MainAfter"/>
             </nav>
         </f:if>
@@ -117,19 +118,6 @@
             </f:else>
     </f:if>
     </f:for>
-    <li>
-        <f:if condition="{[loginUser = *]}">
-            <f:link.typolink additionalParams="&logintype=logout" parameter="123" title="logout">
-                Logout
-            </f:link.typolink>
-        </f:if>
-        <f:else>
-            <f:link.typolink additionalParams="&logintype=login" parameter="123" title="login">
-            Login
-        </f:link.typolink>
-        </f:else>
-
-    </li>
     </ul>
     </f:if>
 </f:section>
