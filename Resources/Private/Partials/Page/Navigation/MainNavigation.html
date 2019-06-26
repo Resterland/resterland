@@ -83,7 +83,9 @@
     <f:render arguments="{_all}" partial="Navigation/LoginLogout"/>
 </li>
 <li class="nav-item">
-    <f:render arguments="{_all}" partial="Navigation/Language"/>
+    <f:if condition="{languagenavigation}">
+        <p>scheisse</p>
+    </f:if>
 </li>
 </ul>
 </f:if>
