@@ -4,3 +4,17 @@
 styles.content.loginform {
     templateFile = EXT:resterland/Resources/Private/Templates/FrontendLogin/FrontendLogin.html
 }
+
+text {
+    # loginStatus
+    login = Anmelden
+    logout = Abmelden
+
+    # fe-userinfo
+    alias = Alias:
+    loggedIn = Sie sind angemeldet als:
+    hallo = Hallo
+    lastlogin = Letztmals angemeldet:
+    firstlogin = Sie sind das 1. Mal angmeldet.
+    memberGruppe = Sie sind Mitglied der Gruppe(n):
+}
