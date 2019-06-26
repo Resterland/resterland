@@ -79,6 +79,12 @@
         </f:else>
 </f:if>
 </f:for>
+<f:render arguments="{_all}" partial="Navigation/LoginLogout"/>
+<f:if condition="{theme.language.enable}">
+    <div class="footer-language">
+        <f:render arguments="{_all}" partial="Navigation/Language"/>
+    </div>
+</f:if>
 </ul>
 </f:if>
 </html>
