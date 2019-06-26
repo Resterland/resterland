@@ -82,24 +82,9 @@
 <li class="nav-item">
     <f:render arguments="{_all}" partial="Navigation/LoginLogout"/>
 </li>
-<f:if condition="{languagenavigation}">
-    <ul class="language-menu" id="language_menu">
-        <f:for as="item" each="{languagenavigation}">
-            <li class="{f:if(condition: item.active, then: 'active')} {f:if(condition: item.available, else: 'text-muted')}">
-                <f:if condition="{item.available}">
-                    <f:then>
-                        <a href="{item.link}" hreflang="{item.hreflang}" title="{item.title}">
-                            <span>{item.navigationTitle}</span>
-                        </a>
-                    </f:then>
-                    <f:else>
-                        <span>{item.navigationTitle}</span>
-                    </f:else>
-                </f:if>
-            </li>
-        </f:for>
-    </ul>
-</f:if>
+<li class="nav-item">
+    <f:render arguments="{_all}" partial="Navigation/Language"/>
+</li>
 </ul>
 </f:if>
 </html>
