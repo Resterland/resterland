@@ -29,12 +29,12 @@
             <nav class="collapse navbar-collapse" id="mainnavigation">
                 <f:render arguments="{_all}" partial="DropIn/Navigation/MainBefore"/>
                 <f:render arguments="{menu: mainnavigation, theme: theme}" partial="Navigation/MainNavigation"/>
-                <f:render arguments="{_all}" partial="DropIn/Navigation/MainAfter"/>
                 <f:if condition="{theme.language.enable}">
-                    <li class="footer-language">
+                    <div class="footer-language">
                         <f:render arguments="{_all}" partial="Navigation/Language"/>
-                    </li>
+                    </div>
                 </f:if>
+                <f:render arguments="{_all}" partial="DropIn/Navigation/MainAfter"/>
             </nav>
         </f:if>
     </div>
