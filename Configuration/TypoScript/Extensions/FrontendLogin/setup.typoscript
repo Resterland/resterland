@@ -69,7 +69,7 @@ lib.userinfo {
         1 {
             10 = CONTENT
             10.table = fe_groups
-            10.select.pidInList = 19
+            10.select.pidInList = 121
             10.select.andWhere.current = 1
             10.select.andWhere.wrap = uid=|
             10.renderObj = TEXT
