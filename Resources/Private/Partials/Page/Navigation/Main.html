@@ -30,6 +30,11 @@
                 <f:render arguments="{_all}" partial="DropIn/Navigation/MainBefore"/>
                 <f:render arguments="{menu: mainnavigation, theme: theme}" section="MainNavigation"/>
                 <f:render arguments="{_all}" partial="Navigation/LoginLogout"/>
+                <f:if condition="{theme.language.enable}">
+                    <div class="footer-language">
+                        <f:render arguments="{_all}" partial="Navigation/Language"/>
+                    </div>
+                </f:if>
                 <f:render arguments="{_all}" partial="DropIn/Navigation/MainAfter"/>
             </nav>
         </f:if>
