@@ -1,51 +1,33 @@
 #-------------------------------------------------------------------------------
 #    NAVIGATION: Language menu - inside the NavBar (lib.navigation.main)
 #-------------------------------------------------------------------------------
-lib.navigation.languageswitch >
-lib.navigation.languageswitch = COA
-lib.navigation.languageswitch {
-    wrap = <li class="dropdown">|</li>
-    5 = TEXT
-    5 {
-        wrap = <a href="#" class="dropdown-toggle" data-toggle="dropdown">|</a>
-        value = {$plugin.t3sbootstrap_configuration.navigation_lang.navBarLabel}<b class="caret"></b>
-    }
-
+lib.languageswitch = COA
+lib.languageswitch {
     10 = HMENU
     10 {
         special = language
-        special.value = {$plugin.t3sbootstrap_configuration.navigation_lang.languages}
-        wrap = <ul id="languageMenu" class="dropdown-menu">|</ul>
+        special.value = 0,1
+
+        addQueryString = 1
+        addQueryString.exclude = id
+        addQueryString.method = GET
+
+        wrap = <ul class="nav navbar-nav navbar-right"><li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="ic-language"></span> <span class="caret"></span></a>|</li></ul>
+
         1 = TMENU
         1 {
+            wrap = <ul class="dropdown-menu" role="menu">|</ul>
             NO = 1
             NO {
                 wrapItemAndSub = <li>|</li>
-
                 stdWrap.cObject = TEXT
-                stdWrap.cObject.value = {$plugin.t3sbootstrap_configuration.navigation_lang.labels}
+                stdWrap.cObject {
+                    value = Deutsch || English
+                }
             }
-
             ACT < .NO
             ACT {
                 wrapItemAndSub = <li class="active">|</li>
-            }
-
-            #### NO TRANSLATION AVAILABLE STATES ####
-            USERDEF1 < .NO
-            USERDEF1 {
-                wrapItemAndSub >
-                doNotLinkIt = 0
-                doNotShowLink = 1
-                stdWrap.cObject >
-            }
-
-            USERDEF2 < .ACT
-            USERDEF2 {
-                wrapItemAndSub >
-                doNotLinkIt = 0
-                doNotShowLink = 1
-                stdWrap.cObject >
             }
         }
     }
