@@ -7,7 +7,7 @@
 #### HELPER ####
 ################
 #<INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland/Configuration/TypoScript/Helper/DynamicContent.typoscript">
-#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland/Configuration/TypoScript/Helper/LanguageNavi.typoscript">
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland/Configuration/TypoScript/Helper/Language/Navi/setup.typoscript">
 
 #############################################################
 #### EXTENSIONS                                          ####
@@ -15,7 +15,7 @@
 #############################################################
 #<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/Extension/Form/setup.typoscript" condition="userFunc = TYPO3\\CMS\\Core\\Utility\\ExtensionManagementUtility::isLoaded('form')">
 ## FrontendLogin
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland/Configuration/TypoScript/Extensions/FrontendLogin/setup.typoscript" condition="userFunc = TYPO3\\CMS\\Core\\Utility\\ExtensionManagementUtility::isLoaded('felogin')">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland/Configuration/TypoScript/Extensions/FrontendLogin/setup.typoscript" condition="userFunc = TYPO3\\CMS\\Core\\Utility\\ExtensionManagementUtility,isLoaded('felogin')">
 #<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/Extension/IndexedSearch/setup.typoscript" condition="userFunc = TYPO3\\CMS\\Core\\Utility\\ExtensionManagementUtility::isLoaded('indexed_search')">
 
 ##<INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland/Configuration/TypoScript/Helper/LanguageNavi.typoscript">
@@ -65,6 +65,95 @@ page {
             5 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
             5 {
                 references.fieldName = media
+            }
+
+            10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+            10 {
+                levels = 2
+                includeSpacer = 1
+                as = mainnavigation
+                dataProcessing {
+                    10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+                    10 {
+                        references.fieldName = nav_icon
+                        as = icon
+                        if {
+                            isTrue.stdWrap.cObject = COA
+                            isTrue.stdWrap.cObject {
+                                10 = TEXT
+                                10.value = 1
+                                10.if.isTrue = {$page.theme.navigation.icon.enable}
+                                20 = TEXT
+                                20.value = 1
+                                20.if.isTrue = {$page.theme.navigation.dropdown.icon.enable}
+                            }
+                        }
+                    }
+                }
+            }
+
+            20 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+            20 {
+                entryLevel = 1
+                levels = 2
+                expandAll = 0
+                includeSpacer = 1
+                as = subnavigation
+                dataProcessing {
+                    10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+                    10 {
+                        references.fieldName = nav_icon
+                        as = icon
+                        if {
+                            isTrue = {$page.theme.subnavigation.icon.enable}
+                        }
+                    }
+                }
+            }
+
+            30 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+            30 {
+                special = rootline
+                special.range = 0|-1
+                includeNotInMenu = 1
+                as = breadcrumb
+                if {
+                    value = {$page.theme.breadcrumb.enableLevel}
+                    value {
+                        insertData = 1
+                        prioriCalc = 1
+                        stdWrap.wrap = |-1
+                    }
+
+                    isGreaterThan {
+                        data = level
+                    }
+                }
+
+                dataProcessing {
+                    10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+                    10 {
+                        references.fieldName = nav_icon
+                        as = icon
+                    }
+                }
+            }
+
+            40 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
+            40 {
+                languages = {$page.theme.language.languageValue}
+                as = languagenavigation
+            }
+
+            50 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+            50 {
+                special = {$page.theme.meta.navigationType}
+                special.value = {$page.theme.meta.navigationValue}
+                includeNotInMenu = {$page.theme.meta.includeNotInMenu}
+                as = metanavigation
+                if {
+                    isTrue = {$page.theme.meta.navigationValue}
+                }
             }
         }
 
