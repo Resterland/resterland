@@ -7,7 +7,7 @@
 #### HELPER ####
 ################
 #<INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland/Configuration/TypoScript/Helper/DynamicContent.typoscript">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland/Configuration/TypoScript/Helper/Language/Navi/setup.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland/Configuration/TypoScript/Helper/LanguageNavi/setup.typoscript">
 
 #############################################################
 #### EXTENSIONS                                          ####
