@@ -82,10 +82,12 @@
 <li class="nav-item">
     <f:render arguments="{_all}" partial="Navigation/LoginLogout"/>
 </li>
-<div>
-    <f:render arguments="{_all}" partial="Navigation/LanguageNavi"/>
-</div>
 </ul>
+</f:if>
+<f:if condition="{theme.language.enable}">
+    <div class="footer-language">
+        <f:render arguments="{_all}" partial="Navigation/LanguageNavi"/>
+    </div>
 </f:if>
 
 </html>
