@@ -2,33 +2,43 @@
 #    NAVIGATION: Language menu - inside the NavBar (lib.navigation.main)
 #-------------------------------------------------------------------------------
 lib.languageswitch = COA
-lib.languageswitch {
-    10 = HMENU
-    10 {
-        special = language
-        special.value = 0,1
+lib.languageswitch.wrap = <nav id="language-select"><ul> | </ul></nav>
+lib.languageswitch.10 = HMENU
+lib.languageswitch.10 {
+    special = language
+    special.value = 0,1,2,3
+    1 = TMENU
+    1 {
+        wrap = |
+        NO = 1
+        NO {
+            linkWrap = <li>|</li>
+            doNotLinkIt = 1
+            stdWrap {
+                cObject = TEXT
+                cObject {
+                    value = de || en || id || fr
+                }
 
-        addQueryString = 1
-        addQueryString.exclude = id
-        addQueryString.method = GET
-
-        wrap = <ul class="nav navbar-nav navbar-right"><li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="ic-language"></span> <span class="caret"></span></a>|</li></ul>
-
-        1 = TMENU
-        1 {
-            wrap = <ul class="dropdown-menu" role="menu">|</ul>
-            NO = 1
-            NO {
-                wrapItemAndSub = <li>|</li>
-                stdWrap.cObject = TEXT
-                stdWrap.cObject {
-                    value = Deutsch || English
+                typolink {
+                    parameter.data = page:uid
+                    additionalParams = &L=0 || &L=1 || &L=2 || &L=3
+                    addQueryString = 1
+                    addQueryString.exclude = L,id,cHash,no_cache,gclid,utm_source,utm_medium,utm_campaign
+                    addQueryString.method = GET
+                    useCacheHash = 1
+                    no_cache = 0
+                    ATagParams = hreflang="de" || hreflang="en" || hreflang="id" || hreflang="fr"
+                    ATagTitle = Deutsch || English || Bahasa Indonesia || Français
                 }
             }
-            ACT < .NO
-            ACT {
-                wrapItemAndSub = <li class="active">|</li>
-            }
+        }
+
+        ACT < .NO
+        ACT {
+            linkWrap = <li class="active">|</li>
+            stdWrap.typolink.ATagParams = class="active"
+            doNotLinkIt = 1
         }
     }
 }

@@ -1,23 +1,29 @@
 <html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
 <f:if condition="{languagemenu}">
-    <ul class="language-menu" id="language">
-        <f:for as="item" each="{languagemenu}">
-            <li class="{f:if(condition: item.active, then: 'active')}
+    <f:then>
+        <nav id="language-select" nav>
+            <ul>
+                <f:for as="item" each="{languagemenu}">
+                    <li class="{f:if(condition: item.active, then: 'active')}
                     {f:if(condition: item.available, else: ' text-muted')}">
-                <f:if condition="{item.available}">
-                    <f:then>
-                        <a href="{item.link}" hreflang="{item.hreflang}"
-                           title="{item.navigationTitle}">
-                            <span>{item.navigationTitle}</span>
-                        </a>
-                    </f:then>
-                    <f:else>
-                        <span>{item.navigationTitle}</span>
-                    </f:else>
-                </f:if>
-            </li>
-        </f:for>
-    </ul>
+                        <f:if condition="{item.available}">
+                            <f:then>
+                                <a href="{item.link}" hreflang="{item.hreflang}"
+                                   title="{item.navigationTitle}">
+                                    <span>{item.navigationTitle}</span>
+                                </a>
+                            </f:then>
+                            <f:else>
+                                <span>{item.navigationTitle}</span>
+                            </f:else>
+                        </f:if>
+                    </li>
+                </f:for>
+            </ul>
+        </nav>
+    </f:then>
+    <f:else>
+        <f:cObject typoscriptObjectPath="lib.languageswitch"/>
+    </f:else>
 </f:if>
-<!-- <f:cObject typoscriptObjectPath="lib.languageswitch"/> -->
 </html>
