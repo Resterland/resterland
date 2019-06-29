@@ -3,7 +3,7 @@
 ################################
 temp.loginStatus = TEXT
 temp.loginStatus {
-    value = {$text.login}
+    value = <span class="nav-link-text">{$text.login}</span>
     typolink {
         parameter = 123
         additionalParams.htmlSpecialChars = 1
@@ -13,7 +13,7 @@ temp.loginStatus {
 
 temp.logoutStatus = TEXT
 temp.logoutStatus {
-    value = {$text.logout}
+    value = <span class="nav-link-text">{$text.logout}</span>
     typolink {
         parameter.data = page:uid
         additionalParams = &logintype=logout
