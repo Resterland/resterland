@@ -1,4 +1,4 @@
-<html data-namespace-typo3-fluid="true" xmlns:bk2k="http://typo3.org/ns/BK2K/BootstrapPackage/ViewHelpers"
+<html data-namespace-typo3-fluid="true"
       xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
 
 <header
@@ -38,86 +38,4 @@
     </div>
 </header>
 
-<f:section name="MainNavigation">
-    <f:if condition="{menu}">
-        <ul class="navbar-nav">
-            <f:for as="item" each="{menu}">
-                <f:if condition="{item.spacer}">
-                    <f:then>
-        </ul>
-        <ul class="navbar-nav">
-            </f:then>
-            <f:else>
-                <li class="nav-item{f:if(condition: item.active, then:' active')}{f:if(condition: item.children, then:' dropdown dropdown-hover')}">
-                    <a class="nav-link{f:if(condition: item.children, then:' dropdown-toggle')}" href="{item.link}"
-                       id="nav-item-{item.data.uid}" item.target, then: {f:if(condition: ' target="{item.target}"')}
-                    title="{item.title}"{f:if(condition: item.children, then:' aria-haspopup="true"
-                    aria-expanded="false"')}>
-                    <f:if condition="{theme.navigation.icon.enable} && {item.icon}">
-                                    <span class="nav-link-icon">
-                                        <f:if condition="{item.icon.0.extension} === svg">
-                                            <f:then>
-                                                <bk2k:inlineSvg height="{theme.navigation.icon.height}"
-                                                                image="{item.icon.0}"
-                                                                width="{theme.navigation.icon.width}"/>
-                                            </f:then>
-                                            <f:else>
-                                                <f:image alt="{item.icon.0.alternative}"
-                                                         height="{theme.navigation.icon.height}" image="{item.icon.0}"
-                                                         title="{item.icon.0.title}"
-                                                         width="{theme.navigation.icon.width}"/>
-                                            </f:else>
-                                        </f:if>
-                                    </span>
-                    </f:if>
-                    <span class="nav-link-text">{item.title}<f:if condition="{item.current}"> <span class="sr-only">(current)</span></f:if></span>
-                    </a>
-                    <f:if condition="{item.children}">
-                        <ul aria-labelledby="nav-item-{item.data.uid}" class="dropdown-menu">
-                            <f:for as="child" each="{item.children}">
-                                <f:if condition="{child.spacer}">
-                                    <f:then>
-                                        <li class="dropdown-divider"></li>
-                                    </f:then>
-                                    <f:else>
-                                        <li>
-                                            <a child.target,
-                                               class="dropdown-item{f:if(condition: child.active, then:' active')}"
-                                               href="{child.link}" then: {f:if(condition: ' target="{child.target}"')}
-                                            title="{child.title}">
-                                            <f:if condition="{theme.navigation.dropdown.icon.enable} && {child.icon}">
-                                                            <span class="dropdown-icon">
-                                                                <f:if condition="{child.icon.0.extension} === svg">
-                                                                    <f:then>
-                                                                        <bk2k:inlineSvg
-                                                                            height="{theme.navigation.dropdown.icon.height}"
-                                                                            image="{child.icon.0}"
-                                                                            width="{theme.navigation.dropdown.icon.width}"/>
-                                                                    </f:then>
-                                                                    <f:else>
-                                                                        <f:image alt="{child.icon.0.alternative}"
-                                                                                 height="{theme.navigation.dropdown.icon.height}"
-                                                                                 image="{child.icon.0}"
-                                                                                 title="{child.icon.0.title}"
-                                                                                 width="{theme.navigation.dropdown.icon.width}"/>
-                                                                    </f:else>
-                                                                </f:if>
-                                                            </span>
-                                            </f:if>
-                                            <span class="dropdown-text">{child.title}<f:if condition="{child.current}"> <span
-                                                class="sr-only">(current)</span></f:if></span>
-                                            </a>
-                                        </li>
-                                    </f:else>
-                                </f:if>
-                            </f:for>
-                        </ul>
-                    </f:if>
-                </li>
-            </f:else>
-    </f:if>
-    </f:for>
-    </ul>
-    </f:if>
-</f:section>
 </html>
