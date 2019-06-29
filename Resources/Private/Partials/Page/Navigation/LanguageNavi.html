@@ -1,8 +1,8 @@
 <html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
 <f:if condition="{languagemenu}">
     <f:then>
-        <nav id="language-select" nav>
-            <ul>
+        <li class="nav-item">
+            <ul class="dropdown-menu">
                 <f:for as="item" each="{languagemenu}">
                     <li class="{f:if(condition: item.active, then: 'active')}
                     {f:if(condition: item.available, else: ' text-muted')}">
@@ -20,7 +20,7 @@
                     </li>
                 </f:for>
             </ul>
-        </nav>
+        </li>
     </f:then>
     <f:else>
         <p>scheisse</p>
