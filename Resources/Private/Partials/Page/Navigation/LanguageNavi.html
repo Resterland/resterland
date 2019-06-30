@@ -3,12 +3,11 @@
     <f:then>
         <ul class="nav">
             <f:for as="item" each="{languagemenu}">
-                <li class="nav-item{f:if(condition: item.active, then: 'active')}
-                    {f:if(condition: item.children, then:' dropdown dropdown-hover')}
+                <li class="nav-item {f:if(condition: item.active, then: 'active')}
                     {f:if(condition: item.available, else: ' text-muted')}">
                     <f:if condition="{item.available}">
                         <f:then>
-                            <a class="nav-link{f:if(condition: item.children, then:' dropdown-toggle')}"
+                            <a class="nav-link"
                                href="{item.link}" hreflang="{item.hreflang}"
                                id="nav-item-{item.data.uid}">
                                 <span>{item.navigationTitle}</span>
