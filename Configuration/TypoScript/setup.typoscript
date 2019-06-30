@@ -268,7 +268,7 @@ page {
         theme >
         #theme = EXT:resterland/Resources/Public/Css/theme.min.css
         mystyle = EXT:resterland/Resources/Public/Scss/Themes/{$page.theme.switch}/theme.scss
-resterland_css = EXT:resterland/Resources/Public/Css/resterland-custom.css
+#resterland_css = EXT:resterland/Resources/Public/Css/resterland-custom.css
         #slate = https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/slate/bootstrap.min.css
         #slate.external = 1
     }
