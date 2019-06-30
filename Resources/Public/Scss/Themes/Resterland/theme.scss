@@ -19,18 +19,18 @@
 //@import "list";
 //@import "backendlayouts";
 //@import "section";
-//@import "footer";
+@import "footer";
 //@import "frame";
 //@import "card";
 //@import "address";
 //@import "buttons";
-//@import "body";
+@import "body";
 //@import "text";
 //@import "media";
 //@import "blockquote";
-//@import "navbar";
-//@import "subnav";
-//@import "breadcrumb";
+@import "navbar";
+@import "subnav";
+@import "breadcrumb";
 //@import "lazyload";
 //@import "gallery";
 //@import "figure";
@@ -54,4 +54,4 @@
 //
 // Plugins
 //
-//@import "photoswipe";
+@import "photoswipe";
