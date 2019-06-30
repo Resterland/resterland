@@ -1,6 +1,8 @@
 <html data-namespace-typo3-fluid="true"
       xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
-<f:debug>{_all}</f:debug>
+<f:comment>
+    <f:debug>{_all}</f:debug>
+</f:comment>
 <header
     class="bp-page-header navbar navbar-mainnavigation navbar-{theme.navigation.style}{f:if(condition:settings.logo.file,then:' navbar-has-image')}{f:if(condition:theme.navigation.type, else:' navbar-top', then:' navbar-{theme.navigation.type} navbar-fixed-{theme.navigation.type}')}"
     id="page-header">
@@ -34,9 +36,6 @@
                 </f:if>
                 <f:render arguments="{_all}" partial="DropIn/Navigation/MainAfter"/>
             </nav>
-        </f:if>
-        <f:if condition="{theme.language.enable}">
-            <f:render arguments="{_all}" partial="Navigation/Language"/>
         </f:if>
     </div>
 </header>
