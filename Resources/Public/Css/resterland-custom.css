@@ -1,10 +1,4 @@
-/* Show it is fixed to the top */
-body {
-    min-height: 75rem;
-    padding-top: 4.5rem;
-	background-color: aquamarine;
-}
-
+/* now flex-grow because of the two navbars */
 .navbar-collapse {
 	flex-grow: 0;
 }
