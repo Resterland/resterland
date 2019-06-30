@@ -1,20 +1,21 @@
 <html data-namespace-typo3-fluid="true" xmlns: xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
 <f:if condition="{languagemenu}">
     <f:then>
-        <ul class="nav">
+        <ul class="nav language-menu" id="languagemenu">
             <f:for as="item" each="{languagemenu}">
-                <li class="nav-item {f:if(condition: item.active, then: 'active')}
+                <li class="nav-item{f:if(condition: item.active, then: 'active')}
                     {f:if(condition: item.available, else: ' text-muted')}">
                     <f:if condition="{item.available}">
                         <f:then>
                             <a class="nav-link"
                                href="{item.link}" hreflang="{item.hreflang}"
                                id="nav-item-{item.data.uid}">
-                                <span>{item.navigationTitle}</span>
+                                <span class="nav-link-text">{item.navigationTitle}<f:if
+                                    condition="{item.current}"> <span class="sr-only">(current)</span></f:if></span>
                             </a>
                         </f:then>
                         <f:else>
-                            <span>{item.navigationTitle}</span>
+                            <span class="nav-link-text">{item.navigationTitle}</span>
                         </f:else>
                     </f:if>
                 </li>
