@@ -148,7 +148,7 @@ page {
 
             45 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
             45 {
-                languages = auto
+            languages = {$page.theme.language.languageValue}
                 as = languagemenu
             }
 
