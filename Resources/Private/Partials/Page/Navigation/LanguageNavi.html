@@ -1,35 +1,26 @@
 <html data-namespace-typo3-fluid="true" xmlns: xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
 <f:if condition="{languagemenu}">
     <f:then>
-        <button aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler collapsed"
-                data-target="#languagemenu" data-toggle="collapse" type="button">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <nav class="collapse navbar-collapse" id="languagemenu">
-            <ul class="navbar-nav">
-                <f:for as="item" each="{languagemenu}">
-                    <li class="nav-item{f:if(condition: item.active, then: 'active')}
+        <ul class="nav">
+            <f:for as="item" each="{languagemenu}">
+                <li class="nav-item{f:if(condition: item.active, then: 'active')}
                     {f:if(condition: item.children, then:' dropdown dropdown-hover')}
                     {f:if(condition: item.available, else: ' text-muted')}">
-                        <f:if condition="{item.available}">
-                            <f:then>
-                                <a class="nav-link{f:if(condition: item.children, then:' dropdown-toggle')}"
-                                   href="{item.link}" hreflang="{item.hreflang}"
-                                   id="nav-item-{item.data.uid}" item.target, then: {f:if(condition: '
-                                target="{item.target}"')}
-                                title="{item.navigationTitle}"{f:if(condition: item.children, then:'
-                                aria-haspopup="true" aria-expanded="false"')}>
-                                    <span>{item.navigationTitle}</span>
-                                </a>
-                            </f:then>
-                            <f:else>
+                    <f:if condition="{item.available}">
+                        <f:then>
+                            <a class="nav-link{f:if(condition: item.children, then:' dropdown-toggle')}"
+                               href="{item.link}" hreflang="{item.hreflang}"
+                               id="nav-item-{item.data.uid}">
                                 <span>{item.navigationTitle}</span>
-                            </f:else>
-                        </f:if>
-                    </li>
-                </f:for>
-            </ul>
-        </nav>
+                            </a>
+                        </f:then>
+                        <f:else>
+                            <span>{item.navigationTitle}</span>
+                        </f:else>
+                    </f:if>
+                </li>
+            </f:for>
+        </ul>
     </f:then>
     <f:else>
         <p>scheisse</p>
