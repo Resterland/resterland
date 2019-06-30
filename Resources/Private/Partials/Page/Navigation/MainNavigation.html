@@ -1,12 +1,12 @@
 <html data-namespace-typo3-fluid="true" xmlns:bk2k="http://typo3.org/ns/BK2K/BootstrapPackage/ViewHelpers"
       xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
 <f:if condition="{menu}">
-    <ul class="navbar-nav justify-content-end">
+    <ul class="navbar-nav">
         <f:for as="item" each="{menu}">
             <f:if condition="{item.spacer}">
                 <f:then>
     </ul>
-    <ul class="navbar-nav justify-content-end">
+    <ul class="navbar-nav">
         </f:then>
         <f:else>
             <li class="nav-item{f:if(condition: item.active, then:' active')}{f:if(condition: item.children, then:' dropdown dropdown-hover')}">
