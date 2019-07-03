@@ -2,31 +2,29 @@
 #### Login Status Settings #####
 ################################
 temp.loginStatus = COA
-temp.loginStatus.10 = TEXT
-temp.loginStatus.10 {
-    if.isTrue = TYPO3\\CMS\\Core\\Utility\\ExtensionManagementUtility::isLoaded('felogin')
-    value = <span class="nav-link-text">{$text.login}</span>
-    typolink {
-        parameter = 123
-        additionalParams.htmlSpecialChars = 1
-        ATagParams = title="{$text.login}" class="nav-link"
+temp.loginStatus = TEXT
+temp.loginStatus {
+    10 = TEXT
+    10 {
+        if.isTrue = TYPO3\\CMS\\Core\\Utility\\ExtensionManagementUtility::isLoaded('felogin')
+        value = <span class="nav-link-text">{$text.login}</span>
+        typolink {
+            parameter = 123
+            additionalParams.htmlSpecialChars = 1
+            ATagParams = title="{$text.login}" class="nav-link"
+        }
     }
-}
 
-temp.loginStatus.20 = TEXT
-temp.loginStatus.20 {
-    if.isFalse = TYPO3\\CMS\\Core\\Utility\\ExtensionManagementUtility::isLoaded('felogin')
-    value = <span class="nav-link-text">no members</span>
-    typolink {
-        parameter = 123
-        additionalParams.htmlSpecialChars = 1
-        ATagParams = title="{$text.login}" class="nav-link"
+    20 = TEXT
+    20 {
+        if.isFalse = TYPO3\\CMS\\Core\\Utility\\ExtensionManagementUtility::isLoaded('felogin')
+        value >
+        typolink >
     }
 }
 
 temp.logoutStatus = TEXT
 temp.logoutStatus {
-    if.isTrue = TYPO3\\CMS\\Core\\Utility\\ExtensionManagementUtility::isLoaded('felogin')
     value = <span class="nav-link-text">{$text.logout}</span>
     typolink {
         parameter.data = page:uid
