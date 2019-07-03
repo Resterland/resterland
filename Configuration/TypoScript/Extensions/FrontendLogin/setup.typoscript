@@ -3,10 +3,6 @@
 ################################
 temp.loginStatus = TEXT
 temp.loginStatus {
-    if.isFalse = TYPO3\\CMS\\Core\\Utility\\ExtensionManagementUtility::isLoaded('felogin')
-    value = &nbsp;
-    typolink >
-    if.isTrue = TYPO3\\CMS\\Core\\Utility\\ExtensionManagementUtility::isLoaded('felogin')
     value = <span class="nav-link-text">{$text.login}</span>
     typolink {
         parameter = 123
