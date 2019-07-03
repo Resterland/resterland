@@ -3,6 +3,7 @@
 ################################
 temp.loginStatus = TEXT
 temp.loginStatus {
+    if.isTrue = TYPO3\\CMS\\Core\\Utility\\ExtensionManagementUtility::isLoaded('felogin')
     value = <span class="nav-link-text">{$text.login}</span>
     typolink {
         parameter = 123
@@ -13,6 +14,7 @@ temp.loginStatus {
 
 temp.logoutStatus = TEXT
 temp.logoutStatus {
+    if.isTrue = TYPO3\\CMS\\Core\\Utility\\ExtensionManagementUtility::isLoaded('felogin')
     value = <span class="nav-link-text">{$text.logout}</span>
     typolink {
         parameter.data = page:uid
