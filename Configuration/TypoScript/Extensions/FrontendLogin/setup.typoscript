@@ -12,8 +12,7 @@ temp.loginStatus {
         }
 
         if.isFalse = TYPO3\\CMS\\Core\\Utility\\ExtensionManagementUtility::isLoaded('felogin')
-        value >
-        typolink >
+    value = &nbsp;
 }
 
 temp.logoutStatus = TEXT
