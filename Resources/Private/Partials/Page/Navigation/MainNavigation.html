@@ -79,11 +79,9 @@
         </f:else>
 </f:if>
 </f:for>
-<f:if condition="{f:cObject(typoscriptObjectPath:'lib.loginstatus')} == 1">
-    <li class="nav-item">
-        <f:render arguments="{_all}" partial="Navigation/LoginLogout"/>
-    </li>
-</f:if>
+<li class="nav-item">
+    <f:render arguments="{_all}" partial="Navigation/LoginLogout"/>
+</li>
 </ul>
 </f:if>
 
