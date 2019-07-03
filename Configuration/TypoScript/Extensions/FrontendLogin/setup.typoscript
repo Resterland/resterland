@@ -1,8 +1,17 @@
 ################################
 #### Login Status Settings #####
 ################################
-temp.loginStatus = TEXT
+temp.loginStatus = COA
 temp.loginStatus {
+    10 = TEXT
+    10 {
+        if.isFalse = TYPO3\\CMS\\Core\\Utility\\ExtensionManagementUtility::isLoaded('felogin')
+        value = &nbsp;
+        typolink >
+    }
+
+    20 = TEXT
+    20 {
         if.isTrue = TYPO3\\CMS\\Core\\Utility\\ExtensionManagementUtility::isLoaded('felogin')
         value = <span class="nav-link-text">{$text.login}</span>
         typolink {
@@ -10,9 +19,7 @@ temp.loginStatus {
             additionalParams.htmlSpecialChars = 1
             ATagParams = title="{$text.login}" class="nav-link"
         }
-
-        if.isFalse = TYPO3\\CMS\\Core\\Utility\\ExtensionManagementUtility::isLoaded('felogin')
-    value = &nbsp;
+    }
 }
 
 temp.logoutStatus = TEXT
