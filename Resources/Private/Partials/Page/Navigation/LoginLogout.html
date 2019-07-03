@@ -1,14 +1,8 @@
 <html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
-<f:if condition="{userFunc} == TYPO3\\CMS\\Core\\Utility\\ExtensionManagementUtility::isLoaded('felogin')">
-    <f:then>
-        <li class="nav-item">
-            <f:cObject typoscriptObjectPath="lib.loginstatus"/>
-        </li>
-    </f:then>
-    <f:else>
-        <f:comment>felogin is not loaded, so there is no need for a link in the menu</f:comment>
-    </f:else>
-</f:if>
+<li class="nav-item">
+    <f:cObject typoscriptObjectPath="lib.loginstatus"/>
+</li>
+<f:comment>felogin is not loaded, so there is no need for a link in the menu</f:comment>
 <f:comment>
     <f:cObject typoscriptObjectPath="lib.userinfo"/>
 </f:comment>
