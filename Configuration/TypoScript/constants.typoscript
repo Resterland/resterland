@@ -33,7 +33,7 @@ page {
         width = 180
         # cat=Resterland Settings: basic/110/130; type=string; label=LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.logo.alt
         alt = Resterland WebAtelier
-        # cat=Resterland Settings: basic/110/130; type=string; label=LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.logo.linktitle
+        # cat=Resterland Settings: basic/110/140; type=string; label=LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.logo.linktitle
         linktitle = Resterland WebAtelier
     }
 

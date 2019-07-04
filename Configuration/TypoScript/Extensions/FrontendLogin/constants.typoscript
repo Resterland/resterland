@@ -5,7 +5,9 @@ styles.content.loginform {
     templateFile = EXT:resterland/Resources/Private/Templates/FrontendLogin/FrontendLogin.html
 }
 
-text {
+styles.content.loginform {
+    #pid of Login/Logout page
+    pageuid = 123
     # loginStatus
     login = Anmelden
     logout = Abmelden

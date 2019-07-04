@@ -3,21 +3,21 @@
 ################################
 temp.loginStatus = TEXT
 temp.loginStatus {
-    value = <span class="nav-link-text">{$text.login}</span>
+    value = <span class="nav-link-text">{$styles.content.loginform.login}</span>
     typolink {
-        parameter = 123
+        parameter = {$styles.content.loginform.pageuid}
         additionalParams.htmlSpecialChars = 1
-        ATagParams = title="{$text.login}" class="nav-link"
+        ATagParams = title="{$styles.content.loginform.login}" class="nav-link"
     }
 }
 
 temp.logoutStatus = TEXT
 temp.logoutStatus {
-    value = <span class="nav-link-text">{$text.logout}</span>
+    value = <span class="nav-link-text">{$styles.content.loginform.logout}</span>
     typolink {
         parameter.data = page:uid
         additionalParams = &logintype=logout
-        ATagParams = title="{$text.logout}" class="nav-link"
+        ATagParams = title="{$styles.content.loginform.logout}" class="nav-link"
     }
 }
 
