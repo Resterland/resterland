@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cacefe7df102914aebf793eb25d74770",
+  "content-hash": "45141858eb8a2959805d1d5b366390b5",
     "packages": [
         {
             "name": "algo26-matthias/idna-convert",
@@ -714,16 +714,16 @@
         },
         {
             "name": "guzzlehttp/psr7",
-          "version": "1.6.0",
+          "version": "1.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-              "reference": "dc784032a3f6f4e7a4b882e272b771f6fe4c37cf"
+              "reference": "239400de7a173fe9901b9ac7c06497751f00727a"
             },
             "dist": {
                 "type": "zip",
-              "url": "https://api.github.com/repos/guzzle/psr7/zipball/dc784032a3f6f4e7a4b882e272b771f6fe4c37cf",
-              "reference": "dc784032a3f6f4e7a4b882e272b771f6fe4c37cf",
+              "url": "https://api.github.com/repos/guzzle/psr7/zipball/239400de7a173fe9901b9ac7c06497751f00727a",
+              "reference": "239400de7a173fe9901b9ac7c06497751f00727a",
                 "shasum": ""
             },
             "require": {
@@ -781,7 +781,7 @@
                 "uri",
                 "url"
             ],
-          "time": "2019-06-30T00:37:05+00:00"
+          "time": "2019-07-01T23:21:34+00:00"
         },
         {
             "name": "helhum/typo3-composer-setup",
@@ -2325,6 +2325,77 @@
             "time": "2019-04-06T14:04:46+00:00"
         },
         {
+          "name": "t3g/blog",
+          "version": "9.1.2",
+          "source": {
+            "type": "git",
+            "url": "https://github.com/TYPO3GmbH/blog.git",
+            "reference": "c8702591262a05502d5acbc68a19c71e25f271b7"
+          },
+          "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/TYPO3GmbH/blog/zipball/c8702591262a05502d5acbc68a19c71e25f271b7",
+            "reference": "c8702591262a05502d5acbc68a19c71e25f271b7",
+            "shasum": ""
+          },
+          "require": {
+            "ext-json": "*",
+            "ext-pdo": "*",
+            "php": "^7.2",
+            "psr/http-message": "^1.0.0",
+            "symfony/console": "^4.1",
+            "typo3/cms-backend": "^9.5.1",
+            "typo3/cms-core": "^9.5.1",
+            "typo3/cms-extbase": "^9.5.1",
+            "typo3/cms-extensionmanager": "^9.5.1",
+            "typo3/cms-fluid": "^9.5.1",
+            "typo3/cms-frontend": "^9.5.1",
+            "typo3/cms-install": "^9.5.1",
+            "typo3fluid/fluid": "^2.5.0"
+          },
+          "require-dev": {
+            "bk2k/extension-helper": "^1.0.2",
+            "friendsofphp/php-cs-fixer": "^2.12",
+            "roave/security-advisories": "dev-master",
+            "t3g/blog-template-test": "^1.0.0",
+            "typo3/cms-belog": "^9.5.1",
+            "typo3/cms-filelist": "^9.5.1",
+            "typo3/cms-lowlevel": "^9.5.1",
+            "typo3/cms-rte-ckeditor": "^9.5.1",
+            "typo3/cms-tstemplate": "^9.5.1",
+            "typo3/testing-framework": "^4.11"
+          },
+          "type": "typo3-cms-extension",
+          "extra": {
+            "typo3/cms": {
+              "cms-package-dir": "{$vendor-dir}/typo3/cms",
+              "web-dir": ".build/web"
+            },
+            "branch-alias": {
+              "dev-v9.1": "9.1.x-dev"
+            }
+          },
+          "autoload": {
+            "psr-4": {
+              "T3G\\AgencyPack\\Blog\\": "Classes/"
+            }
+          },
+          "notification-url": "https://packagist.org/downloads/",
+          "license": [
+            "GPL-2.0-or-later"
+          ],
+          "authors": [
+            {
+              "name": "TYPO3 GmbH",
+              "homepage": "https://typo3.com/",
+              "role": "Developer"
+            }
+          ],
+          "description": "This blog extension uses TYPO3s core concepts and elements to provide a full-blown blog that users of TYPO3 can instantly understand and use.",
+          "homepage": "https://extensions.typo3.org/extension/blog/",
+          "time": "2019-07-03T15:23:28+00:00"
+        },
+      {
             "name": "typo3/class-alias-loader",
             "version": "1.0.1",
             "source": {
@@ -4169,16 +4240,16 @@
         },
         {
             "name": "phpunit/php-token-stream",
-            "version": "3.0.1",
+          "version": "3.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-token-stream.git",
-                "reference": "c99e3be9d3e85f60646f152f9002d46ed7770d18"
+              "reference": "c4a66b97f040e3e20b3aa2a243230a1c3a9f7c8c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/c99e3be9d3e85f60646f152f9002d46ed7770d18",
-                "reference": "c99e3be9d3e85f60646f152f9002d46ed7770d18",
+              "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/c4a66b97f040e3e20b3aa2a243230a1c3a9f7c8c",
+              "reference": "c4a66b97f040e3e20b3aa2a243230a1c3a9f7c8c",
                 "shasum": ""
             },
             "require": {
@@ -4214,7 +4285,7 @@
             "keywords": [
                 "tokenizer"
             ],
-            "time": "2018-10-30T05:52:18+00:00"
+          "time": "2019-07-08T05:24:54+00:00"
         },
         {
             "name": "phpunit/phpunit",
