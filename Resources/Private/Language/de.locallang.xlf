@@ -52,6 +52,28 @@
                 <target>Pfad zum Favicon Ikon</target>
             </trans-unit>
 
+            <!-- felogin -->
+            <trans-unit id="constant_cats.felogin" xml:space="preserve">
+                <source>Frontend Login Settings</source>
+                <target>Frontend Login Einstellungen</target>
+            </trans-unit>
+            <!-- felogin pageuid -->
+            <trans-unit id="constant_cats.felogin.pageuid" xml:space="preserve">
+                <source>Page UID of the Login/Logout Page</source>
+                <target>Seiten UID von der An/Abmelde-Seite</target>
+            </trans-unit>
+            <!-- felogin login -->
+            <trans-unit id="constant_cats.felogin.login" xml:space="preserve">
+                <source>Login</source>
+                <target>Anmelden</target>
+            </trans-unit>
+            <!-- felogin logout -->
+            <trans-unit id="constant_cats.felogin.logout" xml:space="preserve">
+                <source>Logout</source>
+                <target>Abmelden</target>
+            </trans-unit>
+
+            <!-- cookieconsent -->
 			<trans-unit id="cookieconsent.common.header">
                 <source>Cookies used on the website!</source>
                 <target state="translated">Diese Webseite benutzt Cookies!</target>

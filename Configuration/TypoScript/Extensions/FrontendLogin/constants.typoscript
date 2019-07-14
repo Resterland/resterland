@@ -1,16 +1,23 @@
 ########################
 #### FRONTEND LOGIN ####
 ########################
+
+############################
+### CUSTOM SUBCATEGORIES ###
+###########################
+# customsubcategory=200=LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.felogin
+
 styles.content.loginform {
     templateFile = EXT:resterland/Resources/Private/Templates/FrontendLogin/FrontendLogin.html
 }
 
 styles.content.loginform {
     #pid of Login/Logout page
-    pageuid = 123
-    # loginStatus
-    login = Anmelden
-    logout = Abmelden
+    # cat=Resterland Settings: felogin/200/100; type=int+; label=LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.felogin.pageuid
+    pageuid =
+    # login/logoutStatus
+    login = LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.felogin.login
+    logout = LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.felogin.logout
 
     # fe-userinfo
     alias = Alias:
