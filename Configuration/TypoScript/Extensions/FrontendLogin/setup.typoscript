@@ -3,21 +3,21 @@
 ################################
 temp.loginStatus = TEXT
 temp.loginStatus {
-    value = <span class="nav-link-text">{$styles.content.loginform.login}</span>
+    value = <span class="nav-link-text"><f:translate key="LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.felogin.login" /></span>
     typolink {
         parameter = {$styles.content.loginform.pageuid}
         additionalParams.htmlSpecialChars = 1
-        ATagParams = title="{$styles.content.loginform.login}" class="nav-link"
+        ATagParams = title="<f:translate key="LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.felogin.login" />" class="nav-link"
     }
 }
 
 temp.logoutStatus = TEXT
 temp.logoutStatus {
-    value = <span class="nav-link-text">{$styles.content.loginform.logout}</span>
+    value = <span class="nav-link-text"><f:translate key="LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.felogin.logout" /></span>
     typolink {
         parameter.data = page:uid
         additionalParams = &logintype=logout
-        ATagParams = title="{$styles.content.loginform.logout}" class="nav-link"
+        ATagParams = title="<f:translate key="LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.felogin.logout" />" class="nav-link"
     }
 }
 
