@@ -8,7 +8,7 @@ temp.loginStatus {
     typolink {
         parameter = {$styles.content.loginform.pageuid}
         additionalParams.htmlSpecialChars = 1
-        ATagParams = title="{LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.felogin.login}" class="nav-link"
+        ATagParams = title="Login" class="nav-link"
     }
 }
 
@@ -19,7 +19,7 @@ temp.logoutStatus {
     typolink {
         parameter.data = page:uid
         additionalParams = &logintype=logout
-        ATagParams = title="{LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.felogin.logout}" class="nav-link"
+        ATagParams = title="Logout" class="nav-link"
     }
 }
 
