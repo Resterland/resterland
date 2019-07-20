@@ -1,5 +1,5 @@
 <xliff version="1.0" xmlns="urn:oasis:names:tc:xliff:document:1.1">
-	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2017-05-19T09:11:39Z"
+	<file source-language="en" target-language="fr" datatype="plaintext" original="messages" date="2017-05-19T09:11:39Z"
 		  product-name="resterland">
 		<header/>
 		<body>
@@ -13,31 +13,31 @@
             <!-- Logo File Path -->
             <trans-unit id="constant_cats.logo.file" xml:space="preserve">
                 <source>Path to the Logo: Choose one of the list or submit your own</source>
-                <target>Pfad zum Logo: Wähle eines aus der Liste oder gib den gewünschten Pfad an</target>
+                <target>Chemin vers le logo: Choisissez-en un dans la liste ou entrez le chemin d'accès désiré</target>
             </trans-unit>
 
             <!-- Logo Height -->
             <trans-unit id="constant_cats.logo.height" xml:space="preserve">
                 <source>Height: will not be resized!</source>
-                <target>Höhe</target>
+                <target>Apogée</target>
             </trans-unit>
 
             <!-- Logo Width -->
             <trans-unit id="constant_cats.logo.width" xml:space="preserve">
                 <source>Width: will not be resized!</source>
-                <target>Breite</target>
+                <target>Largeur</target>
             </trans-unit>
 
             <!-- Logo Alt Text -->
             <trans-unit id="constant_cats.logo.alt" xml:space="preserve">
                 <source>Alternative text: Text of the alt attribute of the logo image (default: "Resterland WebAtelier")</source>
-                <target>Alternativer Text: Text für das alt-Attribut (Standard: "Resterland WebAtelier")</target>
+                <target>Texte alternatif: Texte pour l'attribut alt (défaut: "Resterland WebAtelier")</target>
             </trans-unit>
 
             <!-- Logo Link Title -->
             <trans-unit id="constant_cats.logo.linktitle" xml:space="preserve">
                 <source>Link Title: Text of the link attribute of the logo image (default: "ResterlandWebAtelierLogo")</source>
-                <target>Link Titel: Titel für das link-Attribut (Standard: "Resterland WebAtelier")</target>
+                <target>Titre du lien: Titre de l'attribut link (défaut: "Resterland WebAtelier")</target>
             </trans-unit>
 
             <!-- Favicon -->
@@ -49,54 +49,54 @@
             <!-- Favicon File Path -->
             <trans-unit id="constant_cats.favicon.file" xml:space="preserve">
                 <source>Favicon File Path</source>
-                <target>Pfad zum Favicon Ikon</target>
+                <target>Chemin vers le Favicon Ikon</target>
             </trans-unit>
 
             <!-- felogin -->
             <trans-unit id="constant_cats.felogin" xml:space="preserve">
                 <source>Frontend Login Settings</source>
-                <target>Frontend Login Einstellungen</target>
+                <target>Paramètres de connexion frontaux</target>
             </trans-unit>
             <!-- felogin pageuid -->
             <trans-unit id="constant_cats.felogin.pageuid" xml:space="preserve">
                 <source>Page UID of the Login/Logout Page</source>
-                <target>Seiten UID von der An/Abmelde-Seite</target>
+                <target>Pages UID à partir de la page de connexion/déconnexion</target>
             </trans-unit>
             <!-- felogin login -->
             <trans-unit id="constant_cats.felogin.login" xml:space="preserve">
                 <source>Login</source>
-                <target>Anmelden</target>
+                <target>Connexion</target>
             </trans-unit>
             <!-- felogin logout -->
             <trans-unit id="constant_cats.felogin.logout" xml:space="preserve">
                 <source>Logout</source>
-                <target>Abmelden</target>
+                <target>Déconnexion</target>
             </trans-unit>
 
             <!-- cookieconsent -->
 			<trans-unit id="cookieconsent.common.header">
                 <source>Cookies used on the website!</source>
-                <target state="translated">Diese Webseite benutzt Cookies!</target>
+                <target state="translated">Ce site utilise des cookies!</target>
             </trans-unit>
             <trans-unit id="cookieconsent.common.message">
                 <source>This website uses cookies to ensure you get the best experience on our website.</source>
-                <target state="translated">Um Ihnen eine optimale Nutzung unserer Website zu ermöglichen, werden Cookies eingesetzt.</target>
+                <target state="translated">Les cookies sont utilisés pour vous permettre d'utiliser notre site Internet de manière optimale.</target>
             </trans-unit>
             <trans-unit id="cookieconsent.common.dismiss">
                 <source>Got it!</source>
-                <target state="translated">Alles klar!</target>
+                <target state="translated">D'accord, c'est bon!</target>
             </trans-unit>
             <trans-unit id="cookieconsent.common.allow">
                 <source>Allow cookies</source>
-                <target state="translated">Cookies erlauben</target>
+                <target state="translated">Accepter les cookies</target>
             </trans-unit>
             <trans-unit id="cookieconsent.common.deny">
                 <source>Decline</source>
-                <target state="translated">Ablehnen</target>
+                <target state="translated">Refuser</target>
             </trans-unit>
             <trans-unit id="cookieconsent.common.link">
                 <source>Learn more</source>
-                <target state="translated">Mehr erfahren</target>
+                <target state="translated">En savoir plus</target>
             </trans-unit>
 
 		</body>
