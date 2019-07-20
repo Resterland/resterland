@@ -3,21 +3,23 @@
 ################################
 temp.loginStatus = TEXT
 temp.loginStatus {
-    value = <span class="nav-link-text">LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.felogin.login</span>
+    value = <span class="nav-link-text">{LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.felogin.login}</span>
+    stdWrap.insertData = 1
     typolink {
         parameter = {$styles.content.loginform.pageuid}
         additionalParams.htmlSpecialChars = 1
-        ATagParams = title="LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.felogin.login" class="nav-link"
+        ATagParams = title="{LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.felogin.login}" class="nav-link"
     }
 }
 
 temp.logoutStatus = TEXT
 temp.logoutStatus {
-    value = <span class="nav-link-text">LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.felogin.logout</span>
+    value = <span class="nav-link-text">{LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.felogin.logout}</span>
+    stdWrap.insertData = 1
     typolink {
         parameter.data = page:uid
         additionalParams = &logintype=logout
-        ATagParams = title="LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.felogin.logout" class="nav-link"
+        ATagParams = title="{LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.felogin.logout}" class="nav-link"
     }
 }
 
