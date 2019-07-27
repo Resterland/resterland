@@ -12,6 +12,9 @@ styles.content.loginform {
 }
 
 styles.content.loginform {
+    #enable login/logout link in menu: default disabled
+    # cat=Resterland Settings: felogin/200/50; type=int+; label=LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.felogin.inmenu
+    inmenu =
     #pid of Login/Logout page
     # cat=Resterland Settings: felogin/200/100; type=int+; label=LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.felogin.pageuid
     pageuid =

@@ -62,6 +62,10 @@
             <trans-unit id="constant_cats.felogin" xml:space="preserve">
                 <source>Frontend Login Settings</source>
             </trans-unit>
+            <!-- felogin inmenu -->
+            <trans-unit id="constant_cats.felogin.inmenu" xml:space="preserve">
+                <source>Enable Login/Logout link in main menue: Default disabled</source>
+            </trans-unit>
             <!-- felogin pageuid -->
             <trans-unit id="constant_cats.felogin.pageuid" xml:space="preserve">
                 <source>Page UID of the Login/Logout Page</source>

@@ -79,7 +79,10 @@
         </f:else>
 </f:if>
 </f:for>
-<f:render arguments="{_all}" partial="Navigation/LoginLogout"/>
+<f:comment>felogin is not loaded, so there is no need for a link in the menu</f:comment>
+<f:if condition="{styles.content.loginform.inmenu}">
+    <f:render arguments="{_all}" partial="Navigation/LoginLogout"/>
+</f:if>
 </ul>
 </f:if>
 
