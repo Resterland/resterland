@@ -52,27 +52,6 @@
                 <target>Jalan ke Favicon Ikon</target>
             </trans-unit>
 
-            <!-- felogin -->
-            <trans-unit id="constant_cats.felogin" xml:space="preserve">
-                <source>Frontend Login Settings</source>
-                <target>Pengaturan Login Frontend</target>
-            </trans-unit>
-            <!-- felogin pageuid -->
-            <trans-unit id="constant_cats.felogin.pageuid" xml:space="preserve">
-                <source>Page UID of the Login/Logout Page</source>
-                <target>Halaman UID dari halaman login/logout</target>
-            </trans-unit>
-            <!-- felogin login -->
-            <trans-unit id="constant_cats.felogin.login" xml:space="preserve">
-                <source>Login</source>
-                <target>Masuk</target>
-            </trans-unit>
-            <!-- felogin logout -->
-            <trans-unit id="constant_cats.felogin.logout" xml:space="preserve">
-                <source>Logout</source>
-                <target>Keluar</target>
-            </trans-unit>
-
             <!-- cookieconsent -->
 			<trans-unit id="cookieconsent.common.header">
                 <source>Cookies used on the website!</source>

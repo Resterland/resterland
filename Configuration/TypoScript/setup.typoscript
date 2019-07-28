@@ -169,7 +169,6 @@ page {
         ################
         settings {
             felogin.inmenu = {$styles.content.loginform.inmenu}
-
         }
 
         #################

@@ -5,7 +5,7 @@
 ############################
 ### CUSTOM SUBCATEGORIES ###
 ###########################
-# customsubcategory=200=LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.felogin
+# customsubcategory=200=LLL:EXT:resterland/Resources/Private/Language/locallang_felogin.xlf:constant_cats.felogin
 
 styles.content.loginform {
     templateFile = EXT:resterland/Resources/Private/Templates/FrontendLogin/FrontendLogin.html
@@ -13,10 +13,10 @@ styles.content.loginform {
 
 styles.content.loginform {
     #enable login/logout link in menu: default disabled
-    # cat=Resterland Settings: felogin/200/100; type=boolean; label=LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.felogin.inmenu
+    # cat=Resterland Settings: felogin/200/100; type=boolean; label=LLL:EXT:resterland/Resources/Private/Language/locallang_felogin.xlf:constant_cats.felogin.inmenu
     inmenu =
     #pid of Login/Logout page
-    # cat=Resterland Settings: felogin/200/200; type=int+; label=LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.felogin.pageuid
+    # cat=Resterland Settings: felogin/200/200; type=int+; label=LLL:EXT:resterland/Resources/Private/Language/locallang_felogin.xlf:constant_cats.felogin.pageuid
     pageuid =
 
     # fe-userinfo
