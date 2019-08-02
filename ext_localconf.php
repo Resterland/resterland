@@ -8,4 +8,4 @@ $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['resterland'] = 'EXT:resterland/Co
 
 $GLOBALS['TYPO3_CONF_VARS']['SYS']['locallangXMLOverride']['EXT:felogin/locallang.xlf'][] = 'EXT:resterland/Resources/Private/Language/locallangf_felogin.xlf';
 
-$GLOBALS['TYPO3_CONF_VARS']['SYS']['locallangXMLOverride']['id']['EXT:resterland/Resources/Private/Language/locallang.xlf'][] = 'EXT:resterland/Resources/Private/Language/id.locallangf.xlf';
+$GLOBALS['TYPO3_CONF_VARS']['SYS']['locallangXMLOverride']['ma']['EXT:resterland/Resources/Private/Language/locallang.xlf'][] = 'EXT:resterland/Resources/Private/Language/id.locallangf.xlf';
