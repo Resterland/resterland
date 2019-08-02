@@ -1,0 +1,83 @@
+<xliff version="1.0" xmlns="urn:oasis:names:tc:xliff:document:1.1">
+	<file source-language="en" target-language="id_ID" datatype="plaintext" original="messages" date="2017-05-19T09:11:39Z"
+		  product-name="resterland">
+		<header/>
+		<body>
+
+            <!-- Logo Settings Header -->
+            <trans-unit id="constant_cats.logo" xml:space="preserve">
+                <source>Logo</source>
+                <target>Logo</target>
+            </trans-unit>
+
+            <!-- Logo File Path -->
+            <trans-unit id="constant_cats.logo.file" xml:space="preserve">
+                <source>Path to the Logo: Choose one of the list or submit your own</source>
+                <target>Jalan ke logo: Pilih satu dari daftar atau tentukan jalur yang diinginkan</target>
+            </trans-unit>
+
+            <!-- Logo Height -->
+            <trans-unit id="constant_cats.logo.height" xml:space="preserve">
+                <source>Height: will not be resized!</source>
+                <target>Tinggi</target>
+            </trans-unit>
+
+            <!-- Logo Width -->
+            <trans-unit id="constant_cats.logo.width" xml:space="preserve">
+                <source>Width: will not be resized!</source>
+                <target>Lebar</target>
+            </trans-unit>
+
+            <!-- Logo Alt Text -->
+            <trans-unit id="constant_cats.logo.alt" xml:space="preserve">
+                <source>Alternative text: Text of the alt attribute of the logo image (default: "Resterland WebAtelier")</source>
+                <target>Teks alternatif: Teks untuk atribut alt (standar: "Resterland WebAtelier")</target>
+            </trans-unit>
+
+            <!-- Logo Link Title -->
+            <trans-unit id="constant_cats.logo.linktitle" xml:space="preserve">
+                <source>Link Title: Text of the link attribute of the logo image (default: "ResterlandWebAtelierLogo")</source>
+                <target>Judul Link: Judul untuk atribut link (standar: "Resterland WebAtelier")</target>
+            </trans-unit>
+
+            <!-- Favicon -->
+            <trans-unit id="constant_cats.favicon" xml:space="preserve">
+                <source>Favicon Icon</source>
+                <target>Favicon Ikon</target>
+            </trans-unit>
+
+            <!-- Favicon File Path -->
+            <trans-unit id="constant_cats.favicon.file" xml:space="preserve">
+                <source>Favicon File Path</source>
+                <target>Jalan ke Favicon Ikon</target>
+            </trans-unit>
+
+            <!-- cookieconsent -->
+			<trans-unit id="cookieconsent.common.header">
+                <source>Cookies used on the website!</source>
+                <target state="translated">Situs web ini menggunakan cookie!</target>
+            </trans-unit>
+            <trans-unit id="cookieconsent.common.message">
+                <source>This website uses cookies to ensure you get the best experience on our website.</source>
+                <target state="translated">Untuk memberi Anda penggunaan sebaik mungkin dari situs web kami, cookie digunakan.</target>
+            </trans-unit>
+            <trans-unit id="cookieconsent.common.dismiss">
+                <source>Got it!</source>
+                <target state="translated">Baiklah!</target>
+            </trans-unit>
+            <trans-unit id="cookieconsent.common.allow">
+                <source>Allow cookies</source>
+                <target state="translated">Izinkan cookie</target>
+            </trans-unit>
+            <trans-unit id="cookieconsent.common.deny">
+                <source>Decline</source>
+                <target state="translated">Menolak</target>
+            </trans-unit>
+            <trans-unit id="cookieconsent.common.link">
+                <source>Learn more</source>
+                <target state="translated">Pelajari lebih lanjut</target>
+            </trans-unit>
+
+		</body>
+	</file>
+</xliff>

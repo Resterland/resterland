@@ -32,139 +32,189 @@
 
             <trans-unit id="ll_welcome_header">
                 <source>User login</source>
+                <target state="translated">Connexion de l'utilisateur</target>
              </trans-unit>
              <trans-unit id="ll_welcome_message">
                 <source>Enter your username and password here in order to log in on the website</source>
+                <target state="translated">Entrez votre nom d'utilisateur et votre mot de passe ici pour vous connecter au site.</target>
              </trans-unit>
              <trans-unit id="ll_logout_header">
                 <source>You have logged out.</source>
+                <target state="translated">Vous vous êtes déconnecté.</target>
              </trans-unit>
-			<trans-unit id="ll_logout_message">
-				<source>You just logged out from your user session on this website. You can login again or as another user by the form below.</source>
-			</trans-unit>
-			<trans-unit id="ll_error_header">
-				<source>Login failure</source>
-			</trans-unit>
-			<trans-unit id="ll_error_message" xml:space="preserve">
-				<source>An error occurred during login. Most likely you didn't enter the username or password correctly.
-Be certain that you enter them precisely as they are, including upper/lower case.
-Another possibility is that cookies might be disabled in your web browser.</source>
-			</trans-unit>
-			<trans-unit id="ll_success_header">
-				<source>Login successful</source>
-			</trans-unit>
-			<trans-unit id="ll_success_message">
-				<source>You are now logged in as '###USER###'</source>
-			</trans-unit>
-			<trans-unit id="ll_status_header">
-				<source>Current status</source>
-			</trans-unit>
-			<trans-unit id="ll_status_message">
-				<source>This is your current status</source>
-			</trans-unit>
-			<trans-unit id="cookie_warning">
-				<source>Warning: There is a possibility that cookies are not enabled in your web browser! If your login disappears on your next click that is the case and you should enable cookies (or accept cookies from this website) immediately!</source>
-			</trans-unit>
-			<trans-unit id="username">
-				<source>Username</source>
-			</trans-unit>
-			<trans-unit id="password">
-				<source>Password</source>
-			</trans-unit>
-			<trans-unit id="login">
-				<source>Login</source>
-			</trans-unit>
-			<trans-unit id="permalogin">
-				<source>Stay logged in</source>
-			</trans-unit>
-			<trans-unit id="logout">
-				<source>Logout</source>
-			</trans-unit>
-			<trans-unit id="send_password">
-				<source>Send password</source>
-			</trans-unit>
-			<trans-unit id="reset_password">
-				<source>Reset Password</source>
-			</trans-unit>
-			<trans-unit id="ll_change_password_header">
-				<source>Change your password</source>
-			</trans-unit>
-			<trans-unit id="ll_change_password_message">
-				<source>Please enter your new password twice. Password needs a minimum length of %s chars.</source>
-			</trans-unit>
-			<trans-unit id="ll_change_password_nolinkprefix_message">
-				<source>Error: there is no prefix for the link. Please set one of the following in your typoscript template: plugin.tx_felogin_pi1.feloginBaseURL = http://yourdomain/, config.baseURL = http://yourdomain/, config.absRefPrefix = /</source>
-			</trans-unit>
-			<trans-unit id="ll_change_password_notvalid_message">
-				<source>The link you clicked is not valid. Please repeat the forgot password procedure.</source>
-			</trans-unit>
-			<trans-unit id="ll_change_password_notequal_message">
-				<source>The passwords are not equal, please enter your new password twice. Password needs a minimum length of %s chars.</source>
-			</trans-unit>
-			<trans-unit id="ll_change_password_tooshort_message">
-				<source>The password length is too short. Please enter your new password twice. Password needs a minimum length of %s chars.</source>
-			</trans-unit>
-			<trans-unit id="ll_change_password_done_message">
-				<source>Your password has been saved. You can now login with your new password.</source>
-			</trans-unit>
-			<trans-unit id="change_password">
-				<source>Change your password</source>
-			</trans-unit>
-			<trans-unit id="newpassword_label1">
-				<source>Enter new password</source>
-			</trans-unit>
-			<trans-unit id="newpassword_label2">
-				<source>Repeat new password</source>
-			</trans-unit>
-			<trans-unit id="your_email">
-				<source>Your email</source>
-			</trans-unit>
-			<trans-unit id="ll_forgot_header">
-				<source>Forgot your password?</source>
-			</trans-unit>
-			<trans-unit id="ll_forgot_email_password" xml:space="preserve">
-				<source>Your password
-Hi %s
+             <trans-unit id="ll_logout_message">
+                <source>You just logged out from your user session on this website. You can login again or as another user by the form below.</source>
+                <target state="translated">Vous venez de vous déconnecter de votre session utilisateur sur ce site. Vous pouvez vous reconnecter ou vous connecter en tant qu'autre utilisateur en utilisant le formulaire ci-dessous.</target>
+             </trans-unit>
+             <trans-unit id="ll_error_header">
+                <source>Login failure</source>
+                <target state="translated">Échec de la connexion</target>
+             </trans-unit>
+             <trans-unit id="ll_error_message" xml:space="preserve">
+                <source>An error occurred during login. Most likely you didn't enter the username or password correctly. Be certain that you enter them precisely as they are, including upper/lower case. Another possibility is that cookies might be disabled in your web browser.</source>
+                <target state="translated">Une erreur s'est produite lors de la connexion. Vous n'avez probablement pas saisi correctement votre nom d'utilisateur et/ou votre mot de passe. Assurez-vous de les entrer exactement comme ils sont, y compris en majuscules et minuscules. Une autre possibilité est que les cookies soient désactivés dans le navigateur Web.</target>
+             </trans-unit>
+             <trans-unit id="ll_success_header">
+                <source>Login successful</source>
+                <target state="translated">Connexion réussie</target>
+             </trans-unit>
+             <trans-unit id="ll_success_message">
+                <source>You are now logged in as '###USER###'</source>
+                <target state="translated">Vous êtes maintenant connecté en tant que '###USER###'.</target>
+             </trans-unit>
+             <trans-unit id="ll_status_header">
+                <source>Current status</source>
+                <target state="translated">Statut actuel</target>
+             </trans-unit>
+             <trans-unit id="ll_status_message">
+                <source>This is your current status</source>
+                <target state="translated">Voici votre statut actuel.</target>
+             </trans-unit>
+             <trans-unit id="cookie_warning">
+                <source>Warning: There is a possibility that cookies are not enabled in your web browser! If your login disappears on your next click that is the case and you should enable cookies (or accept cookies from this website) immediately!</source>
+                <target state="translated">Attention: Il est possible que les cookies ne soient pas activés dans le navigateur web! Si votre login disparaît la prochaine fois que vous cliquez, c'est le cas et vous devez activer les cookies (ou accepter les cookies de ce site)!</target>
+             </trans-unit>
+             <trans-unit id="username">
+                <source>User name</source>
+                <target state="translated">Nom d'utilisateur</target>
+             </trans-unit>
+             <trans-unit id="password">
+                <source>Password</source>
+                <target state="translated">Mot de passe</target>
+             </trans-unit>
+             <trans-unit id="login">
+                <source>Login</source>
+                <target state="translated">Connectez-vous</target>
+             </trans-unit>
+             <trans-unit id="permalogin">
+                <source>Stay logged in</source>
+                <target state="translated">Rester connecté</target>
+             </trans-unit>
+             <trans-unit id="logout">
+                <source>Logout</source>
+                <target state="translated">Déconnectez-vous</target>
+             </trans-unit>
+             <trans-unit id="send_password">
+                <source>Send password</source>
+                <target state="translated">Envoyer le mot de passe</target>
+             </trans-unit>
+             <trans-unit id="reset_password">
+                <source>Reset Password</source>
+                <target state="translated">Réinitialiser le mot de passe</target>
+             </trans-unit>
+             <trans-unit id="ll_change_password_header">
+                <source>Change your password</source>
+                <target state="translated">Modifier le mot de passe</target>
+             </trans-unit>
+             <trans-unit id="ll_change_password_message">
+                <source>Please enter your new password twice. Password needs a minimum length of %s chars.</source>
+                <target state="translated">Veuillez saisir deux fois votre nouveau mot de passe. Le mot de passe a besoin d'une longueur minimale de caractères %s.</target>
+             </trans-unit>
+             <trans-unit id="ll_change_password_nolinkprefix_message">
+                <source>Error: there is no prefix for the link. Please set one of the following in your typoscript template: plugin.tx_felogin_pi1.feloginBaseURL = http://yourdomain/, config.baseURL = http://yourdomain/, config.absRefPrefix = /</source>
+                <target state="translated">Erreur: Il n'y a pas de préfixe pour le lien. Veuillez définir l'une des options suivantes dans votre modèle Typoscript: plugin.tx_felogin_pi1.feloginBaseURL = http://yourdomain/, config.baseURL = http://yourdomain/, config.absRefPrefix = /</target>
+             </trans-unit>
+             <trans-unit id="ll_change_password_notvalid_message">
+                <source>The link you clicked is not valid. Please repeat the forgot password procedure.</source>
+                <target state="translated">Le lien cliqué n'est pas valide. Veuillez répéter le processus d'oubli du mot de passe.</target>
+             </trans-unit>
+             <trans-unit id="ll_change_password_notequal_message">
+                <source>The passwords are not equal, please enter your new password twice. Password needs a minimum length of %s chars.</source>
+                <target state="translated">Les mots de passe ne sont pas les mêmes, veuillez entrer votre nouveau mot de passe deux fois. Le mot de passe requiert une longueur minimale de caractères %s.</target>
+             </trans-unit>
+             <trans-unit id="ll_change_password_tooshort_message">
+                <source>The password length is too short. Please enter your new password twice. Password needs a minimum length of %s chars.</source>
+                <target state="translated">La longueur du mot de passe est trop courte. Veuillez saisir deux fois votre nouveau mot de passe. Le mot de passe requiert une longueur minimale de caractères %s.</target>
+             </trans-unit>
+             <trans-unit id="ll_change_password_done_message">
+                <source>Your password has been saved. You can now login with your new password.</source>
+                <target state="translated">Votre mot de passe a été enregistré. Vous pouvez maintenant vous connecter avec votre nouveau mot de passe.</target>
+             </trans-unit>
+             <trans-unit id="change_password">
+                <source>Change your password</source>
+                <target state="translated">Changer le mot de passe</target>
+             </trans-unit>
+             <trans-unit id="newpassword_label1">
+                <source>Enter new password</source>
+                <target state="translated">Entrer un nouveau mot de passe</target>
+             </trans-unit>
+             <trans-unit id="newpassword_label2">
+                <source>Repeat new password</source>
+                <target state="translated">Répéter le nouveau mot de passe</target>
+             </trans-unit>
+             <trans-unit id="your_email">
+                <source>Your email</source>
+                <target state="translated">Votre E-Mail</target>
+             </trans-unit>
+             <trans-unit id="ll_forgot_header">
+                <source>Forgot your password?</source>
+                <target state="translated">Oublié votre mot de passe?</target>
+             </trans-unit>
+                <source>Your password
+                        Hi %s
 
-Your username is "%s"
-Your password is "%s"</source>
-			</trans-unit>
-			<trans-unit id="ll_forgot_email_nopassword" xml:space="preserve">
-				<source>Your password
-Hi %s
+                        Your username is "%s"
+                        Your password is "%s"</source>
+                <target state="translated">Dein Passwort
+                                           Allô %s
 
-We couldn't find a username for this email address and so cannot send the password to you. Probably you misspelled the email address (upper/lower case makes a difference) or maybe you even didn't register yet?</source>
-			</trans-unit>
-			<trans-unit id="ll_forgot_validate_reset_password" xml:space="preserve">
-				<source>Your new password
-Dear %s,
+                                           Votre nom d'utilisateur est "%s"
+                                           Votre mot de passe est "%s"</target>
+             </trans-unit>
+             <trans-unit id="ll_forgot_email_nopassword" xml:space="preserve">
+                <source>Your password
+                        Hi %s
 
-This email was sent in response to your request to reset your password. Please click on the link below.
-%s
+                        We couldn't find a username for this email address and so cannot send the password to you. Probably you misspelled the email address (upper/lower case makes a difference) or maybe you even didn't register yet.</source>
+                <target state="translated">Dein Passwort
+                                           Allô %s
 
-For security reasons, this link is only active until %s. If you do not visit the link before then, you will need to repeat the password reset steps.</source>
-			</trans-unit>
-			<trans-unit id="ll_forgot_message">
-				<source>Please enter the email address by which you registered your user account. Then press "Send password" and your password will immediately be emailed to you. Make sure to spell your email address correctly.</source>
-			</trans-unit>
-			<trans-unit id="ll_forgot_message_emailSent">
-				<source>Your password has now been sent to the email address %s</source>
-			</trans-unit>
-			<trans-unit id="ll_forgot_reset_message">
-				<source>Please enter your username or email address. Instructions for resetting the password will be immediately emailed to you.</source>
-			</trans-unit>
-			<trans-unit id="ll_forgot_reset_message_emailSent">
-				<source>An email has been sent to the address stored in your account and contains a link to reset your password. If you do not receive an email, your account or email address was not found.</source>
-			</trans-unit>
-			<trans-unit id="ll_forgot_reset_message_error">
-				<source>Your account or email address does not exist.</source>
-			</trans-unit>
-			<trans-unit id="ll_forgot_header_backToLogin">
-				<source>Return to login form</source>
-			</trans-unit>
-			<trans-unit id="ll_enter_your_data">
-				<source>Username or email address</source>
-			</trans-unit>
+                                           Nous n'avons pas trouvé de nom d'utilisateur pour cette adresse e-mail et ne pouvons donc pas vous envoyer le mot de passe. Vous avez probablement mal orthographié l'adresse e-mail (la sensibilité à la casse fait une différence) ou peut-être n'êtes-vous pas encore inscrit.</target>
+            </trans-unit>
+            <trans-unit id="ll_forgot_validate_reset_password" xml:space="preserve">
+                <source>Your new password
+                        Dear %s,
+
+                        This email was sent in response to your request to reset your password. Please click on the link below.
+                        %s
+
+                        For security reasons, this link is only active until %s. If you do not visit the link before then, you will need to repeat the password reset steps.</source>
+                <target state="translated">Dein neues Passwort
+                                           Chère %s,
+
+                                           Cet e-mail a été envoyé en réponse à une demande de réinitialisation du mot de passe. Veuillez cliquer sur le lien ci-dessous.
+                                           %s
+
+                                           Pour des raisons de sécurité, ce lien est actif jusqu'à %s. Si vous n'activez pas le lien avant, les étapes de réinitialisation du mot de passe doivent être répétées.</target>
+            </trans-unit>
+            <trans-unit id="ll_forgot_message">
+                <source>Please enter the email address by which you registered your user account. Then press "Send password" and your password will immediately be emailed to you. Make sure to spell your email address correctly.</source>
+                <target state="translated">Veuillez entrer l'adresse e-mail avec laquelle vous vous êtes enregistré ici, et un lien vers l'administration vous sera envoyé sur votre compte.  sur "Envoyer mot de passe" et votre mot de passe vous sera envoyé immédiatement par e-mail. Assurez-vous d'orthographier correctement l'adresse e-mail.</target>
+            </trans-unit>
+            <trans-unit id="ll_forgot_message_emailSent">
+                <source>Your password has now been sent to the email address %s</source>
+                <target state="translated">Votre mot de passe a été envoyé à l'adresse e-mail %s.</target>
+            </trans-unit>
+            <trans-unit id="ll_forgot_reset_message">
+                <source>Please enter your username or email address. Instructions for resetting the password will be immediately emailed to you.</source>
+                <target state="translated">Veuillez entrer votre nom d'utilisateur ou votre adresse e-mail. Les instructions pour réinitialiser le mot de passe vous seront envoyées immédiatement par e-mail.</target>
+            </trans-unit>
+            <trans-unit id="ll_forgot_reset_message_emailSent">
+                <source>An email has been sent to the address stored in your account and contains a link to reset your password. If you do not receive an email, your account or email address was not found.</source>
+                <target state="translated">Un courriel a été envoyé à l'adresse enregistrée dans votre compte et contient un lien pour réinitialiser votre mot de passe. Si vous n'avez pas reçu d'e-mail, votre compte ou votre adresse e-mail n'a pas été trouvé.</target>
+            </trans-unit>
+            <trans-unit id="ll_forgot_reset_message_error">
+                <source>Your account or email address does not exist.</source>
+                <target state="translated">Votre compte ou votre adresse e-mail n'existe pas.</target>
+            </trans-unit>
+            <trans-unit id="ll_forgot_header_backToLogin">
+                <source>Return to login form</source>
+                <target state="translated">Retour au formulaire de connexion</target>
+            </trans-unit>
+            <trans-unit id="ll_enter_your_data">
+                <source>Username or email address</source>
+                <target state="translated">Nom d'utilisateur ou adresse e-mail</target>
+            </trans-unit>
 
         </body>
     </file>

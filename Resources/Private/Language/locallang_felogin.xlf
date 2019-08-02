@@ -133,7 +133,7 @@ Your password is "%s"</source>
 				<source>Your password
 Hi %s
 
-We couldn't find a username for this email address and so cannot send the password to you. Probably you misspelled the email address (upper/lower case makes a difference) or maybe you even didn't register yet?</source>
+We couldn't find a username for this email address and so cannot send the password to you. Probably you misspelled the email address (upper/lower case makes a difference) or maybe you even didn't register yet.</source>
 			</trans-unit>
 			<trans-unit id="ll_forgot_validate_reset_password" xml:space="preserve">
 				<source>Your new password
