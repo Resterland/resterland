@@ -150,6 +150,7 @@
                 <source>Forgot your password?</source>
                 <target state="translated">Oublié votre mot de passe?</target>
              </trans-unit>
+             <trans-unit id="ll_forgot_email_password" xml:space="preserve">
                 <source>Your password
                         Hi %s
 

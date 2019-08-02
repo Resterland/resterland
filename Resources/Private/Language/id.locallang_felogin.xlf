@@ -122,7 +122,7 @@ Another possibility is that cookies might be disabled in your web browser.</sour
 			<trans-unit id="ll_forgot_header">
 				<source>Forgot your password?</source>
 			</trans-unit>
-			<trans-unit id="ll_forgot_email_password" xml:space="preserve">
+             <trans-unit id="ll_forgot_email_password" xml:space="preserve">
 				<source>Your password
 Hi %s
 
