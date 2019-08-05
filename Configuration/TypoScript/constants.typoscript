@@ -25,8 +25,8 @@
 page {
     logo {
         # cat=Resterland Settings: basic/110/100; type=string; label=LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.logo.file
-        file = EXT:resterland/Resources/Public/Images/Logos/Resterland/ResterlandLogo.svg
-        fileInverted = EXT:resterland/Resources/Public/Images/Logos/Resterland/ResterlandLogo.svg
+        file = Default/Logo.svg
+        fileInverted = Default/LogoInverted.svg
         # cat=Resterland Settings: basic/110/110; type=int+; label=LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.logo.height
         height = 52
         # cat=Resterland Settings: basic/110/120; type=int+; label=LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.logo.width
@@ -40,7 +40,7 @@ page {
     preloader {
         enable = 1
         logo {
-            file = EXT:resterland/Resources/Public/Images/Logos/ResterlandLogo.svg
+            file = EXT:resterland/Resources/Public/Images/Logos/Default/Logo.svg
             height = 52
             width = 180
         }
@@ -48,7 +48,7 @@ page {
         fadeDuration = 0.25
     }
     favicon {
-        # cat=Resterland Settings: layout/111/100; type=options[Default=Default, Resterland=Resterland, Bali Entdecken=Balientdecken, Roesten=Roesten], VPT MOB=Vptmob]; label=LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.favicon.switch
+        # cat=Resterland Settings: layout/111/100; type=options[Default=Default, Resterland=Resterland, Bali Entdecken=Balientdecken, Flores Entdecken=Floresentdecken, Pancasila=Indonesienentdecken, Roesten=Roesten], VPT MOB=Vptmob]; label=LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.favicon.switch
         switch = Default
     }
 
