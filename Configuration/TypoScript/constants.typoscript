@@ -48,7 +48,7 @@ page {
         fadeDuration = 0.25
     }
     favicon {
-        # cat=Resterland Settings: layout/111/100; type=options[Default=Default, Resterland=Resterland, Bali Entdecken=Balientdecken, Flores Entdecken=Floresentdecken, Pancasila=Indonesienentdecken, Roesten=Roesten], VPT MOB=Vptmob]; label=LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.favicon.switch
+      # cat=Resterland Settings: layout/111/100; type=options[Default=Default, Resterland=Resterland, Bali Entdecken=Balientdecken, Flores Entdecken=Floresentdecken, Pancasila=Indonesienentdecken, Roesten=Roesten, VPT MOB=Vptmob]; label=LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.favicon.switch
         switch = Default
     }
 
