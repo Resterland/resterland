@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-  "content-hash": "45141858eb8a2959805d1d5b366390b5",
+  "content-hash": "fe2e665f0ab7f160bfd49e3cce1ba319",
     "packages": [
         {
             "name": "algo26-matthias/idna-convert",
@@ -602,6 +602,73 @@
           "time": "2019-07-30T19:33:28+00:00"
         },
         {
+          "name": "georgringer/news",
+          "version": "7.3.1",
+          "source": {
+            "type": "git",
+            "url": "https://github.com/georgringer/news.git",
+            "reference": "e1e034399468af4f58fe627d73085bcb1dc9df95"
+          },
+          "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/georgringer/news/zipball/e1e034399468af4f58fe627d73085bcb1dc9df95",
+            "reference": "e1e034399468af4f58fe627d73085bcb1dc9df95",
+            "shasum": ""
+          },
+          "require": {
+            "typo3/cms-core": "^8.7.13|| ^9.5.0"
+          },
+          "conflict": {
+            "symfony/finder": "2.7.44 || 2.8.37 || 3.4.7 || 4.0.7"
+          },
+          "replace": {
+            "news": "self.version",
+            "typo3-ter/news": "self.version"
+          },
+          "require-dev": {
+            "friendsofphp/php-cs-fixer": "^2.0",
+            "nimut/testing-framework": "^1.0 || ^2.0 || ^3.0 || ^4.0"
+          },
+          "suggest": {
+            "reelworx/rx-shariff": "~11.0"
+          },
+          "type": "typo3-cms-extension",
+          "extra": {
+            "branch-alias": {
+              "dev-master": "6.x-dev"
+            },
+            "typo3/cms": {
+              "cms-package-dir": "{$vendor-dir}/typo3/cms",
+              "web-dir": ".Build/Web"
+            }
+          },
+          "autoload": {
+            "psr-4": {
+              "GeorgRinger\\News\\": "Classes"
+            }
+          },
+          "notification-url": "https://packagist.org/downloads/",
+          "license": [
+            "GPL-2.0-or-later"
+          ],
+          "authors": [
+            {
+              "name": "Georg Ringer",
+              "homepage": "http://montagmorgen.at",
+              "role": "Developer"
+            }
+          ],
+          "description": "Versatile news extension, based on extbase & fluid for TYPO3 CMS",
+          "homepage": "http://montagmorgen.at",
+          "keywords": [
+            "article",
+            "extension",
+            "news",
+            "typo3"
+          ],
+          "time": "2019-08-29T17:11:09+00:00"
+        },
+      {
             "name": "guzzlehttp/guzzle",
             "version": "6.3.3",
             "source": {
@@ -2328,6 +2395,8 @@
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
           "time": "2019-08-20T14:27:59+00:00"
+          <<<<<<<
+          HEAD
         },
         {
           "name": "t3g/blog",
@@ -2399,6 +2468,9 @@
           "description": "This blog extension uses TYPO3s core concepts and elements to provide a full-blown blog that users of TYPO3 can instantly understand and use.",
           "homepage": "https://extensions.typo3.org/extension/blog/",
           "time": "2019-07-03T15:23:28+00:00"
+          =======
+          >>>>>>>
+          develop
         },
       {
             "name": "typo3/class-alias-loader",
@@ -3300,16 +3372,16 @@
         },
         {
             "name": "typo3fluid/fluid",
-            "version": "2.6.1",
+          "version": "2.6.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/Fluid.git",
-                "reference": "9ef6a8ffff2e812025fc0701b4ce72eea6911a3d"
+              "reference": "7e80658487eed78a7b67ac79e534ef76400a7d87"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/Fluid/zipball/9ef6a8ffff2e812025fc0701b4ce72eea6911a3d",
-                "reference": "9ef6a8ffff2e812025fc0701b4ce72eea6911a3d",
+              "url": "https://api.github.com/repos/TYPO3/Fluid/zipball/7e80658487eed78a7b67ac79e534ef76400a7d87",
+              "reference": "7e80658487eed78a7b67ac79e534ef76400a7d87",
                 "shasum": ""
             },
             "require": {
@@ -3318,7 +3390,7 @@
             "require-dev": {
                 "mikey179/vfsstream": "^1.6",
                 "php-coveralls/php-coveralls": "^2.1",
-                "phpunit/phpunit": "^4.8",
+              "phpunit/phpunit": "^8.1",
                 "squizlabs/php_codesniffer": "^2.7"
             },
             "bin": [
@@ -3335,7 +3407,7 @@
                 "LGPL-3.0-or-later"
             ],
             "description": "The TYPO3 Fluid template rendering engine",
-            "time": "2019-05-07T07:07:18+00:00"
+          "time": "2019-09-12T11:36:15+00:00"
         }
     ],
     "packages-dev": [
@@ -3828,35 +3900,33 @@
         },
         {
             "name": "phpdocumentor/reflection-common",
-            "version": "1.0.1",
+          "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionCommon.git",
-                "reference": "21bdeb5f65d7ebf9f43b1b25d404f87deab5bfb6"
+              "reference": "63a995caa1ca9e5590304cd845c15ad6d482a62a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionCommon/zipball/21bdeb5f65d7ebf9f43b1b25d404f87deab5bfb6",
-                "reference": "21bdeb5f65d7ebf9f43b1b25d404f87deab5bfb6",
+              "url": "https://api.github.com/repos/phpDocumentor/ReflectionCommon/zipball/63a995caa1ca9e5590304cd845c15ad6d482a62a",
+              "reference": "63a995caa1ca9e5590304cd845c15ad6d482a62a",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5"
+              "php": ">=7.1"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.6"
+              "phpunit/phpunit": "~6"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                  "dev-master": "2.x-dev"
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "phpDocumentor\\Reflection\\": [
-                        "src"
-                    ]
+                  "phpDocumentor\\Reflection\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -3878,30 +3948,30 @@
                 "reflection",
                 "static analysis"
             ],
-            "time": "2017-09-11T18:02:19+00:00"
+          "time": "2018-08-07T13:53:10+00:00"
         },
         {
             "name": "phpdocumentor/reflection-docblock",
-            "version": "4.3.1",
+          "version": "4.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-                "reference": "bdd9f737ebc2a01c06ea7ff4308ec6697db9b53c"
+              "reference": "b83ff7cfcfee7827e1e78b637a5904fe6a96698e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/bdd9f737ebc2a01c06ea7ff4308ec6697db9b53c",
-                "reference": "bdd9f737ebc2a01c06ea7ff4308ec6697db9b53c",
+              "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/b83ff7cfcfee7827e1e78b637a5904fe6a96698e",
+              "reference": "b83ff7cfcfee7827e1e78b637a5904fe6a96698e",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.0",
-                "phpdocumentor/reflection-common": "^1.0.0",
-                "phpdocumentor/type-resolver": "^0.4.0",
+              "phpdocumentor/reflection-common": "^1.0.0 || ^2.0.0",
+              "phpdocumentor/type-resolver": "~0.4 || ^1.0.0",
                 "webmozart/assert": "^1.0"
             },
             "require-dev": {
-                "doctrine/instantiator": "~1.0.5",
+              "doctrine/instantiator": "^1.0.5",
                 "mockery/mockery": "^1.0",
                 "phpunit/phpunit": "^6.4"
             },
@@ -3929,41 +3999,40 @@
                 }
             ],
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
-            "time": "2019-04-30T17:48:53+00:00"
+          "time": "2019-09-12T14:27:41+00:00"
         },
         {
             "name": "phpdocumentor/type-resolver",
-            "version": "0.4.0",
+          "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/TypeResolver.git",
-                "reference": "9c977708995954784726e25d0cd1dddf4e65b0f7"
+              "reference": "2e32a6d48972b2c1976ed5d8967145b6cec4a4a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/9c977708995954784726e25d0cd1dddf4e65b0f7",
-                "reference": "9c977708995954784726e25d0cd1dddf4e65b0f7",
+              "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/2e32a6d48972b2c1976ed5d8967145b6cec4a4a9",
+              "reference": "2e32a6d48972b2c1976ed5d8967145b6cec4a4a9",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.5 || ^7.0",
-                "phpdocumentor/reflection-common": "^1.0"
+              "php": "^7.1",
+              "phpdocumentor/reflection-common": "^2.0"
             },
             "require-dev": {
-                "mockery/mockery": "^0.9.4",
-                "phpunit/phpunit": "^5.2||^4.8.24"
+              "ext-tokenizer": "^7.1",
+              "mockery/mockery": "~1",
+              "phpunit/phpunit": "^7.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                  "dev-master": "1.x-dev"
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "phpDocumentor\\Reflection\\": [
-                        "src/"
-                    ]
+                  "phpDocumentor\\Reflection\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -3976,7 +4045,8 @@
                     "email": "me@mikevanriel.com"
                 }
             ],
-            "time": "2017-07-14T14:27:02+00:00"
+          "description": "A PSR-5 based resolver of Class names, Types and Structural Element Names",
+          "time": "2019-08-22T18:11:29+00:00"
         },
         {
             "name": "phpspec/prophecy",
