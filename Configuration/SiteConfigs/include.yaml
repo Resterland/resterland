@@ -1,6 +1,6 @@
 routeEnhancers:
   PageTypeSuffix:
     type: PageType
-    default: .html
+    default: .coffee
     map:
       sitemap.xml: 1533906435
