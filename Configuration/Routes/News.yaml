@@ -1,0 +1,6 @@
+routeEnhancers:
+  News:
+    type: Extbase
+    extension: News
+    plugin: Pi1
+    # routes and aspects will follow here
