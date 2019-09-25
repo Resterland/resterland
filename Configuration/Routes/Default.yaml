@@ -1,4 +1,3 @@
-routeEnhancers:
   PageTypeSuffix:
     type: PageType
     default: .html
