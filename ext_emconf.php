@@ -12,6 +12,7 @@ $EM_CONF[$_EXTKEY] = [
             'typo3' => '8.7.0-9.5.99',
             'rte_ckeditor' => '8.7.0-9.5.99',
             'bootstrap_package' => '10.0.0-10.9.99',
+            'news' => '7.3.0-7.9.99',
         ],
         'conflicts' => [
         ],
@@ -22,7 +23,7 @@ $EM_CONF[$_EXTKEY] = [
         ],
     ],
     'state' => 'beta',
-    'version' => '2.2.0',
+    'version' => '2.3.0',
     'uploadfolder' => 0,
     'createDirs' => '',
     'clearCacheOnLoad' => 1,
