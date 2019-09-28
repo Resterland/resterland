@@ -1,3 +1,28 @@
 #######################################
 #### NEWS Settings for Resterland #####
 #######################################
+###
+# Integrating News by using TypoScript only
+###
+lib.news = USER
+lib.news {
+  userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+  extensionName = News
+  pluginName = Pi1
+  vendorName = GeorgRinger
+
+  switchableControllerActions {
+    News {
+      1 = list
+    }
+  }
+
+  settings < plugin.tx_news.settings
+  settings {
+    categories = 110
+    limit = 30
+    detailPid = 134
+    overrideFlexformSettingsIfEmpty := addToList(detailPid)
+    startingpoint = 110
+  }
+}
