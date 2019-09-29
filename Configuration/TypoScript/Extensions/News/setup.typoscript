@@ -19,7 +19,7 @@ plugin.tx_news {
           maxHeight = 50
         }
 
-        dummyImage = EXT:resterland/Resources/Public/Images/Logos/Resterland/RL_GarudaVishnu-245x184.png
+        dummyImage = EXT:resterland/Resources/Public/Images/Logos/Indonesienentdecken/Logo.svg
       }
     }
   }
