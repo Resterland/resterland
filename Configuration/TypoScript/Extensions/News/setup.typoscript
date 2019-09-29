@@ -15,8 +15,8 @@ plugin.tx_news {
       # media configuration
       media {
         image {
-          maxWidth = 50
-          maxHeight = 50
+          maxWidth = 75
+          maxHeight = 75
         }
 
         dummyImage = EXT:resterland/Resources/Public/Images/Logos/Resterland/RL_GarudaVishnu-245x184.png
