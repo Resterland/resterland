@@ -7,40 +7,19 @@ plugin.tx_news {
   # ====================================
   settings {
     displayDummyIfNoMedia = {$news.settings.displayDummyIfNoMedia}
-  }
 
-  # --------------
-  #  List
-  # --------------
-  list {
-    # media configuration
-    media {
-      image {
-        maxWidth = 100
-        maxHeight = 100
-      }
+    # --------------
+    #  List
+    # --------------
+    list {
+      # media configuration
+      media {
+        image {
+          maxWidth = 50
+          maxHeight = 50
+        }
 
-      dummyImage = typo3conf/ext/resterland/Resources/Public/Images/Logos/Resterland/ResterlandLogo.png
-    }
-
-    # Paginate configuration.
-    paginate {
-      itemsPerPage = 10
-      insertAbove = 1
-      insertBelow = 1
-      templatePath =
-      prevNextHeaderTags = 1
-      maximumNumberOfLinks = 3
-    }
-
-    rss {
-      channel {
-        title = {$plugin.tx_news.rss.channel.title}
-        description = {$plugin.tx_news.rss.channel.description}
-        language = {$plugin.tx_news.rss.channel.language}
-        copyright = {$plugin.tx_news.rss.channel.copyright}
-        generator = {$plugin.tx_news.rss.channel.generator}
-        link = {$plugin.tx_news.rss.channel.link}
+        dummyImage = EXT:resterland/Resources/Public/Images/Logos/Resterland/Logo.svg
       }
     }
   }
