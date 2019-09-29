@@ -8,6 +8,42 @@ plugin.tx_news {
   settings {
     displayDummyIfNoMedia = {$news.settings.displayDummyIfNoMedia}
   }
+
+  # --------------
+  #  List
+  # --------------
+  list {
+    # media configuration
+    media {
+      image {
+        maxWidth = 100
+        maxHeight = 100
+      }
+
+      dummyImage = EXT:resterland/Resources/Public/Logo.svg
+    }
+
+    # Paginate configuration.
+    paginate {
+      itemsPerPage = 10
+      insertAbove = 1
+      insertBelow = 1
+      templatePath =
+      prevNextHeaderTags = 1
+      maximumNumberOfLinks = 3
+    }
+
+    rss {
+      channel {
+        title = {$plugin.tx_news.rss.channel.title}
+        description = {$plugin.tx_news.rss.channel.description}
+        language = {$plugin.tx_news.rss.channel.language}
+        copyright = {$plugin.tx_news.rss.channel.copyright}
+        generator = {$plugin.tx_news.rss.channel.generator}
+        link = {$plugin.tx_news.rss.channel.link}
+      }
+    }
+  }
 }
 
 ###

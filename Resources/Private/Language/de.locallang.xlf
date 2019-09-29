@@ -47,9 +47,27 @@
             </trans-unit>
 
             <!-- Favicon File Path -->
-            <trans-unit id="constant_cats.favicon.file" xml:space="preserve">
-                <source>Favicon File Path</source>
-                <target>Pfad zum Favicon Ikon</target>
+            <trans-unit id="constant_cats.favicon.switch" xml:space="preserve">
+                <source>Favicon Switch: Choose your favorite icon</source>
+                <target>Favicon Auswahl: Wähle dein favoriten Icon</target>
+            </trans-unit>
+
+            <!-- Theme - Page Layout -->
+            <trans-unit id="constant_cats.theme" xml:space="preserve">
+                <source>Theme - Page Layout</source>
+                <target>Thema - Seitenlayout</target>
+            </trans-unit>
+
+            <!-- Theme Switch -->
+            <trans-unit id="constant_cats.theme.switch" xml:space="preserve">
+                <source>Theme Switch: Choose your favorite theme</source>
+                <target>Themenwahl: Wähle dein Lieblingsthema</target>
+            </trans-unit>
+
+            <!-- News Plugin Settings -->
+            <trans-unit id="constant_cats.news.settings.displayDummyIfNoMedia" xml:space="preserve">
+                <source>News List View: Display a dummy pic if there is no media available</source>
+                <target>News Listenansicht: Zeige ein Dummy-Bild, wenn keine Media-Datei verfügbar ist</target>
             </trans-unit>
 
             <!-- cookieconsent -->
