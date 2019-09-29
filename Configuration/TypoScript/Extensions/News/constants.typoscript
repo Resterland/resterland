@@ -1,0 +1,10 @@
+#######################################
+#### NEWS Settings for Resterland #####
+#######################################
+
+news {
+  #Displays a dummy image if the news have no media items
+  #-> Default is 1 - I don't like this
+  # cat=Resterland Settings: layout/160/110; type=boolean; label=LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.news.settings.displayDummyIfNoMedia
+  settings.displayDummyIfNoMedia = 0
+}

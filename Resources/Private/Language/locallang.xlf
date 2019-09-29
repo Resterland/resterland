@@ -58,6 +58,11 @@
                 <source>Theme Switch: Choose your favorite theme</source>
             </trans-unit>
 
+            <!-- News Plugin Settings -->
+            <trans-unit id="constant_cats.news.settings.displayDummyIfNoMedia" xml:space="preserve">
+                <source>News List View: Display a dummy pic if there is no media available</source>
+            </trans-unit>
+
             <!-- cookieconsent -->
             <trans-unit id="cookieconsent.common.header">
                 <source>Cookies used on the website!</source>
