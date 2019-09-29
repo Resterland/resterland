@@ -20,7 +20,7 @@ plugin.tx_news {
         maxHeight = 100
       }
 
-      dummyImage = EXT:resterland/Resources/Public/Images/Logos/Resterland/Logo.svg
+      dummyImage = typo3conf/ext/resterland/Resources/Public/Images/Logos/Resterland/Logo.svg
     }
 
     # Paginate configuration.
