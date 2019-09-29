@@ -20,7 +20,7 @@ plugin.tx_news {
         maxHeight = 100
       }
 
-      dummyImage = EXT:resterland/Resources/Public/Logo.svg
+      dummyImage = EXT:resterland/Resources/Public/Images/Logos/Resterland/Logo.svg
     }
 
     # Paginate configuration.
