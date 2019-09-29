@@ -19,7 +19,7 @@ plugin.tx_news {
           maxHeight = 50
         }
 
-        dummyImage = EXT:resterland/Resources/Public/Images/Logos/Resterland/ResterlandLogo.svg
+        dummyImage = EXT:resterland/Resources/Public/Images/Logos/Resterland/ResterlandLogo.png
       }
     }
   }
