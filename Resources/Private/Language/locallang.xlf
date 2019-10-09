@@ -58,6 +58,11 @@
                 <source>Theme Switch: Choose your favorite theme</source>
             </trans-unit>
 
+            <!-- Theme Copyright Text -->
+            <trans-unit id="theme.copyright.text" xml:space="preserve">
+                <source>Running with <a href="http://www.typo3.org" target="_blank">TYPO3</a> and <a href="https://www.bootstrap-package.com" target="_blank">Bootstrap Package</a><br>Tweaked by <a href="https://resterland.ch" target="_blank">ResterLand WebAtelier</a></source>
+            </trans-unit>
+
             <!-- News Plugin Settings -->
             <trans-unit id="constant_cats.news.settings.displayDummyIfNoMedia" xml:space="preserve">
                 <source>News List View: Display a dummy pic if there is no media available</source>

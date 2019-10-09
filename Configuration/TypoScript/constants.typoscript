@@ -57,7 +57,7 @@ page {
         switch = Theme
         copyright {
             enable = 1
-            text = Running with <a href="http://www.typo3.org" target="_blank">TYPO3</a> and <a href="https://www.bootstrap-package.com" target="_blank">Bootstrap Package</a><br>Tweaked by <a href="https://resterland.ch" target="_blank">ResterLand WebAtelier</a>
+            text = LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:theme.copyright.text
         }
     }
     fluidtemplate {
