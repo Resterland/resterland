@@ -64,6 +64,24 @@
                 <target>Themenwahl: Wähle dein Lieblingsthema</target>
             </trans-unit>
 
+            <!-- Theme Copyright runningWith -->
+            <trans-unit id="theme.copyright.runningWith" xml:space="preserve">
+                <source>Running with</source>
+                <target>Läuft mit</target>
+            </trans-unit>
+
+            <!-- Theme Copyright and -->
+            <trans-unit id="theme.copyright.and" xml:space="preserve">
+                <source>and</source>
+                <target>und</target>
+            </trans-unit>
+
+            <!-- Theme Copyright tweaked -->
+            <trans-unit id="theme.copyright.tweaked" xml:space="preserve">
+                <source>Tweaked by</source>
+                <target>angepasst von</target>
+            </trans-unit>
+
             <!-- News Plugin Settings -->
             <trans-unit id="constant_cats.news.settings.displayDummyIfNoMedia" xml:space="preserve">
                 <source>News List View: Display a dummy pic if there is no media available</source>
