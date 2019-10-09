@@ -79,7 +79,7 @@
             <!-- Theme Copyright tweaked -->
             <trans-unit id="theme.copyright.tweaked" xml:space="preserve">
                 <source>Tweaked by</source>
-                <target>angepasst von</target>
+                <target>optimiert von</target>
             </trans-unit>
 
             <!-- News Plugin Settings -->
