@@ -52,6 +52,24 @@
                 <target>Jalan ke Favicon Ikon</target>
             </trans-unit>
 
+            <!-- Theme Copyright runningWith -->
+            <trans-unit id="theme.copyright.runningWith" xml:space="preserve">
+                <source>Running with</source>
+                <target>Berlari dengan</target>
+            </trans-unit>
+
+            <!-- Theme Copyright and -->
+            <trans-unit id="theme.copyright.and" xml:space="preserve">
+                <source>and</source>
+                <target>dan</target>
+            </trans-unit>
+
+            <!-- Theme Copyright tweaked -->
+            <trans-unit id="theme.copyright.tweaked" xml:space="preserve">
+                <source>Tweaked by</source>
+                <target>Tweak oleh</target>
+            </trans-unit>
+
             <!-- cookieconsent -->
 			<trans-unit id="cookieconsent.common.header">
                 <source>Cookies used on the website!</source>

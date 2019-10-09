@@ -3,7 +3,6 @@
 		  product-name="resterland">
 		<header/>
 		<body>
-
             <!-- Logo Settings Header -->
             <trans-unit id="constant_cats.logo" xml:space="preserve">
                 <source>Logo</source>
@@ -50,6 +49,24 @@
             <trans-unit id="constant_cats.favicon.file" xml:space="preserve">
                 <source>Favicon File Path</source>
                 <target>Chemin vers le Favicon Ikon</target>
+            </trans-unit>
+
+            <!-- Theme Copyright runningWith -->
+            <trans-unit id="theme.copyright.runningWith" xml:space="preserve">
+                <source>Running with</source>
+                <target>Courir avec</target>
+            </trans-unit>
+
+            <!-- Theme Copyright and -->
+            <trans-unit id="theme.copyright.and" xml:space="preserve">
+                <source>and</source>
+                <target>et</target>
+            </trans-unit>
+
+            <!-- Theme Copyright tweaked -->
+            <trans-unit id="theme.copyright.tweaked" xml:space="preserve">
+                <source>Tweaked by</source>
+                <target>Mis au point par</target>
             </trans-unit>
 
             <!-- cookieconsent -->
