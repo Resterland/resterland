@@ -11,8 +11,8 @@ plugin.tx_seo {
             excludedTypes = 1,2
             additionalWhere =
             ## enable these two lines to generate a Google News sitemap
-            # template = EXT:news/Resources/Private/Templates/News/GoogleNews.xml
-            # googleNews = 1
+            template = EXT:news/Resources/Private/Templates/News/GoogleNews.xml
+            googleNews = 1
 
             sortField = datetime
             lastModifiedField = tstamp
