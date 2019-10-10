@@ -25,7 +25,7 @@ plugin.tx_seo {
                 tx_extension_pi1.action = detail
               }
 
-              useCacheHash = 1
+              useCacheHash = 0
             }
           }
         }
