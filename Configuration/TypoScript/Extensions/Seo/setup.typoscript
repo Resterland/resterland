@@ -6,23 +6,36 @@ plugin.tx_seo {
     xmlSitemap {
       sitemaps {
         news {
-          provider = TYPO3\CMS\Seo\XmlSitemap\RecordsXmlSitemapDataProvider
+          provider = GeorgRinger\News\Seo\NewsXmlSitemapDataProvider
           config {
-            table = tx_news_domain_model_news
-            sortField = sorting
-            lastModifiedField = tstamp
+            excludedTypes = 1,2
             additionalWhere =
+            ## enable these two lines to generate a Google News sitemap
+            # template = EXT:news/Resources/Private/Templates/News/GoogleNews.xml
+            # googleNews = 1
+
+            sortField = datetime
+            lastModifiedField = tstamp
             pid = 1
             recursive = 3
             url {
               pageId = 134
+              useCategorySinglePid = 0
+
+              hrDate = 0
+              hrDate {
+                day = j
+                month = n
+                year = Y
+              }
+
               fieldToParameterMap {
                 uid = tx_news_pi1[news]
               }
 
               additionalGetParameters {
-                tx_extension_pi1.controller = News
-                tx_extension_pi1.action = detail
+                tx_news_pi1.controller = News
+                tx_news_pi1.action = detail
               }
 
               useCacheHash = 1
