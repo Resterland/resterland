@@ -8,16 +8,16 @@ plugin.tx_seo {
         news {
           provider = TYPO3\CMS\Seo\XmlSitemap\RecordsXmlSitemapDataProvider
           config {
-            table = news_table
+            table = tx_news_domain_model_news
             sortField = sorting
             lastModifiedField = tstamp
-            additionalWhere =
+            additionalWhere = AND (no_index = 0 OR no_follow = 0)
             pid = 1
             recursive = 3
             url {
               pageId = 134
               fieldToParameterMap {
-                uid = tx_extension_pi1[news]
+                uid = tx_news_pi1[news]
               }
 
               additionalGetParameters {
