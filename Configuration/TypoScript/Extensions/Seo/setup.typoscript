@@ -12,10 +12,10 @@ plugin.tx_seo {
             sortField = sorting
             lastModifiedField = tstamp
             additionalWhere =
-            pid = 1
-            recursive = 3
+            pid = {$plugin.tx_news.settings.sitemap.startingpoint}
+            recursive = {$plugin.tx_news.settings.sitemap.recursive}
             url {
-              pageId = 134
+              pageId = {$plugin.tx_news.settings.sitemap.detailPid}
               fieldToParameterMap {
                 uid = tx_news_pi1[news]
               }
