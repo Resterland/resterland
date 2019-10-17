@@ -1,8 +1,6 @@
-<html data-namespace-typo3-fluid="true"
+<html data-namespace-typo3-fluid="true" xmlns:bk2k="http://typo3.org/ns/BK2K/BootstrapPackage/ViewHelpers"
       xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
-<f:comment>
-    <f:debug>{_all}</f:debug>
-</f:comment>
+
 <header
     class="bp-page-header navbar navbar-mainnavigation navbar-{theme.navigation.style}{f:if(condition:settings.logo.file,then:' navbar-has-image')}{f:if(condition:theme.navigation.type, else:' navbar-top', then:' navbar-{theme.navigation.type} navbar-fixed-{theme.navigation.type}')}"
     id="page-header">
@@ -24,17 +22,15 @@
             </f:else>
         </f:if>
         <f:if condition="{mainnavigation}">
-            <button aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler collapsed"
-                    data-target="#mainnavigation" data-toggle="collapse" type="button">
+            <button aria-expanded="false"
+                    aria-label="{f:translate(key: 'togglenavigation', extensionName: 'bootstrap_package')}"
+                    class="navbar-toggler collapsed" data-target="#mainnavigation" data-toggle="collapse" type="button">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <nav class="collapse navbar-collapse" id="mainnavigation">
                 <f:render arguments="{_all}" partial="DropIn/Navigation/MainBefore"/>
                 <f:render arguments="{menu: mainnavigation, theme: theme}" section="MainNavigation"/>
                 <f:render arguments="{_all}" partial="DropIn/Navigation/MainAfter"/>
-                <f:if condition="{theme.language.enable}">
-                    <f:render arguments="{_all}" partial="Navigation/LanguageNavi"/>
-                </f:if>
             </nav>
         </f:if>
     </div>
@@ -122,5 +118,4 @@
     </ul>
     </f:if>
 </f:section>
-
 </html>
