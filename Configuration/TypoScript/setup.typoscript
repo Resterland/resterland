@@ -323,7 +323,7 @@ config {
     debug = 0
     cache_period = 86400
     intTarget =
-    extTarget =
+    extTarget = _blank
     disablePrefixComment = 1
     index_enable = 1
     index_externals = 1
