@@ -4,7 +4,7 @@
     "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
     "This file is @generated automatically"
   ],
-  "content-hash": "ecdc7938411b50cf9c3254684d996473",
+  "content-hash": "0bf5625ffd2839840c565d406e6cdaf1",
   "packages": [
     {
       "name": "algo26-matthias/idna-convert",
@@ -25,16 +25,16 @@
         "php": ">=5.6.0"
       },
       "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Mso\\IdnaConvert\\": "src"
-                }
-            },
+      "extra": {
+        "branch-alias": {
+          "dev-master": "1.0.x-dev"
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "Mso\\IdnaConvert\\": "src"
+        }
+      },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "LGPL-2.1+"
@@ -124,8 +124,8 @@
             "description": "Bootstrap Package delivers a full configured frontend theme for TYPO3, based on the Bootstrap CSS Framework.",
             "homepage": "https://github.com/benjaminkott/bootstrap_package",
             "keywords": [
-                "TYPO3 CMS",
-                "bootstrap",
+              "TYPO3 CMS",
+              "bootstrap",
               "frontend",
               "introduction",
               "responsive",
@@ -189,16 +189,16 @@
       "dist": {
         "type": "zip",
         "url": "https://api.github.com/repos/cogpowered/FineDiff/zipball/339ddc8c3afb656efed4f2f0a80e5c3d026f8ea8",
-                "reference": "339ddc8c3afb656efed4f2f0a80e5c3d026f8ea8",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "require-dev": {
-                "mockery/mockery": "*",
-                "phpunit/phpunit": "*"
-            },
+        "reference": "339ddc8c3afb656efed4f2f0a80e5c3d026f8ea8",
+        "shasum": ""
+      },
+      "require": {
+        "php": ">=5.3.0"
+      },
+      "require-dev": {
+        "mockery/mockery": "*",
+        "phpunit/phpunit": "*"
+      },
             "type": "library",
             "autoload": {
                 "psr-0": {
@@ -627,16 +627,16 @@
                     "email": "guilhermeblanco@gmail.com"
                 },
                 {
-                    "name": "Roman Borschel",
-                    "email": "roman@code-factory.org"
+                  "name": "Roman Borschel",
+                  "email": "roman@code-factory.org"
                 },
-                {
-                    "name": "Johannes Schmitt",
-                    "email": "schmittjoh@gmail.com"
-                }
+              {
+                "name": "Johannes Schmitt",
+                "email": "schmittjoh@gmail.com"
+              }
             ],
-            "description": "PHP Doctrine Lexer parser library that can be used in Top-Down, Recursive Descent Parsers.",
-            "homepage": "https://www.doctrine-project.org/projects/lexer.html",
+          "description": "PHP Doctrine Lexer parser library that can be used in Top-Down, Recursive Descent Parsers.",
+          "homepage": "https://www.doctrine-project.org/projects/lexer.html",
           "keywords": [
             "annotations",
             "docblock",
@@ -717,16 +717,16 @@
       "dist": {
         "type": "zip",
         "url": "https://api.github.com/repos/georgringer/news/zipball/e1e034399468af4f58fe627d73085bcb1dc9df95",
-                "reference": "e1e034399468af4f58fe627d73085bcb1dc9df95",
-                "shasum": ""
-            },
-            "require": {
-                "typo3/cms-core": "^8.7.13|| ^9.5.0"
-            },
-            "conflict": {
-                "symfony/finder": "2.7.44 || 2.8.37 || 3.4.7 || 4.0.7"
-            },
-            "replace": {
+        "reference": "e1e034399468af4f58fe627d73085bcb1dc9df95",
+        "shasum": ""
+      },
+      "require": {
+        "typo3/cms-core": "^8.7.13|| ^9.5.0"
+      },
+      "conflict": {
+        "symfony/finder": "2.7.44 || 2.8.37 || 3.4.7 || 4.0.7"
+      },
+      "replace": {
                 "news": "self.version",
                 "typo3-ter/news": "self.version"
             },
@@ -1411,26 +1411,67 @@
                     "homepage": "http://www.php-fig.org/"
                 }
             ],
-            "description": "Common interface for logging libraries",
-            "homepage": "https://github.com/php-fig/log",
-            "keywords": [
-                "log",
-                "psr",
-                "psr-3"
-            ],
-            "time": "2016-10-10T12:19:37+00:00"
+          "description": "Common interface for logging libraries",
+          "homepage": "https://github.com/php-fig/log",
+          "keywords": [
+            "log",
+            "psr",
+            "psr-3"
+          ],
+          "time": "2016-10-10T12:19:37+00:00"
         },
+    {
+      "name": "quizpalme/camaliga",
+      "version": "v8.5.0",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/bihor/camaliga.git",
+        "reference": "5e4e73dcd728caca29d2d41e9dfc3f79689af3dc"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/bihor/camaliga/zipball/5e4e73dcd728caca29d2d41e9dfc3f79689af3dc",
+        "reference": "5e4e73dcd728caca29d2d41e9dfc3f79689af3dc",
+        "shasum": ""
+      },
+      "require": {
+        "typo3/cms-core": ">9.5.0"
+      },
+      "replace": {
+        "camaliga": "self.version",
+        "typo3-ter/camaliga": "self.version"
+      },
+      "type": "typo3-cms-extension",
+      "autoload": {
+        "psr-4": {
+          "Quizpalme\\Camaliga\\": "Classes"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "authors": [
         {
-            "name": "ralouphie/getallheaders",
-            "version": "3.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ralouphie/getallheaders.git",
-                "reference": "120b605dfeb996808c31b6477290a714d356e822"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ralouphie/getallheaders/zipball/120b605dfeb996808c31b6477290a714d356e822",
+          "name": "Kurt Gusbeth",
+          "role": "Developer"
+        }
+      ],
+      "description": "A carousel/gallery/map/list extension that can use the TYPO3 categories and different jQuery-plugins like Slick or Isotope. Bootstrap support. Indexer for ke_search.",
+      "homepage": "https://github.com/bihor/camaliga",
+      "keywords": [
+        "slider carousel maps gallery"
+      ],
+      "time": "2019-07-23T15:47:49+00:00"
+    },
+    {
+      "name": "ralouphie/getallheaders",
+      "version": "3.0.3",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/ralouphie/getallheaders.git",
+        "reference": "120b605dfeb996808c31b6477290a714d356e822"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/ralouphie/getallheaders/zipball/120b605dfeb996808c31b6477290a714d356e822",
                 "reference": "120b605dfeb996808c31b6477290a714d356e822",
                 "shasum": ""
             },
