@@ -4,7 +4,7 @@
     "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
     "This file is @generated automatically"
   ],
-  "content-hash": "fe2e665f0ab7f160bfd49e3cce1ba319",
+  "content-hash": "ecdc7938411b50cf9c3254684d996473",
   "packages": [
     {
       "name": "algo26-matthias/idna-convert",
@@ -15,16 +15,16 @@
         "reference": "a6dfb6f87611e3a89d2eec4924a0f51db755c573"
       },
       "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/algo26-matthias/idna-convert/zipball/a6dfb6f87611e3a89d2eec4924a0f51db755c573",
-                "reference": "a6dfb6f87611e3a89d2eec4924a0f51db755c573",
-                "shasum": ""
-            },
-            "require": {
-                "ext-pcre": "*",
-                "php": ">=5.6.0"
-            },
-            "type": "library",
+        "type": "zip",
+        "url": "https://api.github.com/repos/algo26-matthias/idna-convert/zipball/a6dfb6f87611e3a89d2eec4924a0f51db755c573",
+        "reference": "a6dfb6f87611e3a89d2eec4924a0f51db755c573",
+        "shasum": ""
+      },
+      "require": {
+        "ext-pcre": "*",
+        "php": ">=5.6.0"
+      },
+      "type": "library",
             "extra": {
                 "branch-alias": {
                     "dev-master": "1.0.x-dev"
@@ -126,26 +126,69 @@
             "keywords": [
                 "TYPO3 CMS",
                 "bootstrap",
-                "frontend",
-                "introduction",
-                "responsive",
-                "sitepackage",
-                "theme",
-                "web"
+              "frontend",
+              "introduction",
+              "responsive",
+              "sitepackage",
+              "theme",
+              "web"
             ],
-            "time": "2019-09-30T14:20:25+00:00"
+          "time": "2019-09-30T14:20:25+00:00"
         },
+    {
+      "name": "bo/slickcarousel",
+      "version": "3.0.2",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/misterboe/slickcarousel.git",
+        "reference": "2c8c4d812301b02f617fe17cd188ec3186b2a8a4"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/misterboe/slickcarousel/zipball/2c8c4d812301b02f617fe17cd188ec3186b2a8a4",
+        "reference": "2c8c4d812301b02f617fe17cd188ec3186b2a8a4",
+        "shasum": ""
+      },
+      "require": {
+        "fluidtypo3/vhs": "*",
+        "typo3/cms-core": "^9.5.0"
+      },
+      "type": "typo3-cms-extension",
+      "extra": {
+        "typo3/cms": {
+          "cms-package-dir": "{$vendor-dir}/typo3/cms",
+          "web-dir": ".Build/Web",
+          "Package": {
+            "partOfMinimalUsableSystem": true
+          }
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "Bo\\Slickcarousel\\": "Classes"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "authors": [
         {
-            "name": "cogpowered/finediff",
-            "version": "0.3.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/cogpowered/FineDiff.git",
-                "reference": "339ddc8c3afb656efed4f2f0a80e5c3d026f8ea8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/cogpowered/FineDiff/zipball/339ddc8c3afb656efed4f2f0a80e5c3d026f8ea8",
+          "name": "Boris Schauer",
+          "email": "me@bschauer.de"
+        }
+      ],
+      "description": "slick - the last carousel you'll ever need. For more informations please have a look at https://github.com/misterboe/slickcarousel. If you need more features please create an issue on github.",
+      "time": "2019-05-13T06:58:28+00:00"
+    },
+    {
+      "name": "cogpowered/finediff",
+      "version": "0.3.1",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/cogpowered/FineDiff.git",
+        "reference": "339ddc8c3afb656efed4f2f0a80e5c3d026f8ea8"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/cogpowered/FineDiff/zipball/339ddc8c3afb656efed4f2f0a80e5c3d026f8ea8",
                 "reference": "339ddc8c3afb656efed4f2f0a80e5c3d026f8ea8",
                 "shasum": ""
             },
@@ -594,26 +637,86 @@
             ],
             "description": "PHP Doctrine Lexer parser library that can be used in Top-Down, Recursive Descent Parsers.",
             "homepage": "https://www.doctrine-project.org/projects/lexer.html",
-            "keywords": [
-                "annotations",
-                "docblock",
-                "lexer",
-                "parser",
-                "php"
-            ],
-            "time": "2019-07-30T19:33:28+00:00"
+          "keywords": [
+            "annotations",
+            "docblock",
+            "lexer",
+            "parser",
+            "php"
+          ],
+          "time": "2019-07-30T19:33:28+00:00"
         },
-        {
-            "name": "georgringer/news",
-            "version": "7.3.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/georgringer/news.git",
-                "reference": "e1e034399468af4f58fe627d73085bcb1dc9df95"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/georgringer/news/zipball/e1e034399468af4f58fe627d73085bcb1dc9df95",
+    {
+      "name": "fluidtypo3/vhs",
+      "version": "5.2.0",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/FluidTYPO3/vhs.git",
+        "reference": "93bd3ba44406f69e297c4ea6193f0bfae4585e3d"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/FluidTYPO3/vhs/zipball/93bd3ba44406f69e297c4ea6193f0bfae4585e3d",
+        "reference": "93bd3ba44406f69e297c4ea6193f0bfae4585e3d",
+        "shasum": ""
+      },
+      "require": {
+        "php": ">=7.0.0",
+        "typo3/cms-backend": "^8.7 || ^9 || dev-master",
+        "typo3/cms-core": "^8.7 || ^9 || dev-master",
+        "typo3/cms-extbase": "^8.7 || ^9 || dev-master",
+        "typo3/cms-fluid": "^8.7 || ^9 || dev-master",
+        "typo3/cms-frontend": "^8.7 || ^9 || dev-master"
+      },
+      "replace": {
+        "typo3-ter/vhs": "self.version",
+        "vhs": "self.version"
+      },
+      "require-dev": {
+        "fluidtypo3/development": "^4.0"
+      },
+      "suggest": {
+        "ext-tidy": "Allows to make use of the tidy ViewHelper"
+      },
+      "type": "typo3-cms-extension",
+      "extra": {
+        "typo3/cms": {
+          "cms-package-dir": "{$vendor-dir}/typo3/cms",
+          "web-dir": "build/web"
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "FluidTYPO3\\Vhs\\": "Classes/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "GPL-2.0-or-later"
+      ],
+      "description": "The vhs package from FluidTYPO3",
+      "homepage": "https://fluidtypo3.org",
+      "keywords": [
+        "TYPO3 CMS",
+        "fedext",
+        "fluid",
+        "templating",
+        "utility",
+        "viewhelper"
+      ],
+      "time": "2019-04-01T12:17:09+00:00"
+    },
+    {
+      "name": "georgringer/news",
+      "version": "7.3.1",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/georgringer/news.git",
+        "reference": "e1e034399468af4f58fe627d73085bcb1dc9df95"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/georgringer/news/zipball/e1e034399468af4f58fe627d73085bcb1dc9df95",
                 "reference": "e1e034399468af4f58fe627d73085bcb1dc9df95",
                 "shasum": ""
             },
