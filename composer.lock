@@ -4,7 +4,7 @@
     "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
     "This file is @generated automatically"
   ],
-  "content-hash": "0bf5625ffd2839840c565d406e6cdaf1",
+  "content-hash": "6d7969fc3a1f4c967236a429515fd931",
   "packages": [
     {
       "name": "algo26-matthias/idna-convert",
@@ -35,16 +35,16 @@
           "Mso\\IdnaConvert\\": "src"
         }
       },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "LGPL-2.1+"
-            ],
-            "authors": [
-                {
-                    "name": "Matthias Sommerfeld",
-                    "email": "mso@phlylabs.de",
-                    "role": "Developer"
-                }
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "LGPL-2.1+"
+      ],
+      "authors": [
+        {
+          "name": "Matthias Sommerfeld",
+          "email": "mso@phlylabs.de",
+          "role": "Developer"
+        }
             ],
             "description": "A library for encoding and decoding internationalized domain names",
             "homepage": "http://idnaconv.net/",
@@ -199,16 +199,16 @@
         "mockery/mockery": "*",
         "phpunit/phpunit": "*"
       },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "cogpowered\\FineDiff": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
+      "type": "library",
+      "autoload": {
+        "psr-0": {
+          "cogpowered\\FineDiff": "src/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
             "authors": [
                 {
                     "name": "Rob Crowe",
@@ -622,14 +622,14 @@
                 "MIT"
             ],
             "authors": [
-                {
-                    "name": "Guilherme Blanco",
-                    "email": "guilhermeblanco@gmail.com"
-                },
-                {
-                  "name": "Roman Borschel",
-                  "email": "roman@code-factory.org"
-                },
+              {
+                "name": "Guilherme Blanco",
+                "email": "guilhermeblanco@gmail.com"
+              },
+              {
+                "name": "Roman Borschel",
+                "email": "roman@code-factory.org"
+              },
               {
                 "name": "Johannes Schmitt",
                 "email": "schmittjoh@gmail.com"
@@ -646,6 +646,67 @@
           ],
           "time": "2019-07-30T19:33:28+00:00"
         },
+    {
+      "name": "extcode/cart",
+      "version": "v6.5.1",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/extcode/cart.git",
+        "reference": "02043f1bf5801fa2313bfe61f1d989e14fc949c6"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/extcode/cart/zipball/02043f1bf5801fa2313bfe61f1d989e14fc949c6",
+        "reference": "02043f1bf5801fa2313bfe61f1d989e14fc949c6",
+        "shasum": ""
+      },
+      "require": {
+        "php": "^7.2 <7.4",
+        "typo3/cms-core": "^9.5",
+        "typo3/cms-form": "^9.5"
+      },
+      "replace": {
+        "cart": "self.version"
+      },
+      "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.0",
+        "helmich/typo3-typoscript-lint": "^1.4",
+        "nimut/testing-framework": "^4.0"
+      },
+      "type": "typo3-cms-extension",
+      "extra": {
+        "typo3/cms": {
+          "extension-key": "cart",
+          "cms-package-dir": "{$vendor-dir}/typo3/cms",
+          "app-dir": ".Build",
+          "web-dir": ".Build/public"
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "Extcode\\Cart\\": "Classes/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "GPL-2.0-or-later"
+      ],
+      "authors": [
+        {
+          "name": "Daniel Lorenz",
+          "email": "ext.cart@extco.de",
+          "role": "Developer"
+        }
+      ],
+      "description": "Shopping Cart(s) for TYPO3",
+      "homepage": "https://cart.extco.de",
+      "keywords": [
+        "TYPO3 CMS",
+        "cart",
+        "shopping cart"
+      ],
+      "time": "2019-08-10T15:36:29+00:00"
+    },
     {
       "name": "fluidtypo3/vhs",
       "version": "5.2.0",
@@ -727,16 +788,16 @@
         "symfony/finder": "2.7.44 || 2.8.37 || 3.4.7 || 4.0.7"
       },
       "replace": {
-                "news": "self.version",
-                "typo3-ter/news": "self.version"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.0",
-                "nimut/testing-framework": "^1.0 || ^2.0 || ^3.0 || ^4.0"
-            },
-            "suggest": {
-                "reelworx/rx-shariff": "~11.0"
-            },
+        "news": "self.version",
+        "typo3-ter/news": "self.version"
+      },
+      "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.0",
+        "nimut/testing-framework": "^1.0 || ^2.0 || ^3.0 || ^4.0"
+      },
+      "suggest": {
+        "reelworx/rx-shariff": "~11.0"
+      },
             "type": "typo3-cms-extension",
             "extra": {
                 "branch-alias": {
@@ -1401,16 +1462,16 @@
                     "Psr\\Log\\": "Psr/Log/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "PHP-FIG",
-                    "homepage": "http://www.php-fig.org/"
-                }
-            ],
+          "notification-url": "https://packagist.org/downloads/",
+          "license": [
+            "MIT"
+          ],
+          "authors": [
+            {
+              "name": "PHP-FIG",
+              "homepage": "http://www.php-fig.org/"
+            }
+          ],
           "description": "Common interface for logging libraries",
           "homepage": "https://github.com/php-fig/log",
           "keywords": [
@@ -1472,16 +1533,16 @@
       "dist": {
         "type": "zip",
         "url": "https://api.github.com/repos/ralouphie/getallheaders/zipball/120b605dfeb996808c31b6477290a714d356e822",
-                "reference": "120b605dfeb996808c31b6477290a714d356e822",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.6"
-            },
-            "require-dev": {
-                "php-coveralls/php-coveralls": "^2.1",
-                "phpunit/phpunit": "^5 || ^6.5"
-            },
+        "reference": "120b605dfeb996808c31b6477290a714d356e822",
+        "shasum": ""
+      },
+      "require": {
+        "php": ">=5.6"
+      },
+      "require-dev": {
+        "php-coveralls/php-coveralls": "^2.1",
+        "phpunit/phpunit": "^5 || ^6.5"
+      },
             "type": "library",
             "autoload": {
                 "files": [
@@ -3149,26 +3210,81 @@
             "license": [
                 "GPL-2.0-or-later"
             ],
-            "authors": [
-                {
-                    "name": "TYPO3 Core Team",
-                    "email": "typo3cms@typo3.org",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Fluid is a next-generation templating engine which makes the life of extension authors a lot easier!",
-            "homepage": "https://typo3.org",
-            "time": "2019-10-15T07:29:55+00:00"
+          "authors": [
+            {
+              "name": "TYPO3 Core Team",
+              "email": "typo3cms@typo3.org",
+              "role": "Developer"
+            }
+          ],
+          "description": "Fluid is a next-generation templating engine which makes the life of extension authors a lot easier!",
+          "homepage": "https://typo3.org",
+          "time": "2019-10-15T07:29:55+00:00"
         },
+    {
+      "name": "typo3/cms-form",
+      "version": "v9.5.10",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/TYPO3-CMS/form.git",
+        "reference": "60d72cd6e3e07c3d89cb9c1ea1f0a1f32f729112"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/TYPO3-CMS/form/zipball/60d72cd6e3e07c3d89cb9c1ea1f0a1f32f729112",
+        "reference": "60d72cd6e3e07c3d89cb9c1ea1f0a1f32f729112",
+        "shasum": ""
+      },
+      "require": {
+        "psr/http-message": "~1.0",
+        "symfony/expression-language": "^4.1",
+        "typo3/cms-core": "9.5.10"
+      },
+      "conflict": {
+        "typo3/cms": "*"
+      },
+      "suggest": {
+        "typo3/cms-filelist": "Add context menu item for form files",
+        "typo3/cms-impexp": "Register imported form files"
+      },
+      "type": "typo3-cms-framework",
+      "extra": {
+        "typo3/cms": {
+          "Package": {
+            "partOfFactoryDefault": true
+          },
+          "extension-key": "form"
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "TYPO3\\CMS\\Form\\": "Classes/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "GPL-2.0-or-later"
+      ],
+      "authors": [
         {
-            "name": "typo3/cms-frontend",
-            "version": "v9.5.10",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/TYPO3-CMS/frontend.git",
-                "reference": "833dc6077d9ecff68e8384fa51f188412e36604f"
-            },
-            "dist": {
+          "name": "TYPO3 Core Team",
+          "email": "typo3cms@typo3.org",
+          "role": "Developer"
+        }
+      ],
+      "description": "Form Library, Plugin and Editor",
+      "homepage": "https://typo3.org",
+      "time": "2019-10-15T07:29:55+00:00"
+    },
+    {
+      "name": "typo3/cms-frontend",
+      "version": "v9.5.10",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/TYPO3-CMS/frontend.git",
+        "reference": "833dc6077d9ecff68e8384fa51f188412e36604f"
+      },
+      "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/TYPO3-CMS/frontend/zipball/833dc6077d9ecff68e8384fa51f188412e36604f",
                 "reference": "833dc6077d9ecff68e8384fa51f188412e36604f",
