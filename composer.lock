@@ -4,7 +4,7 @@
     "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
     "This file is @generated automatically"
   ],
-  "content-hash": "6d7969fc3a1f4c967236a429515fd931",
+  "content-hash": "a288a596431314bcdb47ee8ae56533bd",
   "packages": [
     {
       "name": "algo26-matthias/idna-convert",
@@ -15,16 +15,16 @@
         "reference": "a6dfb6f87611e3a89d2eec4924a0f51db755c573"
       },
       "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/algo26-matthias/idna-convert/zipball/a6dfb6f87611e3a89d2eec4924a0f51db755c573",
-                "reference": "a6dfb6f87611e3a89d2eec4924a0f51db755c573",
-                "shasum": ""
-            },
-            "require": {
-                "ext-pcre": "*",
-                "php": ">=5.6.0"
-            },
-            "type": "library",
+        "type": "zip",
+        "url": "https://api.github.com/repos/algo26-matthias/idna-convert/zipball/a6dfb6f87611e3a89d2eec4924a0f51db755c573",
+        "reference": "a6dfb6f87611e3a89d2eec4924a0f51db755c573",
+        "shasum": ""
+      },
+      "require": {
+        "ext-pcre": "*",
+        "php": ">=5.6.0"
+      },
+      "type": "library",
             "extra": {
                 "branch-alias": {
                     "dev-master": "1.0.x-dev"
@@ -169,26 +169,86 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "authors": [
-                {
-                    "name": "Boris Schauer",
-                    "email": "me@bschauer.de"
-                }
-            ],
-            "description": "slick - the last carousel you'll ever need. For more informations please have a look at https://github.com/misterboe/slickcarousel. If you need more features please create an issue on github.",
-            "time": "2019-05-13T06:58:28+00:00"
+          "authors": [
+            {
+              "name": "Boris Schauer",
+              "email": "me@bschauer.de"
+            }
+          ],
+          "description": "slick - the last carousel you'll ever need. For more informations please have a look at https://github.com/misterboe/slickcarousel. If you need more features please create an issue on github.",
+          "time": "2019-05-13T06:58:28+00:00"
         },
+    {
+      "name": "causal/file_list",
+      "version": "2.3.1",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/xperseguers/t3ext-file_list.git",
+        "reference": "4e3c33a67a2d85029d5d6071d5a5afcc99eb8035"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/xperseguers/t3ext-file_list/zipball/4e3c33a67a2d85029d5d6071d5a5afcc99eb8035",
+        "reference": "4e3c33a67a2d85029d5d6071d5a5afcc99eb8035",
+        "shasum": ""
+      },
+      "require": {
+        "php": ">= 7.2.0, <= 7.3.99",
+        "typo3/cms-core": "^8.7 || ^9.5"
+      },
+      "replace": {
+        "file_list": "self.version",
+        "typo3-ter/file-list": "self.version"
+      },
+      "type": "typo3-cms-extension",
+      "extra": {
+        "branch-alias": {
+          "dev-master": "2.3.x-dev"
+        },
+        "typo3/cms": {
+          "cms-package-dir": "{$vendor-dir}/typo3/cms",
+          "web-dir": ".Build/Web"
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "Causal\\FileList\\": "Classes/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "GPL-2.0-or-later"
+      ],
+      "authors": [
         {
-            "name": "cogpowered/finediff",
-            "version": "0.3.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/cogpowered/FineDiff.git",
-                "reference": "339ddc8c3afb656efed4f2f0a80e5c3d026f8ea8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/cogpowered/FineDiff/zipball/339ddc8c3afb656efed4f2f0a80e5c3d026f8ea8",
+          "name": "Xavier Perseguers",
+          "email": "xavier@causal.ch",
+          "homepage": "https://www.causal.ch",
+          "role": "Developer"
+        }
+      ],
+      "description": "This extension provides a frontend plugin which shows a list of files and folders in a specified directory on the file system (comparable to Apache directory listing) or using more advanced FAL selectors (categories, collection of files, ...). This extension may also be used for creating image galleries.",
+      "homepage": "https://forge.typo3.org/projects/extension-file_list",
+      "keywords": [
+        "TYPO3 CMS",
+        "directories",
+        "files",
+        "gallery",
+        "list"
+      ],
+      "time": "2019-04-01T18:58:08+00:00"
+    },
+    {
+      "name": "cogpowered/finediff",
+      "version": "0.3.1",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/cogpowered/FineDiff.git",
+        "reference": "339ddc8c3afb656efed4f2f0a80e5c3d026f8ea8"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/cogpowered/FineDiff/zipball/339ddc8c3afb656efed4f2f0a80e5c3d026f8ea8",
                 "reference": "339ddc8c3afb656efed4f2f0a80e5c3d026f8ea8",
                 "shasum": ""
             },
@@ -627,16 +687,16 @@
                     "email": "guilhermeblanco@gmail.com"
                 },
                 {
-                    "name": "Roman Borschel",
-                    "email": "roman@code-factory.org"
+                  "name": "Roman Borschel",
+                  "email": "roman@code-factory.org"
                 },
-                {
-                    "name": "Johannes Schmitt",
-                    "email": "schmittjoh@gmail.com"
-                }
+              {
+                "name": "Johannes Schmitt",
+                "email": "schmittjoh@gmail.com"
+              }
             ],
-            "description": "PHP Doctrine Lexer parser library that can be used in Top-Down, Recursive Descent Parsers.",
-            "homepage": "https://www.doctrine-project.org/projects/lexer.html",
+          "description": "PHP Doctrine Lexer parser library that can be used in Top-Down, Recursive Descent Parsers.",
+          "homepage": "https://www.doctrine-project.org/projects/lexer.html",
           "keywords": [
             "annotations",
             "docblock",
@@ -718,16 +778,16 @@
       "dist": {
         "type": "zip",
         "url": "https://api.github.com/repos/FluidTYPO3/vhs/zipball/93bd3ba44406f69e297c4ea6193f0bfae4585e3d",
-                "reference": "93bd3ba44406f69e297c4ea6193f0bfae4585e3d",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.0.0",
-                "typo3/cms-backend": "^8.7 || ^9 || dev-master",
-                "typo3/cms-core": "^8.7 || ^9 || dev-master",
-                "typo3/cms-extbase": "^8.7 || ^9 || dev-master",
-                "typo3/cms-fluid": "^8.7 || ^9 || dev-master",
-                "typo3/cms-frontend": "^8.7 || ^9 || dev-master"
+        "reference": "93bd3ba44406f69e297c4ea6193f0bfae4585e3d",
+        "shasum": ""
+      },
+      "require": {
+        "php": ">=7.0.0",
+        "typo3/cms-backend": "^8.7 || ^9 || dev-master",
+        "typo3/cms-core": "^8.7 || ^9 || dev-master",
+        "typo3/cms-extbase": "^8.7 || ^9 || dev-master",
+        "typo3/cms-fluid": "^8.7 || ^9 || dev-master",
+        "typo3/cms-frontend": "^8.7 || ^9 || dev-master"
             },
             "replace": {
                 "typo3-ter/vhs": "self.version",
@@ -1462,16 +1522,16 @@
                     "Psr\\Log\\": "Psr/Log/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "PHP-FIG",
-                    "homepage": "http://www.php-fig.org/"
-                }
-            ],
+          "notification-url": "https://packagist.org/downloads/",
+          "license": [
+            "MIT"
+          ],
+          "authors": [
+            {
+              "name": "PHP-FIG",
+              "homepage": "http://www.php-fig.org/"
+            }
+          ],
           "description": "Common interface for logging libraries",
           "homepage": "https://github.com/php-fig/log",
           "keywords": [
@@ -1481,47 +1541,6 @@
           ],
           "time": "2016-10-10T12:19:37+00:00"
         },
-    {
-      "name": "quizpalme/camaliga",
-      "version": "v8.5.0",
-      "source": {
-        "type": "git",
-        "url": "https://github.com/bihor/camaliga.git",
-        "reference": "5e4e73dcd728caca29d2d41e9dfc3f79689af3dc"
-      },
-      "dist": {
-        "type": "zip",
-        "url": "https://api.github.com/repos/bihor/camaliga/zipball/5e4e73dcd728caca29d2d41e9dfc3f79689af3dc",
-        "reference": "5e4e73dcd728caca29d2d41e9dfc3f79689af3dc",
-        "shasum": ""
-      },
-      "require": {
-        "typo3/cms-core": ">9.5.0"
-      },
-      "replace": {
-        "camaliga": "self.version",
-        "typo3-ter/camaliga": "self.version"
-      },
-      "type": "typo3-cms-extension",
-      "autoload": {
-        "psr-4": {
-          "Quizpalme\\Camaliga\\": "Classes"
-        }
-      },
-      "notification-url": "https://packagist.org/downloads/",
-      "authors": [
-        {
-          "name": "Kurt Gusbeth",
-          "role": "Developer"
-        }
-      ],
-      "description": "A carousel/gallery/map/list extension that can use the TYPO3 categories and different jQuery-plugins like Slick or Isotope. Bootstrap support. Indexer for ke_search.",
-      "homepage": "https://github.com/bihor/camaliga",
-      "keywords": [
-        "slider carousel maps gallery"
-      ],
-      "time": "2019-07-23T15:47:49+00:00"
-    },
     {
       "name": "ralouphie/getallheaders",
       "version": "3.0.3",
@@ -1533,16 +1552,16 @@
       "dist": {
         "type": "zip",
         "url": "https://api.github.com/repos/ralouphie/getallheaders/zipball/120b605dfeb996808c31b6477290a714d356e822",
-                "reference": "120b605dfeb996808c31b6477290a714d356e822",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.6"
-            },
-            "require-dev": {
-                "php-coveralls/php-coveralls": "^2.1",
-                "phpunit/phpunit": "^5 || ^6.5"
-            },
+        "reference": "120b605dfeb996808c31b6477290a714d356e822",
+        "shasum": ""
+      },
+      "require": {
+        "php": ">=5.6"
+      },
+      "require-dev": {
+        "php-coveralls/php-coveralls": "^2.1",
+        "phpunit/phpunit": "^5 || ^6.5"
+      },
             "type": "library",
             "autoload": {
                 "files": [
@@ -3201,15 +3220,15 @@
                     ]
                 }
             },
-            "autoload": {
-                "psr-4": {
-                    "TYPO3\\CMS\\Fluid\\": "Classes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
+          "autoload": {
+            "psr-4": {
+              "TYPO3\\CMS\\Fluid\\": "Classes/"
+            }
+          },
+          "notification-url": "https://packagist.org/downloads/",
+          "license": [
+            "GPL-2.0-or-later"
+          ],
           "authors": [
             {
               "name": "TYPO3 Core Team",
@@ -3285,16 +3304,16 @@
         "reference": "833dc6077d9ecff68e8384fa51f188412e36604f"
       },
       "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-CMS/frontend/zipball/833dc6077d9ecff68e8384fa51f188412e36604f",
-                "reference": "833dc6077d9ecff68e8384fa51f188412e36604f",
-                "shasum": ""
-            },
-            "require": {
-                "typo3/cms-core": "9.5.10"
-            },
-            "conflict": {
-                "typo3/cms": "*"
+        "type": "zip",
+        "url": "https://api.github.com/repos/TYPO3-CMS/frontend/zipball/833dc6077d9ecff68e8384fa51f188412e36604f",
+        "reference": "833dc6077d9ecff68e8384fa51f188412e36604f",
+        "shasum": ""
+      },
+      "require": {
+        "typo3/cms-core": "9.5.10"
+      },
+      "conflict": {
+        "typo3/cms": "*"
             },
             "suggest": {
                 "typo3/cms-adminpanel": "Provides additional information and functionality for backend users in the frontend."
