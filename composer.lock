@@ -1,20 +1,20 @@
 {
-    "_readme": [
-        "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
-        "This file is @generated automatically"
-    ],
-    "content-hash": "ecdc7938411b50cf9c3254684d996473",
-    "packages": [
-        {
-            "name": "algo26-matthias/idna-convert",
-            "version": "v1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/algo26-matthias/idna-convert.git",
-                "reference": "a6dfb6f87611e3a89d2eec4924a0f51db755c573"
-            },
-            "dist": {
+  "_readme": [
+    "This file locks the dependencies of your project to a known state",
+    "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+    "This file is @generated automatically"
+  ],
+  "content-hash": "6d7969fc3a1f4c967236a429515fd931",
+  "packages": [
+    {
+      "name": "algo26-matthias/idna-convert",
+      "version": "v1.1.0",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/algo26-matthias/idna-convert.git",
+        "reference": "a6dfb6f87611e3a89d2eec4924a0f51db755c573"
+      },
+      "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/algo26-matthias/idna-convert/zipball/a6dfb6f87611e3a89d2eec4924a0f51db755c573",
                 "reference": "a6dfb6f87611e3a89d2eec4924a0f51db755c573",
@@ -637,26 +637,87 @@
             ],
             "description": "PHP Doctrine Lexer parser library that can be used in Top-Down, Recursive Descent Parsers.",
             "homepage": "https://www.doctrine-project.org/projects/lexer.html",
-            "keywords": [
-                "annotations",
-                "docblock",
-                "lexer",
-                "parser",
-                "php"
-            ],
-            "time": "2019-07-30T19:33:28+00:00"
+          "keywords": [
+            "annotations",
+            "docblock",
+            "lexer",
+            "parser",
+            "php"
+          ],
+          "time": "2019-07-30T19:33:28+00:00"
         },
+    {
+      "name": "extcode/cart",
+      "version": "v6.5.1",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/extcode/cart.git",
+        "reference": "02043f1bf5801fa2313bfe61f1d989e14fc949c6"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/extcode/cart/zipball/02043f1bf5801fa2313bfe61f1d989e14fc949c6",
+        "reference": "02043f1bf5801fa2313bfe61f1d989e14fc949c6",
+        "shasum": ""
+      },
+      "require": {
+        "php": "^7.2 <7.4",
+        "typo3/cms-core": "^9.5",
+        "typo3/cms-form": "^9.5"
+      },
+      "replace": {
+        "cart": "self.version"
+      },
+      "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.0",
+        "helmich/typo3-typoscript-lint": "^1.4",
+        "nimut/testing-framework": "^4.0"
+      },
+      "type": "typo3-cms-extension",
+      "extra": {
+        "typo3/cms": {
+          "extension-key": "cart",
+          "cms-package-dir": "{$vendor-dir}/typo3/cms",
+          "app-dir": ".Build",
+          "web-dir": ".Build/public"
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "Extcode\\Cart\\": "Classes/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "GPL-2.0-or-later"
+      ],
+      "authors": [
         {
-            "name": "fluidtypo3/vhs",
-            "version": "5.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/FluidTYPO3/vhs.git",
-                "reference": "93bd3ba44406f69e297c4ea6193f0bfae4585e3d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/FluidTYPO3/vhs/zipball/93bd3ba44406f69e297c4ea6193f0bfae4585e3d",
+          "name": "Daniel Lorenz",
+          "email": "ext.cart@extco.de",
+          "role": "Developer"
+        }
+      ],
+      "description": "Shopping Cart(s) for TYPO3",
+      "homepage": "https://cart.extco.de",
+      "keywords": [
+        "TYPO3 CMS",
+        "cart",
+        "shopping cart"
+      ],
+      "time": "2019-08-10T15:36:29+00:00"
+    },
+    {
+      "name": "fluidtypo3/vhs",
+      "version": "5.2.0",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/FluidTYPO3/vhs.git",
+        "reference": "93bd3ba44406f69e297c4ea6193f0bfae4585e3d"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/FluidTYPO3/vhs/zipball/93bd3ba44406f69e297c4ea6193f0bfae4585e3d",
                 "reference": "93bd3ba44406f69e297c4ea6193f0bfae4585e3d",
                 "shasum": ""
             },
@@ -1411,26 +1472,67 @@
                     "homepage": "http://www.php-fig.org/"
                 }
             ],
-            "description": "Common interface for logging libraries",
-            "homepage": "https://github.com/php-fig/log",
-            "keywords": [
-                "log",
-                "psr",
-                "psr-3"
-            ],
-            "time": "2016-10-10T12:19:37+00:00"
+          "description": "Common interface for logging libraries",
+          "homepage": "https://github.com/php-fig/log",
+          "keywords": [
+            "log",
+            "psr",
+            "psr-3"
+          ],
+          "time": "2016-10-10T12:19:37+00:00"
         },
+    {
+      "name": "quizpalme/camaliga",
+      "version": "v8.5.0",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/bihor/camaliga.git",
+        "reference": "5e4e73dcd728caca29d2d41e9dfc3f79689af3dc"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/bihor/camaliga/zipball/5e4e73dcd728caca29d2d41e9dfc3f79689af3dc",
+        "reference": "5e4e73dcd728caca29d2d41e9dfc3f79689af3dc",
+        "shasum": ""
+      },
+      "require": {
+        "typo3/cms-core": ">9.5.0"
+      },
+      "replace": {
+        "camaliga": "self.version",
+        "typo3-ter/camaliga": "self.version"
+      },
+      "type": "typo3-cms-extension",
+      "autoload": {
+        "psr-4": {
+          "Quizpalme\\Camaliga\\": "Classes"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "authors": [
         {
-            "name": "ralouphie/getallheaders",
-            "version": "3.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ralouphie/getallheaders.git",
-                "reference": "120b605dfeb996808c31b6477290a714d356e822"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ralouphie/getallheaders/zipball/120b605dfeb996808c31b6477290a714d356e822",
+          "name": "Kurt Gusbeth",
+          "role": "Developer"
+        }
+      ],
+      "description": "A carousel/gallery/map/list extension that can use the TYPO3 categories and different jQuery-plugins like Slick or Isotope. Bootstrap support. Indexer for ke_search.",
+      "homepage": "https://github.com/bihor/camaliga",
+      "keywords": [
+        "slider carousel maps gallery"
+      ],
+      "time": "2019-07-23T15:47:49+00:00"
+    },
+    {
+      "name": "ralouphie/getallheaders",
+      "version": "3.0.3",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/ralouphie/getallheaders.git",
+        "reference": "120b605dfeb996808c31b6477290a714d356e822"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/ralouphie/getallheaders/zipball/120b605dfeb996808c31b6477290a714d356e822",
                 "reference": "120b605dfeb996808c31b6477290a714d356e822",
                 "shasum": ""
             },
@@ -3108,26 +3210,81 @@
             "license": [
                 "GPL-2.0-or-later"
             ],
-            "authors": [
-                {
-                    "name": "TYPO3 Core Team",
-                    "email": "typo3cms@typo3.org",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Fluid is a next-generation templating engine which makes the life of extension authors a lot easier!",
-            "homepage": "https://typo3.org",
-            "time": "2019-10-15T07:29:55+00:00"
+          "authors": [
+            {
+              "name": "TYPO3 Core Team",
+              "email": "typo3cms@typo3.org",
+              "role": "Developer"
+            }
+          ],
+          "description": "Fluid is a next-generation templating engine which makes the life of extension authors a lot easier!",
+          "homepage": "https://typo3.org",
+          "time": "2019-10-15T07:29:55+00:00"
         },
+    {
+      "name": "typo3/cms-form",
+      "version": "v9.5.10",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/TYPO3-CMS/form.git",
+        "reference": "60d72cd6e3e07c3d89cb9c1ea1f0a1f32f729112"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/TYPO3-CMS/form/zipball/60d72cd6e3e07c3d89cb9c1ea1f0a1f32f729112",
+        "reference": "60d72cd6e3e07c3d89cb9c1ea1f0a1f32f729112",
+        "shasum": ""
+      },
+      "require": {
+        "psr/http-message": "~1.0",
+        "symfony/expression-language": "^4.1",
+        "typo3/cms-core": "9.5.10"
+      },
+      "conflict": {
+        "typo3/cms": "*"
+      },
+      "suggest": {
+        "typo3/cms-filelist": "Add context menu item for form files",
+        "typo3/cms-impexp": "Register imported form files"
+      },
+      "type": "typo3-cms-framework",
+      "extra": {
+        "typo3/cms": {
+          "Package": {
+            "partOfFactoryDefault": true
+          },
+          "extension-key": "form"
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "TYPO3\\CMS\\Form\\": "Classes/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "GPL-2.0-or-later"
+      ],
+      "authors": [
         {
-            "name": "typo3/cms-frontend",
-            "version": "v9.5.10",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/TYPO3-CMS/frontend.git",
-                "reference": "833dc6077d9ecff68e8384fa51f188412e36604f"
-            },
-            "dist": {
+          "name": "TYPO3 Core Team",
+          "email": "typo3cms@typo3.org",
+          "role": "Developer"
+        }
+      ],
+      "description": "Form Library, Plugin and Editor",
+      "homepage": "https://typo3.org",
+      "time": "2019-10-15T07:29:55+00:00"
+    },
+    {
+      "name": "typo3/cms-frontend",
+      "version": "v9.5.10",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/TYPO3-CMS/frontend.git",
+        "reference": "833dc6077d9ecff68e8384fa51f188412e36604f"
+      },
+      "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/TYPO3-CMS/frontend/zipball/833dc6077d9ecff68e8384fa51f188412e36604f",
                 "reference": "833dc6077d9ecff68e8384fa51f188412e36604f",
