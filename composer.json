@@ -12,11 +12,13 @@
 
 	"name": "resterland/resterland",
 	"type": "typo3-cms-extension",
-	"description": "Tweaks the extension bootstrap-package of Bajamin Kott with some Resterland goodies.",
+	"description": "TYPO3 extension based on bootstrap-package of Bajamin Kott with some excellent ideas and samples taken from the pizpalue distribution of Roman Büchler. Tweaked to the needs of ResterLand WebAtelier.",
 	"license": "GPL-2.0-or-later",
 	"keywords": [
 		"TYPO3",
-		"extension"
+		"extension",
+		"bootstrap",
+		"responsive"
 	],
 	"homepage": "https://resterland.ch",
 	"authors": [
@@ -30,18 +32,17 @@
 	"require": {
 		"php": ">=7.2",
 		"helhum/typo3-secure-web": "^0.2",
-		"typo3/cms-core": "^9.5",
-		"bk2k/bootstrap-package": ">=10.0 <11.0.0",
-		"georgringer/news": "^7.3",
-		"extcode/cart": "^6.5",
+		"typo3/cms-core": "^9.5 || ~10.0.0 || 10.0.*@dev || 10.1.*@dev",
+		"typo3/cms-impexp": "^9.5 || ~10.0.0 || 10.0.*@dev || 10.1.*@dev",
+		"causal/image_autoresize": "^1.9",
+		"bk2k/bootstrap-package": "^10.0 || ^11.0",
+		"fluidtypo3/vhs": "^5.2",
+		"gridelementsteam/gridelements": "^9.3",
 		"bo/slickcarousel": "^3.0",
-		"causal/file_list": "^2.3"
+		"svewap/ws-flexslider": "^1.5"
 	},
 	"require-dev": {
-		"roave/security-advisories": "dev-master",
-		"friendsofphp/php-cs-fixer": "^2.0",
-		"typo3/cms-styleguide": "~10.0.2",
-		"typo3/testing-framework": "^4.11"
+		"roave/security-advisories": "dev-master"
 	},
 	"autoload": {
 		"psr-4": {
