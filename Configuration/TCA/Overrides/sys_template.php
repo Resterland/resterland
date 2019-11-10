@@ -1,11 +1,19 @@
 <?php
+
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+
 defined('TYPO3_MODE') || die();
 
-/**
- * Default TypoScript for Resterland
- */
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
-    'resterland',
-    'Configuration/TypoScript',
-    'Resterland'
+call_user_func(
+    function ($_EXTKEY) {
+        /**
+         * Default TypoScript for Resterland
+         */
+        ExtensionManagementUtility::addStaticFile(
+            $_EXTKEY,
+            'Configuration/TypoScript',
+            'Resterland - Core'
+        );
+    },
+    'resterland'
 );
