@@ -58,8 +58,7 @@
 		"bk2k/bootstrap-package": "^10.0 || ^11.0",
 		"fluidtypo3/vhs": "^5.2",
 		"gridelementsteam/gridelements": "^9.3",
-		"bo/slickcarousel": "^3.0",
-		"svewap/ws-flexslider": "^1.5"
+		"causal/file_list": "^2.3"
 	},
 	"require-dev": {
 		"roave/security-advisories": "dev-master"
