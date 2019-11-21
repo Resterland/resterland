@@ -290,24 +290,25 @@ page {
     }
 
     includeJS {
-        html5shiv = https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js
-        html5shiv.external = 1
-        html5shiv.forceOnTop = 1
-        html5shiv.allWrap = <!--[if lt IE 9]>|<![endif]-->
+    html5shiv = https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js
+    html5shiv.external = 1
+    html5shiv.forceOnTop = 1
+    html5shiv.allWrap = <!--[if lt IE 9]>|<![endif]-->
     }
 
     includeJSFooterlibs {
-
+    photoswipe_core = EXT:bootstrap_package/Resources/Public/Contrib/photoswipe/photoswipe.min.js
+    photoswipe_ui = EXT:bootstrap_package/Resources/Public/Contrib/photoswipe/photoswipe-ui-default.min.js
     }
 
     includeJSFooter {
-        resterland_scripts = EXT:resterland/Resources/Public/JavaScript/Dist/scripts.js
+    resterland_scripts = EXT:resterland/Resources/Public/JavaScript/Dist/scripts.js
     }
-}
+    }
 
 
-################
-#### CONFIG ####
+    ################
+    #### CONFIG ####
 ################
 config {
     pageTitleFirst = 0
