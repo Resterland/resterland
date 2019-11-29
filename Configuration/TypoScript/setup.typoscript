@@ -13,7 +13,8 @@
 #### EXTENSIONS                                          ####
 #### Manual inclusion to keep control over loading order ####
 #############################################################
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/Extension/Form/setup.typoscript" condition="userFunc = TYPO3\\CMS\\Core\\Utility\\ExtensionManagementUtility::isLoaded('form')">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/Extension/Form/setup.typoscript">
+// condition="userFunc = TYPO3\\CMS\\Core\\Utility\\ExtensionManagementUtility::isLoaded('form')">
 ## FrontendLogin
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland/Configuration/TypoScript/Extensions/FrontendLogin/setup.typoscript">
 // condition="userFunc = TYPO3\\CMS\\Core\\Utility\\ExtensionManagementUtility::isLoaded('felogin')"
@@ -37,301 +38,306 @@
 page = PAGE
 page {
 
-    shortcutIcon = EXT:resterland/Resources/Public/Icons/Favicons/{$page.favicon.switch}/favicon.ico
+  shortcutIcon = EXT:resterland/Resources/Public/Icons/Favicons/{$page.favicon.switch}/favicon.ico
 
-    10 = FLUIDTEMPLATE
-    10 {
+  10 = FLUIDTEMPLATE
+  10 {
 
-        templateRootPaths {
-            0 = EXT:bootstrap_package/Resources/Private/Templates/Page/
-            1 = {$page.fluidtemplate.templateRootPath}
-        }
+    templateRootPaths {
+      0 = EXT:bootstrap_package/Resources/Private/Templates/Page/
+      1 = {$page.fluidtemplate.templateRootPath}
+    }
 
-        partialRootPaths {
-            0 = EXT:bootstrap_package/Resources/Private/Partials/Page/
-            1 = {$page.fluidtemplate.partialRootPath}
-        }
+    partialRootPaths {
+      0 = EXT:bootstrap_package/Resources/Private/Partials/Page/
+      1 = {$page.fluidtemplate.partialRootPath}
+    }
 
-        layoutRootPaths {
-            0 = EXT:bootstrap_package/Resources/Private/Layouts/Page/
-            1 = {$page.fluidtemplate.layoutRootPath}
-        }
+    layoutRootPaths {
+      0 = EXT:bootstrap_package/Resources/Private/Layouts/Page/
+      1 = {$page.fluidtemplate.layoutRootPath}
+    }
 
-        ##########################
-        ### DATA PREPROCESSING ###
-        ##########################
+    ##########################
+    ### DATA PREPROCESSING ###
+    ##########################
+    dataProcessing {
+      1 = BK2K\BootstrapPackage\DataProcessing\ConstantsProcessor
+      1 {
+        as = theme
+        key = page.theme
+      }
+
+      5 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+      5 {
+        references.fieldName = media
+      }
+
+      10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+      10 {
+        levels = 2
+        includeSpacer = 1
+        as = mainnavigation
         dataProcessing {
-            1 = BK2K\BootstrapPackage\DataProcessing\ConstantsProcessor
-            1 {
-                as = theme
-                key = page.theme
+          10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+          10 {
+            references.fieldName = nav_icon
+            as = icon
+            if {
+              isTrue.stdWrap.cObject = COA
+              isTrue.stdWrap.cObject {
+                10 = TEXT
+                10.value = 1
+                10.if.isTrue = {$page.theme.navigation.icon.enable}
+                20 = TEXT
+                20.value = 1
+                20.if.isTrue = {$page.theme.navigation.dropdown.icon.enable}
+              }
             }
+          }
+        }
+      }
 
-            5 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-            5 {
-                references.fieldName = media
+      20 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+      20 {
+        entryLevel = 1
+        levels = 2
+        expandAll = 0
+        includeSpacer = 1
+        as = subnavigation
+        dataProcessing {
+          10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+          10 {
+            references.fieldName = nav_icon
+            as = icon
+            if {
+              isTrue = {$page.theme.subnavigation.icon.enable}
             }
+          }
+        }
+      }
 
-            10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
-            10 {
-                levels = 2
-                includeSpacer = 1
-                as = mainnavigation
-                dataProcessing {
-                    10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-                    10 {
-                        references.fieldName = nav_icon
-                        as = icon
-                        if {
-                            isTrue.stdWrap.cObject = COA
-                            isTrue.stdWrap.cObject {
-                                10 = TEXT
-                                10.value = 1
-                                10.if.isTrue = {$page.theme.navigation.icon.enable}
-                                20 = TEXT
-                                20.value = 1
-                                20.if.isTrue = {$page.theme.navigation.dropdown.icon.enable}
-                            }
-                        }
-                    }
-                }
-            }
+      30 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+      30 {
+        special = rootline
+        special.range = 0|-1
+        includeNotInMenu = 1
+        as = breadcrumb
+        if {
+          value = {$page.theme.breadcrumb.enableLevel}
+          value {
+            insertData = 1
+            prioriCalc = 1
+            stdWrap.wrap = |-1
+          }
 
-            20 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
-            20 {
-                entryLevel = 1
-                levels = 2
-                expandAll = 0
-                includeSpacer = 1
-                as = subnavigation
-                dataProcessing {
-                    10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-                    10 {
-                        references.fieldName = nav_icon
-                        as = icon
-                        if {
-                            isTrue = {$page.theme.subnavigation.icon.enable}
-                        }
-                    }
-                }
-            }
-
-            30 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
-            30 {
-                special = rootline
-                special.range = 0|-1
-                includeNotInMenu = 1
-                as = breadcrumb
-                if {
-                    value = {$page.theme.breadcrumb.enableLevel}
-                    value {
-                        insertData = 1
-                        prioriCalc = 1
-                        stdWrap.wrap = |-1
-                    }
-
-                    isGreaterThan {
-                        data = level
-                    }
-                }
-
-                dataProcessing {
-                    10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-                    10 {
-                        references.fieldName = nav_icon
-                        as = icon
-                    }
-                }
-            }
-
-            40 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
-            40 {
-                languages = {$page.theme.language.languageValue}
-                as = languagenavigation
-            }
-
-            45 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
-            45 {
-                languages = {$page.theme.language.languageValue}
-                as = languagemenu
-            }
-
-            50 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
-            50 {
-                special = {$page.theme.meta.navigationType}
-                special.value = {$page.theme.meta.navigationValue}
-                includeNotInMenu = {$page.theme.meta.includeNotInMenu}
-                as = metanavigation
-                if {
-                    isTrue = {$page.theme.meta.navigationValue}
-                }
-            }
+          isGreaterThan {
+            data = level
+          }
         }
 
-        ################
-        ### SETTINGS ###
-        ################
-        settings {
-            logo {
-                file = EXT:resterland/Resources/Public/Images/Logos/{$page.logo.file}
-                fileInverted = EXT:resterland/Resources/Public/Images/Logos/{$page.logo.fileInverted}
-                height = {$page.logo.height}
-                width = {$page.logo.width}
-                linktitle = {$page.logo.linktitle}
-            }
-            felogin.inmenu = {$styles.content.loginform.inmenu}
+        dataProcessing {
+          10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+          10 {
+            references.fieldName = nav_icon
+            as = icon
+          }
         }
+      }
 
-        #################
-        ### VARIABLES ###
-        #################
-        variables {
-            sitename = TEXT
-            sitename.data = GLOBAL:TYPO3_CONF_VARS|SYS|sitename
+      40 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
+      40 {
+        languages = {$page.theme.language.languageValue}
+        as = languagenavigation
+      }
+
+      45 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
+      45 {
+        languages = {$page.theme.language.languageValue}
+        as = languagemenu
+      }
+
+      50 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+      50 {
+        special = {$page.theme.meta.navigationType}
+        special.value = {$page.theme.meta.navigationValue}
+        includeNotInMenu = {$page.theme.meta.includeNotInMenu}
+        as = metanavigation
+        if {
+          isTrue = {$page.theme.meta.navigationValue}
         }
+      }
     }
 
-    meta {
-        viewport = {$page.meta.viewport}
-        robots = {$page.meta.robots}
-        apple-mobile-web-app-capable = {$page.meta.apple-mobile-web-app-capable}
-        description = {$page.meta.description}
-        description {
-            override.field = description
+    ################
+    ### SETTINGS ###
+    ################
+    settings {
+      logo {
+        file = EXT:resterland/Resources/Public/Images/Logos/{$page.logo.file}
+        fileInverted = EXT:resterland/Resources/Public/Images/Logos/{$page.logo.fileInverted}
+        height = {$page.logo.height}
+        width = {$page.logo.width}
+        linktitle = {$page.logo.linktitle}
+      }
+
+      felogin.inmenu = {$styles.content.loginform.inmenu}
+    }
+
+    #################
+    ### VARIABLES ###
+    #################
+    variables {
+      sitename = TEXT
+      sitename.data = GLOBAL:TYPO3_CONF_VARS|SYS|sitename
+    }
+  }
+
+  meta {
+    viewport = {$page.meta.viewport}
+    robots = {$page.meta.robots}
+    apple-mobile-web-app-capable = {$page.meta.apple-mobile-web-app-capable}
+    description = {$page.meta.description}
+    description {
+      override.field = description
+    }
+
+    author = {$page.meta.author}
+    author {
+      override.field = author
+    }
+
+    keywords = {$page.meta.keywords}
+    keywords {
+      override.field = keywords
+    }
+
+    X-UA-Compatible = {$page.meta.compatible}
+    X-UA-Compatible {
+      attribute = http-equiv
+    }
+
+    # Google
+    google = {$page.meta.google}
+    google-site-verification = {$page.meta.google-site-verification}
+
+    # OpenGraph Tags
+    og:title {
+      attribute = property
+      field = title
+    }
+
+    og:site_name {
+      attribute = property
+      data = TSFE:tmpl|setup|sitetitle
+    }
+
+    og:description = {$page.meta.description}
+    og:description {
+      attribute = property
+      field = description
+    }
+
+    og:image {
+      attribute = property
+      stdWrap.cObject = FILES
+      stdWrap.cObject {
+        references {
+          data = levelfield:-1, media, slide
         }
 
-        author = {$page.meta.author}
-        author {
-            override.field = author
-        }
-
-        keywords = {$page.meta.keywords}
-        keywords {
-            override.field = keywords
-        }
-
-        X-UA-Compatible = {$page.meta.compatible}
-        X-UA-Compatible {
-            attribute = http-equiv
-        }
-
-        # Google
-        google = {$page.meta.google}
-        google-site-verification = {$page.meta.google-site-verification}
-
-        # OpenGraph Tags
-        og:title {
-            attribute = property
-            field = title
-        }
-
-        og:site_name {
-            attribute = property
-            data = TSFE:tmpl|setup|sitetitle
-        }
-
-        og:description = {$page.meta.description}
-        og:description {
-            attribute = property
-            field = description
-        }
-
-        og:image {
-            attribute = property
-            stdWrap.cObject = FILES
-            stdWrap.cObject {
-                references {
-                    data = levelfield:-1, media, slide
-                }
-
-                maxItems = 1
-                renderObj = COA
-                renderObj {
-                    10 = IMG_RESOURCE
-                    10 {
-                        file {
-                            import.data = file:current:uid
-                            treatIdAsReference = 1
-                            width = 1280c
-                            height = 720c
-                        }
-
-                        stdWrap {
-                            typolink {
-                                parameter.data = TSFE:lastImgResourceInfo|3
-                                returnLast = url
-                                forceAbsoluteUrl = 1
-                            }
-                        }
-                    }
-                }
+        maxItems = 1
+        renderObj = COA
+        renderObj {
+          10 = IMG_RESOURCE
+          10 {
+            file {
+              import.data = file:current:uid
+              treatIdAsReference = 1
+              width = 1280c
+              height = 720c
             }
+
+            stdWrap {
+              typolink {
+                parameter.data = TSFE:lastImgResourceInfo|3
+                returnLast = url
+                forceAbsoluteUrl = 1
+              }
+            }
+          }
         }
+      }
     }
+  }
 
-    includeCSSLibs {
-        # googlewebfont >
-    }
+  includeCSSLibs {
+    # googlewebfont >
+  }
 
-    includeCSS {
-      # bootstrap = EXT:bootstrap_package/Resources/Public/Contrib/bootstrap4/scss/bootstrap.scss
-      #theme = EXT:bootstrap_package/Resources/Public/Scss/Theme/theme.scss
-      theme >
-      #theme = EXT:resterland/Resources/Public/Css/theme.min.css
-      mystyle = EXT:resterland/Resources/Public/Scss/Themes/{$page.theme.switch}/theme.scss
-      #news-basic-custom = EXT:resterland/Resources/Public/Css/news-basic-custom.css
-      #resterland_css = EXT:resterland/Resources/Public/Css/resterland-custom.css
-      #slate = https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/slate/bootstrap.min.css
-      #slate.external = 1
-    }
+  includeCSS {
+    # bootstrap = EXT:bootstrap_package/Resources/Public/Contrib/bootstrap4/scss/bootstrap.scss
+    #theme = EXT:bootstrap_package/Resources/Public/Scss/Theme/theme.scss
+    theme >
+    #theme = EXT:resterland/Resources/Public/Css/theme.min.css
+    mystyle = EXT:resterland/Resources/Public/Scss/Themes/{$page.theme.switch}/theme.scss
+    #news-basic-custom = EXT:resterland/Resources/Public/Css/news-basic-custom.css
+    #resterland_css = EXT:resterland/Resources/Public/Css/resterland-custom.css
+    #slate = https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/slate/bootstrap.min.css
+    #slate.external = 1
+  }
 
-    includeJSLibs {
+  includeJSLibs {
 
-    }
+  }
 
-    includeJS {
+  includeJS {
     html5shiv = https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js
     html5shiv.external = 1
     html5shiv.forceOnTop = 1
     html5shiv.allWrap = <!--[if lt IE 9]>|<![endif]-->
-    }
+  }
 
-    includeJSFooterlibs {
+  includeJSFooterlibs {
+    #### Contrib
+    jquery = EXT:bootstrap_package/Resources/Public/Contrib/jquery/jquery.min.js
+    jquery.forceOnTop = 1
+    hammerjs = EXT:bootstrap_package/Resources/Public/Contrib/hammerjs/hammer.min.js
     photoswipe_core = EXT:bootstrap_package/Resources/Public/Contrib/photoswipe/photoswipe.min.js
     photoswipe_ui = EXT:bootstrap_package/Resources/Public/Contrib/photoswipe/photoswipe-ui-default.min.js
-    }
+  }
 
-    includeJSFooter {
+  includeJSFooter {
     resterland_scripts = EXT:resterland/Resources/Public/JavaScript/Dist/scripts.js
-    }
-    }
+  }
+}
 
 
-    ################
-    #### CONFIG ####
+################
+#### CONFIG ####
 ################
 config {
-    pageTitleFirst = 0
-    pageTitleSeparator = -
-    pageTitleSeparator.noTrimWrap = | | |
-    uniqueLinkVars = 1
-    # linkVars = L(init)
-    linkVars = L(int),framework
-    typolinkEnableLinksAcrossDomains = {$config.typolinkEnableLinksAcrossDomains}
-    renderCharset = utf-8
-    metaCharset = utf-8
-    doctype = html5
-    inlineStyle2TempFile = 1
-    debug = 0
-    cache_period = 86400
-    disablePrefixComment = 1
-    index_enable = 1
-    index_externals = 1
-    index_metatags = 1
-    headerComment = {$config.headerComment}
+  pageTitleFirst = 0
+  pageTitleSeparator = -
+  pageTitleSeparator.noTrimWrap = | | |
+  uniqueLinkVars = 1
+  # linkVars = L(init)
+  linkVars = L(int),framework
+  typolinkEnableLinksAcrossDomains = {$config.typolinkEnableLinksAcrossDomains}
+  renderCharset = utf-8
+  metaCharset = utf-8
+  doctype = html5
+  inlineStyle2TempFile = 1
+  debug = 0
+  cache_period = 86400
+  disablePrefixComment = 1
+  index_enable = 1
+  index_externals = 1
+  index_metatags = 1
+  headerComment = {$config.headerComment}
 
-    spamProtectEmailAddresses = ascii
-    spamProtectEmailAddresses_atSubst = (at)
+  spamProtectEmailAddresses = ascii
+  spamProtectEmailAddresses_atSubst = (at)
 }
 
 ### Debugging -> not for production sites
