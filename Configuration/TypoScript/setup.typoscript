@@ -282,7 +282,7 @@ page {
     theme >
     #theme = EXT:resterland/Resources/Public/Css/theme.min.css
     mystyle = EXT:resterland/Resources/Public/Scss/Themes/{$page.theme.switch}/theme.scss
-    custom = EXT:resterland/Resources/Public/Css/custom.css
+    #custom = EXT:resterland/Resources/Public/Css/custom.css
     photoswipe = EXT:resterland/Resources/Public/Css/photoswipe.css
     #news-basic-custom = EXT:resterland/Resources/Public/Css/news-basic-custom.css
     #resterland_css = EXT:resterland/Resources/Public/Css/resterland-custom.css
