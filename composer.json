@@ -12,7 +12,7 @@
 
 	"name": "resterland/resterland",
 	"type": "typo3-cms-extension",
-	"description": "TYPO3 project realized according to the recommendations of Helmut Hummel. Based on bootstrap-package of Bajamin Kott. Tweaked to the needs of ResterLand WebAtelier.",
+	"description": "TYPO3 project realized according to the recommendations of Helmut Humel. Based on bootstrap-package of Bajamin Kott. Tweaked to the needs of ResterLand WebAtelier.",
 	"license": "GPL-2.0-or-later",
 	"keywords": [
 		"TYPO3",
