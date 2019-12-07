@@ -23,7 +23,6 @@
 
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland/Configuration/TypoScript/Extensions/News/setup.typoscript" condition="extension.isLoaded('news') == 1">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland/Configuration/TypoScript/Extensions/Seo/setup.typoscript" condition="extension.isLoaded('seo') == 1">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland/Configuration/TypoScript/Extensions/FileListGallery/setup.typoscript">
 
 ##<INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland/Configuration/TypoScript/Helper/LanguageNavi.typoscript">
 

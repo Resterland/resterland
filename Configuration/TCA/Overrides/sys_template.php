@@ -14,14 +14,6 @@ call_user_func(
             'Configuration/TypoScript',
             'Resterland - Core'
         );
-        /**
-         *  Register default TypoScript for FileListGallery
-         */
-        ExtensionManagementUtility::addStaticFile(
-            $_EXTKEY,
-            'Configuration/TypoScript/Extensions/FileListGallery',
-            'Resterland - Image Gallery'
-        );
     },
     'resterland'
 );

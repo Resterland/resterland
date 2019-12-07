@@ -1,5 +1,0 @@
-plugin.tx_filelist {
-  view {
-    partialRootPaths.100 = EXT:resterland/Resources/Private/Partials/Gallery/
-  }
-}

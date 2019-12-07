@@ -55,11 +55,8 @@
 		"typo3/cms-linkvalidator": "^9.5",
 		"typo3/cms-felogin": "^9.5",
 		"typo3/cms-belog": "^9.5",
-		"fluidtypo3/vhs": "^5.2",
-		"gridelementsteam/gridelements": "^9.3",
 		"causal/image_autoresize": "^1.9",
-		"bk2k/bootstrap-package": "^10.0 || ^11.0",
-		"causal/file_list": "^2.3"
+		"bk2k/bootstrap-package": "^10.0 || ^11.0"
 	},
 	"require-dev": {
 		"roave/security-advisories": "dev-master",
