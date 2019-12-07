@@ -56,7 +56,8 @@
 		"typo3/cms-felogin": "^9.5",
 		"typo3/cms-belog": "^9.5",
 		"causal/image_autoresize": "^1.9",
-		"bk2k/bootstrap-package": "^10.0 || ^11.0"
+		"bk2k/bootstrap-package": "^10.0 || ^11.0",
+		"georgringer/news": "^7.3"
 	},
 	"require-dev": {
 		"roave/security-advisories": "dev-master",
