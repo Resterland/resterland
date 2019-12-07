@@ -31,8 +31,8 @@
 	],
 	"require": {
 		"php": ">=7.2",
-		"typo3-console/composer-auto-commands": "^0.3",
 		"helhum/typo3-secure-web": "^0.2",
+		"helhum/typo3-console": "^5.7",
 		"typo3/cms-core": "^9.5",
 		"typo3/cms-impexp": "^9.5",
 		"typo3/cms-scheduler": "^9.5",
@@ -61,7 +61,6 @@
 	"require-dev": {
 		"roave/security-advisories": "dev-master",
 		"friendsofphp/php-cs-fixer": "^2.0",
-		"typo3/cms-styleguide": "~10.0.2",
 		"typo3/testing-framework": "^4.11"
 	},
 	"autoload": {

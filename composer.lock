@@ -4,7 +4,7 @@
     "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
     "This file is @generated automatically"
   ],
-  "content-hash": "9506440cb190bc40ae2493841582e321",
+  "content-hash": "cc2a2614fba8a54eb05d879d69263b04",
   "packages": [
     {
       "name": "algo26-matthias/idna-convert",
@@ -15,16 +15,16 @@
         "reference": "a6dfb6f87611e3a89d2eec4924a0f51db755c573"
       },
       "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/algo26-matthias/idna-convert/zipball/a6dfb6f87611e3a89d2eec4924a0f51db755c573",
-                "reference": "a6dfb6f87611e3a89d2eec4924a0f51db755c573",
-                "shasum": ""
-            },
-            "require": {
-                "ext-pcre": "*",
-                "php": ">=5.6.0"
-            },
-            "type": "library",
+        "type": "zip",
+        "url": "https://api.github.com/repos/algo26-matthias/idna-convert/zipball/a6dfb6f87611e3a89d2eec4924a0f51db755c573",
+        "reference": "a6dfb6f87611e3a89d2eec4924a0f51db755c573",
+        "shasum": ""
+      },
+      "require": {
+        "ext-pcre": "*",
+        "php": ">=5.6.0"
+      },
+      "type": "library",
             "extra": {
                 "branch-alias": {
                     "dev-master": "1.0.x-dev"
@@ -1673,14 +1673,14 @@
                     "email": "fabien@symfony.com"
                 }
             ],
-            "description": "Swiftmailer, free feature-rich PHP mailer",
-            "homepage": "https://swiftmailer.symfony.com",
-            "keywords": [
-                "email",
-                "mail",
-                "mailer"
-            ],
-            "time": "2018-07-31T09:26:32+00:00"
+          "description": "Swiftmailer, free feature-rich PHP mailer",
+          "homepage": "https://swiftmailer.symfony.com",
+          "keywords": [
+            "email",
+            "mail",
+            "mailer"
+          ],
+          "time": "2018-07-31T09:26:32+00:00"
         },
     {
       "name": "symfony/cache",
@@ -1706,16 +1706,16 @@
       },
       "conflict": {
         "doctrine/dbal": "<2.5",
-                "symfony/dependency-injection": "<3.4",
-                "symfony/http-kernel": "<4.4",
-                "symfony/var-dumper": "<4.4"
-            },
-            "provide": {
-                "psr/cache-implementation": "1.0",
-                "psr/simple-cache-implementation": "1.0",
-                "symfony/cache-implementation": "1.0"
-            },
-            "require-dev": {
+        "symfony/dependency-injection": "<3.4",
+        "symfony/http-kernel": "<4.4",
+        "symfony/var-dumper": "<4.4"
+      },
+      "provide": {
+        "psr/cache-implementation": "1.0",
+        "psr/simple-cache-implementation": "1.0",
+        "symfony/cache-implementation": "1.0"
+      },
+      "require-dev": {
                 "cache/integration-tests": "dev-master",
                 "doctrine/cache": "~1.6",
                 "doctrine/dbal": "~2.5",
@@ -1799,16 +1799,16 @@
             ],
             "authors": [
                 {
-                    "name": "Nicolas Grekas",
-                    "email": "p@tchwork.com"
+                  "name": "Nicolas Grekas",
+                  "email": "p@tchwork.com"
                 },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
+              {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+              }
             ],
-            "description": "Generic abstractions related to caching",
-            "homepage": "https://symfony.com",
+          "description": "Generic abstractions related to caching",
+          "homepage": "https://symfony.com",
           "keywords": [
             "abstractions",
             "contracts",
@@ -1843,16 +1843,16 @@
         "symfony/dependency-injection": "<3.4",
         "symfony/event-dispatcher": "<4.3|>=5",
         "symfony/lock": "<4.4",
-                "symfony/process": "<3.3"
-            },
-            "provide": {
-                "psr/log-implementation": "1.0"
-            },
-            "require-dev": {
-                "psr/log": "~1.0",
-                "symfony/config": "^3.4|^4.0|^5.0",
-                "symfony/dependency-injection": "^3.4|^4.0|^5.0",
-                "symfony/event-dispatcher": "^4.3",
+        "symfony/process": "<3.3"
+      },
+      "provide": {
+        "psr/log-implementation": "1.0"
+      },
+      "require-dev": {
+        "psr/log": "~1.0",
+        "symfony/config": "^3.4|^4.0|^5.0",
+        "symfony/dependency-injection": "^3.4|^4.0|^5.0",
+        "symfony/event-dispatcher": "^4.3",
                 "symfony/lock": "^4.4|^5.0",
                 "symfony/process": "^3.4|^4.0|^5.0",
                 "symfony/var-dumper": "^4.3|^5.0"
@@ -1881,16 +1881,16 @@
             "license": [
                 "MIT"
             ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-              {
-                "name": "Symfony Community",
-                "homepage": "https://symfony.com/contributors"
-              }
-            ],
+      "authors": [
+        {
+          "name": "Fabien Potencier",
+          "email": "fabien@symfony.com"
+        },
+        {
+          "name": "Symfony Community",
+          "homepage": "https://symfony.com/contributors"
+        }
+      ],
       "description": "Symfony Console Component",
       "homepage": "https://symfony.com",
       "time": "2019-12-01T10:06:17+00:00"
@@ -1918,30 +1918,30 @@
       "extra": {
         "branch-alias": {
           "dev-master": "4.4-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\ExpressionLanguage\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "Symfony\\Component\\ExpressionLanguage\\": ""
+        },
+        "exclude-from-classmap": [
+          "/Tests/"
+        ]
+      },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-              {
-                "name": "Symfony Community",
-                "homepage": "https://symfony.com/contributors"
-              }
-            ],
+      "authors": [
+        {
+          "name": "Fabien Potencier",
+          "email": "fabien@symfony.com"
+        },
+        {
+          "name": "Symfony Community",
+          "homepage": "https://symfony.com/contributors"
+        }
+      ],
       "description": "Symfony ExpressionLanguage Component",
       "homepage": "https://symfony.com",
       "time": "2019-11-12T14:53:53+00:00"
@@ -1969,28 +1969,28 @@
           "dev-master": "4.4-dev"
         }
       },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Finder\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
+      "autoload": {
+        "psr-4": {
+          "Symfony\\Component\\Finder\\": ""
+        },
+        "exclude-from-classmap": [
+          "/Tests/"
+        ]
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
                 "MIT"
             ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-              {
-                "name": "Symfony Community",
-                "homepage": "https://symfony.com/contributors"
-              }
-            ],
+      "authors": [
+        {
+          "name": "Fabien Potencier",
+          "email": "fabien@symfony.com"
+        },
+        {
+          "name": "Symfony Community",
+          "homepage": "https://symfony.com/contributors"
+        }
+      ],
       "description": "Symfony Finder Component",
       "homepage": "https://symfony.com",
       "time": "2019-11-17T21:56:56+00:00"
@@ -2019,16 +2019,16 @@
       "suggest": {
         "ext-intl": "to use the component with locales other than \"en\""
       },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.4-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Intl\\": ""
-                },
+      "type": "library",
+      "extra": {
+        "branch-alias": {
+          "dev-master": "4.4-dev"
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "Symfony\\Component\\Intl\\": ""
+        },
                 "classmap": [
                     "Resources/stubs"
                 ],
@@ -2400,16 +2400,16 @@
             "license": [
                 "MIT"
             ],
-            "authors": [
-                {
-                    "name": "Nicolas Grekas",
-                    "email": "p@tchwork.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
+          "authors": [
+            {
+              "name": "Nicolas Grekas",
+              "email": "p@tchwork.com"
+            },
+            {
+              "name": "Symfony Community",
+              "homepage": "https://symfony.com/contributors"
+            }
+          ],
           "description": "Symfony polyfill backporting some PHP 7.3+ features to lower PHP versions",
           "homepage": "https://symfony.com",
           "keywords": [
@@ -2444,27 +2444,27 @@
         }
       },
       "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Process\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
+        "psr-4": {
+          "Symfony\\Component\\Process\\": ""
+        },
+        "exclude-from-classmap": [
+          "/Tests/"
+        ]
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
             ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-              {
-                "name": "Symfony Community",
-                "homepage": "https://symfony.com/contributors"
-              }
-            ],
+      "authors": [
+        {
+          "name": "Fabien Potencier",
+          "email": "fabien@symfony.com"
+        },
+        {
+          "name": "Symfony Community",
+          "homepage": "https://symfony.com/contributors"
+        }
+      ],
       "description": "Symfony Process Component",
       "homepage": "https://symfony.com",
       "time": "2019-11-28T13:33:56+00:00"
@@ -2493,16 +2493,16 @@
       },
       "require-dev": {
         "doctrine/annotations": "~1.2",
-                "psr/log": "~1.0",
-                "symfony/config": "^4.2|^5.0",
-                "symfony/dependency-injection": "^3.4|^4.0|^5.0",
-                "symfony/expression-language": "^3.4|^4.0|^5.0",
-                "symfony/http-foundation": "^3.4|^4.0|^5.0",
-                "symfony/yaml": "^3.4|^4.0|^5.0"
-            },
-            "suggest": {
-                "doctrine/annotations": "For using the annotation loader",
-                "symfony/config": "For using the all-in-one router or any loader",
+        "psr/log": "~1.0",
+        "symfony/config": "^4.2|^5.0",
+        "symfony/dependency-injection": "^3.4|^4.0|^5.0",
+        "symfony/expression-language": "^3.4|^4.0|^5.0",
+        "symfony/http-foundation": "^3.4|^4.0|^5.0",
+        "symfony/yaml": "^3.4|^4.0|^5.0"
+      },
+      "suggest": {
+        "doctrine/annotations": "For using the annotation loader",
+        "symfony/config": "For using the all-in-one router or any loader",
                 "symfony/expression-language": "For using expression matching",
                 "symfony/http-foundation": "For using a Symfony Request object",
                 "symfony/yaml": "For using the YAML loader"
@@ -2583,16 +2583,16 @@
             ],
             "authors": [
                 {
-                    "name": "Nicolas Grekas",
-                    "email": "p@tchwork.com"
+                  "name": "Nicolas Grekas",
+                  "email": "p@tchwork.com"
                 },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
+              {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+              }
             ],
-            "description": "Generic abstractions related to writing services",
-            "homepage": "https://symfony.com",
+          "description": "Generic abstractions related to writing services",
+          "homepage": "https://symfony.com",
           "keywords": [
             "abstractions",
             "contracts",
@@ -2627,32 +2627,32 @@
       "extra": {
         "branch-alias": {
           "dev-master": "4.4-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\VarExporter\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "Symfony\\Component\\VarExporter\\": ""
+        },
+        "exclude-from-classmap": [
+          "/Tests/"
+        ]
+      },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "authors": [
                 {
-                    "name": "Nicolas Grekas",
-                    "email": "p@tchwork.com"
+                  "name": "Nicolas Grekas",
+                  "email": "p@tchwork.com"
                 },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
+              {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+              }
             ],
-            "description": "A blend of var_export() + serialize() to turn any serializable data structure to plain PHP code",
-            "homepage": "https://symfony.com",
+      "description": "A blend of var_export() + serialize() to turn any serializable data structure to plain PHP code",
+      "homepage": "https://symfony.com",
       "keywords": [
         "clone",
         "construct",
@@ -2686,16 +2686,16 @@
       },
       "require-dev": {
         "symfony/console": "^3.4|^4.0|^5.0"
-            },
-            "suggest": {
-                "symfony/console": "For validating YAML files using the lint command"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.4-dev"
-                }
-            },
+      },
+      "suggest": {
+        "symfony/console": "For validating YAML files using the lint command"
+      },
+      "type": "library",
+      "extra": {
+        "branch-alias": {
+          "dev-master": "4.4-dev"
+        }
+      },
             "autoload": {
                 "psr-4": {
                     "Symfony\\Component\\Yaml\\": ""
@@ -2721,43 +2721,6 @@
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
             "time": "2019-11-12T14:51:11+00:00"
-        },
-        {
-            "name": "typo3-console/composer-auto-commands",
-            "version": "v0.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/TYPO3-Console/composer-auto-commands.git",
-                "reference": "b38495e9befbfd6b6dc7354c368cdbe1b52ad147"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-Console/composer-auto-commands/zipball/b38495e9befbfd6b6dc7354c368cdbe1b52ad147",
-                "reference": "b38495e9befbfd6b6dc7354c368cdbe1b52ad147",
-                "shasum": ""
-            },
-            "require": {
-                "helhum/typo3-console": "^4.9.5 || ^5.0",
-                "php": "^7.0",
-                "typo3/cms-composer-installers": "^1.4.2 || ^2.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Typo3Console\\ComposerAutoCommands\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "description": "Execute TYPO3 Console commands on 'composer install'",
-            "time": "2019-08-16T10:45:08+00:00"
         },
         {
             "name": "typo3/class-alias-loader",
@@ -4635,15 +4598,15 @@
                     "dev-master": "v3.x-dev"
                 }
             },
-            "autoload": {
-                "psr-4": {
-                    "TYPO3\\PharStreamWrapper\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
+          "autoload": {
+            "psr-4": {
+              "TYPO3\\PharStreamWrapper\\": "src/"
+            }
+          },
+          "notification-url": "https://packagist.org/downloads/",
+          "license": [
+            "MIT"
+          ],
           "description": "Interceptors for PHP's native phar:// stream handling",
           "homepage": "https://typo3.org/",
           "keywords": [
@@ -4678,16 +4641,16 @@
         "squizlabs/php_codesniffer": "^2.7"
       },
       "bin": [
-                "bin/fluid"
-            ],
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "TYPO3Fluid\\Fluid\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
+        "bin/fluid"
+      ],
+      "type": "library",
+      "autoload": {
+        "psr-4": {
+          "TYPO3Fluid\\Fluid\\": "src/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
                 "LGPL-3.0-or-later"
             ],
             "description": "The TYPO3 Fluid template rendering engine",
@@ -5637,15 +5600,15 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de"
+                  "email": "sebastian@phpunit.de"
                 }
             ],
-            "description": "Wrapper around PHP's tokenizer extension.",
-            "homepage": "https://github.com/sebastianbergmann/php-token-stream/",
-            "keywords": [
-                "tokenizer"
-            ],
-            "time": "2019-09-17T06:23:10+00:00"
+          "description": "Wrapper around PHP's tokenizer extension.",
+          "homepage": "https://github.com/sebastianbergmann/php-token-stream/",
+          "keywords": [
+            "tokenizer"
+          ],
+          "time": "2019-09-17T06:23:10+00:00"
         },
       {
         "name": "phpunit/phpunit",
@@ -5661,16 +5624,16 @@
           "reference": "fcf6c4bfafaadc07785528b06385cce88935474d",
           "shasum": ""
         },
-            "require": {
-                "doctrine/instantiator": "^1.1",
-                "ext-dom": "*",
-                "ext-json": "*",
-                "ext-libxml": "*",
-                "ext-mbstring": "*",
-                "ext-xml": "*",
-                "myclabs/deep-copy": "^1.7",
-                "phar-io/manifest": "^1.0.2",
-                "phar-io/version": "^2.0",
+        "require": {
+          "doctrine/instantiator": "^1.1",
+          "ext-dom": "*",
+          "ext-json": "*",
+          "ext-libxml": "*",
+          "ext-mbstring": "*",
+          "ext-xml": "*",
+          "myclabs/deep-copy": "^1.7",
+          "phar-io/manifest": "^1.0.2",
+          "phar-io/version": "^2.0",
                 "php": "^7.1",
                 "phpspec/prophecy": "^1.7",
                 "phpunit/php-code-coverage": "^6.0.7",
@@ -6501,16 +6464,16 @@
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-              {
-                "name": "Sebastian Bergmann",
-                "email": "sebastian@phpunit.de",
-                "role": "lead"
-              }
-            ],
+          "license": [
+            "BSD-3-Clause"
+          ],
+          "authors": [
+            {
+              "name": "Sebastian Bergmann",
+              "email": "sebastian@phpunit.de",
+              "role": "lead"
+            }
+          ],
           "description": "Library that helps with managing the version number of Git-hosted PHP projects",
           "homepage": "https://github.com/sebastianbergmann/version",
           "time": "2016-10-03T07:35:21+00:00"
@@ -6539,16 +6502,16 @@
         "provide": {
           "psr/event-dispatcher-implementation": "1.0",
           "symfony/event-dispatcher-implementation": "1.1"
-            },
-            "require-dev": {
-                "psr/log": "~1.0",
-                "symfony/config": "^3.4|^4.0|^5.0",
-                "symfony/dependency-injection": "^3.4|^4.0|^5.0",
-                "symfony/expression-language": "^3.4|^4.0|^5.0",
-                "symfony/http-foundation": "^3.4|^4.0|^5.0",
-                "symfony/service-contracts": "^1.1|^2",
-                "symfony/stopwatch": "^3.4|^4.0|^5.0"
-            },
+        },
+        "require-dev": {
+          "psr/log": "~1.0",
+          "symfony/config": "^3.4|^4.0|^5.0",
+          "symfony/dependency-injection": "^3.4|^4.0|^5.0",
+          "symfony/expression-language": "^3.4|^4.0|^5.0",
+          "symfony/http-foundation": "^3.4|^4.0|^5.0",
+          "symfony/service-contracts": "^1.1|^2",
+          "symfony/stopwatch": "^3.4|^4.0|^5.0"
+        },
             "suggest": {
                 "symfony/dependency-injection": "",
                 "symfony/http-kernel": ""
@@ -6623,16 +6586,16 @@
             ],
             "authors": [
                 {
-                    "name": "Nicolas Grekas",
-                    "email": "p@tchwork.com"
+                  "name": "Nicolas Grekas",
+                  "email": "p@tchwork.com"
                 },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
+              {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+              }
             ],
-            "description": "Generic abstractions related to dispatching event",
-            "homepage": "https://symfony.com",
+          "description": "Generic abstractions related to dispatching event",
+          "homepage": "https://symfony.com",
           "keywords": [
             "abstractions",
             "contracts",
@@ -6667,28 +6630,28 @@
             "dev-master": "4.4-dev"
           }
         },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Filesystem\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
+        "autoload": {
+          "psr-4": {
+            "Symfony\\Component\\Filesystem\\": ""
+          },
+          "exclude-from-classmap": [
+            "/Tests/"
+          ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
                 "MIT"
             ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-              {
-                "name": "Symfony Community",
-                "homepage": "https://symfony.com/contributors"
-              }
-            ],
+        "authors": [
+          {
+            "name": "Fabien Potencier",
+            "email": "fabien@symfony.com"
+          },
+          {
+            "name": "Symfony Community",
+            "homepage": "https://symfony.com/contributors"
+          }
+        ],
         "description": "Symfony Filesystem Component",
         "homepage": "https://symfony.com",
         "time": "2019-11-26T23:16:41+00:00"
@@ -6716,16 +6679,16 @@
             "dev-master": "4.4-dev"
           }
         },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\OptionsResolver\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
+        "autoload": {
+          "psr-4": {
+            "Symfony\\Component\\OptionsResolver\\": ""
+          },
+          "exclude-from-classmap": [
+            "/Tests/"
+          ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
                 "MIT"
             ],
             "authors": [
@@ -6786,16 +6749,16 @@
             "license": [
                 "MIT"
             ],
-            "authors": [
-                {
-                    "name": "Nicolas Grekas",
-                    "email": "p@tchwork.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
+          "authors": [
+            {
+              "name": "Nicolas Grekas",
+              "email": "p@tchwork.com"
+            },
+            {
+              "name": "Symfony Community",
+              "homepage": "https://symfony.com/contributors"
+            }
+          ],
           "description": "Symfony polyfill backporting some PHP 7.0+ features to lower PHP versions",
           "homepage": "https://symfony.com",
           "keywords": [
@@ -6829,16 +6792,16 @@
           "branch-alias": {
             "dev-master": "4.4-dev"
           }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Stopwatch\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
+        },
+        "autoload": {
+          "psr-4": {
+            "Symfony\\Component\\Stopwatch\\": ""
+          },
+          "exclude-from-classmap": [
+            "/Tests/"
+          ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -6896,70 +6859,6 @@
             "description": "A small library for converting tokenized PHP source code into XML and potentially other formats",
             "time": "2019-06-13T22:48:21+00:00"
         },
-        {
-            "name": "typo3/cms-styleguide",
-            "version": "10.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/TYPO3/styleguide.git",
-                "reference": "d78e580d6831f8c11ea55605e2327fdff4f47181"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/styleguide/zipball/d78e580d6831f8c11ea55605e2327fdff4f47181",
-                "reference": "d78e580d6831f8c11ea55605e2327fdff4f47181",
-                "shasum": ""
-            },
-            "replace": {
-                "styleguide": "*"
-            },
-            "require-dev": {
-                "codeception/codeception": "^2.4",
-                "typo3/cms-about": "10.*.*@dev",
-                "typo3/cms-core": "10.*.*@dev",
-                "typo3/cms-frontend": "10.*.*@dev",
-                "typo3/cms-install": "10.*.*@dev",
-                "typo3/testing-framework": "^5.0.0"
-            },
-            "type": "typo3-cms-extension",
-            "extra": {
-                "typo3/cms": {
-                    "app-dir": ".Build",
-                    "web-dir": ".Build/Web",
-                    "extension-key": "styleguide"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "TYPO3\\CMS\\Styleguide\\": "Classes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "TYPO3 CMS Core Team",
-                    "homepage": "https://forge.typo3.org/projects/typo3cms-core",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Felix Kopp",
-                    "email": "felix-source@phorax.com",
-                    "homepage": "http://phorax.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "TYPO3 CMS Extension to test everything in the TYPO3 Backend",
-            "homepage": "https://github.com/TYPO3/styleguide",
-            "keywords": [
-                "style guide",
-                "typo3",
-                "typo3 backend"
-            ],
-            "time": "2019-09-04T14:04:43+00:00"
-        },
       {
         "name": "typo3/testing-framework",
         "version": "4.14.0",
@@ -6974,17 +6873,17 @@
           "reference": "3284898ad044772384f3de71d7abc995e0f5356c",
           "shasum": ""
         },
-            "require": {
-              "mikey179/vfsstream": "~1.6.8",
-              "phpunit/phpunit": "^7.5.6",
-              "typo3/cms-backend": "^9.3",
-              "typo3/cms-core": "^9.3",
-              "typo3/cms-extbase": "^9.3",
-              "typo3/cms-fluid": "^9.3",
-              "typo3/cms-frontend": "^9.3",
-              "typo3/cms-recordlist": "^9.3",
-              "typo3fluid/fluid": "^2.5"
-            },
+        "require": {
+          "mikey179/vfsstream": "~1.6.8",
+          "phpunit/phpunit": "^7.5.6",
+          "typo3/cms-backend": "^9.3",
+          "typo3/cms-core": "^9.3",
+          "typo3/cms-extbase": "^9.3",
+          "typo3/cms-fluid": "^9.3",
+          "typo3/cms-frontend": "^9.3",
+          "typo3/cms-recordlist": "^9.3",
+          "typo3fluid/fluid": "^2.5"
+        },
             "suggest": {
                 "codeception/codeception": "^2.4",
                 "typo3/cms-styleguide": "^9.0"
