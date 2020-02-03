@@ -1,0 +1,30 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+<f:spaceless>
+    <div id="top"></div>
+    <div class="body-bg{f:if(condition:theme.navigation.type, then:' body-bg-{theme.navigation.type}')}">
+
+        <f:render arguments="{_all}" partial="Structure/CookieConsent"/>
+        <a class="sr-only sr-only-focusable" href="#page-content">
+            <span>{f:translate(key: 'skiptomaincontent', extensionName: 'bootstrap_package')}</span>
+        </a>
+        <f:render arguments="{_all}" partial="Navigation/Main"/>
+        <f:render optional="true" section="Border"/>
+        <f:render arguments="{_all}" partial="Navigation/Breadcrumb"/>
+
+        <div class="bp-page-content main-section" id="page-content">
+            <!--TYPO3SEARCH_begin-->
+            <f:render section="Main"/>
+            <!--TYPO3SEARCH_end-->
+        </div>
+
+        <footer class="bp-page-footer" id="page-footer">
+            <f:render arguments="{_all}" partial="DropIn/Structure/FooterBefore"/>
+            <f:render optional="true" section="Footer"/>
+            <f:render arguments="{_all}" partial="Structure/FooterMeta"/>
+            <f:render arguments="{_all}" partial="DropIn/Structure/FooterAfter"/>
+        </footer>
+        <f:render arguments="{_all}" partial="Structure/ScrollTop"/>
+
+    </div>
+</f:spaceless>
+</html>
