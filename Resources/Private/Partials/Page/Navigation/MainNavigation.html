@@ -70,11 +70,11 @@
                         </f:for>
                     </ul>
                 </f:if>
+                <f:comment>felogin is not loaded, so there is no need for a link in the menu</f:comment>
+                <f:if condition="{settings.felogin.inmenu}">
+                    <f:render arguments="{_all}" partial="Navigation/LoginLogout"/>
+                </f:if>
             </li>
-            <f:comment>felogin is not loaded, so there is no need for a link in the menu</f:comment>
-            <f:if condition="{settings.felogin.inmenu}">
-                <f:render arguments="{_all}" partial="Navigation/LoginLogout"/>
-            </f:if>
         </f:else>
 </f:if>
 </f:for>
