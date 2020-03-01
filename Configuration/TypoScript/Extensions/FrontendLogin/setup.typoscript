@@ -17,10 +17,9 @@ temp.logoutStatus {
   value = <span class="nav-link-text">{LLL:EXT:resterland/Resources/Private/Language/locallang_felogin.xlf:constant_cats.felogin.logout}</span>
   stdWrap.insertData = 1
   typolink {
-    parameter.data = page:uid
+    parameter = {$styles.content.loginform.redirectuid}
     additionalParams = &logintype=logout
     ATagParams = title="Logout" class="nav-link"
-    linkAccessRestrictedPages = 1
 
   }
 }
@@ -38,7 +37,7 @@ lib.userinfo.wrap = <p>|</p>
 lib.userinfo {
   10 = COA
   10.1 = TEXT
-  10.1.value = {$text.hallo}
+  10.1.value = {$styles.content.userinfo.hallo}
   10.1.htmlSpecialChars = 1
   10.1.insertData = 1
   10.2 = TEXT
@@ -62,7 +61,7 @@ lib.userinfo {
 
   20 = TEXT
   20.data = TSFE:fe_user|user|username
-  20.wrap = {$text.loggedIn}&nbsp;|<br/>
+  20.wrap = {$styles.content.userinfo.loggedIn}&nbsp;|<br/>
   20.required = 1
 
   30 < .20
@@ -86,5 +85,5 @@ lib.userinfo {
     2.10.renderObj.wrap = &nbsp;|
   }
 
-  30.wrap = {$text.memberGruppe}|
+  30.wrap = {$styles.content.userinfo.memberGruppe}|
 }

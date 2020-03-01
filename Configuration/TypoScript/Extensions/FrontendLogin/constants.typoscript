@@ -8,22 +8,27 @@
 # customsubcategory=200=LLL:EXT:resterland/Resources/Private/Language/locallang_felogin.xlf:constant_cats.felogin
 
 styles.content.loginform {
-    templateFile = EXT:resterland/Resources/Private/Templates/FrontendLogin/FrontendLogin.html
+  templateFile = EXT:resterland/Resources/Private/Templates/FrontendLogin/FrontendLogin.html
 }
 
 styles.content.loginform {
-    #enable login/logout link in menu: default disabled
-    # cat=Resterland Settings: felogin/200/100; type=boolean; label=LLL:EXT:resterland/Resources/Private/Language/locallang_felogin.xlf:constant_cats.felogin.inmenu
-    inmenu =
-    #pid of Login/Logout page
-    # cat=Resterland Settings: felogin/200/200; type=int+; label=LLL:EXT:resterland/Resources/Private/Language/locallang_felogin.xlf:constant_cats.felogin.pageuid
-    pageuid =
+  #enable login/logout link in menu: default disabled
+  # cat=Resterland Settings: felogin/200/100; type=boolean; label=LLL:EXT:resterland/Resources/Private/Language/locallang_felogin.xlf:constant_cats.felogin.inmenu
+  inmenu =
+  #pid of Login/Logout page
+  # cat=Resterland Settings: felogin/200/200; type=int+; label=LLL:EXT:resterland/Resources/Private/Language/locallang_felogin.xlf:constant_cats.felogin.pageuid
+  pageuid =
+  #pid of redirect page after logout
+  # cat=Resterland Settings: felogin/200/200; type=int+; label=LLL:EXT:resterland/Resources/Private/Language/locallang_felogin.xlf:constant_cats.felogin.redirectuid
+  redirectuid = {$styles.content.loginform.redirectPageLogout}
+}
 
-    # fe-userinfo
-    alias = Alias:
-    loggedIn = Sie sind angemeldet als:
-    hallo = Hallo
-    lastlogin = Letztmals angemeldet:
-    firstlogin = Sie sind das 1. Mal angmeldet.
-    memberGruppe = Sie sind Mitglied der Gruppe(n):
+styles.content.userinfo {
+  # fe-userinfo
+  alias = Alias:
+  loggedIn = Sie sind angemeldet als:
+  hallo = Hallo
+  lastlogin = Letztmals angemeldet:
+  firstlogin = Sie sind das 1. Mal angmeldet.
+  memberGruppe = Sie sind Mitglied der Gruppe(n):
 }

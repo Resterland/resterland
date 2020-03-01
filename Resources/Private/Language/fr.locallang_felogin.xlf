@@ -19,6 +19,11 @@
                 <source>Page UID of the Login/Logout Page</source>
                 <target>Pages UID à partir de la page de connexion/déconnexion</target>
             </trans-unit>
+            <!-- felogin redirectuid -->
+            <trans-unit id="constant_cats.felogin.redirectuid" xml:space="preserve">
+                <source>Target page (uid) after logout</source>
+                <target state="translated">Page de cible (uid) après déconnexion</target>
+            </trans-unit>
             <!-- felogin login -->
             <trans-unit id="constant_cats.felogin.login" xml:space="preserve">
                 <source>Login</source>
