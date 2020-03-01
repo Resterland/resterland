@@ -1,6 +1,10 @@
 ################################
 #### Login Status Settings #####
 ################################
+config {
+  typolinkLinkAccessRestrictedPages = {$styles.content.loginform.pageuid}
+  typolinkLinkAccessRestrictedPages_addParams = &return_url=###RETURN_URL###
+}
 temp.loginStatus = TEXT
 temp.loginStatus {
   value = <span class="nav-link-text">{LLL:EXT:resterland/Resources/Private/Language/locallang_felogin.xlf:constant_cats.felogin.login}</span>
