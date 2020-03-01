@@ -17,7 +17,7 @@ temp.logoutStatus {
   value = <span class="nav-link-text">{LLL:EXT:resterland/Resources/Private/Language/locallang_felogin.xlf:constant_cats.felogin.logout}</span>
   stdWrap.insertData = 1
   typolink {
-    parameter = {$styles.content.loginform.redirectuid}
+    parameter = {$styles.content.loginform.redirectPageLogout}
     additionalParams = &logintype=logout
     ATagParams = title="Logout" class="nav-link"
 
