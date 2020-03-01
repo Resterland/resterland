@@ -353,4 +353,4 @@ config {
 }
 
 ### Debugging -> not for production sites
-config.contentObjectExceptionHandler = 0
+config.contentObjectExceptionHandler = 1
