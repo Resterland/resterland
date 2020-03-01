@@ -20,7 +20,7 @@ styles.content.loginform {
   pageuid =
   #pid of redirect page after logout
   # cat=Resterland Settings: felogin/200/200; type=int+; label=LLL:EXT:resterland/Resources/Private/Language/locallang_felogin.xlf:constant_cats.felogin.redirectuid
-  redirectuid = {$styles.content.loginform.redirectPageLogout}
+  redirectuid = 1
 }
 
 styles.content.userinfo {
