@@ -347,6 +347,10 @@ config {
   spamProtectEmailAddresses = ascii
   spamProtectEmailAddresses_atSubst = (at)
 }
+config {
+  typolinkLinkAccessRestrictedPages = {$styles.content.loginform.pageuid}
+  typolinkLinkAccessRestrictedPages_addParams = &return_url=###RETURN_URL###
+}
 
 ### Debugging -> not for production sites
 config.contentObjectExceptionHandler = 0
