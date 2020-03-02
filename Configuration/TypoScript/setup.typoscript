@@ -78,6 +78,7 @@ page {
         levels = 2
         includeSpacer = 1
         showAccessRestrictedPages = 123
+        showAccessRestrictedPages.addParams = &return_url=###RETURN_URL###&pageId=###PAGE_ID###
         as = mainnavigation
         dataProcessing {
           10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
@@ -350,6 +351,7 @@ config {
 }
 config {
   typolinkLinkAccessRestrictedPages = 123
+  config.typolinkLinkAccessRestrictedPages_addParams = &return_url=###RETURN_URL###&pageId=###PAGE_ID###
 }
 
 ### Debugging -> not for production sites
