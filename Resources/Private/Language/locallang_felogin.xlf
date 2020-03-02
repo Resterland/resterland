@@ -21,6 +21,10 @@
             <trans-unit id="constant_cats.felogin.pageuid" xml:space="preserve">
                 <source>Page UID of the Login/Logout Page</source>
             </trans-unit>
+            <!-- felogin redirectuid -->
+            <trans-unit id="constant_cats.felogin.redirectuid" xml:space="preserve">
+                <source>Target page (uid) after logout</source>
+            </trans-unit>
             <!-- felogin login -->
             <trans-unit id="constant_cats.felogin.login" xml:space="preserve">
                 <source>Login</source>

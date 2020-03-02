@@ -3,29 +3,30 @@
 ################################
 temp.loginStatus = TEXT
 temp.loginStatus {
-    value = <span class="nav-link-text">{LLL:EXT:resterland/Resources/Private/Language/locallang_felogin.xlf:constant_cats.felogin.login}</span>
-    stdWrap.insertData = 1
-    typolink {
-        parameter = {$styles.content.loginform.pageuid}
-        additionalParams.htmlSpecialChars = 1
-        ATagParams = title="Login" class="nav-link"
-    }
+  value = <span class="nav-link-text">{LLL:EXT:resterland/Resources/Private/Language/locallang_felogin.xlf:constant_cats.felogin.login}</span>
+  stdWrap.insertData = 1
+  typolink {
+    parameter = {$styles.content.loginform.pageuid}
+    additionalParams.htmlSpecialChars = 1
+    ATagParams = title="Login" class="nav-link"
+  }
 }
 
 temp.logoutStatus = TEXT
 temp.logoutStatus {
-    value = <span class="nav-link-text">{LLL:EXT:resterland/Resources/Private/Language/locallang_felogin.xlf:constant_cats.felogin.logout}</span>
-    stdWrap.insertData = 1
-    typolink {
-        parameter.data = page:uid
-        additionalParams = &logintype=logout
-        ATagParams = title="Logout" class="nav-link"
-    }
+  value = <span class="nav-link-text">{LLL:EXT:resterland/Resources/Private/Language/locallang_felogin.xlf:constant_cats.felogin.logout}</span>
+  stdWrap.insertData = 1
+  typolink {
+    parameter = {$styles.content.loginform.redirectuid}
+    additionalParams = &logintype=logout
+    ATagParams = title="Logout" class="nav-link"
+
+  }
 }
 
 lib.loginstatus < temp.loginStatus
 [loginUser = *]
-    lib.loginstatus < temp.logoutStatus
+  lib.loginstatus < temp.logoutStatus
 [global]
 
 #############################
@@ -34,55 +35,55 @@ lib.loginstatus < temp.loginStatus
 lib.userinfo = COA_INT
 lib.userinfo.wrap = <p>|</p>
 lib.userinfo {
-    10 = COA
-    10.1 = TEXT
-    10.1.value = {$text.hallo}
-    10.1.htmlSpecialChars = 1
-    10.1.insertData = 1
-    10.2 = TEXT
-    10.2 {
-        data = TSFE:fe_user|user|first_name
-        wrap = &nbsp;|
-        required = 1
+  10 = COA
+  10.1 = TEXT
+  10.1.value = {$styles.content.userinfo.hallo}
+  10.1.htmlSpecialChars = 1
+  10.1.insertData = 1
+  10.2 = TEXT
+  10.2 {
+    data = TSFE:fe_user|user|first_name
+    wrap = &nbsp;|
+    required = 1
+  }
+
+  10.3 = TEXT
+  10.3 {
+    data = TSFE:fe_user|user|last_name
+    required = 1
+    wrap = &nbsp;|
+  }
+
+  10.stdWrapifEmpty.data = TSFE:fe_user|user|name
+  10.stdWrap.required = 1
+
+  10.stdWrap.wrap = |,&nbsp;
+
+  20 = TEXT
+  20.data = TSFE:fe_user|user|username
+  20.wrap = {$styles.content.userinfo.loggedIn}&nbsp;|<br/>
+  20.required = 1
+
+  30 < .20
+  30.data = TSFE:fe_user|user|usergroup
+  30.split {
+    token = ,
+    cObjNum = |*||*| 1 || 2
+    1 {
+      10 = CONTENT
+      10.table = fe_groups
+      10.select.pidInList = 121
+      10.select.andWhere.current = 1
+      10.select.andWhere.wrap = uid=|
+      10.renderObj = TEXT
+      10.renderObj.field = title
+      10.renderObj.wrap = &nbsp;|,
     }
 
-    10.3 = TEXT
-    10.3 {
-        data = TSFE:fe_user|user|last_name
-        required = 1
-        wrap = &nbsp;|
-    }
+    2 < .1
+    2.10.renderObj.wrap >
+    2.10.renderObj.wrap = &nbsp;|
+  }
 
-    10.stdWrapifEmpty.data = TSFE:fe_user|user|name
-    10.stdWrap.required = 1
-
-    10.stdWrap.wrap = |,&nbsp;
-
-    20 = TEXT
-    20.data = TSFE:fe_user|user|username
-    20.wrap = {$text.loggedIn}&nbsp;|<br/>
-    20.required = 1
-
-    30 < .20
-    30.data = TSFE:fe_user|user|usergroup
-    30.split {
-        token = ,
-        cObjNum = |*||*| 1 || 2
-        1 {
-            10 = CONTENT
-            10.table = fe_groups
-            10.select.pidInList = 121
-            10.select.andWhere.current = 1
-            10.select.andWhere.wrap = uid=|
-            10.renderObj = TEXT
-            10.renderObj.field = title
-            10.renderObj.wrap = &nbsp;|,
-        }
-
-        2 < .1
-        2.10.renderObj.wrap >
-        2.10.renderObj.wrap = &nbsp;|
-    }
-
-    30.wrap = {$text.memberGruppe}|
+  30.wrap = {$styles.content.userinfo.memberGruppe}|
 }
