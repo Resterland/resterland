@@ -77,7 +77,7 @@ page {
       10 {
         levels = 2
         includeSpacer = 1
-        showAccessRestrictedPages = 123
+        showAccessRestrictedPages = {$styles.content.loginform.pageuid}
         showAccessRestrictedPages.addParams = &return_url=###RETURN_URL###&pageId=###PAGE_ID###
         as = mainnavigation
         dataProcessing {
@@ -350,7 +350,7 @@ config {
   spamProtectEmailAddresses_atSubst = (at)
 }
 config {
-  typolinkLinkAccessRestrictedPages = 123
+  typolinkLinkAccessRestrictedPages = {$styles.content.loginform.pageuid}
   config.typolinkLinkAccessRestrictedPages_addParams = &return_url=###RETURN_URL###&pageId=###PAGE_ID###
 }
 
