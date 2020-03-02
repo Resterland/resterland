@@ -106,6 +106,8 @@ page {
         levels = 2
         expandAll = 0
         includeSpacer = 1
+        showAccessRestrictedPages = {$styles.content.loginform.pageuid}
+        showAccessRestrictedPages.addParams = &return_url=###RETURN_URL###&pageId=###PAGE_ID###
         as = subnavigation
         dataProcessing {
           10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
