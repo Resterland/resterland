@@ -102,21 +102,23 @@ page {
 
       20 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
       20 {
-        entryLevel = 1
-        levels = 2
-        expandAll = 0
-        includeSpacer = 1
-        as = subnavigation
-        dataProcessing {
-          10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-          10 {
-            references.fieldName = nav_icon
-            as = icon
-            if {
-              isTrue = {$page.theme.subnavigation.icon.enable}
-            }
+          entryLevel = 1
+          levels = 2
+          expandAll = 0
+          includeSpacer = 1
+          showAccessRestrictedPages = {$styles.content.loginform.pageuid}
+          showAccessRestrictedPages.addParams = &return_url=###RETURN_URL###&pageId=###PAGE_ID###
+          as = subnavigation
+          dataProcessing {
+              10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+              10 {
+                  references.fieldName = nav_icon
+                  as = icon
+                  if {
+                      isTrue = {$page.theme.subnavigation.icon.enable}
+                  }
+              }
           }
-        }
       }
 
       30 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
