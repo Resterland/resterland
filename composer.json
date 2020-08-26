@@ -1,98 +1,95 @@
 {
-	"repositories": [
-		{
-			"type": "composer",
-			"url": "https://composer.typo3.org/"
-		},
-		{
-			"type": "vcs",
-			"url": "https://github.com/resterland/resterland.git"
-		}
-	],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://composer.typo3.org/"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/resterland/resterland.git"
+    }
+  ],
 
-	"name": "resterland/resterland",
-	"type": "typo3-cms-extension",
-	"description": "TYPO3 project realized according to the recommendations of Helmut Humel. Based on bootstrap-package of Bajamin Kott. Tweaked to the needs of ResterLand WebAtelier.",
-	"license": "GPL-2.0-or-later",
-	"keywords": [
-		"TYPO3",
-		"extension",
-		"bootstrap",
-		"responsive"
-	],
-	"homepage": "https://resterland.ch",
-	"authors": [
-		{
-			"name": "Roland Fuhrer",
-			"email": "roland@resterland.ch",
-			"homepage": "https://resterland.ch",
-			"role": "Developer"
-		}
-	],
-	"require": {
-		"php": ">=7.2",
-		"helhum/typo3-secure-web": "^0.2",
-		"helhum/typo3-console": "^5.7",
-		"typo3/cms-core": "^9.5",
-		"typo3/cms-impexp": "^9.5",
-		"typo3/cms-scheduler": "^9.5",
-		"typo3/cms-adminpanel": "^9.5",
-		"typo3/cms-beuser": "^9.5",
-		"typo3/cms-form": "^9.5",
-		"typo3/cms-redirects": "^9.5",
-		"typo3/cms-reports": "^9.5",
-		"typo3/cms-setup": "^9.5",
-		"typo3/cms-sys-note": "^9.5",
-		"typo3/cms-t3editor": "^9.5",
-		"typo3/cms-tstemplate": "^9.5",
-		"typo3/cms-viewpage": "^9.5",
-		"typo3/cms-info": "^9.5",
-		"typo3/cms-rte-ckeditor": "^9.5",
-		"typo3/cms-filemetadata": "^9.5",
-		"typo3/cms-indexed-search": "^9.5",
-		"typo3/cms-seo": "^9.5",
-		"typo3/cms-lowlevel": "^9.5",
-		"typo3/cms-linkvalidator": "^9.5",
-		"typo3/cms-felogin": "^9.5",
-		"typo3/cms-belog": "^9.5",
-		"causal/image_autoresize": "^1.9",
-		"bk2k/bootstrap-package": "^10.0 || ^11.0",
-		"georgringer/news": "^7.3"
-	},
-	"require-dev": {
-		"roave/security-advisories": "dev-master",
-		"friendsofphp/php-cs-fixer": "^2.0",
-		"typo3/testing-framework": "^4.11"
-	},
-	"autoload": {
-		"psr-4": {
-			"Resterland\\Resterland\\": "Classes"
-		}
-	},
-	"autoload-dev": {
-		"psr-4": {
-			"Resterland\\Resterland\\Tests\\": "Tests"
-		}
-	},
-	"replace": {
-		"resterland/resterland": "self.version",
-		"typo3-ter/resterland": "self.version"
-	},
-	"config": {
-		"platform": {
-			"php": "7.2"
-		},
-		"optimize-autoloader": true
-	},
-	"scripts": {
-		"set-version": [
-			"Resterland\\Resterland\\Composer\\VersionScript::setVersion"
-		]
-	},
-	"extra": {
-		"typo3/cms": {
-			"root-dir": "private",
-			"web-dir": "public"
-		}
-	}
+  "name": "resterland/resterland",
+  "type": "typo3-cms-extension",
+  "description": "TYPO3 project realized according to the recommendations of Helmut Humel. Based on bootstrap-package of Bajamin Kott. Tweaked to the needs of ResterLand WebAtelier.",
+  "license": "GPL-2.0-or-later",
+  "keywords": [
+    "TYPO3",
+    "extension",
+    "bootstrap",
+    "responsive"
+  ],
+  "homepage": "https://resterland.ch",
+  "authors": [
+    {
+      "name": "Roland Fuhrer",
+      "email": "roland@resterland.ch",
+      "homepage": "https://resterland.ch",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "helhum/typo3-secure-web": "^0.2",
+    "helhum/typo3-console": "^6.3",
+    "typo3/cms-core": "^10.4",
+    "typo3/cms-impexp": "^10.4",
+    "typo3/cms-scheduler": "^10.4",
+    "typo3/cms-adminpanel": "^10.4",
+    "typo3/cms-beuser": "^10.4",
+    "typo3/cms-form": "^10.4",
+    "typo3/cms-redirects": "^10.4",
+    "typo3/cms-reports": "^10.4",
+    "typo3/cms-setup": "^10.4",
+    "typo3/cms-sys-note": "^10.4",
+    "typo3/cms-t3editor": "^10.4",
+    "typo3/cms-tstemplate": "^10.4",
+    "typo3/cms-viewpage": "^10.4",
+    "typo3/cms-info": "^10.4",
+    "typo3/cms-rte-ckeditor": "^10.4",
+    "typo3/cms-filemetadata": "^10.4",
+    "typo3/cms-indexed-search": "^10.4",
+    "typo3/cms-seo": "^10.4",
+    "typo3/cms-lowlevel": "^10.4",
+    "typo3/cms-linkvalidator": "^10.4",
+    "typo3/cms-felogin": "^10.4",
+    "typo3/cms-belog": "^10.4",
+    "causal/image_autoresize": "^2.0",
+    "bk2k/bootstrap-package": "^11.0"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-master",
+    "typo3/testing-framework": "^5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Resterland\\Resterland\\": "Classes"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Resterland\\Resterland\\Tests\\": "Tests"
+    }
+  },
+  "replace": {
+    "resterland/resterland": "self.version",
+    "typo3-ter/resterland": "self.version"
+  },
+  "config": {
+    "platform": {
+      "php": "7.2"
+    },
+    "optimize-autoloader": true
+  },
+  "scripts": {
+    "set-version": [
+      "Resterland\\Resterland\\Composer\\VersionScript::setVersion"
+    ]
+  },
+  "extra": {
+    "typo3/cms": {
+      "root-dir": "private",
+      "web-dir": "public"
+    }
+  }
 }
