@@ -37,6 +37,13 @@
                         <f:render arguments="{_all}" partial="Navigation/LoginStatus"/>
                     </f:if>
                 </f:if>
+                <f:else>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <p>Scheisse</p>
+                        </li>
+                    </ul>
+                </f:else>
                 <f:render arguments="{_all}" partial="DropIn/Navigation/MainAfter"/>
                 <f:if condition="{theme.language.enable}">
                     <f:render arguments="{_all}" partial="Navigation/LanguageNavi"/>
