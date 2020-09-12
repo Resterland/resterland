@@ -35,6 +35,8 @@ styles.content.loginform {
     pid = 0
     # cat=Frontend Login/01_Storage/102; type=boolean; label= Recursive: If set, also any subfolders of the storagePid will be used
     recursive = 0
+    # cat=Frontend Login/01_Storage/103; type=int+; label=LLL:EXT:resterland/Resources/Private/Language/locallang_felogin.xlf:constant_cats.felogin.pageuid
+    pageuid =
 
     # cat=Frontend Login/02_Template/100; type=string; label= Login template: Enter the path for the HTML template to be used
     templateFile = EXT:resterland/Resources/Private/Templates/FrontendLogin/Login/Login.html
@@ -80,11 +82,6 @@ styles.content.loginform {
     redirectPageLogout = 0
     # cat=Frontend Login/05_Redirects/106; type=boolean; label= Disable Redirect: If set redirecting is disabled
     redirectDisable = 0
-    # cat=Resterland Settings: felogin/200/200; type=int+; label=LLL:EXT:resterland/Resources/Private/Language/locallang_felogin.xlf:constant_cats.felogin.pageuid
-    pageuid =
-    #pid of redirect page after logout
-    # cat=Resterland Settings: felogin/200/200; type=int+; label=LLL:EXT:resterland/Resources/Private/Language/locallang_felogin.xlf:constant_cats.felogin.redirectuid
-    redirectuid = 1
 
     # cat=Frontend Login/06_Security/100; type=int+; label= Time in hours how long the link for forget password is valid: How many hours the link for forget password is valid
     forgotLinkHashValidTime = 12
