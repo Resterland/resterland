@@ -21,7 +21,8 @@ plugin {
 }
 
 styles.content.loginform {
-    templateFile = EXT:resterland/Resources/Private/Templates/FrontendLogin/FrontendLogin.html
+    #templateFile = EXT:resterland/Resources/Private/Templates/FrontendLogin/FrontendLogin.html
+    templateFile >
 }
 
 styles.content.loginform {
