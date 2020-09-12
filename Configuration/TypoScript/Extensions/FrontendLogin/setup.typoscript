@@ -89,10 +89,10 @@ temp.logoutStatus {
     }
 }
 
-#lib.loginstatus < temp.loginStatus
-#[loginUser = *]
-#    lib.loginstatus < temp.logoutStatus
-#[global]
+lib.loginstatus < temp.loginStatus
+[loginUser = *]
+    lib.loginstatus < temp.logoutStatus
+[global]
 
 #############################
 #### User Info Settings #####
