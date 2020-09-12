@@ -4,17 +4,17 @@
 plugin.tx_felogin_login {
     view {
         templateRootPaths {
-            0 = EXT:felogin/Resources/Private/Templates/
+            0 = EXT:resterland/Resources/Private/Templates/FrontendLogin/
             10 = {$plugin.tx_felogin_login.view.templateRootPath}
         }
 
         partialRootPaths {
-            0 = EXT:felogin/Resources/Private/Partials/
+            0 = EXT:resterland/Resources/Private/Partials/FrontendLogin/
             10 = {$plugin.tx_felogin_login.view.partialRootPath}
         }
 
         layoutRootPaths {
-            0 = EXT:felogin/Resources/Private/Layouts/
+            0 = EXT:resterland/Resources/Private/Layouts/
             10 = {$plugin.tx_felogin_login.view.layoutRootPath}
         }
     }
