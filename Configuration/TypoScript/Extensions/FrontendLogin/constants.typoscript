@@ -7,15 +7,28 @@
 ###########################
 # customsubcategory=200=LLL:EXT:resterland/Resources/Private/Language/locallang_felogin.xlf:constant_cats.felogin
 
-styles.content.loginform {
-  templateFile = EXT:resterland/Resources/Private/Templates/FrontendLogin/FrontendLogin.html
+plugin {
+    tx_felogin_login {
+        view {
+            # cat=Frontend Login/02_Template/102; type=string; label= Path to template root (FE)
+            templateRootPath = EXT:felogin/Resources/Private/Templates/
+            # cat=Frontend Login/02_Template/103; type=string; label= Path to template partials (FE)
+            partialRootPath = EXT:felogin/Resources/Private/Partials/
+            # cat=Frontend Login/02_Template/104; type=string; label= Path to template layouts (FE)
+            layoutRootPath = EXT:felogin/Resources/Private/Layouts/
+        }
+    }
 }
 
 styles.content.loginform {
-  #enable login/logout link in menu: default disabled
-  # cat=Resterland Settings: felogin/200/100; type=boolean; label=LLL:EXT:resterland/Resources/Private/Language/locallang_felogin.xlf:constant_cats.felogin.inmenu
-  inmenu =
-  #pid of Login/Logout page
+    templateFile = EXT:resterland/Resources/Private/Templates/FrontendLogin/FrontendLogin.html
+}
+
+styles.content.loginform {
+    #enable login/logout link in menu: default disabled
+    # cat=Resterland Settings: felogin/200/100; type=boolean; label=LLL:EXT:resterland/Resources/Private/Language/locallang_felogin.xlf:constant_cats.felogin.inmenu
+    inmenu =
+    #pid of Login/Logout page
   # cat=Resterland Settings: felogin/200/200; type=int+; label=LLL:EXT:resterland/Resources/Private/Language/locallang_felogin.xlf:constant_cats.felogin.pageuid
   pageuid =
   #pid of redirect page after logout
