@@ -17,6 +17,11 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/Extension/Feedit/setup.typoscript" condition="extension.isLoaded('feedit') == 1">
 ## FrontendLogin
 @import 'EXT:resterland/Configuration/TypoScript/Extensions/FrontendLogin/setup.typoscript'
+[isLoaded('felogin')]
+    felogin.isloaded = 1
+[ELSE]
+    felogin.isloaded = 0
+[END]
 ## Form
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/Extension/Form/setup.typoscript" condition="extension.isLoaded('form') == 1">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/Extension/IndexedSearch/setup.typoscript" condition="extension.isLoaded('indexed_search') == 1">
@@ -186,7 +191,6 @@ page {
         }
 
         felogin.inmenu = {$styles.content.loginform.inmenu}
-        felogin.isloaded = 0
     }
 
     #################
