@@ -1,67 +1,6 @@
 ########################
 #### FRONTEND LOGIN ####
 ########################
-plugin.tx_felogin_login {
-    settings {
-        showPermaLogin = {$styles.content.loginform.showPermaLogin}
-
-        # Template
-        dateFormat = {$styles.content.loginform.dateFormat}
-
-        # Email Settings
-        email_from = {$styles.content.loginform.emailFrom}
-        email_fromName = {$styles.content.loginform.emailFromName}
-        email {
-            templateName = {$styles.content.loginform.email.templateName}
-            layoutRootPaths {
-                20 = {$styles.content.loginform.email.layoutRootPath}
-            }
-
-            templateRootPaths {
-                20 = {$styles.content.loginform.email.templateRootPath}
-            }
-
-            partialRootPaths {
-                20 = {$styles.content.loginform.email.partialRootPath}
-            }
-        }
-
-        replyTo = {$styles.content.loginform.replyToEmail}
-
-        # Security
-        exposeNonexistentUserInForgotPasswordDialog = {$styles.content.loginform.exposeNonexistentUserInForgotPasswordDialog}
-        forgotLinkHashValidTime = {$styles.content.loginform.forgotLinkHashValidTime}
-        newPasswordMinLength = {$styles.content.loginform.newPasswordMinLength}
-        passwordValidators {
-            10 = TYPO3\CMS\Extbase\Validation\Validator\NotEmptyValidator
-            20 {
-                className = TYPO3\CMS\Extbase\Validation\Validator\StringLengthValidator
-                options {
-                    minimum = {$styles.content.loginform.newPasswordMinLength}
-                }
-            }
-        }
-    }
-
-    view {
-        templateRootPaths {
-            0 = EXT:resterland/Resources/Private/Templates/FrontendLogin/
-            10 = {$plugin.tx_felogin_login.view.templateRootPath}
-        }
-
-        partialRootPaths {
-            0 = EXT:resterland/Resources/Private/Partials/FrontendLogin/
-            10 = {$plugin.tx_felogin_login.view.partialRootPath}
-        }
-
-        layoutRootPaths {
-            0 = EXT:resterland/Resources/Private/Layouts/
-            10 = {$plugin.tx_felogin_login.view.layoutRootPath}
-        }
-    }
-}
-
-tt_content.login < tt_content.felogin_login
 
 ################################
 #### Login Status Settings #####
@@ -92,22 +31,6 @@ temp.logoutStatus {
 lib.loginstatus < temp.loginStatus
 [usergroup = *]
     lib.loginstatus < temp.logoutStatus
-[global]
-
-[usergroup = *]
-    lib.loginlogout = TEXT
-    lib.loginlogout {
-        value = <span class="nav-link-text">{LLL:EXT:resterland/Resources/Private/Language/locallang_felogin.xlf:constant_cats.felogin.logout}</span>
-        typolink.parameter.data = TSFE:id
-        typolink.additionalParams = &logintype=logout
-    }
-[else]
-    lib.loginlogout = TEXT
-    lib.loginlogout {
-        value = <span class="nav-link-text">{LLL:EXT:resterland/Resources/Private/Language/locallang_felogin.xlf:constant_cats.felogin.login}</span>
-        typolink.parameter = {$styles.content.loginform.pageuid}
-        typolink.additionalParams = &logintype=logout
-    }
 [global]
 
 #############################

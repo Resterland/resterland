@@ -14,19 +14,6 @@
 # customsubcategory=05_Redirects=Redirects
 # customsubcategory=06_Security=Security
 
-plugin {
-    tx_felogin_login {
-        view {
-            # cat=Frontend Login/02_Template/102; type=string; label= Path to template root (FE)
-            templateRootPath = EXT:felogin/Resources/Private/Templates/
-            # cat=Frontend Login/02_Template/103; type=string; label= Path to template partials (FE)
-            partialRootPath = EXT:felogin/Resources/Private/Partials/
-            # cat=Frontend Login/02_Template/104; type=string; label= Path to template layouts (FE)
-            layoutRootPath = EXT:felogin/Resources/Private/Layouts/
-        }
-    }
-}
-
 styles.content.loginform {
     #enable login/logout link in menu: default disabled
     # cat=Frontend Login/01_Storage/100; type=boolean; label=LLL:EXT:resterland/Resources/Private/Language/locallang_felogin.xlf:constant_cats.felogin.inmenu
@@ -39,7 +26,7 @@ styles.content.loginform {
     pageuid =
 
     # cat=Frontend Login/02_Template/100; type=string; label= Login template: Enter the path for the HTML template to be used
-    templateFile = EXT:resterland/Resources/Private/Templates/FrontendLogin/Login/Login.html
+    templateFile = EXT:resterland/Resources/Private/Templates/FrontendLogin/FrontendLogin.html
     # cat=Frontend Login/02_Template/101; type=string; label= BaseURL for generated links: Base url if something other than the system base URL is needed
     feloginBaseURL =
     # cat=Frontend Login/02_Template/102; type=string; label= Date format: Format for the link is valid until message (forget password email)
