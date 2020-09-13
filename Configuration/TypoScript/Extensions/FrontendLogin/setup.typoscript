@@ -21,8 +21,7 @@ temp.logoutStatus {
     stdWrap.insertData = 1
     typolink {
         parameter = {$styles.content.loginform.redirectuid}
-        additionalParams = '&logintype=logout'
-        useCacheHash = 1
+        additionalParams = &logintype=logout
         ATagParams = title="Logout" class="nav-link"
 
     }
