@@ -177,15 +177,16 @@ page {
     ### SETTINGS ###
     ################
     settings {
-      logo {
-        file = EXT:resterland/Resources/Public/Images/Logos/{$page.logo.file}
-        fileInverted = EXT:resterland/Resources/Public/Images/Logos/{$page.logo.fileInverted}
-        height = {$page.logo.height}
-        width = {$page.logo.width}
-        linktitle = {$page.logo.linktitle}
-      }
+        logo {
+            file = EXT:resterland/Resources/Public/Images/Logos/{$page.logo.file}
+            fileInverted = EXT:resterland/Resources/Public/Images/Logos/{$page.logo.fileInverted}
+            height = {$page.logo.height}
+            width = {$page.logo.width}
+            linktitle = {$page.logo.linktitle}
+        }
 
-      felogin.inmenu = {$styles.content.loginform.inmenu}
+        felogin.inmenu = {$styles.content.loginform.inmenu}
+        felogin.isloaded = extension.isLoaded('news') == 1
     }
 
     #################

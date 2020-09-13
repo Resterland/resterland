@@ -32,8 +32,10 @@
                 <f:render arguments="{_all}" partial="DropIn/Navigation/MainBefore"/>
                 <f:render arguments="{menu: mainnavigation, theme: theme}" partial="Navigation/MainNavigation"/>
                 <f:comment>felogin is not loaded, don't get the Login-Logout menu item</f:comment>
-                <f:if condition="{settings.felogin.inmenu}">
-                    <f:render arguments="{_all}" partial="Navigation/LoginStatus"/>
+                <f:if condition="{settings.felogin.isloaded}">
+                    <f:if condition="{settings.felogin.inmenu}">
+                        <f:render arguments="{_all}" partial="Navigation/LoginStatus"/>
+                    </f:if>
                 </f:if>
                 <f:render arguments="{_all}" partial="DropIn/Navigation/MainAfter"/>
                 <f:if condition="{theme.language.enable}">
