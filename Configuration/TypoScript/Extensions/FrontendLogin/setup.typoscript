@@ -94,6 +94,23 @@ lib.loginstatus < temp.loginStatus
     lib.loginstatus < temp.logoutStatus
 [global]
 
+[usergroup = *]
+    lib.loginlogout = TEXT
+    lib.loginlogout {
+        value = <span class="nav-link-text">{LLL:EXT:resterland/Resources/Private/Language/locallang_felogin.xlf:constant_cats.felogin.logout}</span>
+        typolink.parameter.data = TSFE:id
+        typolink.additionalParams = &logintype=logout
+    }
+[else]
+    lib.loginlogout = TEXT
+    lib.loginlogout {
+        value = <span class="nav-link-text">{LLL:EXT:resterland/Resources/Private/Language/locallang_felogin.xlf:constant_cats.felogin.login}</span>
+        typolink.parameter = {$styles.content.loginform.redirectuid}
+        typolink.additionalParams = &logintype=logout
+    }
+
+[global]
+
 #############################
 #### User Info Settings #####
 #############################
