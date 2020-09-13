@@ -1,7 +1,6 @@
 ########################
 #### FRONTEND LOGIN ####
 ########################
-
 ################################
 #### Login Status Settings #####
 ################################
@@ -21,25 +20,17 @@ temp.logoutStatus {
     value = <span class="nav-link-text">{LLL:EXT:resterland/Resources/Private/Language/locallang_felogin.xlf:constant_cats.felogin.logout}</span>
     stdWrap.insertData = 1
     typolink {
-        parameter = {$styles.content.loginform.redirectPageLogout}
+        parameter = {$styles.content.loginform.redirectuid}
         additionalParams = &logintype=logout
         ATagParams = title="Logout" class="nav-link"
 
     }
 }
 
-#lib.loginstatus < temp.loginStatus
-lib.loginstatus = TEXT
-lib.loginstatus {
-    value = Login
-    typolink.parameter = 123
-}
-
+lib.loginstatus < temp.loginStatus
 [loginUser = *]
-    #lib.loginstatus < temp.logoutStatus
-    lib.loginstatus.value = Logout
-    lib.loginstatus.typolink.additionalParams = &logintype=logout
-[end]
+    lib.loginstatus < temp.logoutStatus
+[global]
 
 #############################
 #### User Info Settings #####
