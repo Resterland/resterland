@@ -186,7 +186,7 @@ page {
         }
 
         felogin.inmenu = {$styles.content.loginform.inmenu}
-        felogin.isloaded = "extension.isLoaded('felogin') == 1"
+        felogin.isloaded = 0
     }
 
     #################
