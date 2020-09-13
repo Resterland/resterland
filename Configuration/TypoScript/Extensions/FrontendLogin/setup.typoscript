@@ -28,10 +28,18 @@ temp.logoutStatus {
     }
 }
 
-lib.loginstatus < temp.loginStatus
-[usergroup = *]
-    lib.loginstatus < temp.logoutStatus
-[global]
+#lib.loginstatus < temp.loginStatus
+lib.loginstatus = TEXT
+lib.loginstatus {
+    value = Login
+    typolink.parameter = 123
+}
+
+[loginUser = *]
+    #lib.loginstatus < temp.logoutStatus
+    lib.loginstatus.value = Logout
+    lib.loginstatus.typolink.additionalParams = &logintype=logout
+[end]
 
 #############################
 #### User Info Settings #####
