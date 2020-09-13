@@ -105,10 +105,9 @@ lib.loginstatus < temp.loginStatus
     lib.loginlogout = TEXT
     lib.loginlogout {
         value = <span class="nav-link-text">{LLL:EXT:resterland/Resources/Private/Language/locallang_felogin.xlf:constant_cats.felogin.login}</span>
-        typolink.parameter = {$styles.content.loginform.redirectuid}
+        typolink.parameter = {$styles.content.loginform.pageuid}
         typolink.additionalParams = &logintype=logout
     }
-
 [global]
 
 #############################
