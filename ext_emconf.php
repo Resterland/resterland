@@ -21,7 +21,7 @@ $EM_CONF[$_EXTKEY] = [
         ],
     ],
     'state' => 'beta',
-    'version' => '4.1.7',
+    'version' => '4.1.9',
     'uploadfolder' => 0,
     'createDirs' => '',
     'clearCacheOnLoad' => 1,

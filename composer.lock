@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1513dc4967f4df538d28e2c3c3e910a8",
+    "content-hash": "0719bb13490335da70de507890beb4de",
     "packages": [
         {
             "name": "bk2k/bootstrap-package",
@@ -5572,6 +5572,65 @@
             "support": {
                 "chat": "https://typo3.org/help",
                 "docs": "https://docs.typo3.org",
+                "issues": "https://forge.typo3.org",
+                "source": "https://github.com/TYPO3/TYPO3.CMS"
+            },
+            "time": "2021-04-13T07:16:54+00:00"
+        },
+        {
+            "name": "typo3/cms-felogin",
+            "version": "v10.4.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3-CMS/felogin.git",
+                "reference": "6c6b2d16ca618fc5c8ae666c3d319c8a555f90db"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-CMS/felogin/zipball/6c6b2d16ca618fc5c8ae666c3d319c8a555f90db",
+                "reference": "6c6b2d16ca618fc5c8ae666c3d319c8a555f90db",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "10.4.15"
+            },
+            "conflict": {
+                "typo3/cms": "*"
+            },
+            "type": "typo3-cms-framework",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "10.4.x-dev"
+                },
+                "typo3/cms": {
+                    "Package": {
+                        "partOfFactoryDefault": true
+                    },
+                    "extension-key": "felogin"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\CMS\\Felogin\\": "Classes/",
+                    "TYPO3\\CMS\\FrontendLogin\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TYPO3 Core Team",
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A template-based plugin to log in Website Users in the Frontend",
+            "homepage": "https://typo3.org",
+            "support": {
+                "chat": "https://typo3.org/help",
+                "docs": "https://docs.typo3.org/c/typo3/cms-felogin/master/en-us",
                 "issues": "https://forge.typo3.org",
                 "source": "https://github.com/TYPO3/TYPO3.CMS"
             },
