@@ -40,6 +40,11 @@ page {
 
     shortcutIcon = EXT:resterland/Resources/Public/Icons/Favicons/{$page.favicon.switch}/favicon.ico
 
+    headerData {
+        20 = TEXT
+        20.value = <script data-ad-client="{$page.tracking.google.adsenseID}" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    }
+
     10 = FLUIDTEMPLATE
     10 {
 
@@ -298,10 +303,6 @@ page {
     }
 
     includeJS {
-        googleadsense = https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
-        googleadsense.external = 1
-        googleadsense.async = 1
-        googleadsense.data-add-client = {$page.tracking.google.adsenseID}
         html5shiv = https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js
         html5shiv.external = 1
         html5shiv.forceOnTop = 1
