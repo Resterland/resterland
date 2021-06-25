@@ -59,10 +59,22 @@ page {
             enable = 1
         }
     }
+
     fluidtemplate {
         layoutRootPath = EXT:resterland/Resources/Private/Layouts/Page/
         partialRootPath = EXT:resterland/Resources/Private/Partials/Page/
         templateRootPath = EXT:resterland/Resources/Private/Templates/Page/
+    }
+
+    tracking {
+        google {
+            # cat=bootstrap package: tracking/180/110; type=string; label=Google AdSense: AdSense-Code
+            adsenseID =
+        }
+    }
+
+    includeJS {
+        googleadsense.data-add-client = ca-pub-4594578473990333
     }
 }
 
