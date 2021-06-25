@@ -42,7 +42,7 @@ page {
 
     headerData {
         20 = TEXT
-        20.value = <script data-ad-client="{$page.tracking.google.adsenseID}" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        20.value = <script data-ad-client="ca-pub-4594578473990333" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     }
 
     10 = FLUIDTEMPLATE
