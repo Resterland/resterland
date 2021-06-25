@@ -72,10 +72,6 @@ page {
             adsenseID =
         }
     }
-
-    includeJS {
-        googleadsense.data-add-client = ca-pub-4594578473990333
-    }
 }
 
 ##############
