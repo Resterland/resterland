@@ -33,7 +33,7 @@
     "helhum/typo3-secure-web": "^0.2",
     "helhum/typo3-console": "^6.3",
     "typo3/cms-core": "^10.4",
-    "resterland/webatelier": "^4",
+    "resterland/webatelier": "dev-master",
     "causal/image_autoresize": "^2.0"
   },
   "require-dev": {

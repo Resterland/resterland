@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "65b55b9a582240312e1bc157787a2dce",
+    "content-hash": "13bfc27796e88707e587e459add945c1",
     "packages": [
         {
             "name": "causal/image_autoresize",
@@ -2253,16 +2253,16 @@
         },
         {
             "name": "resterland/webatelier",
-            "version": "v4.1.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Resterland/webatelier.git",
-                "reference": "344a15d797860b232b9a9b12c38537a069f8f937"
+                "reference": "13dc1df7855c1cc8a4598b28014922d9a46b1995"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Resterland/webatelier/zipball/344a15d797860b232b9a9b12c38537a069f8f937",
-                "reference": "344a15d797860b232b9a9b12c38537a069f8f937",
+                "url": "https://api.github.com/repos/Resterland/webatelier/zipball/13dc1df7855c1cc8a4598b28014922d9a46b1995",
+                "reference": "13dc1df7855c1cc8a4598b28014922d9a46b1995",
                 "shasum": ""
             },
             "require": {
@@ -2274,6 +2274,7 @@
                 "typo3/cms-beuser": "^10",
                 "typo3/cms-core": "^10",
                 "typo3/cms-dashboard": "^10",
+                "typo3/cms-felogin": "^10",
                 "typo3/cms-filemetadata": "^10",
                 "typo3/cms-fluid-styled-content": "^10",
                 "typo3/cms-form": "^10",
@@ -2302,6 +2303,7 @@
                 "roave/security-advisories": "dev-master",
                 "typo3/testing-framework": "^5 || ^6"
             },
+            "default-branch": true,
             "type": "typo3-cms-extension",
             "extra": {
                 "typo3/cms": {
@@ -2330,9 +2332,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Resterland/webatelier/issues",
-                "source": "https://github.com/Resterland/webatelier/tree/v4.1.1"
+                "source": "https://github.com/Resterland/webatelier/tree/master"
             },
-            "time": "2021-04-08T09:54:35+00:00"
+            "time": "2021-10-21T09:00:38+00:00"
         },
         {
             "name": "symfony/cache",
@@ -5733,6 +5735,65 @@
             "support": {
                 "chat": "https://typo3.org/help",
                 "docs": "https://docs.typo3.org",
+                "issues": "https://forge.typo3.org",
+                "source": "https://github.com/typo3/typo3"
+            },
+            "time": "2021-09-21T08:52:27+00:00"
+        },
+        {
+            "name": "typo3/cms-felogin",
+            "version": "v10.4.21",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3-CMS/felogin.git",
+                "reference": "6a867150730e058c2c008c75f7a15a5289ff1d16"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-CMS/felogin/zipball/6a867150730e058c2c008c75f7a15a5289ff1d16",
+                "reference": "6a867150730e058c2c008c75f7a15a5289ff1d16",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "10.4.21"
+            },
+            "conflict": {
+                "typo3/cms": "*"
+            },
+            "type": "typo3-cms-framework",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "10.4.x-dev"
+                },
+                "typo3/cms": {
+                    "Package": {
+                        "partOfFactoryDefault": true
+                    },
+                    "extension-key": "felogin"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\CMS\\Felogin\\": "Classes/",
+                    "TYPO3\\CMS\\FrontendLogin\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TYPO3 Core Team",
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A template-based plugin to log in Website Users in the Frontend",
+            "homepage": "https://typo3.org",
+            "support": {
+                "chat": "https://typo3.org/help",
+                "docs": "https://docs.typo3.org/c/typo3/cms-felogin/master/en-us",
                 "issues": "https://forge.typo3.org",
                 "source": "https://github.com/typo3/typo3"
             },
@@ -9626,6 +9687,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "resterland/webatelier": 20,
         "roave/security-advisories": 20
     },
     "prefer-stable": false,
