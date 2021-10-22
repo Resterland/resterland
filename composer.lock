@@ -1,20 +1,20 @@
 {
-    "_readme": [
-        "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
-        "This file is @generated automatically"
-    ],
-    "content-hash": "13bfc27796e88707e587e459add945c1",
-    "packages": [
-        {
-            "name": "causal/image_autoresize",
-            "version": "2.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/xperseguers/t3ext-image_autoresize.git",
-                "reference": "a7dfde49ac5dfaee0cacd14cef37c5cc2807ff77"
-            },
-            "dist": {
+  "_readme": [
+    "This file locks the dependencies of your project to a known state",
+    "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+    "This file is @generated automatically"
+  ],
+  "content-hash": "fe82818ca0e5305063279d30f9496801",
+  "packages": [
+    {
+      "name": "causal/image_autoresize",
+      "version": "2.1.1",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/xperseguers/t3ext-image_autoresize.git",
+        "reference": "a7dfde49ac5dfaee0cacd14cef37c5cc2807ff77"
+      },
+      "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/xperseguers/t3ext-image_autoresize/zipball/a7dfde49ac5dfaee0cacd14cef37c5cc2807ff77",
                 "reference": "a7dfde49ac5dfaee0cacd14cef37c5cc2807ff77",
@@ -2251,19 +2251,19 @@
             },
             "time": "2019-03-08T08:55:37+00:00"
         },
-        {
-            "name": "resterland/webatelier",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Resterland/webatelier.git",
-                "reference": "13dc1df7855c1cc8a4598b28014922d9a46b1995"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Resterland/webatelier/zipball/13dc1df7855c1cc8a4598b28014922d9a46b1995",
-                "reference": "13dc1df7855c1cc8a4598b28014922d9a46b1995",
-                "shasum": ""
+    {
+      "name": "resterland/webatelier",
+      "version": "v4.2.0",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/Resterland/webatelier.git",
+        "reference": "13dc1df7855c1cc8a4598b28014922d9a46b1995"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/Resterland/webatelier/zipball/13dc1df7855c1cc8a4598b28014922d9a46b1995",
+        "reference": "13dc1df7855c1cc8a4598b28014922d9a46b1995",
+        "shasum": ""
             },
             "require": {
                 "helhum/typo3-config-handling": "^1.0",
@@ -2303,7 +2303,6 @@
                 "roave/security-advisories": "dev-master",
                 "typo3/testing-framework": "^5 || ^6"
             },
-            "default-branch": true,
             "type": "typo3-cms-extension",
             "extra": {
                 "typo3/cms": {
@@ -2332,7 +2331,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Resterland/webatelier/issues",
-                "source": "https://github.com/Resterland/webatelier/tree/master"
+              "source": "https://github.com/Resterland/webatelier/tree/v4.2.0"
             },
             "time": "2021-10-21T09:00:38+00:00"
         },
@@ -9687,7 +9686,6 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "resterland/webatelier": 20,
         "roave/security-advisories": 20
     },
     "prefer-stable": false,
