@@ -280,7 +280,7 @@ page {
     }
 
     includeCSS {
-        # bootstrap = EXT:bootstrap_package/Resources/Public/Contrib/bootstrap4/scss/bootstrap.scss
+        # bootstrap = EXT:bootstrap_package/Resources/Public/Contrib/Bootstrap4/scss/bootstrap.scss
         #theme = EXT:bootstrap_package/Resources/Public/Scss/Theme/theme.scss
         theme >
         #theme = EXT:resterland/Resources/Public/Css/theme.min.css
