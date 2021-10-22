@@ -1,0 +1,57 @@
+//
+// Variables
+//
+@import "variables";
+//
+// Import needed Bootstrap Files
+//
+@import "../../../Contrib/Bootstrap5/scss/bootstrap";
+
+//
+// Compat
+//
+@import "compat/text";
+@import "compat/form";
+@import "compat/embed";
+
+//
+// Components
+//
+@import "../../components/list";
+@import "../../components/backendlayout";
+@import "../../components/section";
+@import "../../components/footer";
+@import "../../components/frame";
+@import "../../components/card";
+@import "../../components/address";
+@import "../../components/buttons";
+@import "../../components/body";
+@import "../../components/text";
+@import "../../components/media";
+@import "../../components/blockquote";
+@import "../../components/navbar";
+@import "../../components/subnav";
+@import "../../components/breadcrumb";
+@import "../../components/lazyload";
+@import "../../components/gallery";
+@import "../../components/figure";
+@import "../../components/carousel";
+@import "../../components/form";
+@import "../../components/textpic";
+@import "../../components/textteaser";
+@import "../../components/texticon";
+@import "../../components/accordion";
+@import "../../components/tab";
+@import "../../components/icongroup";
+@import "../../components/uploads";
+@import "../../components/thumbnail-menu";
+@import "../../components/link";
+@import "../../components/socialmedia";
+@import "../../components/timeline";
+@import "../../components/well";
+@import "../../components/misc";
+//
+// Plugins
+//
+@import "../../plugins/cookieconsent";
+@import "../../plugins/photoswipe";

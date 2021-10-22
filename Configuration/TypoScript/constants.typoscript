@@ -53,7 +53,7 @@ page {
     }
 
     theme {
-        # cat=Resterland Settings: layout/160/100; type=options[Default=MyBootstrap4, MyBootstrap5=MyBootstrap5, Theme=Theme, Resterland=Resterland, Slate=Slate]; label=LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.theme.switch
+        # cat=Resterland Settings: layout/160/100; type=options[Default=MyBootstrap5, Theme=Theme, Resterland=Resterland, Slate=Slate]; label=LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.theme.switch
         switch = Theme
         copyright {
             enable = 1
@@ -130,13 +130,5 @@ plugin.bootstrap_package_contentelements {
 ###################
 #### FRAMEWORK ####
 ###################
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/Bootstrap4/constants.typoscript">
-[globalVar = GP:framework = bootstrap3]
-    <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/Bootstrap3/constants.typoscript">
-[end]
-
-#######################################
-### REMOVE BOOTSTRAP LESS CONSTANTS ###
-#######################################
-#plugin.bootstrap_package.settings.less >
-#plugin.bootstrap_package.settings.overrideLessVariables >
+###################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/Bootstrap5/constants.typoscript">
