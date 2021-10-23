@@ -1,10 +1,11 @@
-<xliff version="1.0" xmlns="urn:oasis:names:tc:xliff:document:1.1">
-	<file source-language="en" target-language="id" datatype="plaintext" original="messages" date="2017-05-19T09:11:39Z"
-		  product-name="resterland">
-		<header/>
-		<body>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" target-language="id" datatype="plaintext" original="messages" date="2017-05-19T09:11:39Z"
+    product-name="resterland">
+        <header />
+        <body>
 
-            <!-- Logo Settings Header -->
+        <!-- Logo Settings Header -->
             <trans-unit id="constant_cats.logo" xml:space="preserve">
                 <source>Logo</source>
                 <target>Logo</target>
