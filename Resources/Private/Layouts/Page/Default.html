@@ -4,7 +4,7 @@
     <div class="body-bg{f:if(condition:theme.navigation.type, then:' body-bg-{theme.navigation.type}')}">
 
         <f:render arguments="{_all}" partial="Structure/CookieConsent"/>
-        <a class="sr-only sr-only-focusable" href="#page-content">
+        <a class="visually-hidden-focusable" href="#page-content">
             <span>{f:translate(key: 'skiptomaincontent', extensionName: 'bootstrap_package')}</span>
         </a>
         <f:render arguments="{_all}" partial="Navigation/Main"/>
