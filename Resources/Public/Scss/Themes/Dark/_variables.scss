@@ -122,7 +122,7 @@ $pagination-color: $body-color !default;
 // Breadcrumb
 // --------------------------------------------------
 $breadcrumb-padding-y: .75rem !default;
-$breadcrumb-bg: $lighter !default;
+$breadcrumb-bg: $body-color;
 
 //
 // Accordion
