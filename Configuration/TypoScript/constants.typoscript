@@ -52,8 +52,8 @@ page {
     }
 
     theme {
-        # cat=Resterland Settings: layout/160/100; type=options[Bootstrap5=Default, Dark=Dark, Resterland=Resterland]; label=LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.theme.switch
-        switch = Default
+        # cat=Resterland Settings: layout/160/100; type=options[Default=Bootstrap5, Dark=Dark, Resterland=Resterland]; label=LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.theme.switch
+        switch = Bootstrap5
         copyright {
             enable = 1
         }
