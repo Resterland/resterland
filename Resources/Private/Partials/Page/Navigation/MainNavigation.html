@@ -3,9 +3,10 @@
 
 <f:if condition="{menu}">
     <ul class="navbar-nav">
-        <f:for as="item" each="{menu}">
-            <f:if condition="{item.spacer}">
-                <f:then>
+        <f:for each="{menu} as=" item
+        "">
+        <f:if condition="{item.spacer}">
+            <f:then>
     </ul>
     <ul class="navbar-nav">
         </f:then>
@@ -29,7 +30,7 @@
                                         </f:if>
                                     </span>
                 </f:if>
-                <span class="nav-link-text">{item.title}<f:if condition="{item.current}"> <span class="sr-only">(current)</span></f:if></span>
+                <span class="nav-link-text">{item.title}<f:if condition="{item.current}"> <span class="visually-hidden">(current)</span></f:if></span>
                 </a>
                 <f:if condition="{item.children}">
                     <ul aria-labelledby="nav-item-{item.data.uid}" class="dropdown-menu">

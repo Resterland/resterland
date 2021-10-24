@@ -3,9 +3,13 @@
 <f:comment>
     <f:debug>{_all}</f:debug>
 </f:comment>
-<header
-    class="bp-page-header navbar navbar-mainnavigation navbar-{theme.navigation.style}{f:if(condition:settings.logo.file,then:' navbar-has-image')}{f:if(condition:theme.navigation.type, else:' navbar-top', then:' navbar-{theme.navigation.type} navbar-fixed-{theme.navigation.type}')}"
-    id="page-header">
+
+<f:variable name="headerClass">bp-page-header navbar navbar-mainnavigation navbar-{theme.navigation.style}</f:variable>
+<f:variable name="headerClass">{headerClass}{f:if(condition:settings.logo.file,then:' navbar-has-image')}</f:variable>
+<f:variable name="headerClass">{headerClass}{f:if(condition:theme.navigation.type, else:' navbar-top', then:'
+    navbar-{theme.navigation.type} navbar-fixed-{theme.navigation.type}')}
+</f:variable>
+<header class="{headerClass}" id="page-header">
     <div class="container">
         <f:if condition="{settings.logo.file}">
             <f:then>
@@ -25,7 +29,8 @@
         </f:if>
         <f:if condition="{mainnavigation}">
             <button aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler collapsed"
-                    data-target="#mainnavigation" data-toggle="collapse" type="button">
+                    data-bs-target="#mainnavigation" data-bs-toggle="collapse" data-target="#mainnavigation"
+                    data-toggle="collapse" type="button">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <nav class="collapse navbar-collapse" id="mainnavigation">
