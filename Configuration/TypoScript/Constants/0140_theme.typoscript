@@ -1,8 +1,0 @@
-########################
-### THEME CONSTANTS ####
-########################
-
-theme {
-    # cat=Resterland Bootstrap: basic/140/100; type=options[Default=, Resterland Bootstrap=rlbootstrap, Resterland Bootswatch Slate=rlbootswatch_slate, Bootstrap Package=bootstrapPackage]; label=LLL:EXT:rlbootstrap/Resources/Private/Language/ConstantCats.xlf:constant_cats.theme.styleSwitcher
-    styleSwitcher =
-}

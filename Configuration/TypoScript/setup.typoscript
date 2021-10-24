@@ -6,34 +6,31 @@
 ################
 #### HELPER ####
 ################
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/Helper/Block.typoscript">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/Helper/PageClass.typoscript">
-#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland/Configuration/TypoScript/Helper/DynamicContent.typoscript">
-#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland/Configuration/TypoScript/Helper/LanguageNavi/setup.typoscript">
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/Helper/Block.typoscript">
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/Helper/PageClass.typoscript">
 
 #############################################################
 #### EXTENSIONS                                          ####
 #### Manual inclusion to keep control over loading order ####
 #############################################################
-## FrontendEdit
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/Extension/Feedit/setup.typoscript" condition="extension.isLoaded('feedit') == 1">
-## FrontendLogin
-#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/Extension/Felogin/setup.typoscript" condition="extension.isLoaded('felogin') == 1">
-@import 'EXT:resterland/Configuration/TypoScript/Extensions/FrontendLogin/setup.typoscript'
+## Felogin
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland/Configuration/TypoScript/Extensions/Felogin/setup.typoscript" condition="extension.isLoaded('felogin') == 1">
+#@import 'EXT:resterland/Configuration/TypoScript/Extensions/Felogin/setup.typoscript'
 ## Form
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/Extension/Form/setup.typoscript" condition="extension.isLoaded('form') == 1">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/Extension/IndexedSearch/setup.typoscript" condition="extension.isLoaded('indexed_search') == 1">
-
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/Extension/Form/setup.typoscript" condition="extension.isLoaded('form') == 1">
+## Indexed_Search
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/Extension/IndexedSearch/setup.typoscript" condition="extension.isLoaded('indexed_search') == 1">
+## Seo
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland/Configuration/TypoScript/Extensions/Seo/setup.typoscript" condition="extension.isLoaded('seo') == 1">
+## News
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland/Configuration/TypoScript/Extensions/News/setup.typoscript" condition="extension.isLoaded('news') == 1">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland/Configuration/TypoScript/Extensions/Seo/setup.typoscript" condition="extension.isLoaded('seo') == 1">
-
-##<INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland/Configuration/TypoScript/Helper/LanguageNavi.typoscript">
 
 ###################
 #### FRAMEWORK ####
 ###################
 #<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/Bootstrap4/setup.typoscript">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/Bootstrap5/setup.typoscript">
+## Using Bootstrap5
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland/Configuration/TypoScript/Bootstrap5/setup.typoscript">
 
 
 ##############
@@ -283,22 +280,6 @@ page {
         # googlewebfont >
     }
 
-    includeCSS {
-        theme >
-        #theme = EXT:resterland/Resources/Public/Css/theme.min.css
-        mystyle = EXT:resterland/Resources/Public/Scss/Themes/{$page.theme.switch}/theme.scss
-        custom = EXT:resterland/Resources/Public/Css/custom.css
-        #photoswipe = EXT:resterland/Resources/Public/Css/photoswipe.css
-        #news-basic-custom = EXT:resterland/Resources/Public/Css/news-basic-custom.css
-        #resterland_css = EXT:resterland/Resources/Public/Css/resterland-custom.css
-        #slate = https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/slate/bootstrap.min.css
-        #slate.external = 1
-    }
-
-    includeJSLibs {
-
-    }
-
     includeJS {
         html5shiv = https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js
         html5shiv.external = 1
@@ -342,8 +323,8 @@ config {
     pageTitleSeparator = -
     pageTitleSeparator.noTrimWrap = | | |
     uniqueLinkVars = 1
-    # linkVars = L(init)
-    linkVars = L(int),framework
+    linkVars = L(init)
+    #linkVars = L(int),framework
     typolinkEnableLinksAcrossDomains = {$config.typolinkEnableLinksAcrossDomains}
     renderCharset = utf-8
     metaCharset = utf-8

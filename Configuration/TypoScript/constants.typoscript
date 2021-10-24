@@ -1,8 +1,3 @@
-######################
-#### DEPENDENCIES ####
-######################
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/constants.typoscript">
-
 ############################
 ### CUSTOM SUBCATEGORIES ###
 ###########################
@@ -18,6 +13,10 @@
 # customsubcategory=169=Section Copyright
 # customsubcategory=180=Tracking
 
+######################
+#### DEPENDENCIES ####
+######################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/ContentElement/constants.typoscript">
 
 ############
 ### PAGE ###
@@ -86,7 +85,7 @@ config {
     concatenateCss = 0
     admPanel = 1
     prefixLocalAnchors = all
-    headerComment = build by sitepackagebuilder.com
+    headerComment = Based on the TYPO3 Bootstrap Package by Benjamin Kott - https://www.bootstrap-package.com/
     sendCacheHeaders = 1
     typolinkEnableLinksAcrossDomains = 0
     preloadImages = 0
@@ -118,17 +117,16 @@ plugin.bootstrap_package_contentelements {
 #### EXTENSIONS                                          ####
 #### Manual inclusion to keep control over loading order ####
 #############################################################
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/Extension/Feedit/constants.typoscript" condition="extension.isLoaded('feedit') == 1">
-## FrontendLogin
-@import 'EXT:resterland/Configuration/TypoScript/Extensions/FrontendLogin/constants.typoscript'
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/Extension/Form/constants.typoscript" condition="extension.isLoaded('form') == 1">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/Extension/IndexedSearch/constants.typoscript" condition="extension.isLoaded('indexed_search') == 1">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/Extension/Seo/constants.typoscript" condition="extension.isLoaded('seo') == 1">
+## Felogin
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland/Configuration/TypoScript/Extension/Felogin/constants.typoscript" condition="extension.isLoaded('felogin') == 1">
+#@import 'EXT:resterland/Configuration/TypoScript/Extensions/FrontendLogin/constants.typoscript'
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/Extension/Form/constants.typoscript" condition="extension.isLoaded('form') == 1">
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/Extension/IndexedSearch/constants.typoscript" condition="extension.isLoaded('indexed_search') == 1">
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/Extension/Seo/constants.typoscript" condition="extension.isLoaded('seo') == 1">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland/Configuration/TypoScript/Extensions/News/constants.typoscript" condition="extension.isLoaded('news') == 1">
 ##<INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland/Configuration/TypoScript/Extensions/FileListGallery/constants.typoscript">
 
 ###################
 #### FRAMEWORK ####
 ###################
-###################
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/Bootstrap5/constants.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland/Configuration/TypoScript/Bootstrap5/constants.typoscript">
