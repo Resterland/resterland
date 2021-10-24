@@ -9,6 +9,13 @@
 @import "../../../Contrib/Bootstrap5/scss/bootstrap";
 
 //
+// Compat
+//
+@import "compat/text";
+@import "compat/form";
+@import "compat/embed";
+
+//
 // Components
 //
 @import "../../components/button";
