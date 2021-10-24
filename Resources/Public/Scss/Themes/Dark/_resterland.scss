@@ -5,7 +5,9 @@
 //
 // Settings for the `<body>` element.
 $body-bg: $gray-900;
-$body-color: $gray-900 !default;
+$body-color: $body-bg;
+
+$min-contrast-ratio: 4.5 !default;
 
 // Fonts
 $font-size-base: 0.9375rem !default;
