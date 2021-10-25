@@ -14,4 +14,9 @@ $font-size-base: 0.9375rem;
 $nav-link-color: $link-color !default;
 $nav-link-hover-color: $link-hover-color !default;
 
+
+$subnav-border-color: $gray-700 !default;
+$subnav-color: rgba($gray-600, .5) !default;
+$subnav-hover-color: rgba($gray-600, .7) !default;
+$subnav-hover-bg: $gray-200 !default;
 $subnav-active-color: $link-color !default;
