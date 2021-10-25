@@ -11,4 +11,7 @@ $link-color: $tertiary;
 // Fonts
 $font-size-base: 0.9375rem;
 
+$nav-link-color: $link-color !default;
+$nav-link-hover-color: $link-hover-color !default;
+
 $subnav-active-color: $link-color !default;
