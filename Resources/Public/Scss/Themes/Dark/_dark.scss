@@ -1,14 +1,14 @@
 //
-// Resterland variables overrides
+// Dark variables overrides
 //
 // Body
 //
 // Settings for the `<body>` element.
 $body-bg: $gray-900;
 $body-color: $body-bg;
-
-$min-contrast-ratio: 4.5 !default;
+$link-color: $primary;
 
 // Fonts
-$font-size-base: 0.9375rem !default;
+$font-size-base: 0.9375rem;
 
+$subnav-active-color: $link-color !default;
