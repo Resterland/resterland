@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fe82818ca0e5305063279d30f9496801",
+    "content-hash": "9e4326987d475aeaa02e830db354e224",
     "packages": [
         {
             "name": "causal/image_autoresize",
@@ -2263,53 +2263,53 @@
         },
         {
             "name": "resterland/webatelier",
-            "version": "v4.2.0",
+            "version": "v5.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Resterland/webatelier.git",
-                "reference": "13dc1df7855c1cc8a4598b28014922d9a46b1995"
+                "reference": "3cbba9470f46e107dde422fd6247dd6749f1b6db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Resterland/webatelier/zipball/13dc1df7855c1cc8a4598b28014922d9a46b1995",
-                "reference": "13dc1df7855c1cc8a4598b28014922d9a46b1995",
+                "url": "https://api.github.com/repos/Resterland/webatelier/zipball/3cbba9470f46e107dde422fd6247dd6749f1b6db",
+                "reference": "3cbba9470f46e107dde422fd6247dd6749f1b6db",
                 "shasum": ""
             },
             "require": {
                 "helhum/typo3-config-handling": "^1.0",
-                "helhum/typo3-console": "^6",
-                "helhum/typo3-secure-web": "^0.2",
-                "typo3/cms-adminpanel": "^10",
-                "typo3/cms-belog": "^10",
-                "typo3/cms-beuser": "^10",
-                "typo3/cms-core": "^10",
-                "typo3/cms-dashboard": "^10",
-                "typo3/cms-felogin": "^10",
-                "typo3/cms-filemetadata": "^10",
-                "typo3/cms-fluid-styled-content": "^10",
-                "typo3/cms-form": "^10",
-                "typo3/cms-impexp": "^10",
-                "typo3/cms-indexed-search": "^10",
-                "typo3/cms-info": "^10",
-                "typo3/cms-linkvalidator": "^10",
-                "typo3/cms-lowlevel": "^10",
-                "typo3/cms-redirects": "^10",
-                "typo3/cms-reports": "^10",
-                "typo3/cms-rte-ckeditor": "^10",
-                "typo3/cms-scheduler": "^10",
-                "typo3/cms-seo": "^10",
-                "typo3/cms-setup": "^10",
-                "typo3/cms-sys-note": "^10",
-                "typo3/cms-t3editor": "^10",
-                "typo3/cms-tstemplate": "^10",
-                "typo3/cms-viewpage": "^10"
+                "helhum/typo3-console": "^6 || ^7",
+                "helhum/typo3-secure-web": "^0.2 || ^0.3",
+                "typo3/cms-adminpanel": "^10 || ^11",
+                "typo3/cms-belog": "^10 || ^11",
+                "typo3/cms-beuser": "^10 || ^11",
+                "typo3/cms-core": "^10 || ^11",
+                "typo3/cms-dashboard": "^10 || ^11",
+                "typo3/cms-felogin": "^10 || ^11",
+                "typo3/cms-filemetadata": "^10 || ^11",
+                "typo3/cms-fluid-styled-content": "^10 || ^11",
+                "typo3/cms-form": "^10 || ^11",
+                "typo3/cms-impexp": "^10 || ^11",
+                "typo3/cms-indexed-search": "^10 || ^11",
+                "typo3/cms-info": "^10 || ^11",
+                "typo3/cms-linkvalidator": "^10 || ^11",
+                "typo3/cms-lowlevel": "^10 || ^11",
+                "typo3/cms-redirects": "^10 || ^11",
+                "typo3/cms-reports": "^10 || ^11",
+                "typo3/cms-rte-ckeditor": "^10 || ^11",
+                "typo3/cms-scheduler": "^10 || ^11",
+                "typo3/cms-seo": "^10 || ^11",
+                "typo3/cms-setup": "^10 || ^11",
+                "typo3/cms-sys-note": "^10 || ^11",
+                "typo3/cms-t3editor": "^10 || ^11",
+                "typo3/cms-tstemplate": "^10 || ^11",
+                "typo3/cms-viewpage": "^10 || ^11"
             },
             "replace": {
                 "resterland/webatelier": "self.version",
                 "typo3-ter/webatelier": "self.version"
             },
             "require-dev": {
-                "helhum/dotenv-connector": "^2",
+                "helhum/dotenv-connector": "^2 || 3",
                 "roave/security-advisories": "dev-master",
                 "typo3/testing-framework": "^5 || ^6"
             },
@@ -2341,9 +2341,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Resterland/webatelier/issues",
-                "source": "https://github.com/Resterland/webatelier/tree/v4.2.0"
+                "source": "https://github.com/Resterland/webatelier/tree/v5.0.0"
             },
-            "time": "2021-10-21T09:00:38+00:00"
+            "time": "2021-12-16T09:06:20+00:00"
         },
         {
             "name": "symfony/cache",
