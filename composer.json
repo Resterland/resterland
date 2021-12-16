@@ -30,10 +30,10 @@
     }
   ],
   "require": {
-    "helhum/typo3-secure-web": "^0.2 || 0.3",
-    "helhum/typo3-console": "^6.3 || 7",
-    "typo3/cms-core": "^10.4 || 11",
-    "resterland/webatelier": "^4.2 || 5",
+    "helhum/typo3-secure-web": "^0.3",
+    "helhum/typo3-console": "^7",
+    "typo3/cms-core": "^11",
+    "resterland/webatelier": "^5",
     "causal/image_autoresize": "^2.0"
   },
   "require-dev": {
@@ -55,9 +55,6 @@
     "typo3-ter/resterland": "self.version"
   },
   "config": {
-    "platform": {
-      "php": "7.4"
-    },
     "optimize-autoloader": true
   },
   "scripts": {
