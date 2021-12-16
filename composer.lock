@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9e4326987d475aeaa02e830db354e224",
+    "content-hash": "8e970998a5cc7e9bcca2adcb053c6eb5",
     "packages": [
         {
             "name": "causal/image_autoresize",
@@ -1093,65 +1093,6 @@
             "time": "2021-10-29T14:13:35+00:00"
         },
         {
-            "name": "helhum/typo3-composer-setup",
-            "version": "v0.5.7",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/helhum/typo3-composer-setup.git",
-                "reference": "e6a51d1c1ead3d97c3861a3f811d3af336d7f11e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/helhum/typo3-composer-setup/zipball/e6a51d1c1ead3d97c3861a3f811d3af336d7f11e",
-                "reference": "e6a51d1c1ead3d97c3861a3f811d3af336d7f11e",
-                "shasum": ""
-            },
-            "require": {
-                "typo3/cms-composer-installers": "^1.4 || ^2.0 || ^3.0",
-                "typo3/minimal": "^7 || ^8 || ^9 || ^10"
-            },
-            "require-dev": {
-                "typo3-console/php-server-command": "^0.1.0",
-                "typo3/cms-core": "^8.7.10 || ^9.5.2 || ^10.2.0"
-            },
-            "suggest": {
-                "helhum/typo3-console": "TYPO3 Console is highly recommended for any TYPO3 composer setup.",
-                "pagemachine/typo3-composer-legacy-cli": "Provides the legacy cli_dispatch.phpsh entry point for TYPO3."
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.x-dev"
-                },
-                "typo3/cms": {
-                    "web-dir": "public"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Helhum\\Typo3ComposerSetup\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Helmut Hummel",
-                    "email": "info@helhum.io",
-                    "homepage": "https://helhum.io",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Set up required entry points for TYPO3 web directory",
-            "support": {
-                "issues": "https://github.com/helhum/typo3-composer-setup/issues",
-                "source": "https://github.com/helhum/typo3-composer-setup/tree/v0.5.7"
-            },
-            "time": "2020-06-25T15:17:07+00:00"
-        },
-        {
             "name": "helhum/typo3-config-handling",
             "version": "v1.0.5",
             "source": {
@@ -1330,30 +1271,28 @@
         },
         {
             "name": "helhum/typo3-secure-web",
-            "version": "v0.2.11",
+            "version": "v0.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/helhum/typo3-secure-web.git",
-                "reference": "0ea5689543698c1f3d2a70500662f03d7755eebc"
+                "reference": "5d727aca2c303ddad8c87bff7cb078d2feb03d4e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/helhum/typo3-secure-web/zipball/0ea5689543698c1f3d2a70500662f03d7755eebc",
-                "reference": "0ea5689543698c1f3d2a70500662f03d7755eebc",
+                "url": "https://api.github.com/repos/helhum/typo3-secure-web/zipball/5d727aca2c303ddad8c87bff7cb078d2feb03d4e",
+                "reference": "5d727aca2c303ddad8c87bff7cb078d2feb03d4e",
                 "shasum": ""
             },
             "require": {
-                "helhum/typo3-composer-setup": "^0.5.4",
-                "typo3/cms-composer-installers": "^1.4 || ^2.0 || ^3.0"
+                "typo3/cms-composer-installers": "^3.0",
+                "typo3/cms-core": ">=9.5.20"
             },
             "conflict": {
-                "helhum/typo3-composer-setup": "<0.5.4",
-                "typo3/cms": "<8.7.10",
-                "typo3/cms-core": "<8.7.10"
+                "typo3/cms": "*"
             },
             "require-dev": {
-                "typo3-console/php-server-command": "^0.1.0",
-                "typo3/cms-core": "^8.7.10 || ^9.5.2 || ^10.4"
+                "typo3-console/php-server-command": "@dev",
+                "typo3/cms-filelist": "@dev"
             },
             "type": "library",
             "extra": {
@@ -1382,7 +1321,7 @@
             "description": "Set up secure TYPO3 web directory containing only public assets",
             "support": {
                 "issues": "https://github.com/helhum/typo3-secure-web/issues",
-                "source": "https://github.com/helhum/typo3-secure-web/tree/master"
+                "source": "https://github.com/helhum/typo3-secure-web/tree/v0.3.0"
             },
             "funding": [
                 {
@@ -1394,7 +1333,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-05-28T13:56:20+00:00"
+            "time": "2020-12-26T13:57:34+00:00"
         },
         {
             "name": "lolli42/finediff",
@@ -5824,66 +5763,6 @@
             "time": "2021-12-14T08:06:06+00:00"
         },
         {
-            "name": "typo3/cms-filelist",
-            "version": "v10.4.22",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/TYPO3-CMS/filelist.git",
-                "reference": "42ff49843bb519c0090af1a958692b45bd435f5a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-CMS/filelist/zipball/42ff49843bb519c0090af1a958692b45bd435f5a",
-                "reference": "42ff49843bb519c0090af1a958692b45bd435f5a",
-                "shasum": ""
-            },
-            "require": {
-                "typo3/cms-core": "10.4.22"
-            },
-            "conflict": {
-                "typo3/cms": "*"
-            },
-            "type": "typo3-cms-framework",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "10.4.x-dev"
-                },
-                "typo3/cms": {
-                    "Package": {
-                        "protected": true,
-                        "partOfFactoryDefault": true,
-                        "partOfMinimalUsableSystem": true
-                    },
-                    "extension-key": "filelist"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "TYPO3\\CMS\\Filelist\\": "Classes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "TYPO3 Core Team",
-                    "email": "typo3cms@typo3.org",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Listing of files in the directory",
-            "homepage": "https://typo3.org",
-            "support": {
-                "chat": "https://typo3.org/help",
-                "docs": "https://docs.typo3.org",
-                "issues": "https://forge.typo3.org",
-                "source": "https://github.com/typo3/typo3"
-            },
-            "time": "2021-12-14T08:06:06+00:00"
-        },
-        {
             "name": "typo3/cms-filemetadata",
             "version": "v10.4.22",
             "source": {
@@ -7252,63 +7131,6 @@
                 "source": "https://github.com/TYPO3/html-sanitizer/tree/v2.0.13"
             },
             "time": "2021-10-12T15:04:17+00:00"
-        },
-        {
-            "name": "typo3/minimal",
-            "version": "v10.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/TYPO3/minimal.git",
-                "reference": "858bc4b51f9183306f4301db3cead2f99a0d48ff"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/minimal/zipball/858bc4b51f9183306f4301db3cead2f99a0d48ff",
-                "reference": "858bc4b51f9183306f4301db3cead2f99a0d48ff",
-                "shasum": ""
-            },
-            "require": {
-                "typo3/cms-backend": "^10.4",
-                "typo3/cms-core": "^10.4",
-                "typo3/cms-extbase": "^10.4",
-                "typo3/cms-extensionmanager": "^10.4",
-                "typo3/cms-filelist": "^10.4",
-                "typo3/cms-fluid": "^10.4",
-                "typo3/cms-frontend": "^10.4",
-                "typo3/cms-install": "^10.4",
-                "typo3/cms-recordlist": "^10.4"
-            },
-            "type": "metapackage",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "10.4.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "TYPO3 CMS Core Team",
-                    "homepage": "https://forge.typo3.org/projects/typo3cms-core",
-                    "role": "Developer"
-                },
-                {
-                    "name": "The TYPO3 Community",
-                    "homepage": "https://typo3.org/community/",
-                    "role": "Contributor"
-                }
-            ],
-            "description": "Minimal required set of TYPO3 extensions",
-            "support": {
-                "general": "https://typo3.org/support/",
-                "irc": "irc://irc.freenode.net/#typo3-cms",
-                "issues": "https://forge.typo3.org",
-                "news": "nntp://lists.typo3.org",
-                "source": "https://github.com/TYPO3/minimal/tree/v10.4.0"
-            },
-            "time": "2020-04-21T08:52:32+00:00"
         },
         {
             "name": "typo3/phar-stream-wrapper",
