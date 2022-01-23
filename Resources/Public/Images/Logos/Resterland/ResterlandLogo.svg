@@ -86,7 +86,7 @@
                     style="stop-color:#171109;stop-opacity:1"
                     offset="1"
                     id="stop8163"/>
-    </linearGradient>
+        </linearGradient>
         <linearGradient
                 id="linearGradient8135">
             <stop
@@ -120,7 +120,7 @@
                     style="stop-color:#171109;stop-opacity:1"
                     offset="1"
                     id="stop8131"/>
-    </linearGradient>
+        </linearGradient>
         <linearGradient
                 id="linearGradient5682">
             <stop
@@ -188,7 +188,7 @@
                 x2="260"
                 y2="1042.3622"
                 gradientUnits="userSpaceOnUse"/>
-  </defs>
+    </defs>
     <g
             id="layer1"
             transform="translate(0,-552.36216)">
