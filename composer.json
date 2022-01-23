@@ -40,10 +40,6 @@
       "Resterland\\Resterland\\Tests\\": "Tests"
     }
   },
-  "replace": {
-    "resterland/resterland": "self.version",
-    "typo3-ter/resterland": "self.version"
-  },
   "config": {
     "optimize-autoloader": true,
     "allow-plugins": {

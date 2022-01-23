@@ -4,7 +4,7 @@
     "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
     "This file is @generated automatically"
   ],
-  "content-hash": "8aa83bd344c0071e69f6f12153c3ce76",
+  "content-hash": "efaa2fee049b0cddd3232a44b65215da",
   "packages": [
     {
       "name": "bacon/bacon-qr-code",
@@ -55,16 +55,16 @@
       "homepage": "https://github.com/Bacon/BaconQrCode",
       "support": {
         "issues": "https://github.com/Bacon/BaconQrCode/issues",
-                "source": "https://github.com/Bacon/BaconQrCode/tree/2.0.4"
-            },
-            "time": "2021-06-18T13:26:35+00:00"
-        },
-        {
-            "name": "causal/image_autoresize",
-            "version": "2.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/xperseguers/t3ext-image_autoresize.git",
+        "source": "https://github.com/Bacon/BaconQrCode/tree/2.0.4"
+      },
+      "time": "2021-06-18T13:26:35+00:00"
+    },
+    {
+      "name": "causal/image_autoresize",
+      "version": "2.1.1",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/xperseguers/t3ext-image_autoresize.git",
                 "reference": "a7dfde49ac5dfaee0cacd14cef37c5cc2807ff77"
             },
             "dist": {
@@ -461,16 +461,16 @@
       "autoload": {
         "psr-4": {
           "Doctrine\\DBAL\\": "lib/Doctrine/DBAL"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Guilherme Blanco",
-                    "email": "guilhermeblanco@gmail.com"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "Guilherme Blanco",
+          "email": "guilhermeblanco@gmail.com"
                 },
                 {
                     "name": "Roman Borschel",
@@ -768,16 +768,16 @@
         "MIT"
       ],
       "authors": [
-                {
-                    "name": "Guilherme Blanco",
-                    "email": "guilhermeblanco@gmail.com"
-                },
-                {
-                    "name": "Roman Borschel",
-                    "email": "roman@code-factory.org"
-                },
-                {
-                    "name": "Johannes Schmitt",
+        {
+          "name": "Guilherme Blanco",
+          "email": "guilhermeblanco@gmail.com"
+        },
+        {
+          "name": "Roman Borschel",
+          "email": "roman@code-factory.org"
+        },
+        {
+          "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com"
                 }
             ],
@@ -1740,16 +1740,16 @@
                 "phpdocumentor/type-resolver": "^1.3",
                 "webmozart/assert": "^1.9.1"
             },
-            "require-dev": {
-                "mockery/mockery": "~1.3.2",
-                "psalm/phar": "^4.8"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "5.x-dev"
-                }
-            },
+          "require-dev": {
+            "mockery/mockery": "~1.3.2",
+            "psalm/phar": "^4.8"
+          },
+          "type": "library",
+          "extra": {
+            "branch-alias": {
+              "dev-master": "5.x-dev"
+            }
+          },
           "autoload": {
             "psr-4": {
               "phpDocumentor\\Reflection\\": "src"
@@ -1820,16 +1820,16 @@
         }
       ],
       "description": "A PSR-5 based resolver of Class names, Types and Structural Element Names",
-            "support": {
-                "issues": "https://github.com/phpDocumentor/TypeResolver/issues",
-              "source": "https://github.com/phpDocumentor/TypeResolver/tree/1.6.0"
-            },
+      "support": {
+        "issues": "https://github.com/phpDocumentor/TypeResolver/issues",
+        "source": "https://github.com/phpDocumentor/TypeResolver/tree/1.6.0"
+      },
       "time": "2022-01-04T19:58:01+00:00"
-        },
-        {
-            "name": "psr/cache",
-            "version": "1.0.1",
-            "source": {
+    },
+    {
+      "name": "psr/cache",
+      "version": "1.0.1",
+      "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/cache.git",
                 "reference": "d11b50ad223250cf17b86e38383413f5a6764bf8"
@@ -2391,15 +2391,15 @@
                 "roave/security-advisories": "dev-master",
                 "typo3/testing-framework": "^5 || ^6"
             },
-            "type": "typo3-cms-extension",
-            "extra": {
-                "typo3/cms": {
-                    "web-dir": "public",
-                    "root-dir": "private",
-                    "extension-key": "webatelier"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
+          "type": "typo3-cms-extension",
+          "extra": {
+            "typo3/cms": {
+              "web-dir": "public",
+              "root-dir": "private",
+              "extension-key": "webatelier"
+            }
+          },
+          "notification-url": "https://packagist.org/downloads/",
           "license": [
             "GPL-2.0-or-later"
           ],
@@ -2467,16 +2467,16 @@
         "psr/simple-cache": "^1.0|^2.0",
         "symfony/config": "^4.4|^5.0|^6.0",
         "symfony/dependency-injection": "^4.4|^5.0|^6.0",
-                "symfony/filesystem": "^4.4|^5.0|^6.0",
-                "symfony/http-kernel": "^4.4|^5.0|^6.0",
-                "symfony/messenger": "^4.4|^5.0|^6.0",
-                "symfony/var-dumper": "^4.4|^5.0|^6.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Cache\\": ""
-                },
+        "symfony/filesystem": "^4.4|^5.0|^6.0",
+        "symfony/http-kernel": "^4.4|^5.0|^6.0",
+        "symfony/messenger": "^4.4|^5.0|^6.0",
+        "symfony/var-dumper": "^4.4|^5.0|^6.0"
+      },
+      "type": "library",
+      "autoload": {
+        "psr-4": {
+          "Symfony\\Component\\Cache\\": ""
+        },
                 "exclude-from-classmap": [
                     "/Tests/"
                 ]
@@ -2643,16 +2643,16 @@
           "/Tests/"
         ]
       },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "Fabien Potencier",
+          "email": "fabien@symfony.com"
+        },
+        {
                     "name": "Symfony Community",
                     "homepage": "https://symfony.com/contributors"
                 }
@@ -2722,16 +2722,16 @@
         "symfony/var-dumper": "^4.4|^5.0|^6.0"
       },
       "suggest": {
-                "psr/log": "For using the console logger",
-                "symfony/event-dispatcher": "",
-                "symfony/lock": "",
-                "symfony/process": ""
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Console\\": ""
-                },
+        "psr/log": "For using the console logger",
+        "symfony/event-dispatcher": "",
+        "symfony/lock": "",
+        "symfony/process": ""
+      },
+      "type": "library",
+      "autoload": {
+        "psr-4": {
+          "Symfony\\Component\\Console\\": ""
+        },
                 "exclude-from-classmap": [
                     "/Tests/"
                 ]
@@ -2821,16 +2821,16 @@
         "symfony/finder": "For using double-star glob patterns or when GLOB_BRACE portability is required",
         "symfony/proxy-manager-bridge": "Generate service proxies to lazy load them",
         "symfony/yaml": ""
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\DependencyInjection\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
+      },
+      "type": "library",
+      "autoload": {
+        "psr-4": {
+          "Symfony\\Component\\DependencyInjection\\": ""
+        },
+        "exclude-from-classmap": [
+          "/Tests/"
+        ]
+      },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
@@ -3268,23 +3268,23 @@
       ],
       "description": "Finds files and directories via an intuitive fluent interface",
       "homepage": "https://symfony.com",
-            "support": {
-              "source": "https://github.com/symfony/finder/tree/v5.4.2"
-            },
-            "funding": [
-              {
-                "url": "https://symfony.com/sponsor",
-                "type": "custom"
-              },
-              {
-                "url": "https://github.com/fabpot",
-                "type": "github"
-              },
-              {
-                "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                "type": "tidelift"
-              }
-            ],
+      "support": {
+        "source": "https://github.com/symfony/finder/tree/v5.4.2"
+      },
+      "funding": [
+        {
+          "url": "https://symfony.com/sponsor",
+          "type": "custom"
+        },
+        {
+          "url": "https://github.com/fabpot",
+          "type": "github"
+        },
+        {
+          "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+          "type": "tidelift"
+        }
+      ],
       "time": "2021-12-15T11:06:13+00:00"
     },
     {
@@ -3331,16 +3331,16 @@
       ],
       "authors": [
         {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Defines an object-oriented layer for the HTTP specification",
-            "homepage": "https://symfony.com",
+          "name": "Fabien Potencier",
+          "email": "fabien@symfony.com"
+        },
+        {
+          "name": "Symfony Community",
+          "homepage": "https://symfony.com/contributors"
+        }
+      ],
+      "description": "Defines an object-oriented layer for the HTTP specification",
+      "homepage": "https://symfony.com",
             "support": {
               "source": "https://github.com/symfony/http-foundation/tree/v5.4.2"
             },
@@ -3404,16 +3404,16 @@
         {
           "name": "Jérémy Derussé",
           "email": "jeremy@derusse.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Creates and manages locks, a mechanism to provide exclusive access to a shared resource",
-            "homepage": "https://symfony.com",
-            "keywords": [
-                "cas",
+        },
+        {
+          "name": "Symfony Community",
+          "homepage": "https://symfony.com/contributors"
+        }
+      ],
+      "description": "Creates and manages locks, a mechanism to provide exclusive access to a shared resource",
+      "homepage": "https://symfony.com",
+      "keywords": [
+        "cas",
                 "flock",
                 "locking",
                 "mutex",
@@ -3483,16 +3483,16 @@
       "notification-url": "https://packagist.org/downloads/",
       "license": [
         "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
+      ],
+      "authors": [
+        {
+          "name": "Fabien Potencier",
+          "email": "fabien@symfony.com"
+        },
+        {
+          "name": "Symfony Community",
+          "homepage": "https://symfony.com/contributors"
+        }
             ],
             "description": "Helps sending emails",
             "homepage": "https://symfony.com",
@@ -3559,16 +3559,16 @@
           "/Tests/"
         ]
       },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "Fabien Potencier",
+          "email": "fabien@symfony.com"
+        },
+        {
                     "name": "Symfony Community",
                     "homepage": "https://symfony.com/contributors"
                 }
@@ -3727,26 +3727,26 @@
       "keywords": [
         "compatibility",
         "ctype",
-                "polyfill",
-                "portable"
-            ],
-            "support": {
-              "source": "https://github.com/symfony/polyfill-ctype/tree/v1.24.0"
-            },
-            "funding": [
-              {
-                "url": "https://symfony.com/sponsor",
-                "type": "custom"
-              },
-              {
-                "url": "https://github.com/fabpot",
-                "type": "github"
-              },
-              {
-                "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                "type": "tidelift"
-              }
-            ],
+        "polyfill",
+        "portable"
+      ],
+      "support": {
+        "source": "https://github.com/symfony/polyfill-ctype/tree/v1.24.0"
+      },
+      "funding": [
+        {
+          "url": "https://symfony.com/sponsor",
+          "type": "custom"
+        },
+        {
+          "url": "https://github.com/fabpot",
+          "type": "github"
+        },
+        {
+          "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+          "type": "tidelift"
+        }
+      ],
       "time": "2021-10-20T20:35:02+00:00"
     },
     {
@@ -3793,16 +3793,16 @@
       ],
       "authors": [
         {
-                    "name": "Nicolas Grekas",
-                    "email": "p@tchwork.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony polyfill for intl's grapheme_* functions",
-            "homepage": "https://symfony.com",
+          "name": "Nicolas Grekas",
+          "email": "p@tchwork.com"
+        },
+        {
+          "name": "Symfony Community",
+          "homepage": "https://symfony.com/contributors"
+        }
+      ],
+      "description": "Symfony polyfill for intl's grapheme_* functions",
+      "homepage": "https://symfony.com",
             "keywords": [
                 "compatibility",
                 "grapheme",
@@ -3874,16 +3874,16 @@
           "/Tests/"
         ]
       },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Nicolas Grekas",
-                    "email": "p@tchwork.com"
-                },
-                {
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "Nicolas Grekas",
+          "email": "p@tchwork.com"
+        },
+        {
                     "name": "Symfony Community",
                     "homepage": "https://symfony.com/contributors"
                 }
@@ -3961,16 +3961,16 @@
       "license": [
         "MIT"
       ],
-            "authors": [
-                {
-                    "name": "Laurent Bassin",
-                    "email": "laurent@bassin.info"
-                },
-                {
-                    "name": "Trevor Rowbotham",
-                    "email": "trevor.rowbotham@pm.me"
-                },
-                {
+      "authors": [
+        {
+          "name": "Laurent Bassin",
+          "email": "laurent@bassin.info"
+        },
+        {
+          "name": "Trevor Rowbotham",
+          "email": "trevor.rowbotham@pm.me"
+        },
+        {
                     "name": "Symfony Community",
                     "homepage": "https://symfony.com/contributors"
                 }
@@ -4047,16 +4047,16 @@
       },
       "notification-url": "https://packagist.org/downloads/",
       "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Nicolas Grekas",
-                    "email": "p@tchwork.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "Nicolas Grekas",
+          "email": "p@tchwork.com"
+        },
+        {
+          "name": "Symfony Community",
+          "homepage": "https://symfony.com/contributors"
                 }
             ],
             "description": "Symfony polyfill for intl's Normalizer class and related functions",
@@ -4148,27 +4148,27 @@
       "keywords": [
         "compatibility",
         "mbstring",
-                "polyfill",
-                "portable",
-                "shim"
-            ],
-            "support": {
-              "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.24.0"
-            },
-            "funding": [
-              {
-                "url": "https://symfony.com/sponsor",
-                "type": "custom"
-              },
-              {
-                "url": "https://github.com/fabpot",
-                "type": "github"
-              },
-              {
-                "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                "type": "tidelift"
-              }
-            ],
+        "polyfill",
+        "portable",
+        "shim"
+      ],
+      "support": {
+        "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.24.0"
+      },
+      "funding": [
+        {
+          "url": "https://symfony.com/sponsor",
+          "type": "custom"
+        },
+        {
+          "url": "https://github.com/fabpot",
+          "type": "github"
+        },
+        {
+          "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+          "type": "tidelift"
+        }
+      ],
       "time": "2021-11-30T18:21:41+00:00"
     },
     {
@@ -4214,16 +4214,16 @@
         {
           "name": "Nicolas Grekas",
           "email": "p@tchwork.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony polyfill backporting some PHP 7.2+ features to lower PHP versions",
-            "homepage": "https://symfony.com",
-            "keywords": [
-                "compatibility",
+        },
+        {
+          "name": "Symfony Community",
+          "homepage": "https://symfony.com/contributors"
+        }
+      ],
+      "description": "Symfony polyfill backporting some PHP 7.2+ features to lower PHP versions",
+      "homepage": "https://symfony.com",
+      "keywords": [
+        "compatibility",
                 "polyfill",
                 "portable",
                 "shim"
@@ -4291,16 +4291,16 @@
       ],
       "authors": [
         {
-                    "name": "Nicolas Grekas",
-                    "email": "p@tchwork.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony polyfill backporting some PHP 7.3+ features to lower PHP versions",
-            "homepage": "https://symfony.com",
+          "name": "Nicolas Grekas",
+          "email": "p@tchwork.com"
+        },
+        {
+          "name": "Symfony Community",
+          "homepage": "https://symfony.com/contributors"
+        }
+      ],
+      "description": "Symfony polyfill backporting some PHP 7.3+ features to lower PHP versions",
+      "homepage": "https://symfony.com",
             "keywords": [
                 "compatibility",
                 "polyfill",
@@ -4370,16 +4370,16 @@
       ],
       "authors": [
         {
-                    "name": "Ion Bazan",
-                    "email": "ion.bazan@gmail.com"
-                },
-                {
-                    "name": "Nicolas Grekas",
-                    "email": "p@tchwork.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
+          "name": "Ion Bazan",
+          "email": "ion.bazan@gmail.com"
+        },
+        {
+          "name": "Nicolas Grekas",
+          "email": "p@tchwork.com"
+        },
+        {
+          "name": "Symfony Community",
+          "homepage": "https://symfony.com/contributors"
                 }
             ],
             "description": "Symfony polyfill backporting some PHP 8.0+ features to lower PHP versions",
@@ -4453,16 +4453,16 @@
       ],
       "authors": [
         {
-                    "name": "Nicolas Grekas",
-                    "email": "p@tchwork.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony polyfill backporting some PHP 8.1+ features to lower PHP versions",
-            "homepage": "https://symfony.com",
+          "name": "Nicolas Grekas",
+          "email": "p@tchwork.com"
+        },
+        {
+          "name": "Symfony Community",
+          "homepage": "https://symfony.com/contributors"
+        }
+      ],
+      "description": "Symfony polyfill backporting some PHP 8.1+ features to lower PHP versions",
+      "homepage": "https://symfony.com",
             "keywords": [
                 "compatibility",
                 "polyfill",
@@ -4533,21 +4533,21 @@
       "homepage": "https://symfony.com",
       "support": {
         "source": "https://github.com/symfony/process/tree/v5.4.2"
-            },
-            "funding": [
-              {
-                "url": "https://symfony.com/sponsor",
-                "type": "custom"
-              },
-              {
-                "url": "https://github.com/fabpot",
-                "type": "github"
-              },
-              {
-                "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                "type": "tidelift"
-              }
-            ],
+      },
+      "funding": [
+        {
+          "url": "https://symfony.com/sponsor",
+          "type": "custom"
+        },
+        {
+          "url": "https://github.com/fabpot",
+          "type": "github"
+        },
+        {
+          "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+          "type": "tidelift"
+        }
+      ],
       "time": "2021-12-27T21:01:00+00:00"
     },
     {
@@ -4594,16 +4594,16 @@
           "name": "Fabien Potencier",
           "email": "fabien@symfony.com"
         },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Provides functions to read and write from/to an object or array using a simple string notation",
-            "homepage": "https://symfony.com",
-            "keywords": [
-                "access",
-                "array",
+        {
+          "name": "Symfony Community",
+          "homepage": "https://symfony.com/contributors"
+        }
+      ],
+      "description": "Provides functions to read and write from/to an object or array using a simple string notation",
+      "homepage": "https://symfony.com",
+      "keywords": [
+        "access",
+        "array",
                 "extraction",
                 "index",
                 "injection",
@@ -4675,16 +4675,16 @@
         "psr-4": {
           "Symfony\\Component\\PropertyInfo\\": ""
         },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
+        "exclude-from-classmap": [
+          "/Tests/"
+        ]
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
                     "name": "Kévin Dunglas",
                     "email": "dunglas@gmail.com"
                 },
@@ -4766,16 +4766,16 @@
           "name": "Symfony Community",
           "homepage": "https://symfony.com/contributors"
         }
-            ],
-            "description": "Provides a Token Bucket implementation to rate limit input and output in your application",
-            "homepage": "https://symfony.com",
-            "keywords": [
-                "limiter",
-                "rate-limiter"
-            ],
-            "support": {
-              "source": "https://github.com/symfony/rate-limiter/tree/v5.4.2"
-            },
+      ],
+      "description": "Provides a Token Bucket implementation to rate limit input and output in your application",
+      "homepage": "https://symfony.com",
+      "keywords": [
+        "limiter",
+        "rate-limiter"
+      ],
+      "support": {
+        "source": "https://github.com/symfony/rate-limiter/tree/v5.4.2"
+      },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -5009,16 +5009,16 @@
         ]
       },
       "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Nicolas Grekas",
-                    "email": "p@tchwork.com"
-                },
-                {
-                    "name": "Symfony Community",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "Nicolas Grekas",
+          "email": "p@tchwork.com"
+        },
+        {
+          "name": "Symfony Community",
                     "homepage": "https://symfony.com/contributors"
                 }
             ],
@@ -5095,16 +5095,16 @@
           "Resources/functions/dump.php"
         ],
         "psr-4": {
-                    "Symfony\\Component\\VarDumper\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
+          "Symfony\\Component\\VarDumper\\": ""
+        },
+        "exclude-from-classmap": [
+          "/Tests/"
+        ]
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
             "authors": [
                 {
                     "name": "Nicolas Grekas",
@@ -5184,16 +5184,16 @@
           "homepage": "https://symfony.com/contributors"
         }
       ],
-            "description": "Allows exporting any serializable PHP data structure to plain PHP code",
-            "homepage": "https://symfony.com",
-            "keywords": [
-                "clone",
-                "construct",
-                "export",
-                "hydrate",
-                "instantiate",
-                "serialize"
-            ],
+      "description": "Allows exporting any serializable PHP data structure to plain PHP code",
+      "homepage": "https://symfony.com",
+      "keywords": [
+        "clone",
+        "construct",
+        "export",
+        "hydrate",
+        "instantiate",
+        "serialize"
+      ],
             "support": {
               "source": "https://github.com/symfony/var-exporter/tree/v5.4.2"
             },
@@ -5257,16 +5257,16 @@
       "license": [
         "MIT"
       ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
+      "authors": [
+        {
+          "name": "Fabien Potencier",
+          "email": "fabien@symfony.com"
+        },
+        {
+          "name": "Symfony Community",
+          "homepage": "https://symfony.com/contributors"
+        }
+      ],
             "description": "Loads and dumps YAML files",
             "homepage": "https://symfony.com",
             "support": {
@@ -5326,16 +5326,16 @@
                     "TYPO3\\ClassAliasLoader\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Helmut Hummel",
-                    "email": "info@helhum.io"
-                }
-            ],
+          "notification-url": "https://packagist.org/downloads/",
+          "license": [
+            "MIT"
+          ],
+          "authors": [
+            {
+              "name": "Helmut Hummel",
+              "email": "info@helhum.io"
+            }
+          ],
           "description": "Amends the composer class loader to support class aliases to provide backwards compatibility for packages",
           "homepage": "http://github.com/TYPO3/class-alias-loader",
           "keywords": [
@@ -5385,17 +5385,17 @@
         },
         "typo3/cms": {
           "Package": {
-                        "partOfFactoryDefault": true
-                    },
-                    "extension-key": "adminpanel"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "TYPO3\\CMS\\Adminpanel\\": "Classes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
+            "partOfFactoryDefault": true
+          },
+          "extension-key": "adminpanel"
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "TYPO3\\CMS\\Adminpanel\\": "Classes/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
       "license": [
         "GPL-2.0-or-later"
       ],
@@ -5450,26 +5450,26 @@
         "typo3/cms-install": "To generate url to install tool in environment toolbar"
       },
       "type": "typo3-cms-framework",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "11.5.x-dev"
-                },
-                "typo3/cms": {
-                    "Package": {
-                        "serviceProvider": "TYPO3\\CMS\\Backend\\ServiceProvider",
-                        "protected": true,
-                        "partOfFactoryDefault": true,
-                        "partOfMinimalUsableSystem": true
-                    },
-                    "extension-key": "backend"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "TYPO3\\CMS\\Backend\\": "Classes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
+      "extra": {
+        "branch-alias": {
+          "dev-master": "11.5.x-dev"
+        },
+        "typo3/cms": {
+          "Package": {
+            "serviceProvider": "TYPO3\\CMS\\Backend\\ServiceProvider",
+            "protected": true,
+            "partOfFactoryDefault": true,
+            "partOfMinimalUsableSystem": true
+          },
+          "extension-key": "backend"
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "TYPO3\\CMS\\Backend\\": "Classes/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
       "license": [
         "GPL-2.0-or-later"
       ],
@@ -5524,10 +5524,10 @@
       },
       "autoload": {
         "psr-4": {
-                    "TYPO3\\CMS\\Belog\\": "Classes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
+          "TYPO3\\CMS\\Belog\\": "Classes/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
       "license": [
         "GPL-2.0-or-later"
       ],
@@ -5582,16 +5582,16 @@
       },
       "autoload": {
         "psr-4": {
-                    "TYPO3\\CMS\\Beuser\\": "Classes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "TYPO3 Core Team",
+          "TYPO3\\CMS\\Beuser\\": "Classes/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "GPL-2.0-or-later"
+      ],
+      "authors": [
+        {
+          "name": "TYPO3 Core Team",
                     "email": "typo3cms@typo3.org",
                     "role": "Developer"
                 }
@@ -5688,15 +5688,15 @@
             ],
             "authors": [
                 {
-                    "name": "TYPO3 CMS Core Team",
-                    "homepage": "https://forge.typo3.org/projects/typo3cms-core",
-                    "role": "Developer"
+                  "name": "TYPO3 CMS Core Team",
+                  "homepage": "https://forge.typo3.org/projects/typo3cms-core",
+                  "role": "Developer"
                 },
-                {
-                    "name": "The TYPO3 Community",
-                    "homepage": "https://typo3.org/community/",
-                    "role": "Contributor"
-                }
+              {
+                "name": "The TYPO3 Community",
+                "homepage": "https://typo3.org/community/",
+                "role": "Contributor"
+              }
             ],
           "description": "TYPO3 CMS Installers",
           "homepage": "https://github.com/TYPO3/CmsComposerInstallers",
@@ -5798,16 +5798,16 @@
       },
       "replace": {
         "typo3/cms-lang": "*",
-                "typo3/cms-saltedpasswords": "*",
-                "typo3/cms-sv": "*"
-            },
-            "suggest": {
-                "ext-fileinfo": "Used for proper file type detection in the file abstraction layer",
-                "ext-gd": "GDlib/Freetype is required for building images with text (GIFBUILDER) and can also be used to scale images",
-                "ext-intl": "TYPO3 with unicode-based filesystems",
-                "ext-mysqli": "",
-                "ext-openssl": "OpenSSL is required for sending SMTP mails over an encrypted channel endpoint",
-                "ext-zip": "",
+        "typo3/cms-saltedpasswords": "*",
+        "typo3/cms-sv": "*"
+      },
+      "suggest": {
+        "ext-fileinfo": "Used for proper file type detection in the file abstraction layer",
+        "ext-gd": "GDlib/Freetype is required for building images with text (GIFBUILDER) and can also be used to scale images",
+        "ext-intl": "TYPO3 with unicode-based filesystems",
+        "ext-mysqli": "",
+        "ext-openssl": "OpenSSL is required for sending SMTP mails over an encrypted channel endpoint",
+        "ext-zip": "",
                 "ext-zlib": "TYPO3 uses zlib for amongst others output compression and un/packing t3x extension files"
             },
             "type": "typo3-cms-framework",
@@ -5827,16 +5827,16 @@
             },
             "autoload": {
                 "psr-4": {
-                    "TYPO3\\CMS\\Core\\": "Classes/"
+                  "TYPO3\\CMS\\Core\\": "Classes/"
                 },
-                "classmap": [
-                    "Resources/PHP/"
-                ],
-                "files": [
-                    "Resources/PHP/GlobalDebugFunctions.php"
-                ]
+              "classmap": [
+                "Resources/PHP/"
+              ],
+              "files": [
+                "Resources/PHP/GlobalDebugFunctions.php"
+              ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+      "notification-url": "https://packagist.org/downloads/",
       "license": [
         "GPL-2.0-or-later"
       ],
@@ -5891,15 +5891,15 @@
           "Package": {
             "serviceProvider": "TYPO3\\CMS\\Dashboard\\ServiceProvider",
             "partOfFactoryDefault": true
-                    }
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "TYPO3\\CMS\\Dashboard\\": "Classes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
+          }
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "TYPO3\\CMS\\Dashboard\\": "Classes/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
       "license": [
         "GPL-2.0-or-later"
       ],
@@ -5954,21 +5954,21 @@
           "dev-master": "11.5.x-dev"
         },
         "typo3/cms": {
-                    "Package": {
-                        "serviceProvider": "TYPO3\\CMS\\Extbase\\ServiceProvider",
-                        "protected": true,
-                        "partOfFactoryDefault": true,
-                        "partOfMinimalUsableSystem": true
-                    },
-                    "extension-key": "extbase"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "TYPO3\\CMS\\Extbase\\": "Classes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
+          "Package": {
+            "serviceProvider": "TYPO3\\CMS\\Extbase\\ServiceProvider",
+            "protected": true,
+            "partOfFactoryDefault": true,
+            "partOfMinimalUsableSystem": true
+          },
+          "extension-key": "extbase"
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "TYPO3\\CMS\\Extbase\\": "Classes/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
       "license": [
         "GPL-2.0-or-later"
       ],
@@ -6023,13 +6023,13 @@
           },
           "extension-key": "extensionmanager"
         }
-            },
-            "autoload": {
-                "psr-4": {
-                    "TYPO3\\CMS\\Extensionmanager\\": "Classes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
+      },
+      "autoload": {
+        "psr-4": {
+          "TYPO3\\CMS\\Extensionmanager\\": "Classes/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
       "license": [
         "GPL-2.0-or-later"
       ],
@@ -6252,16 +6252,16 @@
             "protected": true,
             "partOfFactoryDefault": true,
             "partOfMinimalUsableSystem": true
-                    },
-                    "extension-key": "fluid"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "TYPO3\\CMS\\Fluid\\": "Classes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
+          },
+          "extension-key": "fluid"
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "TYPO3\\CMS\\Fluid\\": "Classes/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
       "license": [
         "GPL-2.0-or-later"
       ],
@@ -6316,12 +6316,12 @@
           "extension-key": "fluid_styled_content"
         }
       },
-            "autoload": {
-                "psr-4": {
-                    "TYPO3\\CMS\\FluidStyledContent\\": "Classes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
+      "autoload": {
+        "psr-4": {
+          "TYPO3\\CMS\\FluidStyledContent\\": "Classes/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
       "license": [
         "GPL-2.0-or-later"
       ],
@@ -6376,16 +6376,16 @@
         "typo3/cms": {
           "Package": {
             "partOfFactoryDefault": true
-                    },
-                    "extension-key": "form"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "TYPO3\\CMS\\Form\\": "Classes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
+          },
+          "extension-key": "form"
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "TYPO3\\CMS\\Form\\": "Classes/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
       "license": [
         "GPL-2.0-or-later"
       ],
@@ -6440,18 +6440,18 @@
           "Package": {
             "serviceProvider": "TYPO3\\CMS\\Frontend\\ServiceProvider",
             "protected": true,
-                        "partOfFactoryDefault": true,
-                        "partOfMinimalUsableSystem": true
-                    },
-                    "extension-key": "frontend"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "TYPO3\\CMS\\Frontend\\": "Classes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
+            "partOfFactoryDefault": true,
+            "partOfMinimalUsableSystem": true
+          },
+          "extension-key": "frontend"
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "TYPO3\\CMS\\Frontend\\": "Classes/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
       "license": [
         "GPL-2.0-or-later"
       ],
@@ -6506,10 +6506,10 @@
       },
       "autoload": {
         "psr-4": {
-                    "TYPO3\\CMS\\Impexp\\": "Classes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
+          "TYPO3\\CMS\\Impexp\\": "Classes/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
       "license": [
         "GPL-2.0-or-later"
       ],
@@ -6564,10 +6564,10 @@
       },
       "autoload": {
         "psr-4": {
-                    "TYPO3\\CMS\\IndexedSearch\\": "Classes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
+          "TYPO3\\CMS\\IndexedSearch\\": "Classes/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
       "license": [
         "GPL-2.0-or-later"
       ],
@@ -6622,13 +6622,13 @@
           },
           "extension-key": "info"
         }
-            },
-            "autoload": {
-                "psr-4": {
-                    "TYPO3\\CMS\\Info\\": "Classes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
+      },
+      "autoload": {
+        "psr-4": {
+          "TYPO3\\CMS\\Info\\": "Classes/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
       "license": [
         "GPL-2.0-or-later"
       ],
@@ -6683,20 +6683,20 @@
         },
         "typo3/cms": {
           "Package": {
-                        "serviceProvider": "TYPO3\\CMS\\Install\\ServiceProvider",
-                        "protected": true,
-                        "partOfFactoryDefault": true,
-                        "partOfMinimalUsableSystem": true
-                    },
-                    "extension-key": "install"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "TYPO3\\CMS\\Install\\": "Classes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
+            "serviceProvider": "TYPO3\\CMS\\Install\\ServiceProvider",
+            "protected": true,
+            "partOfFactoryDefault": true,
+            "partOfMinimalUsableSystem": true
+          },
+          "extension-key": "install"
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "TYPO3\\CMS\\Install\\": "Classes/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
       "license": [
         "GPL-2.0-or-later"
       ],
@@ -6751,11 +6751,11 @@
         }
       },
       "autoload": {
-                "psr-4": {
-                    "TYPO3\\CMS\\Linkvalidator\\": "Classes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
+        "psr-4": {
+          "TYPO3\\CMS\\Linkvalidator\\": "Classes/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
       "license": [
         "GPL-2.0-or-later"
       ],
@@ -6810,11 +6810,11 @@
         }
       },
       "autoload": {
-                "psr-4": {
-                    "TYPO3\\CMS\\Lowlevel\\": "Classes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
+        "psr-4": {
+          "TYPO3\\CMS\\Lowlevel\\": "Classes/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
       "license": [
         "GPL-2.0-or-later"
       ],
@@ -6869,12 +6869,12 @@
           "extension-key": "recordlist"
         }
       },
-            "autoload": {
-                "psr-4": {
-                    "TYPO3\\CMS\\Recordlist\\": "Classes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
+      "autoload": {
+        "psr-4": {
+          "TYPO3\\CMS\\Recordlist\\": "Classes/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
       "license": [
         "GPL-2.0-or-later"
       ],
@@ -6929,20 +6929,20 @@
       "extra": {
         "branch-alias": {
           "dev-master": "11.5.x-dev"
-                },
-                "typo3/cms": {
-                    "extension-key": "redirects",
-                    "Package": {
-                        "partOfFactoryDefault": true
-                    }
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "TYPO3\\CMS\\Redirects\\": "Classes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
+        },
+        "typo3/cms": {
+          "extension-key": "redirects",
+          "Package": {
+            "partOfFactoryDefault": true
+          }
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "TYPO3\\CMS\\Redirects\\": "Classes/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
       "license": [
         "GPL-2.0-or-later"
       ],
@@ -6997,13 +6997,13 @@
           },
           "extension-key": "reports"
         }
-            },
-            "autoload": {
-                "psr-4": {
-                    "TYPO3\\CMS\\Reports\\": "Classes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
+      },
+      "autoload": {
+        "psr-4": {
+          "TYPO3\\CMS\\Reports\\": "Classes/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
       "license": [
         "GPL-2.0-or-later"
       ],
@@ -7058,13 +7058,13 @@
           },
           "extension-key": "rte_ckeditor"
         }
-            },
-            "autoload": {
-                "psr-4": {
-                    "TYPO3\\CMS\\RteCKEditor\\": "Classes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
+      },
+      "autoload": {
+        "psr-4": {
+          "TYPO3\\CMS\\RteCKEditor\\": "Classes/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
       "license": [
         "GPL-2.0-or-later"
       ],
@@ -7119,7 +7119,7 @@
           "TYPO3\\CMS\\Scheduler\\": "Classes/"
         }
       },
-            "notification-url": "https://packagist.org/downloads/",
+      "notification-url": "https://packagist.org/downloads/",
       "license": [
         "GPL-2.0-or-later"
       ],
@@ -7174,12 +7174,12 @@
           }
         }
       },
-            "autoload": {
-                "psr-4": {
-                    "TYPO3\\CMS\\Seo\\": "Classes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
+      "autoload": {
+        "psr-4": {
+          "TYPO3\\CMS\\Seo\\": "Classes/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
       "license": [
         "GPL-2.0-or-later"
       ],
@@ -7234,10 +7234,10 @@
       },
       "autoload": {
         "psr-4": {
-                    "TYPO3\\CMS\\Setup\\": "Classes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
+          "TYPO3\\CMS\\Setup\\": "Classes/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
       "license": [
         "GPL-2.0-or-later"
       ],
@@ -7292,10 +7292,10 @@
       },
       "autoload": {
         "psr-4": {
-                    "TYPO3\\CMS\\SysNote\\": "Classes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
+          "TYPO3\\CMS\\SysNote\\": "Classes/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
       "license": [
         "GPL-2.0-or-later"
       ],
@@ -7350,11 +7350,11 @@
         }
       },
       "autoload": {
-                "psr-4": {
-                    "TYPO3\\CMS\\T3editor\\": "Classes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
+        "psr-4": {
+          "TYPO3\\CMS\\T3editor\\": "Classes/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
       "license": [
         "GPL-2.0-or-later"
       ],
@@ -7409,10 +7409,10 @@
       },
       "autoload": {
         "psr-4": {
-                    "TYPO3\\CMS\\Tstemplate\\": "Classes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
+          "TYPO3\\CMS\\Tstemplate\\": "Classes/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
       "license": [
         "GPL-2.0-or-later"
       ],
@@ -7467,16 +7467,16 @@
       },
       "autoload": {
         "psr-4": {
-                    "TYPO3\\CMS\\Viewpage\\": "Classes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "TYPO3 Core Team",
+          "TYPO3\\CMS\\Viewpage\\": "Classes/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "GPL-2.0-or-later"
+      ],
+      "authors": [
+        {
+          "name": "TYPO3 Core Team",
                     "email": "typo3cms@typo3.org",
                     "role": "Developer"
                 }
@@ -8308,16 +8308,16 @@
             },
             "type": "library",
             "extra": {
-                "branch-alias": {
-                    "dev-master": "5.0-dev"
-                }
+              "branch-alias": {
+                "dev-master": "5.0-dev"
+              }
             },
-            "autoload": {
-                "classmap": [
-                    "src/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
+          "autoload": {
+            "classmap": [
+              "src/"
+            ]
+          },
+          "notification-url": "https://packagist.org/downloads/",
           "license": [
             "BSD-3-Clause"
           ],
@@ -8389,16 +8389,16 @@
           "sebastian/type": "^2.3.4",
           "sebastian/version": "^3.0.2"
         },
-            "require-dev": {
-                "ext-pdo": "*",
-                "phpspec/prophecy-phpunit": "^2.0.1"
-            },
-            "suggest": {
-                "ext-soap": "*",
-                "ext-xdebug": "*"
-            },
-            "bin": [
-                "phpunit"
+        "require-dev": {
+          "ext-pdo": "*",
+          "phpspec/prophecy-phpunit": "^2.0.1"
+        },
+        "suggest": {
+          "ext-soap": "*",
+          "ext-xdebug": "*"
+        },
+        "bin": [
+          "phpunit"
             ],
             "type": "library",
             "extra": {
@@ -8767,13 +8767,13 @@
               "symfony/polyfill-php55": ">=1,<1.10",
               "symfony/proxy-manager-bridge": ">=2.7,<2.7.51|>=2.8,<2.8.50|>=3,<3.4.26|>=4,<4.1.12|>=4.2,<4.2.7",
               "symfony/routing": ">=2,<2.0.19",
-                "symfony/security": ">=2,<2.7.51|>=2.8,<3.4.49|>=4,<4.4.24|>=5,<5.2.8",
-                "symfony/security-bundle": ">=2,<2.7.48|>=2.8,<2.8.41|>=3,<3.3.17|>=3.4,<3.4.11|>=4,<4.0.11|>=5.3,<5.3.12",
-                "symfony/security-core": ">=2.4,<2.6.13|>=2.7,<2.7.9|>=2.7.30,<2.7.32|>=2.8,<3.4.49|>=4,<4.4.24|>=5,<5.2.9",
-                "symfony/security-csrf": ">=2.4,<2.7.48|>=2.8,<2.8.41|>=3,<3.3.17|>=3.4,<3.4.11|>=4,<4.0.11",
-                "symfony/security-guard": ">=2.8,<3.4.48|>=4,<4.4.23|>=5,<5.2.8",
-                "symfony/security-http": ">=2.3,<2.3.41|>=2.4,<2.7.51|>=2.8,<3.4.48|>=4,<4.4.23|>=5,<5.2.8|>=5.3,<5.3.2",
-                "symfony/serializer": ">=2,<2.0.11|>=4.1,<4.4.35|>=5,<5.3.12",
+              "symfony/security": ">=2,<2.7.51|>=2.8,<3.4.49|>=4,<4.4.24|>=5,<5.2.8",
+              "symfony/security-bundle": ">=2,<2.7.48|>=2.8,<2.8.41|>=3,<3.3.17|>=3.4,<3.4.11|>=4,<4.0.11|>=5.3,<5.3.12",
+              "symfony/security-core": ">=2.4,<2.6.13|>=2.7,<2.7.9|>=2.7.30,<2.7.32|>=2.8,<3.4.49|>=4,<4.4.24|>=5,<5.2.9",
+              "symfony/security-csrf": ">=2.4,<2.7.48|>=2.8,<2.8.41|>=3,<3.3.17|>=3.4,<3.4.11|>=4,<4.0.11",
+              "symfony/security-guard": ">=2.8,<3.4.48|>=4,<4.4.23|>=5,<5.2.8",
+              "symfony/security-http": ">=2.3,<2.3.41|>=2.4,<2.7.51|>=2.8,<3.4.48|>=4,<4.4.23|>=5,<5.2.8|>=5.3,<5.3.2",
+              "symfony/serializer": ">=2,<2.0.11|>=4.1,<4.4.35|>=5,<5.3.12",
               "symfony/symfony": ">=2,<3.4.49|>=4,<4.4.35|>=5,<5.3.12",
               "symfony/translation": ">=2,<2.0.17",
               "symfony/validator": ">=2,<2.0.24|>=2.1,<2.1.12|>=2.2,<2.2.5|>=2.3,<2.3.3",
@@ -8836,16 +8836,16 @@
               "zendframework/zend-crypt": ">=2,<2.4.9|>=2.5,<2.5.2",
               "zendframework/zend-db": ">=2,<2.0.99|>=2.1,<2.1.99|>=2.2,<2.2.10|>=2.3,<2.3.5",
               "zendframework/zend-developer-tools": ">=1.2.2,<1.2.3",
-                "zendframework/zend-diactoros": ">=1,<1.8.4",
-                "zendframework/zend-feed": ">=1,<2.10.3",
-                "zendframework/zend-form": ">=2,<2.2.7|>=2.3,<2.3.1",
-                "zendframework/zend-http": ">=1,<2.8.1",
-                "zendframework/zend-json": ">=2.1,<2.1.6|>=2.2,<2.2.6",
-                "zendframework/zend-ldap": ">=2,<2.0.99|>=2.1,<2.1.99|>=2.2,<2.2.8|>=2.3,<2.3.3",
-                "zendframework/zend-mail": ">=2,<2.4.11|>=2.5,<2.7.2",
-                "zendframework/zend-navigation": ">=2,<2.2.7|>=2.3,<2.3.1",
-                "zendframework/zend-session": ">=2,<2.0.99|>=2.1,<2.1.99|>=2.2,<2.2.9|>=2.3,<2.3.4",
-                "zendframework/zend-validator": ">=2.3,<2.3.6",
+              "zendframework/zend-diactoros": ">=1,<1.8.4",
+              "zendframework/zend-feed": ">=1,<2.10.3",
+              "zendframework/zend-form": ">=2,<2.2.7|>=2.3,<2.3.1",
+              "zendframework/zend-http": ">=1,<2.8.1",
+              "zendframework/zend-json": ">=2.1,<2.1.6|>=2.2,<2.2.6",
+              "zendframework/zend-ldap": ">=2,<2.0.99|>=2.1,<2.1.99|>=2.2,<2.2.8|>=2.3,<2.3.3",
+              "zendframework/zend-mail": ">=2,<2.4.11|>=2.5,<2.7.2",
+              "zendframework/zend-navigation": ">=2,<2.2.7|>=2.3,<2.3.1",
+              "zendframework/zend-session": ">=2,<2.0.99|>=2.1,<2.1.99|>=2.2,<2.2.9|>=2.3,<2.3.4",
+              "zendframework/zend-validator": ">=2.3,<2.3.6",
                 "zendframework/zend-view": ">=2,<2.2.7|>=2.3,<2.3.1",
                 "zendframework/zend-xmlrpc": ">=2.1,<2.1.6|>=2.2,<2.2.6",
                 "zendframework/zendframework": "<=3",
