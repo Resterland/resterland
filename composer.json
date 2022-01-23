@@ -56,7 +56,16 @@
     "typo3-ter/resterland": "self.version"
   },
   "config": {
-    "optimize-autoloader": true
+    "optimize-autoloader": true,
+    "allow-plugins": {
+      "typo3/cms-*": true,
+      "resterland/*": true,
+      "roave/security-advisories": true,
+      "typo3/testing-framework": true,
+      "helhum/*": true,
+      "causal/image_autoresize": true,
+      "typo3/class-alias-loader": true
+    }
   },
   "scripts": {
     "set-version": [
