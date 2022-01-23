@@ -36,8 +36,8 @@
                     offset="0"
                     id="stop4208"/>
         </linearGradient>
-		<linearGradient
-				id="linearGradient9914">
+        <linearGradient
+                id="linearGradient9914">
             <stop
                     style="stop-color:#d3ba5b;stop-opacity:1;"
                     offset="0"
@@ -46,7 +46,7 @@
                     style="stop-color:#d3ba5b;stop-opacity:0;"
                     offset="1"
                     id="stop9918"/>
-		</linearGradient>
+        </linearGradient>
         <linearGradient
                 id="linearGradient9908">
             <stop
@@ -72,8 +72,8 @@
                     offset="0"
                     id="stop9886"/>
         </linearGradient>
-		<linearGradient
-				id="linearGradient8159">
+        <linearGradient
+                id="linearGradient8159">
             <stop
                     style="stop-color:#171109;stop-opacity:1"
                     offset="0"
@@ -86,9 +86,9 @@
                     style="stop-color:#171109;stop-opacity:1"
                     offset="1"
                     id="stop8163"/>
-		</linearGradient>
-		<linearGradient
-				id="linearGradient8135">
+        </linearGradient>
+        <linearGradient
+                id="linearGradient8135">
             <stop
                     style="stop-color:#e1c15b;stop-opacity:1"
                     offset="0"
@@ -97,9 +97,9 @@
                     style="stop-color:#e1c95b;stop-opacity:0.31550801"
                     offset="1"
                     id="stop8139"/>
-		</linearGradient>
-		<linearGradient
-				id="linearGradient8127">
+        </linearGradient>
+        <linearGradient
+                id="linearGradient8127">
             <stop
                     style="stop-color:#171109;stop-opacity:1"
                     offset="0"
@@ -120,7 +120,7 @@
                     style="stop-color:#171109;stop-opacity:1"
                     offset="1"
                     id="stop8131"/>
-		</linearGradient>
+        </linearGradient>
         <linearGradient
                 id="linearGradient5682">
             <stop
@@ -135,17 +135,17 @@
                     offset="0"
                     id="stop5642"/>
         </linearGradient>
-		<filter
-				style="color-interpolation-filters:sRGB"
-				id="filter5776"
-				x="-0.055397488"
-				width="1.110795"
-				y="-0.042345416"
-				height="1.0846908">
+        <filter
+                style="color-interpolation-filters:sRGB"
+                id="filter5776"
+                x="-0.055397488"
+                width="1.110795"
+                y="-0.042345416"
+                height="1.0846908">
             <feGaussianBlur
                     stdDeviation="1.8465829"
                     id="feGaussianBlur5778"/>
-		</filter>
+        </filter>
         <linearGradient
                 xlink:href="#linearGradient8127"
                 id="linearGradient8133"
@@ -170,15 +170,15 @@
                 x2="270"
                 y2="592.36219"
                 gradientUnits="userSpaceOnUse"/>
-		<radialGradient
-				xlink:href="#linearGradient9914"
-				id="radialGradient9922"
-				cx="110.76946"
-				cy="784.88019"
-				fx="110.76946"
-				fy="784.88019"
-				r="95.276794"
-				gradientTransform="matrix(1,0,0,0.37215949,0,492.77956)"
+        <radialGradient
+                xlink:href="#linearGradient9914"
+                id="radialGradient9922"
+                cx="110.76946"
+                cy="784.88019"
+                fx="110.76946"
+                fy="784.88019"
+                r="95.276794"
+                gradientTransform="matrix(1,0,0,0.37215949,0,492.77956)"
         />
         <linearGradient
                 xlink:href="#linearGradient4248"
@@ -188,7 +188,7 @@
                 x2="260"
                 y2="1042.3622"
                 gradientUnits="userSpaceOnUse"/>
-	</defs>
+    </defs>
 	<g
 			id="layer1"
 			transform="translate(0,-552.36216)">
