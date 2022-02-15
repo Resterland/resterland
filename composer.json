@@ -23,11 +23,10 @@
     "helhum/typo3-console": "^6.3 || ^7",
     "typo3/cms-core": "^10.4 || ^11",
     "typo3/cms-filelist": "^10 || ^11",
-    "resterland/webatelier": "^5",
-    "causal/image_autoresize": "^2.0"
+    "causal/image_autoresize": "^2.0",
+    "resterland/webatelier": "^5.1"
   },
   "require-dev": {
-    "roave/security-advisories": "dev-master",
     "typo3/testing-framework": "^5 || ^6"
   },
   "autoload": {
