@@ -118,7 +118,7 @@ plugin.bootstrap_package_contentelements {
 #### Manual inclusion to keep control over loading order ####
 #############################################################
 ## Felogin
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland/Configuration/TypoScript/Extension/Felogin/constants.typoscript" condition="extension.isLoaded('felogin') == 1">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland/Configuration/TypoScript/Extensions/Felogin/constants.typoscript" condition="extension.isLoaded('felogin') == 1">
 #@import 'EXT:resterland/Configuration/TypoScript/Extensions/FrontendLogin/constants.typoscript'
 #<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/Extension/Form/constants.typoscript" condition="extension.isLoaded('form') == 1">
 #<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/Extension/IndexedSearch/constants.typoscript" condition="extension.isLoaded('indexed_search') == 1">
