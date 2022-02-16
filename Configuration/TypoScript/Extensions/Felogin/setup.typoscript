@@ -4,6 +4,7 @@
 plugin.tx_felogin_login {
     settings {
         pages >
+        pages = 21
     }
 
 }
