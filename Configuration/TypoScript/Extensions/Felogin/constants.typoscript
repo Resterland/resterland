@@ -13,7 +13,7 @@ styles.content.loginform {
 
 styles.content.loginform {
     # cat=Frontend Login/01_Storage/100; type=string; label= User Storage Page: Define the Storage Folder with the Website User Records, using a comma separated list or single value
-    pid = 0
+    pid >
     #enable login/logout link in menu: default disabled
     # cat=Resterland Settings: felogin/200/100; type=boolean; label=LLL:EXT:resterland/Resources/Private/Language/locallang_felogin.xlf:constant_cats.felogin.inmenu
     inmenu =
