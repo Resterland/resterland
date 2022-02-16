@@ -1,6 +1,14 @@
 ########################
 #### FRONTEND LOGIN ####
 ########################
+plugin.tx_felogin_login {
+
+    settings {
+        pages = {$styles.content.loginform.pid}
+
+    }
+
+}
 ################################
 #### Login Status Settings #####
 ################################
