@@ -4,7 +4,7 @@
 plugin.tx_felogin_login {
     settings {
         pages >
-        pages = {$styles.content.loginform.pid}
+        pages = 21
     }
 
 }
