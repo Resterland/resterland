@@ -32,19 +32,20 @@
     </f:link.action>
 </f:if>
 
+<f:comment><!--Login Form--></f:comment>
 <f:section name="content">
     <fieldset>
         <legend>
             <f:translate key="login"/>
         </legend>
-        <div>
-            <label>
+        <div class="form-group">
+            <label for="user">
                 <f:translate key="username"/>
                 <f:form.textfield additionalAttributes="{autocomplete: 'username'}" name="user" required="true"/>
             </label>
         </div>
-        <div>
-            <label>
+        <div class="form-group">
+            <label for="pass">
                 <f:translate key="password"/>
                 <f:form.password additionalAttributes="{required: 'required', autocomplete: 'current-password'}"
                                  name="pass"/>
@@ -52,24 +53,27 @@
         </div>
 
         <f:if condition="{permaloginStatus} > -1">
-            <div>
-                <label>
-                    <f:translate id="permalogin"/>
-                    <f:if condition="{permaloginStatus} == 1">
-                        <f:then>
-                            <f:form.hidden additionalAttributes="{disabled: 'disabled'}" name="permalogin" value="0"/>
-                            <f:form.checkbox checked="checked" id="permalogin" name="permalogin" value="1"/>
-                        </f:then>
-                        <f:else>
-                            <f:form.hidden name="permalogin" value="0"/>
-                            <f:form.checkbox id="permalogin" name="permalogin" value="1"/>
-                        </f:else>
-                    </f:if>
-                </label>
+            <div class="form-group">
+                <div class="checkbox">
+                    <label for="permalogin">
+                        <f:translate id="permalogin"/>
+                        <f:if condition="{permaloginStatus} == 1">
+                            <f:then>
+                                <f:form.hidden additionalAttributes="{disabled: 'disabled'}" name="permalogin"
+                                               value="0"/>
+                                <f:form.checkbox checked="checked" id="permalogin" name="permalogin" value="1"/>
+                            </f:then>
+                            <f:else>
+                                <f:form.hidden name="permalogin" value="0"/>
+                                <f:form.checkbox id="permalogin" name="permalogin" value="1"/>
+                            </f:else>
+                        </f:if>
+                    </label>
+                </div>
             </div>
         </f:if>
 
-        <div>
+        <div class="form-group">
             <f:form.submit name="submit" value="{f:translate(key: 'login')}"/>
         </div>
 

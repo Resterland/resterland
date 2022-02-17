@@ -19,12 +19,15 @@ styles.content.loginform {
     redirectuid = 1
 }
 
-styles.content.userinfo {
-    # fe-userinfo
-    alias = Alias:
-    loggedIn = Sie sind angemeldet als:
-    hallo = Hallo
-    lastlogin = Letztmals angemeldet:
-    firstlogin = Sie sind das 1. Mal angmeldet.
-    memberGruppe = Sie sind Mitglied der Gruppe(n):
+plugin {
+    tx_felogin_login {
+        view {
+            # cat=Frontend Login/02_Template/102; type=string; label= Path to template root (FE)
+            templateRootPath = EXT:resterland/Resources/Private/Templates/FrontendLogin/
+            # cat=Frontend Login/02_Template/103; type=string; label= Path to template partials (FE)
+            partialRootPath = EXT:resterland/Resources/Private/Partials/FrontendLogin/
+            # cat=Frontend Login/02_Template/104; type=string; label= Path to template layouts (FE)
+            layoutRootPath =
+        }
+    }
 }
