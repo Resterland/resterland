@@ -1,6 +1,9 @@
 ########################
 #### FRONTEND LOGIN ####
 ########################
+styles.content.loginform {
+    templateFile >
+}
 ################################
 #### Login Status Settings #####
 ################################
