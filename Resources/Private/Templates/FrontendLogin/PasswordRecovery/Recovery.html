@@ -1,9 +1,9 @@
 <html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
 <h3>
-    <f:translate key="forgot_header"/>
+    <f:render arguments="{key: 'forgot_header'}" partial="RenderLabelOrMessage"/>
 </h3>
 <p>
-    <f:translate key="forgot_reset_message"/>
+    <f:render arguments="{key: 'forgot_reset_message'}" partial="RenderLabelOrMessage"/>
 </p>
 
 <f:render partial="ValidationErrors"/>

@@ -89,7 +89,7 @@
              </trans-unit>
              <trans-unit id="login">
                 <source>Login</source>
-                <target state="translated">Anmelden</target>
+                <target state="translated">Login</target>
              </trans-unit>
              <trans-unit id="permalogin">
                 <source>Stay logged in</source>
