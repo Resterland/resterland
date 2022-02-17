@@ -1,13 +1,6 @@
 ########################
 #### FRONTEND LOGIN ####
 ########################
-plugin.tx_felogin_login {
-    settings {
-        pages >
-        pages = 21
-    }
-
-}
 ################################
 #### Login Status Settings #####
 ################################
