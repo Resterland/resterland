@@ -6,8 +6,8 @@
 </f:if>
 
 <f:if condition="{messageKey}">
-    <h3>
-        <f:render arguments="{key: '{messageKey}_header'}" partial="RenderLabelOrMessage"/>
+    <h3 class="element-header">
+        <span><f:render arguments="{key: '{messageKey}_header'}" partial="RenderLabelOrMessage"/></span>
     </h3>
     <p>
         <f:render arguments="{key: '{messageKey}_message'}" partial="RenderLabelOrMessage"/>
@@ -34,23 +34,23 @@
 
 <f:comment><!--Login Form--></f:comment>
 <f:section name="content">
-    <form>
         <fieldset>
             <legend>
                 <f:translate key="login"/>
             </legend>
-            <div class="form-group mb-3">
+            <div class="form-group">
                 <label class="form-label" for="user">
                     <f:translate key="username"/>
                 </label>
-                <f:form.textfield additionalAttributes="{autocomplete: 'username'}" name="user" required="true"/>
+                <f:form.textfield additionalAttributes="{autocomplete: 'username'}" class="form-control" name="user"
+                                  required="true"/>
             </div>
-            <div class="form-group mb-3">
+            <div class="form-group">
                 <label class="form-label" for="pass">
                     <f:translate key="password"/>
                 </label>
                 <f:form.password additionalAttributes="{required: 'required', autocomplete: 'current-password'}"
-                                 name="pass"/>
+                                 class="form-control" name="pass"/>
             </div>
 
             <f:if condition="{permaloginStatus} > -1">
@@ -74,9 +74,7 @@
                 </div>
             </f:if>
 
-            <button class="btn btn-primary">
-                <f:form.submit name="submit" value="{f:translate(key: 'login')}"/>
-            </button>
+            <f:form.submit class="btn btn-primary" name="submit" value="{f:translate(key: 'login')}"/>
 
             <div class="felogin-hidden">
                 <f:form.hidden name="logintype" value="login"/>
@@ -97,6 +95,5 @@
                 {extraHidden}
             </div>
         </fieldset>
-    </form>
 </f:section>
 </html>
