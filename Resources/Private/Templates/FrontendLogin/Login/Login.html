@@ -35,82 +35,68 @@
 <f:comment><!--Login Form--></f:comment>
 <f:section name="content">
     <form>
-        <div class="mb-3">
-            <label class="form-label" for="exampleInputEmail1">Email address</label>
-            <input aria-describedby="emailHelp" class="form-control" id="exampleInputEmail1" type="email">
-            <div class="form-text" id="emailHelp">We'll never share your email with anyone else.</div>
-        </div>
-        <div class="mb-3">
-            <label class="form-label" for="exampleInputPassword1">Password</label>
-            <input class="form-control" id="exampleInputPassword1" type="password">
-        </div>
-        <div class="mb-3 form-check">
-            <input class="form-check-input" id="exampleCheck1" type="checkbox">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>
-        <button class="btn btn-primary" type="submit">Submit</button>
-    </form>
-    <fieldset>
-        <legend>
-            <f:translate key="login"/>
-        </legend>
-        <div class="form-group">
-            <label for="user">
-                <f:translate key="username"/>
-                <f:form.textfield additionalAttributes="{autocomplete: 'username'}" name="user" required="true"/>
-            </label>
-        </div>
-        <div class="form-group">
-            <label for="pass">
-                <f:translate key="password"/>
-                <f:form.password additionalAttributes="{required: 'required', autocomplete: 'current-password'}"
-                                 name="pass"/>
-            </label>
-        </div>
-
-        <f:if condition="{permaloginStatus} > -1">
-            <div class="form-group">
-                <div class="checkbox">
-                    <label for="permalogin">
-                        <f:translate id="permalogin"/>
-                        <f:if condition="{permaloginStatus} == 1">
-                            <f:then>
-                                <f:form.hidden additionalAttributes="{disabled: 'disabled'}" name="permalogin"
-                                               value="0"/>
-                                <f:form.checkbox checked="checked" id="permalogin" name="permalogin" value="1"/>
-                            </f:then>
-                            <f:else>
-                                <f:form.hidden name="permalogin" value="0"/>
-                                <f:form.checkbox id="permalogin" name="permalogin" value="1"/>
-                            </f:else>
-                        </f:if>
-                    </label>
-                </div>
+        <fieldset>
+            <legend>
+                <f:translate key="login"/>
+            </legend>
+            <div class="form-group mb-3">
+                <label class="form-label" for="user">
+                    <f:translate key="username"/>
+                    <f:form.textfield additionalAttributes="{autocomplete: 'username'}" name="user" required="true"/>
+                </label>
             </div>
-        </f:if>
+            <div class="form-group">
+                <label class="form-label" for="pass">
+                    <f:translate key="password"/>
+                    <f:form.password additionalAttributes="{required: 'required', autocomplete: 'current-password'}"
+                                     name="pass"/>
+                </label>
+            </div>
 
-        <div class="form-group">
-            <f:form.submit name="submit" value="{f:translate(key: 'login')}"/>
-        </div>
+            <f:if condition="{permaloginStatus} > -1">
+                <div class="form-group">
+                    <div class="checkbox">
+                        <label for="permalogin">
+                            <f:translate id="permalogin"/>
+                            <f:if condition="{permaloginStatus} == 1">
+                                <f:then>
+                                    <f:form.hidden additionalAttributes="{disabled: 'disabled'}" name="permalogin"
+                                                   value="0"/>
+                                    <f:form.checkbox checked="checked" id="permalogin" name="permalogin" value="1"/>
+                                </f:then>
+                                <f:else>
+                                    <f:form.hidden name="permalogin" value="0"/>
+                                    <f:form.checkbox id="permalogin" name="permalogin" value="1"/>
+                                </f:else>
+                            </f:if>
+                        </label>
+                    </div>
+                </div>
+            </f:if>
 
-        <div class="felogin-hidden">
-            <f:form.hidden name="logintype" value="login"/>
-            <f:form.hidden name="pid" value="{storagePid}"/>
-            <f:if condition="{redirectURL}!=''">
-                <f:form.hidden name="redirect_url" value="{redirectURL}"/>
-            </f:if>
-            <f:if condition="{referer}!=''">
-                <f:form.hidden name="referer" value="{referer}"/>
-            </f:if>
-            <f:if condition="{redirectReferrer}!=''">
-                <f:form.hidden name="redirectReferrer" value="off"/>
-            </f:if>
-            <f:if condition="{noRedirect}!=''">
-                <f:form.hidden name="noredirect" value="1"/>
-            </f:if>
+            <div class="form-group btn btn-primary">
+                <f:form.submit name="submit" value="{f:translate(key: 'login')}"/>
+            </div>
 
-            {extraHidden}
-        </div>
-    </fieldset>
+            <div class="felogin-hidden">
+                <f:form.hidden name="logintype" value="login"/>
+                <f:form.hidden name="pid" value="{storagePid}"/>
+                <f:if condition="{redirectURL}!=''">
+                    <f:form.hidden name="redirect_url" value="{redirectURL}"/>
+                </f:if>
+                <f:if condition="{referer}!=''">
+                    <f:form.hidden name="referer" value="{referer}"/>
+                </f:if>
+                <f:if condition="{redirectReferrer}!=''">
+                    <f:form.hidden name="redirectReferrer" value="off"/>
+                </f:if>
+                <f:if condition="{noRedirect}!=''">
+                    <f:form.hidden name="noredirect" value="1"/>
+                </f:if>
+
+                {extraHidden}
+            </div>
+        </fieldset>
+    </form>
 </f:section>
 </html>
