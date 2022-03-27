@@ -25,6 +25,7 @@ plugin {
         view {
             # cat=Frontend Login/02_Template/102; type=string; label= Path to template root (FE)
             templateRootPath = EXT:resterland/Resources/Private/Templates/FrontendLogin/
+            partialRoothPath = EXT:resterland/Resources/Private/Partials/FrontendLogin/
         }
     }
 }
