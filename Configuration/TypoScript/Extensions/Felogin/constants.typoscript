@@ -8,6 +8,7 @@
 # customsubcategory=200=LLL:EXT:resterland/Resources/Private/Language/locallang_felogin.xlf:constant_cats.felogin
 
 styles.content.loginform {
+    templateFile >
     #enable login/logout link in menu: default disabled
     # cat=Resterland Settings: felogin/200/100; type=boolean; label=LLL:EXT:resterland/Resources/Private/Language/locallang_felogin.xlf:constant_cats.felogin.inmenu
     inmenu =
@@ -24,10 +25,6 @@ plugin {
         view {
             # cat=Frontend Login/02_Template/102; type=string; label= Path to template root (FE)
             templateRootPath = EXT:resterland/Resources/Private/Templates/FrontendLogin/
-            # cat=Frontend Login/02_Template/103; type=string; label= Path to template partials (FE)
-            partialRootPath = EXT:resterland/Resources/Private/Partials/FrontendLogin/
-            # cat=Frontend Login/02_Template/104; type=string; label= Path to template layouts (FE)
-            layoutRootPath =
         }
     }
 }

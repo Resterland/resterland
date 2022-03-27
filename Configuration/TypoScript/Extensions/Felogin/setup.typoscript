@@ -1,9 +1,12 @@
 ########################
 #### FRONTEND LOGIN ####
 ########################
+plugin.tx_felogin_pi1 >
+
 styles.content.loginform {
     templateFile >
 }
+
 ################################
 #### Login Status Settings #####
 ################################

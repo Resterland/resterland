@@ -16,7 +16,7 @@
 ######################
 #### DEPENDENCIES ####
 ######################
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/ContentElement/constants.typoscript">
+#@import 'EXT:bootstrap_package/Configuration/TypoScript/ContentElement/constants.typoscript'
 
 ############
 ### PAGE ###
@@ -36,16 +36,6 @@ page {
         linktitle = Resterland WebAtelier
     }
 
-    preloader {
-        enable = 1
-        logo {
-            file = EXT:resterland/Resources/Public/Images/Logos/Default/Logo.svg
-            height = 52
-            width = 180
-        }
-        backgroundColor = #333333
-        fadeDuration = 0.25
-    }
     favicon {
       # cat=Resterland Settings: layout/111/100; type=options[Default=Default, Resterland=Resterland, Bali Entdecken=Balientdecken, Flores Entdecken=Floresentdecken, Pancasila=Indonesienentdecken, Roesten=Roesten, VPT MOB=Vptmob]; label=LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.favicon.switch
         switch = Default
@@ -129,4 +119,4 @@ plugin.bootstrap_package_contentelements {
 ###################
 #### FRAMEWORK ####
 ###################
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland/Configuration/TypoScript/Bootstrap5/constants.typoscript">
+@import 'EXT:resterland/Configuration/TypoScript/Bootstrap5/constants.typoscript'
