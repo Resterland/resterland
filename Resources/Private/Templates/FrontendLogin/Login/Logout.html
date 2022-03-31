@@ -4,7 +4,7 @@
     <f:render partial="CookieWarning"/>
 </f:if>
 
-<h3>
+<h3 class="element-header">
     <f:render arguments="{key: 'status_header'}" partial="RenderLabelOrMessage"/>
 </h3>
 <p>
@@ -16,14 +16,14 @@
         <legend>
             <f:translate key="logout"/>
         </legend>
-        <div>
-            <label>
+        <div class="form-group">
+            <label class="form-label">
                 <f:translate key="username"/>
             </label>
-            {user.username}
+            <p>{user.username}</p>
         </div>
         <div>
-            <f:form.submit name="submit" value="{f:translate(key: 'logout')}"/>
+            <f:form.submit class="btn btn-primary" name="submit" value="{f:translate(key: 'logout')}"/>
         </div>
 
         <div class="felogin-hidden">
