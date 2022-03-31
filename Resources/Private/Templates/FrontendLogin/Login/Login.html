@@ -27,9 +27,11 @@
 </f:if>
 
 <f:if condition="{settings.showForgotPassword}">
-    <f:link.action action="recovery" controller="PasswordRecovery">
-        <f:render arguments="{key: 'forgot_header'}" partial="RenderLabelOrMessage"/>
-    </f:link.action>
+    <p>
+        <f:link.action action="recovery" controller="PasswordRecovery">
+            <f:render arguments="{key: 'forgot_header'}" partial="RenderLabelOrMessage"/>
+        </f:link.action>
+    </p>
 </f:if>
 
 <f:comment><!--Login Form--></f:comment>
