@@ -8,15 +8,16 @@
 ## customsubcategory=200=LLL:EXT:resterland/Resources/Private/Language/locallang_felogin.xlf:constant_cats.felogin
 
 styles.content.loginform {
-    #enable login/logout link in menu: default disabled
-    # cat=Resterland Settings: felogin/200/100; type=boolean; label=LLL:EXT:resterland/Resources/Private/Language/locallang_felogin.xlf:constant_cats.felogin.inmenu
-    #inmenu =
     #pid of Login/Logout page
     # cat=Frontend Login/01_Storage/102; type=int+; label=LLL:EXT:resterland/Resources/Private/Language/locallang_felogin.xlf:constant_cats.felogin.pageuid
     pageuid =
     #pid of redirect page after logout
     # cat=Resterland Settings: felogin/200/200; type=int+; label=LLL:EXT:resterland/Resources/Private/Language/locallang_felogin.xlf:constant_cats.felogin.redirectuid
     #redirectuid = 1
+
+    #enable login/logout link in menu: default disabled
+    # cat=Frontend Login/03_Features/102; type=boolean; label=LLL:EXT:resterland/Resources/Private/Language/locallang_felogin.xlf:constant_cats.felogin.inmenu
+    inmenu =
 
     email {
         templateRootPath = EXT:resterland/Resources/Private/Email/Templates/
