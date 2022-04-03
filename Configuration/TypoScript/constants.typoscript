@@ -109,7 +109,7 @@ plugin.bootstrap_package_contentelements {
 #############################################################
 ## Felogin
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland/Configuration/TypoScript/Extensions/Felogin/constants.typoscript" condition="extension.isLoaded('felogin') == 1">
-#@import 'EXT:resterland/Configuration/TypoScript/Extensions/FrontendLogin/constants.typoscript'
+#@import 'EXT:resterland/Configuration/TypoScript/Extensions/Felogin/constants.typoscript'
 #<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/Extension/Form/constants.typoscript" condition="extension.isLoaded('form') == 1">
 #<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/Extension/IndexedSearch/constants.typoscript" condition="extension.isLoaded('indexed_search') == 1">
 #<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/Extension/Seo/constants.typoscript" condition="extension.isLoaded('seo') == 1">

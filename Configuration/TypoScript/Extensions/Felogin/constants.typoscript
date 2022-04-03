@@ -5,27 +5,30 @@
 ############################
 ### CUSTOM SUBCATEGORIES ###
 ###########################
-# customsubcategory=200=LLL:EXT:resterland/Resources/Private/Language/locallang_felogin.xlf:constant_cats.felogin
+## customsubcategory=200=LLL:EXT:resterland/Resources/Private/Language/locallang_felogin.xlf:constant_cats.felogin
 
 styles.content.loginform {
-    templateFile >
     #enable login/logout link in menu: default disabled
     # cat=Resterland Settings: felogin/200/100; type=boolean; label=LLL:EXT:resterland/Resources/Private/Language/locallang_felogin.xlf:constant_cats.felogin.inmenu
-    inmenu =
+    #inmenu =
     #pid of Login/Logout page
-    # cat=Resterland Settings: felogin/200/200; type=int+; label=LLL:EXT:resterland/Resources/Private/Language/locallang_felogin.xlf:constant_cats.felogin.pageuid
+    # cat=Frontend Login/01_Storage/102; type=int+; label=LLL:EXT:resterland/Resources/Private/Language/locallang_felogin.xlf:constant_cats.felogin.pageuid
     pageuid =
     #pid of redirect page after logout
     # cat=Resterland Settings: felogin/200/200; type=int+; label=LLL:EXT:resterland/Resources/Private/Language/locallang_felogin.xlf:constant_cats.felogin.redirectuid
-    redirectuid = 1
+    #redirectuid = 1
+
+    email {
+        templateRootPath = EXT:resterland/Resources/Private/Email/Templates/
+        templateName = PasswordRecovery
+    }
 }
 
 plugin {
     tx_felogin_login {
         view {
-            # cat=Frontend Login/02_Template/102; type=string; label= Path to template root (FE)
-            templateRootPath = EXT:resterland/Resources/Private/Templates/FrontendLogin/
-            partialRoothPath = EXT:resterland/Resources/Private/Partials/FrontendLogin/
+            templateRootPath = EXT:resterland/Resources/Private/Templates/Felogin/
+            partialRoothPath = EXT:resterland/Resources/Private/Partials/Felogin/
         }
     }
 }
