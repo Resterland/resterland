@@ -28,7 +28,7 @@ plugin {
     tx_felogin_login {
         view {
             templateRootPath = EXT:resterland/Resources/Private/Templates/Felogin/
-            partialRoothPath = EXT:resterland/Resources/Private/Partials/Felogin/
+            partialRootPath = EXT:resterland/Resources/Private/Partials/Felogin/
         }
     }
 }
