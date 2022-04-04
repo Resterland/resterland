@@ -10,9 +10,4 @@ page {
         mystyle = EXT:resterland/Resources/Public/Scss/Themes/{$page.theme.switch}/theme.scss
         custom = EXT:resterland/Resources/Public/Css/custom.css
     }
-
-    includeJSFooterlibs {
-        popper = EXT:bootstrap_package/Resources/Public/Contrib/popper-core/popper.min.js
-        bootstrap = EXT:bootstrap_package/Resources/Public/Contrib/bootstrap5/js/bootstrap.min.js
-    }
 }

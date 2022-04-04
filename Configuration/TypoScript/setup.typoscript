@@ -33,6 +33,12 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland/Configuration/TypoScript/Bootstrap5/setup.typoscript">
 
 
+###################
+#### FRAMEWORK ####
+###################
+@import 'EXT:resterland/Configuration/TypoScript/Bootstrap5/setup.typoscript'
+
+
 ##############
 #### PAGE ####
 ##############

@@ -9,7 +9,7 @@
     <h3 class="element-header">
         <span><f:render arguments="{key: '{messageKey}_header'}" partial="RenderLabelOrMessage"/></span>
     </h3>
-    <p>
+    <p class="fs-4">
         <f:render arguments="{key: '{messageKey}_message'}" partial="RenderLabelOrMessage"/>
     </p>
 </f:if>
@@ -27,7 +27,7 @@
 </f:if>
 
 <f:if condition="{settings.showForgotPassword}">
-    <p>
+    <p class="fs-4">
         <f:link.action action="recovery" controller="PasswordRecovery">
             <f:render arguments="{key: 'forgot_header'}" partial="RenderLabelOrMessage"/>
         </f:link.action>

@@ -99,9 +99,14 @@ plugin.bootstrap_package_contentelements {
     view {
         layoutRootPath = EXT:resterland/Resources/Private/Layouts/ContentElements/
         partialRootPath = EXT:resterland/Resources/Private/Partials/ContentElements/
-        templateRootPath = EXT:resterland/Resources/Private/Templates/ContentElements/
+        #        templateRootPath = EXT:resterland/Resources/Private/Templates/ContentElements/
     }
 }
+
+###################
+#### FRAMEWORK ####
+###################
+@import 'EXT:resterland/Configuration/TypoScript/Bootstrap5/constants.typoscript'
 
 #############################################################
 #### EXTENSIONS                                          ####
@@ -115,8 +120,3 @@ plugin.bootstrap_package_contentelements {
 #<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/Extension/Seo/constants.typoscript" condition="extension.isLoaded('seo') == 1">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland/Configuration/TypoScript/Extensions/News/constants.typoscript" condition="extension.isLoaded('news') == 1">
 ##<INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland/Configuration/TypoScript/Extensions/FileListGallery/constants.typoscript">
-
-###################
-#### FRAMEWORK ####
-###################
-@import 'EXT:resterland/Configuration/TypoScript/Bootstrap5/constants.typoscript'
