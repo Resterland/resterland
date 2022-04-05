@@ -67,18 +67,8 @@ page {
 ### CONFIG ###
 ##############
 config {
-    no_cache = 0
-    removeDefaultJS = 0
-    compressJs = 0
-    compressCss = 0
-    concatenateJs = 0
-    concatenateCss = 0
-    admPanel = 1
-    prefixLocalAnchors = all
     headerComment = Based on the TYPO3 Bootstrap Package by Benjamin Kott - https://www.bootstrap-package.com/
-    sendCacheHeaders = 1
     typolinkEnableLinksAcrossDomains = 0
-    preloadImages = 0
 }
 
 ####################################
