@@ -4,7 +4,7 @@
     "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
     "This file is @generated automatically"
   ],
-  "content-hash": "2c6fbd8f2dfb42487f6fae0f0289ad91",
+  "content-hash": "6b97a46d9050c31f51593848f009927c",
   "packages": [
     {
       "name": "bacon/bacon-qr-code",
@@ -61,6 +61,89 @@
       "time": "2022-03-14T02:02:36+00:00"
     },
     {
+      "name": "causal/image_autoresize",
+      "version": "2.1.1",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/xperseguers/t3ext-image_autoresize.git",
+        "reference": "a7dfde49ac5dfaee0cacd14cef37c5cc2807ff77"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/xperseguers/t3ext-image_autoresize/zipball/a7dfde49ac5dfaee0cacd14cef37c5cc2807ff77",
+        "reference": "a7dfde49ac5dfaee0cacd14cef37c5cc2807ff77",
+        "shasum": ""
+      },
+      "require": {
+        "ext-exif": "*",
+        "ext-json": "*",
+        "php": ">= 7.2.0, <= 7.4.99",
+        "typo3/cms-core": "^8.7 || ^9.5 || ^10 || ^11"
+      },
+      "replace": {
+        "typo3-ter/image-autoresize": "self.version"
+      },
+      "type": "typo3-cms-extension",
+      "extra": {
+        "branch-alias": {
+          "dev-master": "2.1.x-dev"
+        },
+        "typo3/cms": {
+          "extension-key": "image_autoresize",
+          "cms-package-dir": "{$vendor-dir}/typo3/cms"
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "Causal\\ImageAutoresize\\": "Classes/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "GPL-2.0-or-later",
+        "GPL-3.0-or-later"
+      ],
+      "authors": [
+        {
+          "name": "Xavier Perseguers",
+          "email": "xavier@causal.ch",
+          "homepage": "https://www.causal.ch",
+          "role": "Developer"
+        }
+      ],
+      "description": "Simplify the way your editors may upload their images: no complex local procedure needed, let TYPO3 automatically resize down their huge images/pictures on-the-fly during upload (or using a scheduler task for batch processing) and according to your own business rules (directory/groups). This will highly reduce the footprint on your server and speed-up response time if lots of images are rendered (e.g., in a gallery). Features an EXIF/IPTC extractor to ensure metadata may be used by the FAL indexer even if not preserved upon resizing.",
+      "homepage": "https://github.com/xperseguers/t3ext-image_autoresize",
+      "keywords": [
+        "IPTC",
+        "TYPO3 CMS",
+        "auto-resize",
+        "autoresize",
+        "batch",
+        "exif",
+        "fal",
+        "footprint",
+        "image",
+        "performance",
+        "picture",
+        "upload"
+      ],
+      "support": {
+        "issues": "https://github.com/xperseguers/t3ext-image_autoresize/issues",
+        "source": "https://github.com/xperseguers/t3ext-image_autoresize/tree/2.1.1"
+      },
+      "funding": [
+        {
+          "url": "https://www.paypal.me/xperseguers/10",
+          "type": "custom"
+        },
+        {
+          "url": "https://github.com/xperseguers",
+          "type": "github"
+        }
+      ],
+      "time": "2021-05-22T08:08:01+00:00"
+    },
+    {
       "name": "christian-riesen/base32",
       "version": "1.6.0",
       "source": {
@@ -103,16 +186,16 @@
           "email": "chris.riesen@gmail.com",
           "homepage": "http://christianriesen.com",
           "role": "Developer"
-                }
-            ],
-            "description": "Base32 encoder/decoder according to RFC 4648",
-            "homepage": "https://github.com/ChristianRiesen/base32",
-            "keywords": [
-                "base32",
-                "decode",
-                "encode",
-                "rfc4648"
-            ],
+        }
+      ],
+      "description": "Base32 encoder/decoder according to RFC 4648",
+      "homepage": "https://github.com/ChristianRiesen/base32",
+      "keywords": [
+        "base32",
+        "decode",
+        "encode",
+        "rfc4648"
+      ],
             "support": {
                 "issues": "https://github.com/ChristianRiesen/base32/issues",
                 "source": "https://github.com/ChristianRiesen/base32/tree/1.6.0"
@@ -216,14 +299,14 @@
                     "name": "Benjamin Eberlei",
                     "email": "kontakt@beberlei.de"
                 },
-                {
-                    "name": "Jonathan Wage",
-                    "email": "jonwage@gmail.com"
-                },
-                {
-                    "name": "Johannes Schmitt",
-                  "email": "schmittjoh@gmail.com"
-                }
+              {
+                "name": "Jonathan Wage",
+                "email": "jonwage@gmail.com"
+              },
+              {
+                "name": "Johannes Schmitt",
+                "email": "schmittjoh@gmail.com"
+              }
             ],
           "description": "Docblock Annotations Parser",
           "homepage": "https://www.doctrine-project.org/projects/annotations.html",
@@ -276,16 +359,16 @@
       "license": [
         "MIT"
       ],
-            "authors": [
-                {
-                    "name": "Guilherme Blanco",
-                    "email": "guilhermeblanco@gmail.com"
-                },
-                {
-                    "name": "Roman Borschel",
-                    "email": "roman@code-factory.org"
-                },
-                {
+      "authors": [
+        {
+          "name": "Guilherme Blanco",
+          "email": "guilhermeblanco@gmail.com"
+        },
+        {
+          "name": "Roman Borschel",
+          "email": "roman@code-factory.org"
+        },
+        {
                     "name": "Benjamin Eberlei",
                     "email": "kontakt@beberlei.de"
                 },
@@ -503,16 +586,16 @@
       "conflict": {
         "doctrine/common": "<2.9@dev"
       },
-            "require-dev": {
-                "doctrine/coding-standard": "^6.0",
-                "phpunit/phpunit": "^7.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
+      "require-dev": {
+        "doctrine/coding-standard": "^6.0",
+        "phpunit/phpunit": "^7.0"
+      },
+      "type": "library",
+      "extra": {
+        "branch-alias": {
+          "dev-master": "1.0.x-dev"
+        }
+      },
             "autoload": {
                 "psr-4": {
                     "Doctrine\\Common\\": "lib/Doctrine/Common"
@@ -927,16 +1010,16 @@
           "email": "webmaster@tubo-world.de",
           "homepage": "https://github.com/Tobion"
         }
-            ],
-            "description": "Guzzle is a PHP HTTP client library",
-            "keywords": [
-                "client",
-                "curl",
-                "framework",
-                "http",
-                "http client",
-                "psr-18",
-                "psr-7",
+      ],
+      "description": "Guzzle is a PHP HTTP client library",
+      "keywords": [
+        "client",
+        "curl",
+        "framework",
+        "http",
+        "http client",
+        "psr-18",
+        "psr-7",
                 "rest",
                 "web service"
             ],
@@ -1128,16 +1211,16 @@
           "homepage": "https://sagikazarmark.hu"
         }
       ],
-            "description": "PSR-7 message implementation that also provides common utility methods",
-            "keywords": [
-                "http",
-                "message",
-                "psr-7",
-                "request",
-                "response",
-                "stream",
-                "uri",
-                "url"
+      "description": "PSR-7 message implementation that also provides common utility methods",
+      "keywords": [
+        "http",
+        "message",
+        "psr-7",
+        "request",
+        "response",
+        "stream",
+        "uri",
+        "url"
             ],
             "support": {
                 "issues": "https://github.com/guzzle/psr7/issues",
@@ -1344,16 +1427,16 @@
       },
       "conflict": {
         "typo3/cms": "*"
-            },
-            "require-dev": {
-                "typo3-console/php-server-command": "@dev",
-                "typo3/cms-filelist": "@dev"
-            },
-            "type": "library",
-            "extra": {
-                "typo3/cms": {
-                    "root-dir": "private",
-                    "web-dir": "public"
+      },
+      "require-dev": {
+        "typo3-console/php-server-command": "@dev",
+        "typo3/cms-filelist": "@dev"
+      },
+      "type": "library",
+      "extra": {
+        "typo3/cms": {
+          "root-dir": "private",
+          "web-dir": "public"
                 }
             },
             "autoload": {
@@ -1368,16 +1451,16 @@
             "authors": [
                 {
                     "name": "Helmut Hummel",
-                    "email": "info@helhum.io",
-                    "homepage": "https://helhum.io",
-                    "role": "Developer"
+                  "email": "info@helhum.io",
+                  "homepage": "https://helhum.io",
+                  "role": "Developer"
                 }
             ],
-            "description": "Set up secure TYPO3 web directory containing only public assets",
-            "support": {
-                "issues": "https://github.com/helhum/typo3-secure-web/issues",
-                "source": "https://github.com/helhum/typo3-secure-web/tree/v0.3.2"
-            },
+      "description": "Set up secure TYPO3 web directory containing only public assets",
+      "support": {
+        "issues": "https://github.com/helhum/typo3-secure-web/issues",
+        "source": "https://github.com/helhum/typo3-secure-web/tree/v0.3.2"
+      },
       "funding": [
         {
           "url": "https://www.paypal.me/helhum/19.99",
@@ -1426,16 +1509,16 @@
       "license": [
         "MIT"
       ],
-            "authors": [
-                {
-                    "name": "Raymond Hill"
-                },
-                {
-                    "name": "Rob Crowe",
-                    "email": "rob@cogpowered.com"
-                },
-                {
-                    "name": "Christian Kuhn",
+      "authors": [
+        {
+          "name": "Raymond Hill"
+        },
+        {
+          "name": "Rob Crowe",
+          "email": "rob@cogpowered.com"
+        },
+        {
+          "name": "Christian Kuhn",
                     "email": "lolli@schwarzbu.ch",
                     "role": "maintainer"
                 }
@@ -1540,16 +1623,16 @@
             },
             "require": {
                 "ext-tokenizer": "*",
-                "php": ">=7.0"
+              "php": ">=7.0"
             },
-            "require-dev": {
-                "ircmaxell/php-yacc": "^0.0.7",
-                "phpunit/phpunit": "^6.5 || ^7.0 || ^8.0 || ^9.0"
-            },
-            "bin": [
-                "bin/php-parse"
-            ],
-            "type": "library",
+          "require-dev": {
+            "ircmaxell/php-yacc": "^0.0.7",
+            "phpunit/phpunit": "^6.5 || ^7.0 || ^8.0 || ^9.0"
+          },
+          "bin": [
+            "bin/php-parse"
+          ],
+          "type": "library",
           "extra": {
             "branch-alias": {
               "dev-master": "4.9-dev"
@@ -1864,16 +1947,16 @@
         "psr-4": {
           "Psr\\EventDispatcher\\": "src/"
         }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "PHP-FIG",
-                    "homepage": "http://www.php-fig.org/"
-                }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "PHP-FIG",
+          "homepage": "http://www.php-fig.org/"
+        }
             ],
             "description": "Standard interfaces for event handling.",
             "keywords": [
@@ -2151,15 +2234,15 @@
                 "middleware",
                 "psr",
                 "psr-15",
-                "psr-7",
-                "request",
-                "response"
+              "psr-7",
+              "request",
+              "response"
             ],
-            "support": {
-                "issues": "https://github.com/php-fig/http-server-middleware/issues",
-                "source": "https://github.com/php-fig/http-server-middleware/tree/master"
-            },
-            "time": "2018-10-30T17:12:04+00:00"
+          "support": {
+            "issues": "https://github.com/php-fig/http-server-middleware/issues",
+            "source": "https://github.com/php-fig/http-server-middleware/tree/master"
+          },
+          "time": "2018-10-30T17:12:04+00:00"
         },
     {
       "name": "psr/log",
@@ -4849,23 +4932,23 @@
         "interoperability",
         "standards"
       ],
-            "support": {
-              "source": "https://github.com/symfony/service-contracts/tree/v2.5.1"
-            },
-            "funding": [
-              {
-                "url": "https://symfony.com/sponsor",
-                "type": "custom"
-              },
-              {
-                "url": "https://github.com/fabpot",
-                "type": "github"
-              },
-              {
-                "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                "type": "tidelift"
-              }
-            ],
+      "support": {
+        "source": "https://github.com/symfony/service-contracts/tree/v2.5.1"
+      },
+      "funding": [
+        {
+          "url": "https://symfony.com/sponsor",
+          "type": "custom"
+        },
+        {
+          "url": "https://github.com/fabpot",
+          "type": "github"
+        },
+        {
+          "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+          "type": "tidelift"
+        }
+      ],
       "time": "2022-03-13T20:07:29+00:00"
     },
     {
@@ -7500,16 +7583,16 @@
     },
     {
       "name": "typo3/symfony-psr-event-dispatcher-adapter",
-            "version": "v2.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/TYPO3/symfony-psr-event-dispatcher-adapter.git",
-                "reference": "c93fd7cc9f215cfbbc6ce89089eadabedf65a21f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/symfony-psr-event-dispatcher-adapter/zipball/c93fd7cc9f215cfbbc6ce89089eadabedf65a21f",
-                "reference": "c93fd7cc9f215cfbbc6ce89089eadabedf65a21f",
+      "version": "v2.1.0",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/TYPO3/symfony-psr-event-dispatcher-adapter.git",
+        "reference": "c93fd7cc9f215cfbbc6ce89089eadabedf65a21f"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/TYPO3/symfony-psr-event-dispatcher-adapter/zipball/c93fd7cc9f215cfbbc6ce89089eadabedf65a21f",
+        "reference": "c93fd7cc9f215cfbbc6ce89089eadabedf65a21f",
                 "shasum": ""
             },
             "require": {
@@ -8036,16 +8119,16 @@
           }
         },
         "autoload": {
-                "classmap": [
-                    "src/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
+          "classmap": [
+            "src/"
+          ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+          "BSD-3-Clause"
+        ],
+        "authors": [
+          {
                     "name": "Sebastian Bergmann",
                     "email": "sebastian@phpunit.de",
                     "role": "lead"
@@ -8105,16 +8188,16 @@
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de",
-                    "role": "lead"
-                }
-            ],
+          "license": [
+            "BSD-3-Clause"
+          ],
+          "authors": [
+            {
+              "name": "Sebastian Bergmann",
+              "email": "sebastian@phpunit.de",
+              "role": "lead"
+            }
+          ],
           "description": "Invoke callables with a timeout",
           "homepage": "https://github.com/sebastianbergmann/php-invoker/",
           "keywords": [
@@ -8432,16 +8515,16 @@
         "type": "library",
         "extra": {
           "branch-alias": {
-                    "dev-master": "1.0-dev"
-                }
-            },
-            "autoload": {
-                "classmap": [
-                    "src/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
+            "dev-master": "1.0-dev"
+          }
+        },
+        "autoload": {
+          "classmap": [
+            "src/"
+          ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
                 "BSD-3-Clause"
             ],
             "authors": [
@@ -8659,15 +8742,15 @@
                 "url": "https://github.com/sebastianbergmann/diff.git",
                 "reference": "3461e3fccc7cfdfc2720be910d3bd73c69be590d"
             },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/3461e3fccc7cfdfc2720be910d3bd73c69be590d",
-                "reference": "3461e3fccc7cfdfc2720be910d3bd73c69be590d",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.3"
-            },
+          "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/3461e3fccc7cfdfc2720be910d3bd73c69be590d",
+            "reference": "3461e3fccc7cfdfc2720be910d3bd73c69be590d",
+            "shasum": ""
+          },
+          "require": {
+            "php": ">=7.3"
+          },
           "require-dev": {
             "phpunit/phpunit": "^9.3",
             "symfony/process": "^4.2 || ^5"
@@ -8791,16 +8874,16 @@
         "dist": {
           "type": "zip",
           "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/65e8b7db476c5dd267e65eea9cab77584d3cfff9",
-                "reference": "65e8b7db476c5dd267e65eea9cab77584d3cfff9",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.3",
-                "sebastian/recursion-context": "^4.0"
-            },
-            "require-dev": {
-                "ext-mbstring": "*",
-                "phpunit/phpunit": "^9.3"
+          "reference": "65e8b7db476c5dd267e65eea9cab77584d3cfff9",
+          "shasum": ""
+        },
+        "require": {
+          "php": ">=7.3",
+          "sebastian/recursion-context": "^4.0"
+        },
+        "require-dev": {
+          "ext-mbstring": "*",
+          "phpunit/phpunit": "^9.3"
             },
             "type": "library",
             "extra": {
@@ -8972,16 +9055,16 @@
         },
         "funding": [
           {
-                    "url": "https://github.com/sebastianbergmann",
-                    "type": "github"
-                }
-            ],
-            "time": "2020-11-28T06:42:11+00:00"
-        },
-        {
-            "name": "sebastian/object-enumerator",
-            "version": "4.0.4",
-            "source": {
+            "url": "https://github.com/sebastianbergmann",
+            "type": "github"
+          }
+        ],
+        "time": "2020-11-28T06:42:11+00:00"
+      },
+      {
+        "name": "sebastian/object-enumerator",
+        "version": "4.0.4",
+        "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/object-enumerator.git",
                 "reference": "5c9eeac41b290a3712d88851518825ad78f45c71"
@@ -9135,16 +9218,16 @@
                     "email": "whatthejeff@gmail.com"
                 },
                 {
-                    "name": "Adam Harvey",
-                    "email": "aharvey@php.net"
+                  "name": "Adam Harvey",
+                  "email": "aharvey@php.net"
                 }
             ],
-            "description": "Provides functionality to recursively process PHP variables",
-            "homepage": "http://www.github.com/sebastianbergmann/recursion-context",
-            "support": {
-                "issues": "https://github.com/sebastianbergmann/recursion-context/issues",
-              "source": "https://github.com/sebastianbergmann/recursion-context/tree/4.0.4"
-            },
+          "description": "Provides functionality to recursively process PHP variables",
+          "homepage": "http://www.github.com/sebastianbergmann/recursion-context",
+          "support": {
+            "issues": "https://github.com/sebastianbergmann/recursion-context/issues",
+            "source": "https://github.com/sebastianbergmann/recursion-context/tree/4.0.4"
+          },
           "funding": [
             {
               "url": "https://github.com/sebastianbergmann",
