@@ -38,6 +38,9 @@
     }
   },
   "config": {
+    "platform": {
+      "php": "7.4.99"
+    },
     "optimize-autoloader": true,
     "allow-plugins": {
       "typo3/cms-*": true,
