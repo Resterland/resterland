@@ -287,10 +287,7 @@ page {
     }
 
     includeJS {
-        html5shiv = https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js
-        html5shiv.external = 1
-        html5shiv.forceOnTop = 1
-        html5shiv.allWrap = <!--[if lt IE 9]>|<![endif]-->
+        #include JavaScripts, if adorable
     }
 
     includeJSFooterlibs {
