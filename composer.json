@@ -56,7 +56,6 @@
   },
   "extra": {
     "typo3/cms": {
-      "root-dir": "private",
       "web-dir": "public",
       "extension-key": "resterland"
     }
