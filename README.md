@@ -1,3 +1,3 @@
 # resterland
 
-Requires the bootstrap_package extension from Benjamin Kott and tweaks it to the needs of ResterlandWebatelier.
+This extension just extends the `bootstrap package`from Benjamin Kott with some additional configuration.
