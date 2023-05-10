@@ -9,8 +9,8 @@ $EM_CONF[$_EXTKEY] = [
     'category' => 'extension',
     'constraints' => [
         'depends' => [
-            'typo3' => '10.4.0-11.9.99',
-            'bootstrap_package' => '11.0.0-12.9.99'
+            'typo3' => '11.5.0-12.9.99',
+            'bootstrap_package' => '11.0.0-13.9.99'
         ],
         'conflicts' => [],
         'suggests' => [],
@@ -21,7 +21,7 @@ $EM_CONF[$_EXTKEY] = [
         ],
     ],
     'state' => 'beta',
-    'version' => '5.3.0',
+    'version' => '6.1.0',
     'uploadfolder' => 0,
     'createDirs' => '',
     'clearCacheOnLoad' => 1,
