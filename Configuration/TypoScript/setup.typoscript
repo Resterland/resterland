@@ -47,6 +47,22 @@ page {
 
     shortcutIcon = EXT:resterland/Resources/Public/Icons/Favicons/{$page.favicon.switch}/favicon.ico
 
+    headerData {
+        999 = TEXT
+        999.value (
+            <!-- Google tag (gtag.js) -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-PXND7Q93K5"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'G-PXND7Q93K5');
+            </script>
+            <!-- Google tag (gtag.js) End -->
+        )
+    }
+
     10 = FLUIDTEMPLATE
     10 {
 
