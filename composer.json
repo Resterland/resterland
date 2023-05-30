@@ -17,6 +17,11 @@
             "Resterland\\Resterland\\": "Classes/"
         }
     },
+    "scripts": {
+        "set-version": [
+            "Resterland\\Resterland\\Composer\\VersionScript::setVersion"
+        ]
+    },
     "extra": {
         "typo3/cms": {
             "extension-key": "resterland"
