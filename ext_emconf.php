@@ -5,27 +5,26 @@
  */
 $EM_CONF[$_EXTKEY] = [
     'title' => 'Resterland',
-    'description' => 'This extension is based on the bootstrap package extension by Bajamin Kott. Layout switch integration.',
-    'category' => 'extension',
+    'description' => '',
+    'category' => 'templates',
     'constraints' => [
         'depends' => [
-            'typo3' => '11.5.0-12.9.99',
-            'bootstrap_package' => '11.0.0-13.9.99'
+            'bootstrap_package' => '13.0.0-13.9.99',
         ],
-        'conflicts' => [],
-        'suggests' => [],
+        'conflicts' => [
+        ],
     ],
     'autoload' => [
         'psr-4' => [
-            'Resterland\\Resterland\\' => 'Classes'
+            'Resterland\\Resterland\\' => 'Classes',
         ],
     ],
-    'state' => 'beta',
-    'version' => '6.2.0',
+    'state' => 'stable',
     'uploadfolder' => 0,
     'createDirs' => '',
     'clearCacheOnLoad' => 1,
     'author' => 'Roland Fuhrer',
     'author_email' => 'roland@resterland.ch',
-    'author_company' => 'ResterLand WebAtelier'
+    'author_company' => 'ResterLand',
+    'version' => '1.0.0',
 ];

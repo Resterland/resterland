@@ -1,55 +1,21 @@
 {
     "name": "resterland/resterland",
     "type": "typo3-cms-extension",
-    "description": "TYPO3 project realized according to the recommendations of Helmut Humel. Based on bootstrap-package of Bajamin Kott. Tweaked to the needs of ResterLand WebAtelier.",
-    "license": "GPL-2.0-or-later",
-    "keywords": [
-        "TYPO3",
-        "extension",
-        "bootstrap",
-        "responsive"
+    "description": "",
+    "homepage": "https://resterland.ch/",
+    "license": [
+        "GPL-2.0-or-later"
     ],
-    "homepage": "https://resterland.ch",
-    "authors": [
-        {
-            "name": "Roland Fuhrer",
-            "email": "roland@resterland.ch",
-            "homepage": "https://resterland.ch",
-            "role": "Developer"
-        }
+    "keywords": [
+        "TYPO3 CMS"
     ],
     "require": {
-        "typo3/cms-core": "^11.5 || ^12.4",
         "bk2k/bootstrap-package": "^13.0"
-    },
-    "require-dev": {
-        "roave/security-advisories": "dev-latest",
-        "typo3/testing-framework": "^6 || ^7 || ^8"
     },
     "autoload": {
         "psr-4": {
-            "Resterland\\Resterland\\": "Classes"
+            "Resterland\\Resterland\\": "Classes/"
         }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Resterland\\Resterland\\Tests\\": "Tests"
-        }
-    },
-    "config": {
-        "optimize-autoloader": true,
-        "allow-plugins": {
-            "typo3/cms-*": true,
-            "roave/security-advisories": true,
-            "typo3/testing-framework": true,
-            "causal/image_autoresize": true,
-            "typo3/class-alias-loader": true
-        }
-    },
-    "scripts": {
-        "set-version": [
-            "Resterland\\Resterland\\Composer\\VersionScript::setVersion"
-        ]
     },
     "extra": {
         "typo3/cms": {
