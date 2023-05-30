@@ -12,9 +12,20 @@
     "require": {
         "bk2k/bootstrap-package": "^13.0"
     },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest"
+    },
     "autoload": {
         "psr-4": {
             "Resterland\\Resterland\\": "Classes/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "allow-plugins": {
+            "typo3/cms-*": true,
+            "roave/security-advisories": true,
+            "typo3/class-alias-loader": true
         }
     },
     "scripts": {
