@@ -21,9 +21,6 @@ indent_style = space
 indent_size = 4
 
 # TMPL-Files
-[*.tmpl]
-indent_style = space
-indent_size = 4
 
 # SCSS-Files
 [*.scss]
@@ -31,9 +28,6 @@ indent_style = space
 indent_size = 4
 
 # TS/JS-Files
-[*.ts]
-indent_style = space
-indent_size = 2
 
 [*.js]
 indent_style = space
@@ -50,9 +44,6 @@ indent_style = space
 indent_size = 4
 
 # ReST-Files
-[*.rst]
-indent_style = space
-indent_size = 3
 
 # MD-Files
 [*.md]
@@ -68,9 +59,6 @@ indent_size = 2
 # composer.json
 # .travis.yml
 # bower.json
-[{package.json, composer.json, .travis.yml, bower.json}]
-indent_style = space
-indent_size = 2
 
 # TypoScript
 [*.typoscript]
