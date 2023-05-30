@@ -1,7 +1,7 @@
 ######################
 #### DEPENDENCIES ####
 ######################
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/constants.typoscript">
+@import 'FILE:EXT:bootstrap_package/Configuration/TypoScript/constants.typoscript'
 
 
 ############
@@ -9,12 +9,12 @@
 ############
 page {
     logo {
-        file = EXT:resterland/Resources/Public/Images/logo.svg
-        fileInverted = EXT:resterland/Resources/Public/Images/logo-inverted.svg
+        file = EXT:resterland/Resources/Public/Images/Logos/ResterlandLogo.svg
+        fileInverted = EXT:resterland/Resources/Public/Images/Logos/ResterlandLogoInverted.svg
         height = 52
-        width = 192
-        alt = Resterland
-        linktitle = Resterland
+        width = 180
+        alt = Resterland WebAtelier
+        linktitle = Resterland WebAtelier
     }
 
     favicon {
