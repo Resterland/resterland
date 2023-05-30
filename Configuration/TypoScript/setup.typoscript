@@ -9,30 +9,6 @@
 #@import 'EXT:bootstrap_package/Configuration/TypoScript/Helper/Block.typoscript'
 #@import 'EXT:bootstrap_package/Configuration/TypoScript/Helper/PageClass.typoscript'
 
-#############################################################
-#### EXTENSIONS                                          ####
-#### Manual inclusion to keep control over loading order ####
-#############################################################
-## Felogin
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland/Configuration/TypoScript/Extensions/Felogin/setup.typoscript" condition="extension.isLoaded('felogin') == 1">
-#@import 'EXT:resterland/Configuration/TypoScript/Extensions/Felogin/setup.typoscript'
-## Form
-#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/Extension/Form/setup.typoscript" condition="extension.isLoaded('form') == 1">
-## Indexed_Search
-#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/Extension/IndexedSearch/setup.typoscript" condition="extension.isLoaded('indexed_search') == 1">
-## Seo
-#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland/Configuration/TypoScript/Extensions/Seo/setup.typoscript" condition="extension.isLoaded('seo') == 1">
-## News
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland/Configuration/TypoScript/Extensions/News/setup.typoscript" condition="extension.isLoaded('news') == 1">
-
-###################
-#### FRAMEWORK ####
-###################
-#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/Bootstrap4/setup.typoscript">
-## Using Bootstrap5
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland/Configuration/TypoScript/Bootstrap5/setup.typoscript">
-
-
 ###################
 #### FRAMEWORK ####
 ###################
@@ -302,14 +278,14 @@ page {
         # googlewebfont >
     }
 
-    includeJS {
-        #include JavaScripts, if adorable
+    includeJSLibs {
+        modernizr = EXT:bootstrap_package/Resources/Public/Contrib/modernizr/modernizr.min.js
+        modernizr.forceOnTop = 1
+        modernizr.async = 1
     }
 
     includeJSFooterlibs {
         #### Contrib
-        jquery = EXT:bootstrap_package/Resources/Public/Contrib/jquery/jquery.min.js
-        jquery.forceOnTop = 1
         photoswipe_core = EXT:bootstrap_package/Resources/Public/Contrib/photoswipe/photoswipe.min.js
         photoswipe_ui = EXT:bootstrap_package/Resources/Public/Contrib/photoswipe/photoswipe-ui-default.min.js
 
@@ -323,7 +299,7 @@ page {
     }
 
     includeJSFooter {
-        resterland_scripts = EXT:resterland/Resources/Public/JavaScript/Dist/scripts.js
+        #resterland_scripts = EXT:resterland/Resources/Public/JavaScript/Dist/scripts.js
     }
 }
 
@@ -352,6 +328,3 @@ config {
 #    typolinkLinkAccessRestrictedPages = {$styles.content.loginform.pageuid}
 #    config.typolinkLinkAccessRestrictedPages_addParams = &return_url=###RETURN_URL###&pageId=###PAGE_ID###
 #}
-
-### Debugging -> not for production sites
-config.contentObjectExceptionHandler = 0
