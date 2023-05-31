@@ -1,0 +1,26 @@
+<html data-namespace-typo3-fluid="true"
+      xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+
+<f:variable name="headerClass">bp-page-header navbar navbar-mainnavigation navbar-{theme.navigation.style}</f:variable>
+<f:variable name="headerClass">{headerClass}{f:if(condition: logo.normal, then:' navbar-has-image')}</f:variable>
+<f:variable name="headerClass">{headerClass}{f:if(condition: theme.navigation.type, else:' navbar-top', then:'
+    navbar-{theme.navigation.type} navbar-fixed-{theme.navigation.type}')}
+</f:variable>
+<header class="{headerClass}" id="page-header">
+    <div class="container">
+        <f:render arguments="{_all}" partial="Header/Logo"/>
+        <f:if condition="{mainnavigation}">
+            <f:render arguments="{_all}" partial="Header/Toggle"/>
+            <nav class="collapse navbar-collapse" id="mainnavigation">
+                <f:render arguments="{_all}" partial="DropIn/Navigation/MainBefore"/>
+                <f:render arguments="{_all}" partial="Navigation/MainNavigation"/>
+                <f:render arguments="{_all}" partial="DropIn/Navigation/MainAfter"/>
+            </nav>
+        </f:if>
+        <f:if condition="{theme.language.enable}">
+            <f:render arguments="{_all}" partial="Navigation/Language"/>
+        </f:if>
+    </div>
+</header>
+
+</html>
