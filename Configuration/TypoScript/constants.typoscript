@@ -9,7 +9,9 @@
 ############
 page {
     logo {
+        # cat=bootstrap package: logo/110/100; type=string; label=Logo: Leave blank to use website title from template instead
         file = EXT:resterland/Resources/Public/Images/Logos/ResterlandLogo.svg
+        # cat=bootstrap package: logo/110/110; type=string; label=Logo Inverted: Leave blank to use website title from template instead
         fileInverted = EXT:resterland/Resources/Public/Images/Logos/ResterlandLogoInverted.svg
         height = 52
         width = 180
