@@ -8,6 +8,7 @@
 #### PAGE ####
 ##############
 page {
+    shortcutIcon >
     shortcutIcon = EXT:resterland/Resources/Public/Icons/Favicons/{$page.favicon.switch}/favicon.ico
 
     includeCSS {

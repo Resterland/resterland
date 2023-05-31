@@ -19,6 +19,9 @@ page {
 
     favicon {
         file = EXT:resterland/Resources/Public/Icons/favicon.ico
+
+        # cat=bootstrap package: logo/111/101; type=options[Default=Default, Bali Entdecken=Balientdecken, Flores Entdecken=Floresentdecken, Pancasila=Indonesienentdecken, Roesten=Roesten, VPT MOB=Vptmob]; label=LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.favicon.switch
+        switch = Default
     }
 
     fluidtemplate {
