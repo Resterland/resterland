@@ -12,10 +12,11 @@ page {
     shortcutIcon = EXT:resterland/Resources/Public/Icons/Favicons/{$page.favicon.switch}/favicon.ico
 
     dataProcessing {
-        41 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
-        41 {
+
+        45 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
+        45 {
             languages = {$page.theme.language.languageValue}
-            as = languagemain
+            as = languagemenu
         }
     }
 
