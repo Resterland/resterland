@@ -3,7 +3,6 @@
 ######################
 @import 'FILE:EXT:bootstrap_package/Configuration/TypoScript/constants.typoscript'
 
-
 ############
 ### PAGE ###
 ############
