@@ -15,10 +15,10 @@
                 <f:render arguments="{_all}" partial="DropIn/Navigation/MainBefore"/>
                 <f:render arguments="{_all}" partial="Navigation/MainNavigation"/>
                 <f:render arguments="{_all}" partial="DropIn/Navigation/MainAfter"/>
+                <f:if condition="{theme.language.enable}">
+                    <f:render arguments="{_all}" partial="Navigation/Language"/>
+                </f:if>
             </nav>
-        </f:if>
-        <f:if condition="{theme.language.enable}">
-            <f:render arguments="{_all}" partial="Navigation/Language"/>
         </f:if>
     </div>
 </header>
