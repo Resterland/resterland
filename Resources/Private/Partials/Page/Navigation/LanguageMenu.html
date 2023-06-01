@@ -2,15 +2,17 @@
 <f:if condition="{languagenavigation}">
     <ul class="navbar-nav">
         <f:for as="item" each="{languagenavigation}">
-            <li class="{f:if(condition: item.active, then: 'active')} {f:if(condition: item.available, else: 'text-muted')}">
+            <li class="nav-item {f:if(condition: item.active, then: 'active')} {f:if(condition: item.available, else: 'text-muted')}">
                 <f:if condition="{item.available}">
                     <f:then>
-                        <a href="{item.link}" hreflang="{item.hreflang}" title="{item.title}">
-                            <span>{item.navigationTitle}</span>
+                        <a class="nav-link"
+                           href="{item.link}" hreflang="{item.hreflang}"
+                           title="{item.title}">
+                            <span class="nav-link-text">{item.navigationTitle}</span>
                         </a>
                     </f:then>
                     <f:else>
-                        <span>{item.navigationTitle}</span>
+                        <span class="nav-link-text">{item.navigationTitle}</span>
                     </f:else>
                 </f:if>
             </li>
