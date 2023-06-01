@@ -18,8 +18,8 @@ page {
     }
 
     includeCSS {
-        #theme >
-        theme = EXT:resterland/Resources/Public/Scss/Theme/theme.scss
+        theme >
+        #theme = EXT:resterland/Resources/Public/Scss/Theme/theme.scss
     }
 
     includeJSLibs {
