@@ -3,6 +3,8 @@
 ######################
 @import 'FILE:EXT:bootstrap_package/Configuration/TypoScript/setup.typoscript'
 
+# FRAMEWORK
+@import 'EXT:resterland/Configuration/TypoScript/Bootstrap5/setup.typoscript'
 
 ##############
 #### PAGE ####
@@ -13,15 +15,11 @@ page {
 
     dataProcessing {
 
-        45 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
-        45 {
-            languages = {$page.theme.language.languageValue}
-            as = languagemenu
-        }
     }
 
     includeCSS {
-        theme = EXT:resterland/Resources/Public/Scss/Theme/theme.scss
+        theme >
+        #theme = EXT:resterland/Resources/Public/Scss/Theme/theme.scss
     }
 
     includeJSLibs {

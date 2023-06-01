@@ -32,6 +32,14 @@ page {
         switch = Default
     }
 
+    theme {
+        # cat=bootstrap package: theme/160/100; type=options[Default=Bootstrap5, Dark=Dark; label=LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.theme.switch
+        switch = Bootstrap5
+        copyright {
+            enable = 1
+        }
+    }
+
     fluidtemplate {
         layoutRootPath = EXT:resterland/Resources/Private/Layouts/Page/
         partialRootPath = EXT:resterland/Resources/Private/Partials/Page/
