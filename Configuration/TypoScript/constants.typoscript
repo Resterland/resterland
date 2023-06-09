@@ -33,7 +33,7 @@ page {
     }
 
     theme {
-        # cat=bootstrap package: theme/160/100; type=options[Default=Bootstrap5, Dark=Dark; label=LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.theme.switch
+        # cat=bootstrap package: bootstrap5/160/100; type=options[Default=Bootstrap5, Dark=Dark; label=LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.bootstrap5.switch
         switch = Bootstrap5
         copyright {
             enable = 1
@@ -76,6 +76,6 @@ plugin.bootstrap_package_contentelements {
 ### BOOTSTRAP SCSS CONSTANTS ###
 ################################
 plugin.bootstrap_package.settings.scss {
-    primary = #eb3e4a
-    secondary = #013859
+    #primary = #eb3e4a
+    #secondary = #013859
 }

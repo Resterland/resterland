@@ -4,7 +4,7 @@
 #@import 'FILE:EXT:bootstrap_package/Configuration/TypoScript/setup.typoscript'
 
 # FRAMEWORK
-#@import 'EXT:resterland/Configuration/TypoScript/Bootstrap5/setup.typoscript'
+@import 'EXT:resterland/Configuration/TypoScript/Bootstrap5/setup.typoscript'
 
 ##############
 #### PAGE ####
@@ -19,7 +19,7 @@ page {
 
     includeCSS {
         #theme >
-        #theme = EXT:resterland/Resources/Public/Scss/Theme/theme.scss
+        #theme = EXT:resterland/Resources/Public/Scss/bootstrap5/theme.scss
     }
 
     includeJSLibs {
@@ -35,6 +35,6 @@ page {
     }
 
     includeJSFooter {
-        #resterland_scripts = EXT:resterland/Resources/Public/JavaScript/Dist/scripts.js
+        resterland_scripts = EXT:resterland/Resources/Public/JavaScript/Dist/scripts.js
     }
 }
