@@ -35,6 +35,6 @@ page {
     }
 
     includeJSFooter {
-        resterland_scripts = EXT:resterland/Resources/Public/JavaScript/Dist/scripts.js
+        #resterland_scripts = EXT:resterland/Resources/Public/JavaScript/Dist/scripts.js
     }
 }
