@@ -10,9 +10,9 @@ page {
     logo >
     logo {
         # cat=bootstrap package: logo/110/100; type=string; label=Logo: Leave blank to use website title from template instead
-        file = EXT:resterland/Resources/Public/Images/Logos/ResterlandLogo.svg
+        file = EXT:resterland/Resources/Public/Images/Logos/Resterland/ResterlandLogo.svg
         # cat=bootstrap package: logo/110/110; type=string; label=Logo Inverted: Leave blank to use website title from template instead
-        fileInverted = EXT:resterland/Resources/Public/Images/Logos/ResterlandLogoInverted.svg
+        fileInverted = EXT:resterland/Resources/Public/Images/Resterland/Logos/ResterlandLogoInverted.svg
         # cat=bootstrap package: logo/110/120; type=int+; label=Height: The image will not be resized!
         height = 52
         # cat=bootstrap package: logo/110/130; type=int+; label=Width: The image will not be resized!
