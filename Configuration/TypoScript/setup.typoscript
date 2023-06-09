@@ -4,7 +4,7 @@
 @import 'FILE:EXT:bootstrap_package/Configuration/TypoScript/setup.typoscript'
 
 # FRAMEWORK
-@import 'EXT:resterland/Configuration/TypoScript/Bootstrap5/setup.typoscript'
+#@import 'EXT:resterland/Configuration/TypoScript/Bootstrap5/setup.typoscript'
 
 ##############
 #### PAGE ####
@@ -18,7 +18,7 @@ page {
     }
 
     includeCSS {
-        theme >
+        #theme >
         #theme = EXT:resterland/Resources/Public/Scss/Theme/theme.scss
     }
 
