@@ -1,7 +1,7 @@
 ######################
 #### DEPENDENCIES ####
 ######################
-@import 'FILE:EXT:bootstrap_package/Configuration/TypoScript/setup.typoscript'
+#@import 'FILE:EXT:bootstrap_package/Configuration/TypoScript/setup.typoscript'
 
 # FRAMEWORK
 #@import 'EXT:resterland/Configuration/TypoScript/Bootstrap5/setup.typoscript'
