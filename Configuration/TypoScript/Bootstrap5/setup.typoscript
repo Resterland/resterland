@@ -9,6 +9,6 @@ page {
         theme >
         mytheme = EXT:resterland/Resources/Public/Scss/Themes/{$page.theme.switch}/theme.scss
         #mytheme = EXT:resterland/Resources/Public/Css/bootstrap-theme.css
-        #custom = EXT:resterland/Resources/Public/Css/custom.css
+        custom = EXT:resterland/Resources/Public/Css/custom.css
     }
 }
