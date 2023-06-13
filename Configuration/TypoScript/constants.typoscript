@@ -1,7 +1,9 @@
 ######################
 #### DEPENDENCIES ####
 ######################
-@import 'FILE:EXT:bootstrap_package/Configuration/TypoScript/constants.typoscript'
+#@import 'FILE:EXT:bootstrap_package/Configuration/TypoScript/constants.typoscript'
+@import 'EXT:bootstrap_package/Configuration/TypoScript/ContentElement/constants.typoscript'
+@import 'EXT:bootstrap_package/Configuration/TypoScript/Extension/constants.typoscript'
 
 ############
 ### PAGE ###
@@ -41,8 +43,11 @@ page {
     }
 
     fluidtemplate {
+        # cat=bootstrap package: templates/100/100; type=string; label=Layout Root Path: Path to layouts
         layoutRootPath = EXT:resterland/Resources/Private/Layouts/Page/
+        # cat=bootstrap package: templates/100/110; type=string; label=Partial Root Path: Path to partials
         partialRootPath = EXT:resterland/Resources/Private/Partials/Page/
+        # cat=bootstrap package: templates/100/120; type=string; label=Template Root Path: Path to templates
         templateRootPath = EXT:resterland/Resources/Private/Templates/Page/
     }
 }
@@ -53,23 +58,21 @@ page {
 ##################
 plugin.bootstrap_package {
     view {
+        # cat=bootstrap package: templates/200/layoutRootPath; type=string; label=Layout Root Path: Path to layouts
         layoutRootPath = EXT:resterland/Resources/Private/Layouts/
+        # cat=bootstrap package: templates/200/partialRootPath; type=string; label=Partial Root Path: Path to partials
         partialRootPath = EXT:resterland/Resources/Private/Partials/
+        # cat=bootstrap package: templates/200/templateRootPath; type=string; label=Template Root Path: Path to templates
         templateRootPath = EXT:resterland/Resources/Private/Templates/
     }
 }
 
+# COMPONENTS
+@import 'EXT:bootstrap_package/Configuration/TypoScript/CookieConsent/constants.typoscript'
+@import 'EXT:bootstrap_package/Configuration/TypoScript/GoogleTagManager/constants.typoscript'
 
-########################
-### CONTENT ELEMENTS ###
-########################
-plugin.bootstrap_package_contentelements {
-    view {
-        layoutRootPath = EXT:resterland/Resources/Private/Layouts/ContentElements/
-        partialRootPath = EXT:resterland/Resources/Private/Partials/ContentElements/
-        templateRootPath = EXT:resterland/Resources/Private/Templates/ContentElements/
-    }
-}
+# FRAMEWORK
+@import 'EXT:resterland/Configuration/TypoScript/Bootstrap5/constants.typoscript'
 
 
 ################################
