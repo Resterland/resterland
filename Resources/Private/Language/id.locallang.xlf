@@ -1,61 +1,60 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-    <file source-language="en" target-language="de_CH" datatype="plaintext" original="messages"
-          date="2017-05-19T09:11:39Z"
+    <file source-language="en" target-language="id" datatype="plaintext" original="messages" date="2017-05-19T09:11:39Z"
           product-name="resterland">
         <header/>
         <body>
 
+            <!-- Logo Settings Header -->
+            <trans-unit id="constant_cats.logo" xml:space="preserve">
+                <source>Logo</source>
+                <target>Logo</target>
+            </trans-unit>
+
             <!-- Theme Copyright runningWith -->
             <trans-unit id="theme.copyright.runningWith" xml:space="preserve">
                 <source>Running with</source>
-                <target>Louft mit</target>
+                <target>Jalan dengan</target>
             </trans-unit>
 
             <!-- Theme Copyright and -->
             <trans-unit id="theme.copyright.and" xml:space="preserve">
                 <source>and</source>
-                <target>und</target>
+                <target>dan</target>
             </trans-unit>
 
             <!-- Theme Copyright tweaked -->
             <trans-unit id="theme.copyright.tweaked" xml:space="preserve">
                 <source>Tweaked by</source>
-                <target>optimiert von</target>
-            </trans-unit>
-
-            <!-- News Plugin Settings -->
-            <trans-unit id="constant_cats.news.settings.displayDummyIfNoMedia" xml:space="preserve">
-                <source>News List View: Display a dummy pic if there is no media available</source>
-                <target>News Listenansicht: Zeige ein Dummy-Bild, wenn keine Media-Datei verfügbar ist</target>
+                <target>dioptimalkan dari</target>
             </trans-unit>
 
             <!-- cookieconsent -->
             <trans-unit id="cookieconsent.common.header">
                 <source>Cookies used on the website!</source>
-                <target state="translated">Diese Webseite benutzt Cookies!</target>
+                <target state="translated">Situs web ini menggunakan cookies!</target>
             </trans-unit>
             <trans-unit id="cookieconsent.common.message">
                 <source>This website uses cookies to ensure you get the best experience on our website.</source>
-                <target state="translated">Um Ihnen eine optimale Nutzung unserer Website zu ermöglichen, werden Cookies
-                    eingesetzt.
+                <target state="translated">Cookie digunakan untuk memungkinkan Anda memanfaatkan situs web kami secara
+                    optimal.
                 </target>
             </trans-unit>
             <trans-unit id="cookieconsent.common.dismiss">
                 <source>Got it!</source>
-                <target state="translated">Alles palletti!</target>
+                <target state="translated">Semua jelas!</target>
             </trans-unit>
             <trans-unit id="cookieconsent.common.allow">
                 <source>Allow cookies</source>
-                <target state="translated">Cookies erlauben</target>
+                <target state="translated">Izinkan cookies</target>
             </trans-unit>
             <trans-unit id="cookieconsent.common.deny">
                 <source>Decline</source>
-                <target state="translated">Wot nid!</target>
+                <target state="translated">Menolak</target>
             </trans-unit>
             <trans-unit id="cookieconsent.common.link">
                 <source>Learn more</source>
-                <target state="translated">Meh Details</target>
+                <target state="translated">Pelajari selengkapnya</target>
             </trans-unit>
 
         </body>
