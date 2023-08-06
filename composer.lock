@@ -4,7 +4,7 @@
     "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
     "This file is @generated automatically"
   ],
-  "content-hash": "8388a7ddea24e843fa2d5c40e3e7ee89",
+  "content-hash": "4a2348d29cee35103141c3edbcf8a1bb",
   "packages": [
     {
       "name": "bacon/bacon-qr-code",
@@ -62,16 +62,16 @@
     },
     {
       "name": "bk2k/bootstrap-package",
-      "version": "13.0.5",
+      "version": "14.0.6",
       "source": {
         "type": "git",
         "url": "https://github.com/benjaminkott/bootstrap_package.git",
-        "reference": "62f3b9e180dda55079ea86edfd1b88b176494979"
+        "reference": "a4e2c3a4f8d9c088610458bb540895d3af7eacc8"
       },
       "dist": {
         "type": "zip",
-        "url": "https://api.github.com/repos/benjaminkott/bootstrap_package/zipball/62f3b9e180dda55079ea86edfd1b88b176494979",
-        "reference": "62f3b9e180dda55079ea86edfd1b88b176494979",
+        "url": "https://api.github.com/repos/benjaminkott/bootstrap_package/zipball/a4e2c3a4f8d9c088610458bb540895d3af7eacc8",
+        "reference": "a4e2c3a4f8d9c088610458bb540895d3af7eacc8",
         "shasum": ""
       },
       "require": {
@@ -119,7 +119,7 @@
       "type": "typo3-cms-extension",
       "extra": {
         "branch-alias": {
-          "dev-BP_13_0": "13.0.x-dev"
+          "dev-BP_14_0": "14.0.x-dev"
         },
         "typo3/cms": {
           "extension-key": "bootstrap_package",
@@ -167,7 +167,7 @@
           "type": "custom"
         }
       ],
-      "time": "2023-06-30T13:45:52+00:00"
+      "time": "2023-07-17T12:00:46+00:00"
     },
     {
       "name": "christian-riesen/base32",
