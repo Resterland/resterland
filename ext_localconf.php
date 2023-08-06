@@ -1,16 +1,14 @@
 <?php
-defined('TYPO3_MODE') || die();
 
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+
+defined('TYPO3') or die('Access denied.');
 /***************
  * Add default RTE configuration
  */
 $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['resterland'] = 'EXT:resterland/Configuration/RTE/Default.yaml';
 
-$GLOBALS['TYPO3_CONF_VARS']['SYS']['locallangXMLOverride']['EXT:felogin/locallang.xlf'][] = 'EXT:resterland/Resources/Private/Language/locallang_felogin.xlf';
-
-#$GLOBALS['TYPO3_CONF_VARS']['SYS']['localization']['locales']['user'] = array(
-#    'id' => 'Indonesian',
-#);
-#$GLOBALS['TYPO3_CONF_VARS']['SYS']['localization']['locales']['dependencies'] = array(
-#    'id' => array('id_ID', 'id'),
-#);
+/***************
+ * PageTS
+ */
+ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland/Configuration/TsConfig/Page/All.tsconfig">');

@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-    <file source-language="en" datatype="plaintext" original="messages" date="2018-06-17UTC09:02:180"
-    product-name="resterland">
+    <file source-language="en" datatype="plaintext" original="messages" date="2023-05-30UTC06:26:210">
         <header>
             <authorName>Roland Fuhrer</authorName>
-            <authorEmail>roland@resteland.ch</authorEmail>
+            <authorEmail>roland@resterland.ch</authorEmail>
         </header>
         <body>
-
-        <!-- Logo Settings Header -->
+            <!-- Logo Settings Header -->
             <trans-unit id="constant_cats.logo" xml:space="preserve">
                 <source>Logo</source>
             </trans-unit>
@@ -71,11 +69,6 @@
             <!-- Theme Copyright tweaked -->
             <trans-unit id="theme.copyright.tweaked" xml:space="preserve">
                 <source>Tweaked by</source>
-            </trans-unit>
-
-            <!-- News Plugin Settings -->
-            <trans-unit id="constant_cats.news.settings.displayDummyIfNoMedia" xml:space="preserve">
-                <source>News List View: Display a dummy pic if there is no media available</source>
             </trans-unit>
 
             <!-- cookieconsent -->

@@ -1,47 +1,23 @@
-<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+<html data-namespace-typo3-fluid="true"
+      xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
 
-<f:comment>
-    <f:debug>{_all}</f:debug>
-</f:comment>
-<header
-    class="bp-page-header navbar navbar-mainnavigation navbar-{theme.navigation.style}{f:if(condition:settings.logo.file,then:' navbar-has-image')}{f:if(condition:theme.navigation.type, else:' navbar-top', then:' navbar-{theme.navigation.type} navbar-fixed-{theme.navigation.type}')}"
-    id="page-header">
+<f:variable name="headerClass">bp-page-header navbar navbar-mainnavigation navbar-{theme.navigation.style}</f:variable>
+<f:variable name="headerClass">{headerClass}{f:if(condition: logo.normal, then:' navbar-has-image')}</f:variable>
+<f:variable name="headerClass">{headerClass}{f:if(condition: theme.navigation.type, else:' navbar-top', then:'
+    navbar-{theme.navigation.type} navbar-fixed-{theme.navigation.type}')}
+</f:variable>
+<header class="{headerClass}" id="page-header">
     <div class="container">
-        <f:if condition="{settings.logo.file}">
-            <f:then>
-                <f:link.page class="navbar-brand navbar-brand-image" pageUid="{rootPage}"
-                             title="{settings.logo.linktitle}">
-                    <img alt="{logoAlt}" class="navbar-brand-logo-normal" height="{settings.logo.height}"
-                         src="{f:uri.image(src: settings.logo.file)}" width="{settings.logo.width}">
-                    <img alt="{logoAlt}" class="navbar-brand-logo-inverted" height="{settings.logo.height}"
-                         src="{f:uri.image(src: settings.logo.fileInverted)}" width="{settings.logo.width}">
-                </f:link.page>
-            </f:then>
-            <f:else>
-                <f:link.page class="navbar-brand navbar-brand-text" pageUid="{rootPage}"
-                             title="{settings.logo.linktitle}">{siteTitle}
-                </f:link.page>
-            </f:else>
-        </f:if>
+        <f:render arguments="{_all}" partial="Header/Logo"/>
         <f:if condition="{mainnavigation}">
-            <button aria-controls="mainnavigation" aria-expanded="false"
-                    aria-label="{f:translate(key: 'togglenavigation', extensionName: 'bootstrap_package')}"
-                    class="navbar-toggler collapsed"
-                    data-bs-target="#mainnavigation" data-bs-toggle="collapse" data-target="#mainnavigation"
-                    data-toggle="collapse" type="button">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <f:render arguments="{_all}" partial="Header/Toggle"/>
             <nav class="collapse navbar-collapse" id="mainnavigation">
                 <f:render arguments="{_all}" partial="DropIn/Navigation/MainBefore"/>
-                <f:render arguments="{menu: mainnavigation, theme: theme}" partial="Navigation/MainNavigation"/>
-                <f:comment>felogin is not loaded, don't get the Login-Logout menu item</f:comment>
-                <f:if condition="{settings.felogin.inmenu}">
-                    <f:render arguments="{_all}" partial="Navigation/LoginStatus"/>
+                <f:render arguments="{_all}" partial="Navigation/MainNavigation"/>
+                <f:if condition="{theme.language.enable}">
+                    <f:render arguments="{_all}" partial="Navigation/LanguageMenu"/>
                 </f:if>
                 <f:render arguments="{_all}" partial="DropIn/Navigation/MainAfter"/>
-                <f:if condition="{theme.language.enable}">
-                    <f:render arguments="{_all}" partial="Navigation/LanguageNavi"/>
-                </f:if>
             </nav>
         </f:if>
     </div>

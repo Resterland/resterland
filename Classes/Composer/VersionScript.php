@@ -20,6 +20,7 @@ use RuntimeException;
  */
 class VersionScript
 {
+
     /**
      * @param ScriptEvent $event
      * @throws RuntimeException
@@ -29,10 +30,12 @@ class VersionScript
         // Validate Arguments
         $arguments = $event->getArguments();
         if (count($arguments) === 0) {
-            throw new RuntimeException('No arguments provided. Example: composer run-script set-version 1.0.0', 1496141893);
+            throw new RuntimeException('No arguments provided. Example: composer run-script set-version 1.0.0',
+                1496141893);
         }
         if (!preg_match('/\A\d+\.\d+\.\d+\z/', $arguments[0])) {
-            throw new RuntimeException('No valid version number provided! Example: composer run-script set-version 1.0.0', 1496141893);
+            throw new RuntimeException('No valid version number provided! Example: composer run-script set-version 1.0.0',
+                1496141893);
         }
         $version = $arguments[0];
 

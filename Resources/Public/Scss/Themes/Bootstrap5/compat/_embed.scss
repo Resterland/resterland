@@ -21,10 +21,12 @@ $embed-responsive-aspect-ratios: join(
     width: 100%;
     padding: 0;
     overflow: hidden;
+
     &:before {
         display: block;
         content: "";
     }
+
     .embed-responsive-item,
     iframe,
     embed,
@@ -39,6 +41,7 @@ $embed-responsive-aspect-ratios: join(
         border: 0;
     }
 }
+
 @each $embed-responsive-aspect-ratio in $embed-responsive-aspect-ratios {
     $embed-responsive-aspect-ratio-x: nth($embed-responsive-aspect-ratio, 1);
     $embed-responsive-aspect-ratio-y: nth($embed-responsive-aspect-ratio, 2);

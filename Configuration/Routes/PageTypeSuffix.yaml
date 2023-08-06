@@ -1,6 +1,0 @@
-routeEnhancers:
-  PageTypeSuffix:
-    type: PageType
-    default: .html
-    map:
-      sitemap.xml: 1533906435

@@ -6,8 +6,9 @@ page {
         # bootstrap 5.x will be included in the themes.scss file
         # for standalone usage just uncomment the following line
         # bootstrap = EXT:bootstrap_package/Resources/Public/Contrib/bootstrap5/scss/bootstrap.scss
-        theme >
-        mystyle = EXT:resterland/Resources/Public/Scss/Themes/{$page.theme.switch}/theme.scss
+        #theme >
+        #mytheme = EXT:resterland/Resources/Public/Scss/Themes/{$page.theme.switch}/theme.scss
+        #mytheme = EXT:resterland/Resources/Public/Css/bootstrap-theme.css
         custom = EXT:resterland/Resources/Public/Css/custom.css
     }
 }

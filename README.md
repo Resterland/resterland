@@ -1,3 +1,4 @@
-# resterland
+Sitepackage for the project "Resterland"
+==============================================================
 
-This extension just extends the `bootstrap package`from Benjamin Kott with some additional configuration.
+Add some explanation here.

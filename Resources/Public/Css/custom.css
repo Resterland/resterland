@@ -1,4 +1,4 @@
 /* now flex-grow because of the two navbars */
 .navbar-collapse {
-	flex-grow: 0;
+    flex-grow: 0;
 }
