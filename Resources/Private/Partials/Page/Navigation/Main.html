@@ -15,6 +15,9 @@
                  class="collapse navbar-collapse" id="mainnavigation">
                 <f:render arguments="{_all}" partial="DropIn/Navigation/MainBefore"/>
                 <f:render arguments="{_all}" partial="Navigation/MainNavigation"/>
+                <f:if condition="{theme.language.enable}">
+                    <f:render arguments="{_all}" partial="Navigation/LanguageMenu"/>
+                </f:if>
                 <f:render arguments="{_all}" partial="DropIn/Navigation/MainAfter"/>
             </nav>
         </f:if>
