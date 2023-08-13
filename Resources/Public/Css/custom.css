@@ -3,29 +3,18 @@
     flex-grow: 3;
 }
 
-.header-language .language-menu {
-    margin: 0;
-    list-style: none;
-    padding-left: 0;
+.header-language {
+    background-color: olivedrab;
 }
 
-@media (min-width: 576px) {
-    .header-language .language-menu {
-        margin-left: -.5em;
-        margin-right: -.5em;
-    }
-
-    .header-language .language-menu > li {
-        display: inline-block;
-        padding-left: .5em;
-        padding-right: .5em;
-    }
+.header-language-menu {
+    background-color: aqua;
 }
 
-.header-language .language-menu .active a {
+.header-language-menu .active a {
     font-weight: bold;
 }
 
-.header-language .language-menu .inactive {
+.header-language-menu .inactive {
     opacity: .5;
 }
