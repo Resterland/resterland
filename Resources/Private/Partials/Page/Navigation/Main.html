@@ -7,11 +7,12 @@
     navbar-{theme.navigation.type} navbar-fixed-{theme.navigation.type}')}
 </f:variable>
 <header class="{headerClass}" id="page-header">
-    <div class="container">
+    <div class="container container-mainnavigation">
         <f:render arguments="{_all}" partial="Header/Logo"/>
         <f:if condition="{mainnavigation}">
             <f:render arguments="{_all}" partial="Header/Toggle"/>
-            <nav class="collapse navbar-collapse" id="mainnavigation">
+            <nav aria-label="{f:translate(key: 'main-navigation.label', extensionName: 'resterland')}"
+                 class="collapse navbar-collapse" id="mainnavigation">
                 <f:render arguments="{_all}" partial="DropIn/Navigation/MainBefore"/>
                 <f:render arguments="{_all}" partial="Navigation/MainNavigation"/>
                 <f:if condition="{theme.language.enable}">
