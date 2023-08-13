@@ -1,6 +1,6 @@
 <html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
 <f:if condition="{languagenavigation}">
-    <ul class="header-language-menu" id="header_language_menu">
+    <ul class="navbar-nav header-language-menu" id="header_language_menu">
         <f:for as="item" each="{languagenavigation}">
             <li class="{f:if(condition: item.active, then: 'active')} {f:if(condition: item.available, else: 'inactive')}">
                 <f:if condition="{item.available}">
