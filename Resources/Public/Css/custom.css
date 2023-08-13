@@ -1,10 +1,19 @@
 :root,
 [data-bs-theme="light"] {
     --bs-emphasis-color-rgb: 0, 0, 0;
+    --bs-link-color: #577760;
+    --bs-link-color-rgb: 87, 119, 96;
+    --bs-link-decoration: underline;
+    --bs-link-hover-color: #465f4d;
+    --bs-link-hover-color-rgb: 70, 95, 77;
 }
 
 [data-bs-theme="dark"] {
     --bs-emphasis-color-rgb: 255, 255, 255;
+    --bs-link-color: #9aada0;
+    --bs-link-hover-color: #aebdb3;
+    --bs-link-color-rgb: 154, 173, 160;
+    --bs-link-hover-color-rgb: 174, 189, 179;
 }
 
 .navbar {
