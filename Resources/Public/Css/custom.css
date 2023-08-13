@@ -1,20 +1,74 @@
-/* now flex-grow because of the two navbars */
-.navbar-collapse {
-    flex-grow: 3;
+:root,
+[data-bs-theme="light"] {
+    --bs-emphasis-color-rgb: 0, 0, 0;
 }
 
-.header-language {
-    background-color: olivedrab;
+[data-bs-theme="dark"] {
+    --bs-emphasis-color-rgb: 255, 255, 255;
 }
 
-.header-language-menu {
-    background-color: aqua;
+.navbar {
+    --bs-navbar-color: rgba(var(--bs-emphasis-color-rgb), 0.65);
+    --bs-navbar-hover-color: rgba(var(--bs-emphasis-color-rgb), 0.8);
+    --bs-navbar-disabled-color: rgba(var(--bs-emphasis-color-rgb), 0.3);
 }
 
-.header-language-menu .active a {
+.header-language-nav {
+    --bs-nav-link-padding-x: 0;
+    --bs-nav-link-padding-y: 0.5rem;
+    --bs-nav-link-font-weight: ;
+    --bs-nav-link-color: var(--bs-navbar-color);
+    --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
+    --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.header-language-nav .active a {
     font-weight: bold;
 }
 
-.header-language-menu .inactive {
+.header-language-nav .inactive {
     opacity: .5;
+}
+
+.navbar-mainnavigation {
+    --mainnavigation-nav-spacing-y: 1px;
+    --mainnavigation-nav-spacing-x: .75em;
+    --mainnavigation-link-line-height: 1.45;
+    --mainnavigation-link-font-size: 1rem;
+    --mainnavigation-link-padding-y: .5rem;
+    --mainnavigation-link-padding-x: .75rem;
+}
+
+.navbar-mainnavigation .header-language-nav {
+    gap: var(--mainnavigation-nav-spacing-y) var(--mainnavigation-nav-spacing-x);
+    line-height: var(--mainnavigation-link-line-height);
+    --bs-nav-link-font-size: var(--mainnavigation-link-font-size);
+    --bs-nav-link-padding-y: var(--mainnavigation-link-padding-y);
+    --bs-nav-link-padding-x: var(--mainnavigation-link-padding-x);
+    width: 100%;
+    position: static;
+}
+
+.navbar-mainnavigation .header-language-nav:before {
+    content: '';
+    height: 1rem;
+}
+
+@media (min-width: 992px) {
+    .navbar-mainnavigation .header-language-nav {
+        padding-top: 0;
+    }
+
+    .navbar-mainnavigation .header-language-nav:before {
+        display: none;
+    }
+
+    .navbar-mainnavigation .header-language-nav {
+        flex-direction: row;
+    }
 }
