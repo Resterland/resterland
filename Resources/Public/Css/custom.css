@@ -1,6 +1,6 @@
 /* now flex-grow because of the two navbars */
 .navbar-collapse {
-    flex-basis: 100%;
+    flex-basis: auto;
     flex-grow: 1;
     align-items: center;
 }
