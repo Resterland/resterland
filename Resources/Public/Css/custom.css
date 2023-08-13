@@ -22,7 +22,7 @@
     --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
     display: flex;
     flex-direction: column;
-    padding-left: 0;
+    padding-left: 0.5em;
     margin-bottom: 0;
     list-style: none;
 }
@@ -50,7 +50,6 @@
     --bs-nav-link-font-size: var(--mainnavigation-link-font-size);
     --bs-nav-link-padding-y: var(--mainnavigation-link-padding-y);
     --bs-nav-link-padding-x: var(--mainnavigation-link-padding-x);
-    width: 100%;
     position: static;
 }
 
