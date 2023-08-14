@@ -49,10 +49,8 @@ a {
     --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
     display: flex;
     flex-direction: column;
-    padding-left: 0.5em;
     margin-bottom: 0;
     list-style: none;
-    background-color: aqua;
 }
 
 .header-language-nav .active a {
