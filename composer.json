@@ -1,7 +1,7 @@
 {
     "name": "resterland/resterland",
     "type": "typo3-cms-extension",
-    "description": "Resterland's theme extendes the TYPOO3 bootstrap-package by Benjamin Kott.",
+    "description": "This theme from ResterLand WebAtelier extends the TYPOO3 bootstrap-package by Benjamin Kott.",
     "homepage": "https://resterland.ch/",
     "license": [
         "GPL-2.0-or-later"
