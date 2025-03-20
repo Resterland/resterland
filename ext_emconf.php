@@ -9,7 +9,6 @@ $EM_CONF[$_EXTKEY] = [
     'category' => 'templates',
     'constraints' => [
         'depends' => [
-            'bootstrap_package' => '13.0.0-14.9.99',
         ],
         'conflicts' => [
         ],
@@ -26,5 +25,5 @@ $EM_CONF[$_EXTKEY] = [
     'author' => 'Roland Fuhrer',
     'author_email' => 'roland@resterland.ch',
     'author_company' => 'ResterLand',
-    'version' => '7.2.4',
+    'version' => '8.0.0',
 ];
