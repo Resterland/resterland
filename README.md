@@ -1,4 +1,4 @@
-Sitepackage for the project "Resterland"
+ResterLand Site Package for TYPO3 Projects
 ==============================================================
 
-Add some explanation here.
+This is the basic site package for TYPO3 projects created by ResterLand.

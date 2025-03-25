@@ -4,11 +4,14 @@
  * Extension Manager/Repository config file for ext "resterland".
  */
 $EM_CONF[$_EXTKEY] = [
-    'title' => 'Resterland',
-    'description' => '',
+    'title' => 'Resterland Site Package',
+    'description' => 'This is the basic site package for TYPO3 projects created by Resterland.',
     'category' => 'templates',
     'constraints' => [
         'depends' => [
+            'typo3' => '13.4.0-13.4.99',
+            'fluid_styled_content' => '13.4.0-13.4.99',
+            'rte_ckeditor' => '13.4.0-13.4.99',
         ],
         'conflicts' => [
         ],
@@ -23,7 +26,7 @@ $EM_CONF[$_EXTKEY] = [
     'createDirs' => '',
     'clearCacheOnLoad' => 1,
     'author' => 'Roland Fuhrer',
-    'author_email' => 'roland@resterland.ch',
-    'author_company' => 'ResterLand',
+    'author_email' => 'webmaster@resterland.org',
+    'author_company' => 'ResterLand WebAtelier',
     'version' => '8.0.0',
 ];

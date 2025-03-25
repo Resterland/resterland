@@ -1,8 +1,8 @@
 {
     "name": "resterland/resterland",
     "type": "typo3-cms-extension",
-    "description": "This theme from ResterLand WebAtelier extends the TYPOO3 bootstrap-package by Benjamin Kott.",
-    "homepage": "https://resterland.ch/",
+    "description": "This is the basic site package for TYPO3 projects created by Resterland.",
+    "homepage": "https://resterland.org/",
     "license": [
         "GPL-2.0-or-later"
     ],
@@ -13,7 +13,8 @@
     ],
     "require": {
 		"typo3/cms-core": "^12.4 || ^13.4",
-		"typo3/cms-rte-ckeditor": "^12.4 || ^13.4"
+		"typo3/cms-rte-ckeditor": "^12.4 || ^13.4",
+		"typo3/cms-fluid-styled-content": "^12.4 || ^13.4"
 	},
     "require-dev": {
         "roave/security-advisories": "dev-latest"

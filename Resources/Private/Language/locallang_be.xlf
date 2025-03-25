@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-    <file source-language="en" datatype="plaintext" original="messages" date="2023-05-30UTC06:26:210">
+    <file source-language="en" datatype="plaintext" original="messages" date="2025-03-25UTC07:27:400">
         <header>
             <authorName>Roland Fuhrer</authorName>
-            <authorEmail>roland@resterland.ch</authorEmail>
+            <authorEmail>webmaster@resterland.org</authorEmail>
         </header>
         <body>
-            <trans-unit id="backend_layout.example">
-                <source>Example</source>
+            <trans-unit id="backend_layout.default">
+                <source>Default</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.stage">
+                <source>Stage</source>
             </trans-unit>
             <trans-unit id="backend_layout.column.normal">
                 <source>Normal</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.right">
+                <source>Right</source>
             </trans-unit>
         </body>
     </file>
