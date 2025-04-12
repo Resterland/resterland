@@ -12,7 +12,7 @@
         "responsive"
     ],
     "require": {
-        "bk2k/bootstrap-package": "^13.0 || ^14.0"
+        "bk2k/bootstrap-package": "^14.0 || ^15.0"
     },
     "require-dev": {
         "roave/security-advisories": "dev-latest"
