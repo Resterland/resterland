@@ -11,4 +11,5 @@ $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['resterland'] = 'EXT:resterland/Co
 /***************
  * PageTS
  */
-ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland/Configuration/TsConfig/Page/All.tsconfig">');
+#ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT:
+# source="FILE:EXT:resterland/Configuration/TsConfig/Page/All.tsconfig">');
