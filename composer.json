@@ -12,8 +12,8 @@
         "responsive"
     ],
     "require": {
-        "typo3/cms-core": "^13.4 || ^14.3",
-        "bk2k/bootstrap-package": "^15.0 || ^16.0"
+        "typo3/cms-core": "^14.3",
+        "bk2k/bootstrap-package": "^16.0"
     },
     "require-dev": {
         "roave/security-advisories": "dev-latest"
@@ -27,8 +27,7 @@
         "optimize-autoloader": true,
         "allow-plugins": {
             "typo3/cms-*": true,
-            "roave/security-advisories": true,
-            "typo3/class-alias-loader": true
+            "roave/security-advisories": true
         }
     },
     "scripts": {

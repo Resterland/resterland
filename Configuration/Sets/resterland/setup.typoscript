@@ -1,0 +1,19 @@
+######################
+#### DEPENDENCIES ####
+######################
+@import 'TypoScript/*.typoscript'
+
+# FRAMEWORK
+@import 'TypoScript/Bootstrap5/setup.typoscript'
+
+##############
+#### PAGE ####
+##############
+page {
+    shortcutIcon >
+    shortcutIcon = EXT:resterland/Resources/Public/Icons/Favicons/{$page.favicon.switch}/favicon.ico
+
+    includeJSFooter {
+        resterland_scripts = EXT:resterland/Resources/Public/JavaScript/Dist/scripts.js
+    }
+}

@@ -1,0 +1,4 @@
+name: resterland/resterland
+label: "Resterland Extension for Bootstrap Package"
+Dependencies:
+  - bk2k/bootstrap-package
