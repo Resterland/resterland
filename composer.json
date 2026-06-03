@@ -8,12 +8,11 @@
     ],
     "keywords": [
         "TYPO3 CMS",
-        "bootstrap",
+        "theme",
         "responsive"
     ],
     "require": {
-        "typo3/cms-core": "^14.3",
-        "bk2k/bootstrap-package": "^16.0"
+        "typo3/cms-core": "^14.3"
     },
     "require-dev": {
         "roave/security-advisories": "dev-latest"
@@ -29,11 +28,6 @@
             "typo3/cms-*": true,
             "roave/security-advisories": true
         }
-    },
-    "scripts": {
-        "set-version": [
-            "Resterland\\Resterland\\Composer\\VersionScript::setVersion"
-        ]
     },
     "extra": {
         "typo3/cms": {
