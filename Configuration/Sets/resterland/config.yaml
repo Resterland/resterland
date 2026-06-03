@@ -1,2 +1,7 @@
 name: resterland/resterland
 label: "Theme - Resterland"
+optionalDependencies:
+  - typo3/felogin
+  - typo3/indexed-search
+  - typo3/form
+  - typo3/seo-sitemap
