@@ -11,7 +11,7 @@
 ##############
 page {
     shortcutIcon >
-    shortcutIcon = EXT:resterland/Resources/Public/Icons/Favicons/{$page.favicon.switch}/favicon.ico
+    shortcutIcon = EXT:resterland/Resources/Public/Icons/Favicons/Default/favicon.ico
 
     includeJSFooter {
         resterland_scripts = EXT:resterland/Resources/Public/JavaScript/Dist/scripts.js
