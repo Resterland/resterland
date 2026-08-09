@@ -30,11 +30,6 @@
             "roave/security-advisories": true
         }
     },
-    "scripts": {
-        "set-version": [
-            "Resterland\\Resterland\\Composer\\VersionScript::setVersion"
-        ]
-    },
     "extra": {
         "typo3/cms": {
             "extension-key": "resterland"
