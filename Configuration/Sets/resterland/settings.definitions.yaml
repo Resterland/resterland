@@ -1,0 +1,75 @@
+#categories:
+#  BootstrapPackage:
+#    label: 'Bootstrap Package'
+#  BootstrapPackage.google-tag-manager:
+#    label: 'Google Tag Manager'
+#    parent: BootstrapPackage
+
+settings:
+
+  # Logo
+  page.logo.file:
+    label: 'Logo'
+    description: 'Leave blank to use website title from template instead'
+    category: BootstrapPackage.logo
+    type: string
+    default: 'EXT:resterland/Resources/Public/Images/Logos/Resterland/ResterlandLogo.svg'
+
+  page.logo.fileInverted:
+    label: 'Logo Inverted'
+    description: 'Leave blank to use website title from template instead'
+    category: BootstrapPackage.logo
+    type: string
+    default: 'EXT:resterland/Resources/Public/Images/Resterland/Logos/ResterlandLogoInverted.svg'
+
+  page.logo.height:
+    label: 'Height'
+    category: BootstrapPackage.logo
+    type: number
+    default: 52
+
+  page.logo.width:
+    label: 'Width'
+    category: BootstrapPackage.logo
+    type: number
+    default: 180
+
+  page.logo.alt:
+    label: 'Alternative text'
+    description: 'Text of the alt attribute of the logo image (default: "<website title> logo"'
+    category: BootstrapPackage.logo
+    type: string
+    default: ''
+
+  page.logo.linktitle:
+    label: 'Link title'
+    description: 'Title of the link attribute of the logo image'
+    category: BootstrapPackage.logo
+    type: string
+    default: ''
+
+  # Favicon
+  page.favicon.file:
+    label: 'Favicon'
+    category: BootstrapPackage.favicon
+    type: string
+    default: 'EXT:resterland/Resources/Public/Icons/favicon.ico'
+
+  # Template Plugin
+  plugin.bootstrap_package.view.layoutRootPath:
+#    label: 'Layout Root Path'
+    category: BootstrapPackage.templates.plugin
+    type: string
+    default: 'EXT:resterland/Resources/Private/Layouts/'
+
+  plugin.bootstrap_package.view.partialRootPath:
+#    label: 'Partial Root Path'
+    category: BootstrapPackage.templates.plugin
+    type: string
+    default: 'EXT:resterland/Resources/Private/Partials/'
+
+  plugin.bootstrap_package.view.templateRootPath:
+#    label: 'Template Root Path'
+    category: BootstrapPackage.templates.plugin
+    type: string
+    default: 'EXT:resterland/Resources/Private/Templates/'
