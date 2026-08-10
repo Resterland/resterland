@@ -35,14 +35,14 @@ settings:
     default: 180
 
   page.logo.alt:
-    label: 'Alternative text'
-    description: 'Text of the alt attribute of the logo image (default: "<website title> logo"'
+    label: 'Alternative Text'
+    description: 'Text of the alt attribute of the logo image (default: "<website title> logo")'
     category: BootstrapPackage.logo
     type: string
     default: ''
 
   page.logo.linktitle:
-    label: 'Link title'
+    label: 'Link Title'
     description: 'Title of the link attribute of the logo image'
     category: BootstrapPackage.logo
     type: string
@@ -55,21 +55,21 @@ settings:
     type: string
     default: 'EXT:resterland/Resources/Public/Icons/favicon.ico'
 
-  # Template Plugin
-  plugin.bootstrap_package.view.layoutRootPath:
+    # Template Page
+  page.fluidtemplate.layoutRootPath:
     label: 'Layout Root Path'
-    category: BootstrapPackage.templates.plugin
+    category: BootstrapPackage.templates.page
     type: string
     default: 'EXT:resterland/Resources/Private/Layouts/'
 
-  plugin.bootstrap_package.view.partialRootPath:
+  page.fluidtemplate.partialRootPath:
     label: 'Partial Root Path'
-    category: BootstrapPackage.templates.plugin
+    category: BootstrapPackage.templates.page
     type: string
     default: 'EXT:resterland/Resources/Private/Partials/'
 
-  plugin.bootstrap_package.view.templateRootPath:
+  page.fluidtemplate.templateRootPath:
     label: 'Template Root Path'
-    category: BootstrapPackage.templates.plugin
+    category: BootstrapPackage.templates.page
     type: string
     default: 'EXT:resterland/Resources/Private/Templates/'
