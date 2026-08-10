@@ -57,19 +57,19 @@ settings:
 
   # Template Plugin
   plugin.bootstrap_package.view.layoutRootPath:
-#    label: 'Layout Root Path'
+    label: 'Layout Root Path'
     category: BootstrapPackage.templates.plugin
     type: string
     default: 'EXT:resterland/Resources/Private/Layouts/'
 
   plugin.bootstrap_package.view.partialRootPath:
-#    label: 'Partial Root Path'
+    label: 'Partial Root Path'
     category: BootstrapPackage.templates.plugin
     type: string
     default: 'EXT:resterland/Resources/Private/Partials/'
 
   plugin.bootstrap_package.view.templateRootPath:
-#    label: 'Template Root Path'
+    label: 'Template Root Path'
     category: BootstrapPackage.templates.plugin
     type: string
     default: 'EXT:resterland/Resources/Private/Templates/'
